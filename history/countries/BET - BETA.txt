@@ -7,9 +7,8 @@ capital = 619
 
 add_ideas = {
 	Beta
-	FocusWest
-	# FocusSoviet
-	# FocusMiddleEast
+	FocusSoviet
+	FocusMiddleEast
 	closed_economy
 	Beta_nation2
 }

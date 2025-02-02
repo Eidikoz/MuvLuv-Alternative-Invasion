@@ -5,7 +5,7 @@
 sub_units = {
 
 	Betas = {
-		sprite = infantry
+		sprite = "venator"
 		map_icon_category = infantry
 		
 		priority = 600
@@ -46,7 +46,7 @@ sub_units = {
 		}
 	}
 	Betas2 = {
-		sprite = infantry
+		sprite = "venator"
 		map_icon_category = infantry
 		
 		priority = 600
@@ -87,7 +87,7 @@ sub_units = {
 		}
 	}
 	Betas3 = {
-		sprite = infantry
+		sprite = "venator"
 		map_icon_category = infantry
 		
 		priority = 600

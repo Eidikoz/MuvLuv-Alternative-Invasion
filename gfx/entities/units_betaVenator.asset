@@ -1,0 +1,5 @@
+entity = {
+	name = "venator_entity"
+	pdxmesh = "BetaVenator_mesh"
+	scale = 0.6
+}

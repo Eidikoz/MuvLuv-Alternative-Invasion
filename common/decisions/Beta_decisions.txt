@@ -28,6 +28,645 @@ Beta_decisions = {
 		}
 	}
 
+	Beta_spawn_hive_2 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			168 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive02"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_3 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			407 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive03"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_4 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			880 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive04"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_5 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			260 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive05"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_6 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			882 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive06"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_7 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			577 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive07"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_8 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			148 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive08"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_9 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			291 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive09"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_10 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			576 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive10"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_11 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			43 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive11"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_12 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			20 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive12"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_13 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			436 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive13"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_14 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			756 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive14"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_15 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			568 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive15"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_16 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			605 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive16"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_17 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			640 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive17"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Beta_spawn_hive_18 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			330 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive18"
+			}
+		}
+	}
+	
+	Beta_spawn_hive_19 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			561 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive19"
+			}
+		}
+	}
+	
+	Beta_spawn_hive_20 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			527 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive20"
+			}
+		}
+	}
+
+	Beta_spawn_hive_21 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			534 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive21"
+			}
+		}
+	}
+
+	Beta_spawn_hive_22 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			282 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive22"
+			}
+		}
+	}
+
+	Beta_spawn_hive_23 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			574 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive23"
+			}
+		}
+	}
+
+	Beta_spawn_hive_24 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			878 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive24"
+			}
+		}
+	}
+
+	Beta_spawn_hive_25 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			877 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive25"
+			}
+		}
+	}
+
+	Beta_spawn_hive_26 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			874 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_Hive26"
+			}
+		}
+	}
+
 	find_the_Betas_england = {
 		icon = generic_operation
 

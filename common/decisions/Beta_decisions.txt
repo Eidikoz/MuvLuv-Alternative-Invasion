@@ -1,6 +1,33 @@
 ####Find Betas#####	
 
 Beta_decisions = {
+	Beta_spawn_hive_1 = {
+		icon = generic_operation
+
+		available = {
+			tag = BET
+			619 = {
+				is_fully_controlled_by = BET
+			}
+		}
+		cost = 0
+		days_re_enable = 120
+		days_remove = 1
+		
+		visible = {
+			tag = BET
+		}
+		complete_effect = {
+			BET = {
+				load_oob = "BET_1936_sinkiang"
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
 	find_the_Betas_england = {
 		icon = generic_operation
 

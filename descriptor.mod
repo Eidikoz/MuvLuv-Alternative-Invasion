@@ -1,0 +1,15 @@
+version="0.0.1"
+tags={
+	"Alternative History"
+	"Events"
+	"Gameplay"
+	"Technologies"
+	"Military"
+	"Balance"
+	"National Focuses"
+	"Graphics"
+	"Sound"
+}
+picture="thumbnail.png"
+name="MuvLuv Alternative Invasion"
+supported_version="1.15.*"

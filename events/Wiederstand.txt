@@ -1,0 +1,108 @@
+
+add_namespace = BETAwiederstand
+
+country_event = {
+	id = BETAwiederstand.1
+	title = "BETAwiederstand.1.name"
+	desc = "BETAwiederstand.1.desc"
+	picture = GFX_event_widerstand1
+	fire_only_once = yes
+	hidden =yes
+	mean_time_to_happen = { days = 500}	
+	
+	trigger = {
+		438={
+			is_controlled_by = BET
+		}
+	}
+
+
+	option = {
+		name = BETAwiederstand.1.a
+		hidden_effect = {
+			country_event = { days = 1 id = BETAnews.13 }
+			ENG={
+				load_oob = "ENG_Partisan"
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = BETAwiederstand.2
+	title = "BETAwiederstand.2.name"
+	desc = "BETAwiederstand.2.desc"
+	picture = GFX_event_widerstand2
+	fire_only_once = yes
+	hidden =yes
+	mean_time_to_happen = { days = 500}	
+	trigger = {
+		322={
+			is_controlled_by = BET
+		}
+	}
+
+
+	option = {
+		name = BETAwiederstand.1.a
+		hidden_effect = {
+			country_event = { days = 1 id = BETAnews.14 }
+			TIB={
+				load_oob = "TIB_Partisan"
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = BETAwiederstand.3
+	title = "BETAwiederstand.3.name"
+	desc = "BETAwiederstand.3.desc"
+	picture = GFX_event_widerstand3
+	fire_only_once = yes
+	hidden =yes
+	mean_time_to_happen = { days = 500}
+	trigger = {
+		443={
+			is_controlled_by = BET
+		}
+	}
+
+
+	option = {
+		name = BETAwiederstand.1.a
+		country_event = { days = 1 id = BETAnews.15 }
+		hidden_effect = {
+			ENG={
+				load_oob = "ENG_Partisan2"
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = BETAwiederstand.4
+	title = "BETAwiederstand.4.name"
+	desc = "BETAwiederstand.4.desc"
+	picture = GFX_event_widerstand4
+	fire_only_once = yes
+	hidden =yes
+	mean_time_to_happen = { days = 500 }	
+	trigger = {
+		266={
+			is_controlled_by = BET
+		}
+	}
+
+
+	option = {
+		name = BETAwiederstand.1.a
+		hidden_effect = {
+			country_event = { days = 1 id = BETAnews.16 }
+			PER={
+				load_oob = "PER_Partisan"
+			}	
+		}		
+	}
+}
+

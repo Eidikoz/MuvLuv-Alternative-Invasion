@@ -1,0 +1,7 @@
+######################################
+category = {
+ name = "Battlesound"
+ soundeffects = {
+	ZOM_infantry_rifle_attack
+    }
+}

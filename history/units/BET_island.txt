@@ -1,0 +1,8 @@
+﻿units = {
+	division= {
+		name = "BETA Horde"
+		location = 12689
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+	}
+}

@@ -1,0 +1,14 @@
+# animation = {
+# 	name = "BetaVenator_attack_animation"
+# 	file = "BetaVenator_attack.anim"
+# }
+
+# animation = {
+# 	name = "BetaVenator_idle_animation"
+# 	file = "BetaVenator_idle.anim"
+# }
+
+# animation = {
+# 	name = "BetaVenator_moving_animation"
+# 	file = "BetaVenator_moving.anim"
+# }

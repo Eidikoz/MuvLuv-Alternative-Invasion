@@ -1,0 +1,107 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_event_mussolini_hitler"
+		texturefile = "gfx/event_pictures/event_mussolini_hitler.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_mussolini"
+		texturefile = "gfx/event_pictures/event_mussolini.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_goering"
+		texturefile = "gfx/event_pictures/event_goering.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_churchill"
+		texturefile = "gfx/event_pictures/event_churchill.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_widerstand1"
+		texturefile = "gfx/event_pictures/event_widerstand1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_widerstand2"
+		texturefile = "gfx/event_pictures/event_widerstand2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_widerstand3"
+		texturefile = "gfx/event_pictures/event_widerstand3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_widerstand4"
+		texturefile = "gfx/event_pictures/event_widerstand4.dds"
+	}
+	spriteType = {
+		name = "GFX_event_spain"
+		texturefile = "gfx/event_pictures/event_spain.dds"
+	}
+	spriteType = {
+		name = "GFX_event_doomsday"
+		texturefile = "gfx/event_pictures/event_doomsday.dds"
+	}
+	spriteType = {
+		name = "GFX_event_zombie_landing"
+		texturefile = "gfx/event_pictures/event_zombielanding.dds"
+	}
+	spriteType = {
+		name = "GFX_event_mutation"
+		texturefile = "gfx/event_pictures/event_mutation.dds"
+	}
+	spriteType = {
+		name = "GFX_event_cuba"
+		texturefile = "gfx/event_pictures/event_cuba.dds"
+	}
+	spriteType = {
+		name = "GFX_event_sydney"
+		texturefile = "gfx/event_pictures/event_sydney.dds"
+	}
+	spriteType = {
+		name = "GFX_event_persia"
+		texturefile = "gfx/event_pictures/event_persia.dds"
+	}
+	spriteType = {
+		name = "GFX_event_sweden"
+		texturefile = "gfx/event_pictures/event_sweden.dds"
+	}
+	spriteType = {
+		name = "GFX_event_india_falling"
+		texturefile = "gfx/event_pictures/event_india_falling.dds"
+	}
+	spriteType = {
+		name = "GFX_event_soviet_falling"
+		texturefile = "gfx/event_pictures/event_soviet_falling.dds"
+	}
+	spriteType = {
+		name = "GFX_event_france_falling"
+		texturefile = "gfx/event_pictures/event_france_falling.dds"
+	}
+	spriteType = {
+		name = "GFX_event_germany_falling"
+		texturefile = "gfx/event_pictures/event_germany_falling.dds"
+	}
+	spriteType = {
+		name = "GFX_event_uk_falling"
+		texturefile = "gfx/event_pictures/event_uk_falling.dds"
+	}
+	spriteType = {
+		name = "GFX_event_japan_falling"
+		texturefile = "gfx/event_pictures/event_japan_falling.dds"
+	}
+	spriteType = {
+		name = "GFX_event_usa_falling"
+		texturefile = "gfx/event_pictures/event_usa_falling.dds"
+	}
+	
+	
+}
+	
+	
+	

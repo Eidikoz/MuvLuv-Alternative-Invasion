@@ -1,0 +1,1208 @@
+####Find Betas#####	
+
+Beta_decisions = {
+	find_the_Betas_england = {
+		icon = generic_operation
+
+		available = {
+			tag = ENG
+		}
+		cost = 200
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				ENG = { has_country_flag = Beta_find }
+				tag = ENG
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = Beta_fight_england
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_england2 = {
+		icon = generic_operation
+
+		available = {
+			AND = {
+				tag = ENG
+				has_manpower > 10000
+			}
+		}
+		cost = 0
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				ENG = { has_country_flag = Beta_find }
+				tag  = ENG
+			}
+		}
+		complete_effect = {
+			add_manpower = -10000
+			add_to_variable = {
+				var = Beta_fight_england
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_england3 = {                         
+		allowed = { tag = ENG }                
+		available = {                           
+			check_variable = { Beta_fight_england > 50 }                
+		}
+		activation = {                         
+			ENG = { has_country_flag = Beta_find }              
+		}
+		is_good = no  
+		fire_only_once = yes		
+		days_mission_timeout = 100              
+		timeout_effect = {                      
+			BET ={
+				declare_war_on = {
+					type = take_state_focus
+					target = ENG
+				}
+			}
+			hidden_effect = {
+				BET = { load_oob = "BET_england" }
+				ENG = { clr_country_flag = Beta_find }
+			}
+			country_event = { days = 1 id = Betanews.23 }             
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = { days = 1 id = Betanews.22 }
+				ENG = { clr_country_flag = Beta_find }				
+			}
+		}
+	}
+
+	find_the_Betas_irland = {
+		icon = generic_operation
+
+		available = {
+			tag = IRE
+		}
+		cost = 200
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				IRE = { has_country_flag = Beta_find }
+				tag = IRE
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = Beta_fight_irland
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_irland2 = {
+		icon = generic_operation
+
+		available = {
+			AND = {
+				tag = IRE
+				has_manpower > 10000
+			}
+		}
+		cost = 0
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				IRE = { has_country_flag = Beta_find }
+				tag = IRE
+			}
+		}
+		complete_effect = {
+			add_manpower = -10000
+			add_to_variable = {
+				var = Beta_fight_irland
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_irland3 = {                         
+		allowed = { tag = IRE }                
+		available = {                           
+			check_variable = { Beta_fight_irland > 50 }                
+		}
+		activation = {                         
+			IRE = { has_country_flag = Beta_find }              
+		}
+		is_good = no  
+		fire_only_once = yes		
+		days_mission_timeout = 100              
+		timeout_effect = {                      
+			BET ={
+				declare_war_on = {
+					type = take_state_focus
+					target = IRE
+				}
+			}
+			hidden_effect = {
+				BET = { load_oob = "BET_irland" }
+				IRE = { clr_country_flag = Beta_find }
+			}
+			country_event = { days = 1 id = Betanews.26 }             
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = { days = 1 id = Betanews.25 } 
+				IRE = { clr_country_flag = Beta_find }
+			}
+		}
+	}
+
+	find_the_Betas_usa = {
+		icon = generic_operation
+
+		available = {
+			tag = USA
+		}
+		cost = 200
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				USA = { has_country_flag = Beta_find }
+				tag = USA
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = Beta_fight_usa
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_usa2 = {
+		icon = generic_operation
+
+		available = {
+			AND = {
+				tag = USA
+				has_manpower > 10000
+			}
+		}
+		cost = 0
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				USA = { has_country_flag = Beta_find }
+				tag = USA
+			}
+		}
+		complete_effect = {
+			add_manpower = -10000
+			add_to_variable = {
+				var = Beta_fight_usa
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_usa3 = {                         
+		allowed = { tag = USA }                
+		available = {                           
+			check_variable = { Beta_fight_usa > 50 }                
+		}
+		activation = {                         
+			USA = { has_country_flag = Beta_find }              
+		}
+		is_good = no 
+		fire_only_once = yes
+		days_mission_timeout = 100              
+		timeout_effect = {                      
+			BET ={
+				declare_war_on = {
+					type = take_state_focus
+					target = USA
+				}
+			}
+			hidden_effect = {
+				BET = { load_oob = "BET_amerika" }
+				USA = { clr_country_flag = Beta_find }
+			}
+			country_event = { days = 1 id = Betanews.29 }             
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = { days = 1 id = Betanews.28 } 
+				USA = { clr_country_flag = Beta_find }
+			}
+		}
+	}
+
+	find_the_Betas_japan = {
+		icon = generic_operation
+
+		available = {
+			tag = JAP
+		}
+		cost = 200
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				JAP = { has_country_flag = Beta_find }
+				tag = JAP
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = Beta_fight_japan
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_japan2 = {
+		icon = generic_operation
+
+		available = {
+			AND ={
+				tag = JAP
+				has_manpower > 10000
+			}
+		}
+		cost = 0
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				JAP = { has_country_flag = Beta_find }
+				tag = JAP
+			}
+		}
+		complete_effect = {
+			add_manpower = -10000
+			add_to_variable = {
+				var = Beta_fight_japan
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_japan3 = {                         
+		allowed = { tag = JAP }                
+		available = {                           
+			check_variable = { Beta_fight_japan > 50 }                
+		}
+		activation = {                         
+			JAP = { has_country_flag = Beta_find }              
+		}
+		is_good = no  
+		fire_only_once = yes
+		days_mission_timeout = 100              
+		timeout_effect = {                      
+			BET ={
+				declare_war_on = {
+					type = take_state_focus
+					target = JAP
+				}
+			}
+			hidden_effect = {
+				BET = { load_oob = "BET_japan" }
+				JAP = { clr_country_flag = Beta_find }
+			}
+			country_event = { days = 1 id = Betanews.32 }             
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = { days = 1 id = Betanews.31 }
+				JAP = { clr_country_flag = Beta_find }				
+			}
+		}
+	}
+
+	find_the_Betas_australia = {
+		icon = generic_operation
+
+		available = {
+			tag = AST
+		}
+		cost = 200
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND ={
+				AST = { has_country_flag = Beta_find }
+				tag = AST
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = Beta_fight_australia
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_australia2 = {
+		icon = generic_operation
+
+		available = {
+			AND = {
+				tag = AST
+				has_manpower > 10000
+			}
+		}
+		cost = 0
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				AST = { has_country_flag = Beta_find }
+				tag =AST
+			}
+		}
+		complete_effect = {
+			add_manpower = -10000
+			add_to_variable = {
+				var = Beta_fight_australia
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_australia3 = {                         
+		allowed = { tag = AST }                
+		available = {                           
+			check_variable = { Beta_fight_australia > 50 }                
+		}
+		activation = {                         
+			AST = { has_country_flag = Beta_find }              
+		}
+		is_good = no   
+		fire_only_once = yes
+		days_mission_timeout = 100              
+		timeout_effect = {                      
+			BET ={
+				declare_war_on = {
+					type = take_state_focus
+					target = AST
+				}
+			}
+			hidden_effect = {
+				BET = { load_oob = "BET_australien" }
+				AST = { clr_country_flag = Beta_find }
+			}
+			country_event = { days = 1 id = Betanews.35 }             
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = { days = 1 id = Betanews.34 } 
+				AST = { clr_country_flag = Beta_find }
+			}
+		}
+	}	
+	find_the_Betas_nzl = {
+		icon = generic_operation
+
+		available = {
+			tag = NZL
+		}
+		cost = 200
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				NZL = { has_country_flag = Beta_find }
+				tag = NZL
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = Beta_fight_nzl
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_nzl2 = {
+		icon = generic_operation
+
+		available = {
+			AND = {
+				tag = NZL
+				has_manpower > 10000
+			}
+		}
+		cost = 0
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				NZL = { has_country_flag = Beta_find }
+				tag = NZL
+			}
+		}
+		complete_effect = {
+			add_manpower = -10000
+			add_to_variable = {
+				var = Beta_fight_nzl
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_nzl3 = {                         
+		allowed = { tag = NZL }                
+		available = {                           
+			check_variable = { Beta_fight_nzl > 50 }                
+		}
+		activation = {                         
+			NZL = { has_country_flag = Beta_find }              
+		}
+		is_good = no  
+		fire_only_once = yes
+		days_mission_timeout = 100              
+		timeout_effect = {                      
+			BET ={
+				declare_war_on = {
+					type = take_state_focus
+					target = NZL
+				}
+			}
+			hidden_effect = {
+				BET = { load_oob = "BET_neuseeland" }
+				NZL = { clr_country_flag = Beta_find }
+			}
+			country_event = { days = 1 id = Betanews.38 }             
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = { days = 1 id = Betanews.37 } 
+				NZL = { clr_country_flag = Beta_find }
+			}
+		}
+	}
+	
+	find_the_Betas_phi = {
+		icon = generic_operation
+
+		available = {
+			tag = PHI
+		}
+		cost = 200
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND ={
+				PHI = { has_country_flag = Beta_find }
+				tag = PHI
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = Beta_fight_phi
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_phi2 = {
+		icon = generic_operation
+
+		available = {
+			AND = {
+				tag = PHI
+				has_manpower > 10000
+			}
+		}
+		cost = 0
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				PHI = { has_country_flag = Beta_find }
+				tag = PHI
+			}
+		}
+		complete_effect = {
+			add_manpower = -10000
+			add_to_variable = {
+				var = Beta_fight_phi
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_phi3 = {                         
+		allowed = { tag = PHI }                
+		available = {                           
+			check_variable = { Beta_fight_phi > 50 }                
+		}
+		activation = {                         
+			PHI = { has_country_flag = Beta_find }              
+		}
+		is_good = no  
+		fire_only_once = yes
+		days_mission_timeout = 100              
+		timeout_effect = {                      
+			BET ={
+				declare_war_on = {
+					type = take_state_focus
+					target = PHI
+				}
+			}
+			hidden_effect = {
+				BET = { load_oob = "BET_philippinien" }
+				PHI = { clr_country_flag = Beta_find }
+			}
+			country_event = { days = 1 id = Betanews.41 }             
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = { days = 1 id = Betanews.40 } 
+				PHI = { clr_country_flag = Beta_find }
+			}
+		}
+	}
+	
+	find_the_Betas_bra = {
+		icon = generic_operation
+
+		available = {
+			tag = BRA
+		}
+		cost = 200
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				BRA = { has_country_flag = Beta_find }
+				tag = BRA
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = Beta_fight_bra
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_bra2 = {
+		icon = generic_operation
+
+		available = {
+			AND = {
+				tag = BRA
+				has_manpower > 10000
+			}
+		}
+		cost = 0
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				BRA = { has_country_flag = Beta_find }
+				tag = BRA
+			}
+		}
+		complete_effect = {
+			add_manpower = -10000
+			add_to_variable = {
+				var = Beta_fight_bra
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_bra3 = {                         
+		allowed = { tag = BRA }                
+		available = {                           
+			check_variable = { Beta_fight_bra > 50 }                
+		}
+		activation = {                         
+			BRA = { has_country_flag = Beta_find }              
+		}
+		is_good = no  
+		fire_only_once = yes
+		days_mission_timeout = 100              
+		timeout_effect = {                      
+			BET ={
+				declare_war_on = {
+					type = take_state_focus
+					target = BRA
+				}
+			}
+			hidden_effect = {
+				BET = {	load_oob = "BET_brasilien" }
+				BRA = { clr_country_flag = Beta_find }
+			}
+			country_event = { days = 1 id = Betanews.44 }             
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = { days = 1 id = Betanews.43 } 
+				BRA = { clr_country_flag = Beta_find }
+			}
+		}
+	}
+	
+	find_the_Betas_CUB = {
+		icon = generic_operation
+
+		available = {
+			tag = CUB
+		}
+		cost = 200
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				CUB = { has_country_flag = Beta_find }
+				tag = CUB
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = Beta_fight_CUB
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_CUB2 = {
+		icon = generic_operation
+
+		available = {
+			AND = {
+				tag = CUB
+				has_manpower > 10000
+			}
+		}
+		cost = 0
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				CUB = { has_country_flag = Beta_find }
+				tag = CUB
+			}
+		}
+		complete_effect = {
+			add_manpower = -10000
+			add_to_variable = {
+				var = Beta_fight_CUB
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_CUB3 = {                         
+		allowed = { tag = CUB }                
+		available = {                           
+			check_variable = { Beta_fight_CUB > 50 }                
+		}
+		activation = {                         
+			CUB = { has_country_flag = Beta_find }              
+		}
+		is_good = no 
+		fire_only_once = yes
+		days_mission_timeout = 100              
+		timeout_effect = {                      
+			BET ={
+				declare_war_on = {
+					type = take_state_focus
+					target = CUB
+				}
+			}
+			hidden_effect = {
+				BET = {	load_oob = "BET_kuba" }
+				CUB = { clr_country_flag = Beta_find }
+			}
+			country_event = { days = 1 id = Betanews.47 }             
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = { days = 1 id = Betanews.46 }
+				CUB = { clr_country_flag = Beta_find }				
+			}
+		}
+	}
+	
+	find_the_Betas_DOM = {
+		icon = generic_operation
+
+		available = {
+			tag = DOM
+		}
+		cost = 200
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND = {
+				DOM = { has_country_flag = Beta_find }
+				tag = DOM
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = Beta_fight_DOM
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_DOM2 = {
+		icon = generic_operation
+
+		available = {
+			AND ={
+				tag = DOM
+				has_manpower > 10000
+			}
+		}
+		cost = 0
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND ={
+				DOM = { has_country_flag = Beta_find }
+				tag = DOM
+			}
+		}
+		complete_effect = {
+			add_manpower = -10000
+			add_to_variable = {
+				var = Beta_fight_DOM
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_DOM3 = {                         
+		allowed = { tag = DOM }                
+		available = {                           
+			check_variable = { Beta_fight_DOM > 50 }                
+		}
+		activation = {                         
+			DOM = { has_country_flag = Beta_find }              
+		}
+		is_good = no  
+		fire_only_once = yes
+		days_mission_timeout = 100              
+		timeout_effect = {                      
+			BET ={
+				declare_war_on = {
+					type = take_state_focus
+					target = DOM
+				}
+			}
+			hidden_effect = {
+				BET = {	load_oob = "BET_dom" }
+				DOM = { clr_country_flag = Beta_find }
+			}
+			country_event = { days = 1 id = Betanews.50 }             
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = { days = 1 id = Betanews.49 }
+				DOM = { clr_country_flag = Beta_find }				
+			}
+		}
+	}
+	
+	find_the_Betas_ICE = {
+		icon = generic_operation
+
+		available = {
+			tag = ICE
+		}
+		cost = 200
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND ={
+				ICE = { has_country_flag = Beta_find }
+				tag = ICE
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = Beta_fight_ICE
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_ICE2 = {
+		icon = generic_operation
+
+		available = {
+			AND = {
+				tag = ICE
+				has_manpower > 10000
+			}
+		}
+		cost = 0
+		days_re_enable = 1
+		days_remove = 25
+		
+		visible = {
+			AND ={
+				ICE = { has_country_flag = Beta_find }
+				tag = ICE
+			}
+		}
+		complete_effect = {
+			add_manpower = -10000
+			add_to_variable = {
+				var = Beta_fight_ICE
+				value = 10
+			}
+			news_event = { days = 1 id = Betanews.56 }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	find_the_Betas_ICE3 = {                         
+		allowed = { tag = ICE }                
+		available = {                           
+			check_variable = { Beta_fight_ICE > 50 }                
+		}
+		activation = {                         
+			ICE = { has_country_flag = Beta_find }              
+		}
+		is_good = no 
+		fire_only_once = yes
+		days_mission_timeout = 100              
+		timeout_effect = {                      
+			BET ={
+				declare_war_on = {
+					type = take_state_focus
+					target = ICE
+				}
+			}
+			hidden_effect = {
+				BET = {	load_oob = "BET_island" }
+				ICE = { clr_country_flag = Beta_find }
+			}
+			country_event = { days = 1 id = Betanews.53 }             
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = { days = 1 id = Betanews.52 } 
+				ICE = { clr_country_flag = Beta_find }
+			}
+		}
+	}
+	
+	fightBeta_japan = {
+			icon = generic_operation
+
+		available = {
+			AND = {
+				tag = JAP
+				BET = { exists = yes }
+			}
+		}
+		cost = 300
+		fire_only_once = yes
+		
+		visible = {
+			AND = {
+				JAP = { exists = yes }
+				tag = JAP
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = { days = 1 id = Betaevents.5 } 
+				country_event = { days = 1 id = Betanews.59 } 
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	Betas_spain = {
+			icon = generic_operation
+
+		available = {
+			AND = {
+				tag = D01
+				SPR={ has_war_with = D01 }
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		
+		visible = {
+			AND = {
+				SPR={ has_war_with = D01 }
+				tag = D01
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = { days = 1 id = Betanews.11}
+				BET={
+					load_oob = "BET_spain"
+					declare_war_on = {
+						type = take_state_focus
+						target = SPR	
+					}
+					declare_war_on = {
+						type = take_state_focus
+						target = D01	
+					}
+				}		
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				has_war_with = BET
+				factor = 0
+			}
+		}
+	}
+	
+	antiBeta_allianz = {
+			icon = generic_operation
+
+		available = {
+			OR ={
+				AND = {
+					has_capitulated = no
+					is_major = yes
+					FROM={ NOT = { is_in_faction_with = ENG }}
+					FROM={ NOT = { has_war_with = ENG }}
+					has_game_rule = {
+						rule = normal_alliances
+						option = UNITED
+					}
+					NOT = { tag = BET }
+					NOT = { tag = UNI }
+					BET = { exists = yes }
+				}
+				AND = {
+					FROM = { has_war_with = BET }
+					FROM={ NOT = { is_in_faction_with = ENG }}
+					has_game_rule = {
+						rule = normal_alliances
+						option = UNITED
+					}
+					has_capitulated = no
+					NOT = { tag = BET }
+					NOT = { tag = UNI }
+					BET = { exists = yes }
+				}
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		
+		visible = {
+			OR ={
+				AND = {
+					has_capitulated = no
+					is_major = yes
+					FROM={ NOT = { is_in_faction_with = ENG }}
+					FROM={ NOT = { has_war_with = ENG }}
+					has_game_rule = {
+						rule = normal_alliances
+						option = UNITED
+					}
+					NOT = { tag = BET }
+					NOT = { tag = UNI }
+				}
+				AND = {
+					FROM = { has_war_with = BET }
+					FROM={ NOT = { is_in_faction_with = ENG }}
+					has_game_rule = {
+						rule = normal_alliances
+						option = UNITED
+					}
+					has_capitulated = no
+					NOT = { tag = BET }
+					NOT = { tag = UNI }
+				}
+			}
+			date > 1936.03.01 
+		}
+		complete_effect = {
+			ENG = { add_to_Faction = FROM }
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	usa_special_forces_decision = {
+        icon = GFX_decision_generic_build_troops
+        available = {
+            tag = USA  
+            has_war_with = BET 
+        }
+        visible = {
+            tag = USA 
+        }
+        cost = 50  
+        complete_effect = {
+			hidden_effect ={
+				country_event = { id = Betaevents.37 }
+			}
+        }
+        days_re_enable = 25
+		
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				is_major = yes
+				has_war_with = BET
+				factor = 200
+			}
+		}
+    }
+}

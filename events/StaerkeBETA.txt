@@ -1,0 +1,647 @@
+
+add_namespace = StaerkeBETA
+
+country_event = {
+	id = StaerkeBETA.1
+	title = "StaerkeBETA.1.name"
+	desc = "StaerkeBETA.1.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = NORMAL
+		}
+	}
+	mean_time_to_happen = { days = 10 }
+
+	option = {
+		name = StaerkeBETA.1.da
+		BET={ add_manpower = 6000000 }		
+	}
+}
+
+country_event = {
+	id = StaerkeBETA.2
+	title = "StaerkeBETA.2.name"
+	desc = "StaerkeBETA.2.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		AND = {
+			has_game_rule = {
+				rule = BETA_difficulty
+				option = HARD
+			}
+			has_game_rule = {
+				rule = BET_spawn
+				option = NORMAL
+			}
+			has_global_flag = BET_sinkiang
+		}
+	}
+	mean_time_to_happen = { days = 10 }
+
+	option = {
+		name = StaerkeBETA.1.ca
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke3_india"
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+	}
+}
+
+country_event = {
+	id = StaerkeBETA.3
+	title = "StaerkeBETA.3.name"
+	desc = "StaerkeBETA.3.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		AND = {
+			has_game_rule = {
+				rule = BETA_difficulty
+				option = EXTREME
+			}
+			has_game_rule = {
+				rule = BET_spawn
+				option = NORMAL
+			}
+			has_global_flag = BET_sinkiang
+		}
+	}
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = StaerkeBETA.1.ba
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke2_india"
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+		
+	}
+}
+
+country_event = {
+	id = StaerkeBETA.4
+	title = "StaerkeBETA.4.name"
+	desc = "StaerkeBETA.4.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		AND = {
+			has_game_rule = {
+				rule = BETA_difficulty
+				option = INSANE
+			}
+			has_game_rule = {
+				rule = BET_spawn
+				option = NORMAL
+			}
+			has_global_flag = BET_sinkiang
+		}
+	}
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = StaerkeBETA.1.ab
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke1_india"
+			add_ideas = {
+				Besser
+			}
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+	}
+}
+
+####TURKEY####
+
+country_event = {
+	id = StaerkeBETA.5
+	title = "StaerkeBETA.5.name"
+	desc = "StaerkeBETA.5.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = HARD
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = RANDOM
+		}
+		has_global_flag = BET_turkey
+	}
+	mean_time_to_happen = { days = 10 }
+
+	option = {
+		name = StaerkeBETA.1.ca
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke3_turkey"
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+	}
+}
+
+country_event = {
+	id = StaerkeBETA.6
+	title = "StaerkeBETA.6.name"
+	desc = "StaerkeBETA.6.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = EXTREME
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = RANDOM
+		}
+	    has_global_flag = BET_turkey
+	}
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = StaerkeBETA.1.ba
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke2_turkey"
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+		
+	}
+}
+
+country_event = {
+	id = StaerkeBETA.7
+	title = "StaerkeBETA.7.name"
+	desc = "StaerkeBETA.7.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = INSANE
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = RANDOM
+		}
+	    has_global_flag = BET_turkey
+	}
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = StaerkeBETA.1.ab
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke1_turkey"
+			add_ideas = {
+				Besser
+			}
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+	}
+}
+
+####TUNIS####
+
+country_event = {
+	id = StaerkeBETA.8
+	title = "StaerkeBETA.8.name"
+	desc = "StaerkeBETA.8.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = HARD
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = RANDOM
+		}
+		has_global_flag = BET_tunis
+	}
+	mean_time_to_happen = { days = 10 }
+
+	option = {
+		name = StaerkeBETA.1.ca
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke3_tunis"
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+	}
+}
+
+country_event = {
+	id = StaerkeBETA.9
+	title = "StaerkeBETA.9.name"
+	desc = "StaerkeBETA.9.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = EXTREME
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = RANDOM
+		}
+	    has_global_flag = BET_tunis
+	}
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = StaerkeBETA.1.ba
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke2_tunis"
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+		
+	}
+}
+
+country_event = {
+	id = StaerkeBETA.10
+	title = "StaerkeBETA.10.name"
+	desc = "StaerkeBETA.10.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = INSANE
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = RANDOM
+		}
+	    has_global_flag = BET_tunis
+	}
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = StaerkeBETA.1.ab
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke1_tunis"
+			add_ideas = {
+				Besser
+			}
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+	}
+}
+
+####SWEDEN####
+
+country_event = {
+	id = StaerkeBETA.11
+	title = "StaerkeBETA.11.name"
+	desc = "StaerkeBETA.11.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = HARD
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = RANDOM
+		}
+		has_global_flag = BET_sweden
+	}
+	mean_time_to_happen = { days = 10 }
+
+	option = {
+		name = StaerkeBETA.1.ca
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke3_sweden"
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+	}
+}
+
+country_event = {
+	id = StaerkeBETA.12
+	title = "StaerkeBETA.12.name"
+	desc = "StaerkeBETA.12.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = EXTREME
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = RANDOM
+		}
+	    has_global_flag = BET_sweden
+	}
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = StaerkeBETA.1.ba
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke2_sweden"
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+		
+	}
+}
+
+country_event = {
+	id = StaerkeBETA.13
+	title = "StaerkeBETA.13.name"
+	desc = "StaerkeBETA.13.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = INSANE
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = RANDOM
+		}
+	    has_global_flag = BET_sweden
+	}
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = StaerkeBETA.1.ab
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke1_sweden"
+			add_ideas = {
+				Besser
+			}
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+	}
+}
+
+####RUSSIA####
+
+country_event = {
+	id = StaerkeBETA.14
+	title = "StaerkeBETA.14.name"
+	desc = "StaerkeBETA.14.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = HARD
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = RANDOM
+		}
+		has_global_flag = BET_russia
+	}
+	mean_time_to_happen = { days = 10 }
+
+	option = {
+		name = StaerkeBETA.1.ca
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke3_russia"
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+	}
+}
+
+country_event = {
+	id = StaerkeBETA.15
+	title = "StaerkeBETA.15.name"
+	desc = "StaerkeBETA.15.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = EXTREME
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = RANDOM
+		}
+	    has_global_flag = BET_russia
+	}
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = StaerkeBETA.1.ba
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke2_russia"
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+		
+	}
+}
+
+country_event = {
+	id = StaerkeBETA.16
+	title = "StaerkeBETA.16.name"
+	desc = "StaerkeBETA.16.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = INSANE
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = RANDOM
+		}
+	    has_global_flag = BET_russia
+	}
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = StaerkeBETA.1.ab
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke1_russia"
+			add_ideas = {
+				Besser
+			}
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+	}
+}
+
+####INFECTION####
+
+country_event = {
+	id = StaerkeBETA.17
+	title = "StaerkeBETA.17.name"
+	desc = "StaerkeBETA.17.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = HARD
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = INFECTION
+		}
+		has_global_flag = BET_infection
+	}
+	mean_time_to_happen = { days = 10 }
+
+	option = {
+		name = StaerkeBETA.1.ca
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke3_infection"
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+	}
+}
+
+country_event = {
+	id = StaerkeBETA.18
+	title = "StaerkeBETA.18.name"
+	desc = "StaerkeBETA.18.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = EXTREME
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = INFECTION
+		}
+	    has_global_flag = BET_infection
+	}
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = StaerkeBETA.1.ba
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke2_infection"
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+		
+	}
+}
+
+country_event = {
+	id = StaerkeBETA.19
+	title = "StaerkeBETA.19.name"
+	desc = "StaerkeBETA.19.desc"
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BETA_difficulty
+			option = INSANE
+		}
+		has_game_rule = {
+			rule = BET_spawn
+			option = INFECTION
+		}
+	    has_global_flag = BET_infection
+	}
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = StaerkeBETA.1.ab
+		BET={
+			add_manpower = 6000000
+			load_oob = "BET_staerke1_infection"
+			add_ideas = {
+				Besser
+			}
+		}
+		set_division_template_lock = {
+			division_template = "BETA Horde"
+			is_locked = yes
+		}
+	}
+}
+
+

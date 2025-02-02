@@ -1,0 +1,24 @@
+######### BATTLESOUND
+sound =
+{
+	name = "ZOM_infantry_rifle_attack01"
+	file = "animations/ZOM_infantry_fire_standing_state_01.wav"
+	always_load = yes
+}
+sound = 
+{
+	name = "ZOM_infantry_rifle_attack02"
+	file = "animations/ZOM_infantry_fire_standing_state_02.wav"
+}
+
+sound = 
+{
+	name = "ZOM_infantry_rifle_attack03"
+	file = "animations/ZOM_infantry_fire_standing_state_03.wav"
+}
+
+sound = 
+{
+	name = "ZOM_infantry_rifle_attack04"
+	file = "animations/ZOM_infantry_fire_standing_state_04.wav"
+}

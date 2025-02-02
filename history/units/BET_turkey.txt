@@ -1,0 +1,133 @@
+﻿
+units = {
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+		division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "BETA Horde"
+		location = 6919
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+}

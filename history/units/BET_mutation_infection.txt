@@ -1,0 +1,126 @@
+﻿units = {
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Mutated Horde"
+		location = 10892
+		division_template = "Mutated Horde"
+		start_experience_factor = 0.3
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+}

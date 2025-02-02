@@ -1,0 +1,2 @@
+BET = "countries/Betas.txt"
+UNI = "countries/UNI.txt"

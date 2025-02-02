@@ -1,0 +1,15 @@
+focus_tree = {
+	id = Beta_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BET
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no	
+
+}

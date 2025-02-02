@@ -1,0 +1,84 @@
+spriteTypes = {	
+	
+	spriteType = { 
+        name = "GFX_idea_beta"				
+        textureFile = "gfx/interface/ideas/beta.dds"
+    }
+
+	spriteType = { 
+        name = "GFX_idea_aggressive_beta"				
+        textureFile = "gfx/interface/ideas/AggressiveBeta.dds"
+    }
+
+	spriteType = { 
+        name = "GFX_idea_un_force"				
+        textureFile = "gfx/interface/counters/divisions_large/UN_force.dds"
+    }
+
+    spriteType = { 
+        name = "GFX_unit_Zombies_icon_medium"				
+        textureFile = "gfx/interface/counters/divisions_large/Zombie_icon.dds"
+        noOfFrames = 2
+    }
+
+	spriteType = { 
+		name = "GFX_unit_Zombies_icon_medium_white"						
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_Zombie_icon.dds" 
+		noOfFrames = 2
+	}
+    	spriteType = { 
+        	name = "GFX_unit_Zombies2_icon_medium"				
+        	textureFile = "gfx/interface/counters/divisions_large/Zombie_mutation_icon.dds"
+        	noOfFrames = 2
+    	}
+
+	spriteType = { 
+		name = "GFX_unit_Zombies2_icon_medium_white"						
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_Zombie_mutation_icon.dds" 
+		noOfFrames = 2
+	}
+    	spriteType = { 
+        	name = "GFX_unit_Zombies3_icon_medium"				
+        	textureFile = "gfx/interface/counters/divisions_large/Zombie_mutation_better_icon.dds"
+        	noOfFrames = 2
+    	}
+
+	spriteType = { 
+		name = "GFX_unit_Zombies3_icon_medium_white"						
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_Zombie_mutation_better_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_idea_the_zombies"
+		texturefile = "gfx/interface/ideas/idea_the_zombies.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_zcom"
+		texturefile = "gfx/interface/ideas/idea_zcom.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_pirate"
+		texturefile = "gfx/interface/ideas/idea_pirate.dds"		
+	}	
+	spriteType = {
+		name = "GFX_idea_the_other_way"
+		texturefile = "gfx/interface/ideas/idea_the_other_way.dds"		
+	}	
+	spriteType = {
+		name = "GFX_idea_generic_fortify_the_borders_zcom"
+		texturefile = "gfx/interface/ideas/idea_generic_fortify_the_borders_zcom.dds"		
+	}
+	spriteType = {
+		name = "GFX_idea_jap_supremacy_of_technology_zcom"
+		texturefile = "gfx/interface/ideas/idea_jap_supremacy_of_technology_zcom.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_no_way_back"
+		texturefile = "gfx/interface/ideas/idea_no_way_back.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_minewar"
+		texturefile = "gfx/interface/ideas/idea_minewar.dds"
+	}
+
+}

@@ -1,0 +1,18 @@
+####ZOMBIESOUNDS####
+
+soundeffect = {
+	name = ZOM_infantry_rifle_attack
+	falloff = "falloff_100"
+	sounds = {
+		sound = ZOM_infantry_rifle_attack01
+		sound = ZOM_infantry_rifle_attack02
+		sound = ZOM_infantry_rifle_attack03
+		sound = ZOM_infantry_rifle_attack04
+	} 
+	max_audible = 10
+	delay_random_offset = { 0.0 0.15 }
+	playbackrate_random_offset = { -0.15 0.15 }
+	max_audible_behaviour = fail
+	is3d = yes
+	volume = 0.8
+}

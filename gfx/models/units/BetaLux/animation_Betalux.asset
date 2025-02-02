@@ -1,0 +1,14 @@
+# animation = {
+# 	name = "BetaLux_attack_animation"
+# 	file = "BetaLux_attack.anim"
+# }
+
+# animation = {
+# 	name = "BetaLux_idle_animation"
+# 	file = "BetaLux_idle.anim"
+# }
+
+# animation = {
+# 	name = "BetaLux_moving_animation"
+# 	file = "BetaLux_moving.anim"
+# }

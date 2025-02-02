@@ -1,0 +1,1231 @@
+focus_tree = {
+	id = UNI_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UNI
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no	
+
+#####Military#######
+	
+	focus = {
+		id = focus_on_war_Beta
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 0
+		cost = 2
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 150
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = international_Finance1
+		icon = GFX_focus_fra_devalue_the_franc
+		prerequisite = { focus = focus_on_war_Beta }
+		x = 6
+		y = 1
+		cost = 3
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = {
+				country_event = { id = doomsday.25 }
+			}
+			custom_effect_tooltip = UNI_finance
+		}
+	}
+	focus = {
+		id = international_Finance2
+		icon = GFX_focus_fra_devalue_the_franc
+		prerequisite = { focus = international_Finance1 }
+		x = 6
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = {
+				country_event = { id = doomsday.25 }
+			}
+			custom_effect_tooltip = UNI_finance
+		}
+	}
+	focus = {
+		id = international_Finance3
+		icon = GFX_focus_fra_devalue_the_franc
+		prerequisite = { focus = international_Finance2 }
+		x = 6
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = {
+				country_event = { id = doomsday.25 }
+			}
+			custom_effect_tooltip = UNI_finance
+		}
+	}
+	
+	focus = {
+		id = better_weapons
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = focus_on_war_Beta }
+		x = 0
+		y = 1
+		cost = 3
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 3.0
+				uses = 4
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = better_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = better_weapons }
+		x = 0
+		y = 2
+
+		cost = 3
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 2.0
+				uses = 4
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = better_weapons2
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = better_artillery }
+		x = 0
+		y = 3
+
+		cost = 2
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			army_experience = 200
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 2.75
+				uses = 3
+				category = land_doctrine
+			}		
+		}
+	}
+	
+	focus = {
+		id = motorized_equipment
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = better_weapons2 }
+		x = 0
+		y = 4
+
+		cost = 4
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 2.5
+				uses = 3
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = import_weapons_international
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = focus_on_war_Beta }
+		x = 2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			GER ={
+				send_equipment = {
+					target = UNI
+					type = infantry_equipment
+					amount = 10000
+				}
+				send_equipment = {
+					target = UNI
+					type = artillery_equipment
+					amount = 1000
+				}
+				send_equipment = {
+					target = UNI
+					type = support_equipment
+					amount = 1000
+				}
+			}
+			SOV ={
+				send_equipment = {
+					target = UNI
+					type = infantry_equipment
+					amount = 10000
+				}
+				send_equipment = {
+					target = UNI
+					type = artillery_equipment
+					amount = 1000
+				}
+				send_equipment = {
+					target = UNI
+					type = support_equipment
+					amount = 1000
+				}
+			}
+			ENG ={
+				send_equipment = {
+					target = UNI
+					type = infantry_equipment
+					amount = 10000
+				}
+				send_equipment = {
+					target = UNI
+					type = artillery_equipment
+					amount = 1000
+				}
+				send_equipment = {
+					target = UNI
+					type = support_equipment
+					amount = 1000
+				}
+			}
+			FRA ={
+				send_equipment = {
+					target = UNI
+					type = infantry_equipment
+					amount = 10000
+				}
+				send_equipment = {
+					target = UNI
+					type = artillery_equipment
+					amount = 1000
+				}
+				send_equipment = {
+					target = UNI
+					type = support_equipment
+					amount = 1000
+				}
+			}
+		}
+	}
+	focus = {
+		id = international_volunteers
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = import_weapons_international }
+		x = 2
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			add_manpower = 100000
+		}
+	}
+	focus = {
+		id = new_soldiers
+		icon = GFX_goal_continuous_reduce_training_time
+		prerequisite = { focus = motorized_equipment }
+		prerequisite = { focus = better_weapons3 }
+		x = 1
+		y = 5
+		cost = 10000
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = {
+			modifier = {
+				factor = 40
+				has_war = yes
+				has_equipment = {
+					infantry_equipment < 1
+				}				
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = UNI_new_soldiers
+		}
+	}
+	
+	focus = {
+		id = international_weapons
+		icon = GFX_goal_continuous_reduce_training_time
+		prerequisite = { focus = motorized_equipment }
+		prerequisite = { focus = better_weapons3 }
+		x = 3
+		y = 5
+		cost = 10000
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = {
+			modifier = {
+				factor = 20
+				has_war = yes
+				num_divisions < 10				
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = UNI_new_weapons
+		}
+	}
+	
+	focus = {
+		id = internal_anwerber
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = focus_on_war_Beta }
+		x = 4
+		y = 1
+		cost = 12
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { id = doomsday.13 }
+		}
+	}
+	
+	focus = {
+		id = tank_project
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = internal_anwerber }
+		x = 4
+		y = 2
+
+		cost = 2
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = tank_bonus
+				bonus = 1.25
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = airborne_defence
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = tank_project}
+		x = 4
+		y = 3
+
+
+		cost = 2
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_airborne_defence
+				bonus = 1.75
+				uses = 3
+				category = para_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = better_weapons3
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = airborne_defence }
+		x = 4
+		y = 4
+		cost = 2
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.75
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+####Internal#####
+
+	focus = {
+		id = internal
+		icon = GFX_goal_generic_demand_territory
+		x = 9
+		y = 0
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = fortress
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = internal }
+		x = 8
+		y = 1
+		cost = 12
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ROOT = { country_event = { id = doomsday.3 } }
+		}
+	}
+	focus = {
+		id = Ports
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = internal }
+		x = 10
+		y = 1
+		cost = 6
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ROOT = { country_event = { id = doomsday.4 } }
+		}
+	}
+	focus = {
+		id = UNI_infrastructure
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = Ports }
+		prerequisite = { focus = fortress }
+		x = 9
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			183 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+###Criminal####
+
+	focus = {
+		id = criminal_way_focus
+		icon = GFX_goal_generic_demand_territory
+		x = 14
+		y = 0
+		cost = 2
+
+		available_if_capitulated = yes
+		ai_will_do = {
+			modifier = {
+				factor = 200
+				has_game_rule = {
+					rule = UNI_ai_behavior
+					option = ANTICOLONIAL
+				}
+			}
+			modifier = {
+				factor = 200
+				has_game_rule = {
+					rule = UNI_ai_behavior
+					option = DOMINANCE
+				}
+			}
+			modifier = {
+				factor = -200
+				has_game_rule = {
+					rule = UNI_ai_behavior
+					option = ALLIANCE
+				}
+			}
+		}
+		completion_reward = {
+			country_event = { id = doomsday.14 }
+		}
+	}
+	
+	focus = {
+		id = sell_Beta_parts
+		icon = GFX_focus_fra_devalue_the_franc
+		prerequisite = { focus = criminal_way_focus }
+		x = 17
+		y = 1
+		cost = 3
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = Black_market_small_arms
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = criminal_way_focus}
+		
+		x = 13
+		y = 1
+		cost = 2
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect ={
+				country_event = { id = doomsday.24 }
+			}
+			custom_effect_tooltip = UNI_black_market
+		}
+	}
+		
+	focus = {
+		id = Black_market_heavy_weapons
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = Black_market_small_arms}
+		
+		x = 13
+		y = 2
+		cost = 2
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect ={
+				country_event = { id = doomsday.24 }
+			}
+			custom_effect_tooltip = UNI_black_market
+		}
+	}
+	
+	focus = {
+		id = recrute_soeldner
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = criminal_way_focus }
+		
+		x = 15
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			hidden_effect = {
+				country_event = { id = doomsday.24 }
+				country_event = { id = doomsday.17 }
+			}
+			custom_effect_tooltip = UNI_soeldner
+		}
+	}
+	
+	focus = {
+		id = Black_market_planes
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = recrute_soeldner}
+		
+		x = 15
+		y = 2
+		cost = 2
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect ={
+				country_event = { id = doomsday.24 }
+			}
+			custom_effect_tooltip = UNI_black_market
+		}
+	}
+	
+	focus = {
+		id = unite_with_triaden
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = Black_market_planes }
+		
+		x = 16
+		y = 3
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { id = doomsday.24 }
+			add_political_power = 300
+			army_experience = 10
+			create_corps_commander = {
+				name = "Yaomin Xia"
+				picture = "Portrait_Asia_Generic_warlord2.dds"
+				traits = { trickster brilliant_strategist }
+				skill = 3
+				attack_skill = 6
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = CHI
+			}
+		}
+	}
+	
+	focus = {
+		id = unite_with_mafia
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = Black_market_planes }
+		prerequisite = { focus = Black_market_heavy_weapons }
+		
+		x = 14
+		y = 3
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { id = doomsday.24 }
+			add_political_power = 300
+			create_corps_commander = {
+				name = "Pietro De Luca"
+				picture = "Portrait_Italy_Generic_land_5.dds"
+				traits = { hill_fighter }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+				producer = ITA
+			}
+		}
+	}
+	
+	focus = {
+		id = unite_with_yakuza
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = Black_market_heavy_weapons }
+		
+		x = 12
+		y = 3
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { id = doomsday.24 }
+			add_political_power = 300
+			create_corps_commander = {
+				name = "Taro Chiba"
+				picture = Portrait_Japan_Generic_land_5.dds
+				traits = { spotter }
+				skill = 5
+				attack_skill = 6
+				defense_skill = 6
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = JAP
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = the_other_way2
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = unite_with_mafia }
+		prerequisite = { focus = unite_with_triaden }
+		prerequisite = { focus = unite_with_yakuza }
+		
+		x = 14
+		y = 4
+		cost = 4
+		
+		available = {
+			has_idea = the_other_way 
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = pirate
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = the_other_way2 }
+		x = 10
+		y = 5
+		cost = 7
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas={
+				Pirate
+			}
+			hidden_effect = {
+				country_event = { id = doomsday.14 }
+				country_event = { id = doomsday.14 }
+			}
+		}
+	}
+	
+####Anti-Colonial#####
+	
+	focus = {
+		id = anti_colonial
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = the_other_way2 }
+		mutually_exclusive = { focus = dominance }
+		x = 14
+		y = 5
+		cost = 7
+
+		available = {
+		}
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			modifier = {
+				factor = 200
+				has_game_rule = {
+					rule = UNI_ai_behavior
+					option = ANTICOLONIAL
+				}
+			}
+		}
+		
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = annex_syria
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = anti_colonial }
+		x = 14
+		y = 6
+		cost = 7
+
+		available = {
+		}
+		bypass = {
+			OR ={
+				677 = {
+					is_controlled_by = BET
+				}	
+				680 = {
+					is_controlled_by = BET
+				}
+				554 = {
+					is_controlled_by = BET
+				}
+				553 = {
+					is_controlled_by = BET
+				}
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		completion_reward = {
+			UNI = {
+				set_state_controller = 677
+				set_state_controller = 680
+				set_state_controller = 554
+				set_state_controller = 553
+			}
+		}
+	}
+	
+	focus = {
+		id = recrute_syrians
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = annex_syria }
+		x = 14
+		y = 7
+		cost = 7
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			add_manpower = 20000
+		}
+	}
+	
+	focus = {
+		id = recrute_syrians_forces
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = annex_syria }
+		x = 12
+		y = 7
+		cost = 3
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			load_oob = "UNI_syria"
+		}
+	}
+	
+	
+	focus = {
+		id = form_colonial_bounds
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = annex_syria }
+		x = 17
+		y = 7
+		cost = 2
+
+		available = {
+			ETH = {
+				exists = yes
+			}			
+			LIB = {
+				exists = yes
+			}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			LIB ={
+				add_opinion_modifier = {
+					target = UNI
+					modifier = colonial_bound
+				}
+			}
+			ETH ={
+				add_opinion_modifier = {
+					target = UNI
+					modifier = colonial_bound
+				}
+			}
+		}
+	}
+	focus = {
+		id = form_anti_colonial
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = form_colonial_bounds }
+		x = 15
+		y = 8
+		cost = 6
+
+		available = {
+			ETH = {
+				exists = yes
+			}			
+			LIB = {
+				exists = yes
+			}
+		}
+		bypass = {
+			ETH = {
+				OR ={
+					exists = no
+					is_in_faction = yes
+				}
+			}
+			LIB = {
+				OR ={
+					exists = no
+					is_in_faction = yes
+				}
+			}
+		}			
+		available_if_capitulated = yes
+
+		completion_reward = {
+			UNI ={
+				add_ideas = {
+					anti_colonie
+				}
+			}
+			LIB ={
+				add_ideas = {
+					anti_colonie
+				}
+			}
+			ETH ={
+				add_ideas = {
+					anti_colonie
+				}
+			}
+		}
+	}
+	focus = {
+		id = the_alliance
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = form_anti_colonial }
+		
+		x = 15
+		y = 9
+		cost = 7
+		
+		available = {
+		}
+		bypass = {
+			ETH = {
+				OR ={
+					exists = no
+					is_in_faction = yes
+				}
+			}
+			LIB = {
+				OR ={
+					exists = no
+					is_in_faction = yes
+				}
+			}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_faction = "Anti Colonial Axis"
+			add_to_faction = UNI
+			add_to_faction = LIB
+			add_to_faction = ETH
+		}
+	}
+	
+	focus = {
+		id = finance_rebels
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = form_colonial_bounds }
+		x = 18
+		y = 8
+		cost = 7
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -1000
+			army_experience = -30
+		}
+	}
+	
+	focus = {
+		id = finance_rebels_libya
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = finance_rebels }
+		x = 17
+		y = 9
+		cost = 8
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ITA ={
+				release = LBA
+				LBA ={
+					declare_war_on = {
+						type = take_state_focus
+						target = ITA
+					}
+					hidden_effect = {
+						load_oob = "LBA_Partisan"
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = finance_rebels_tunis
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = finance_rebels }
+		x = 19
+		y = 9
+		cost = 8
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			FRA ={
+				release = TUN
+				TUN ={
+					declare_war_on = {
+						type = take_state_focus
+						target = FRA
+					}
+					hidden_effect = {
+						load_oob = "TUN_Partisan"
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = finance_rebels_egypt
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = finance_rebels_tunis }
+		prerequisite = { focus = finance_rebels_libya }
+		x = 18
+		y = 10
+		cost = 10
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ENG ={
+				release = EGY
+				LBA ={
+					declare_war_on = {
+						type = take_state_focus
+						target = EGY
+					}
+					hidden_effect = {
+						load_oob = "EGY_Partisan"
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = annex_jordan
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		will_lead_to_war_with = ENG
+		prerequisite = { focus = recrute_syrians }
+		prerequisite = { focus = recrute_syrians_forces }
+		x = 13
+		y = 8
+		cost = 6
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		completion_reward = {
+			ENG ={
+				create_wargoal = {
+					type = take_state_focus
+					target = UNI
+					generator = { 183 }
+					expire = 0
+				}
+				declare_war_on = {
+					type = take_state_focus
+					target = UNI
+				}
+			}
+			UNI = {
+				set_state_controller = 455
+				set_state_controller = 454
+			}
+		}
+	}
+	
+#####Dominance####
+
+	focus = {
+		id = dominance
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = the_other_way2 }
+		mutually_exclusive = { focus = anti_colonial }
+		x = 21
+		y = 5
+		cost = 5
+
+		available = {
+		}
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			modifier = {
+				factor = 200
+				has_game_rule = {
+					rule = UNI_ai_behavior
+					option = DOMINANCE
+				}
+			}
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = international_norms
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = dominance }
+		x = 20
+		y = 6
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = {
+				country_event = { id = doomsday.20 }
+			}
+			custom_effect_tooltip = UNI_norms
+		}
+	}
+	
+	focus = {
+		id = minewar
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = dominance }
+		x = 22
+		y = 6
+		cost = 3
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				Minewar
+			}
+		}
+	}
+	
+	focus = {
+		id = firebombs
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = international_norms }
+		prerequisite = { focus = minewar }
+		x = 22
+		y = 7
+		cost = 3
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = UNI_bombs
+		}
+	}
+	
+	focus = {
+		id = weapons_of_mass_destruction
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = international_norms }
+		prerequisite = { focus = minewar }
+		x = 20
+		y = 7
+		cost = 3
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = UNI_bombs
+		}
+	}
+	
+	focus = {
+		id = no_way_back
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = firebombs }
+		prerequisite = { focus = weapons_of_mass_destruction }
+		x = 21
+		y = 8
+		cost = 3
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				No_way_back
+			}
+			hidden_effect = {
+				country_event = { id = doomsday.28 }
+			}
+		}
+	}
+	
+#####External#####
+shared_focus = external
+
+}

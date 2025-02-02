@@ -1,0 +1,1186 @@
+#####External#####
+
+	shared_focus = {
+		id = external
+		icon = GFX_goal_generic_demand_territory
+		x = 24
+		y = 0
+		cost = 3
+		offset = {
+			x = 25
+			y = 0
+			trigger = {
+				tag = UNZ
+			}
+		}
+
+		available_if_capitulated = yes
+		ai_will_do = {
+			modifier = {
+				factor = -200
+				has_game_rule = {
+					rule = UNI_ai_behavior
+					option = ANTICOLONIAL
+				}
+			}
+			modifier = {
+				factor = -200
+				has_game_rule = {
+					rule = UNI_ai_behavior
+					option = DOMINANCE
+				}
+			}
+			modifier = {
+				factor = 200
+				has_game_rule = {
+					rule = UNI_ai_behavior
+					option = ALLIANCE
+				}
+			}
+		}
+		completion_reward = {
+			add_political_power = 130
+		}
+	}
+	
+
+###Asia####	
+	
+	shared_focus = {
+		id = focus_on_asia
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { focus = external }
+		relative_position_id = external
+		x = -2
+		y = 1
+		cost = 5
+
+		available = {
+			OR = {
+				AND = {
+					OR = {
+						JAP = { has_idea = doomsdaymember }
+						JAP = { has_idea = doomsdayheadquarters }
+					}
+					OR = {
+						CHI = { has_idea = doomsdaymember }
+						CHI = { has_idea = doomsdayheadquarters }
+					}
+				}
+				AND = {
+					OR = {
+						JAP = { has_idea = doomsdaymember_united }
+						JAP = { has_idea = doomsdayheadquarters_united }
+					}
+					OR = {
+						CHI = { has_idea = doomsdaymember_united }
+						CHI = { has_idea = doomsdayheadquarters_united }
+					}
+				}
+			}
+			JAP = { has_war_with = BET }
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = {
+				country_event = { days = 1 id = doomsday.5 }
+			}
+			JAP ={
+				add_ideas = {
+					UNIfortress
+				}			
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+			CHI ={
+				add_ideas = {
+					UNIfortress
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+		}
+	}
+	shared_focus = {
+		id = japanese_UNI
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { focus = focus_on_asia }
+		relative_position_id = external
+		x = -6
+		y = 2
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			JAP ={
+				add_ideas = {
+					UNI_base
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+		}
+	}
+	shared_focus = {
+		id = ask_research_JAP
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { focus = focus_on_asia }
+		relative_position_id = external
+		x = -4
+		y = 2
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			JAP ={
+				country_event = { id = doomsday.7 }
+			}
+		}
+	}
+	shared_focus = {
+		id = UNI_jap
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { focus = ask_research_JAP }
+		relative_position_id = external
+		x = -4
+		y = 3
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			JAP ={
+				add_ideas = {
+					UNI_jap
+				}
+			}
+			UNI = {
+				add_ideas = {
+					UNI_jap
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = ask_manpower_CHI
+		icon = GFX_focus_chi_united_front
+		prerequisite = { focus = focus_on_asia }
+		relative_position_id = external
+		x = -2
+		y = 2
+		cost = 3
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			CHI ={
+				country_event = { id = doomsday.8 }
+			}
+		}
+	}
+	shared_focus = {
+		id = UNI_training
+		icon = GFX_focus_chi_united_front
+		prerequisite = { focus = ask_manpower_CHI }
+		relative_position_id = external
+		x = -2
+		y = 3
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			CHI ={
+				add_ideas = {
+					UNI_training
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+		}
+	}
+	shared_focus = {
+		id = UNI_soldiers
+		icon = GFX_focus_chi_united_front
+		prerequisite = { focus = ask_manpower_CHI }
+		relative_position_id = external
+		x = 0
+		y = 3
+		cost = 4
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			CHI ={
+				load_oob = "UNI"
+				load_oob = "UNI_more"
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+		}
+	}
+	
+####EUROPE#####
+
+	shared_focus = {
+		id = focus_on_europe
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = external }
+		relative_position_id = external
+		x = 4
+		y = 1
+		cost = 5
+
+		available = {
+			OR = {
+				AND = {
+					OR = {
+						GER = { has_idea = doomsdaymember }
+						GER = { has_idea = doomsdayheadquarters}
+					}
+					OR = {
+						ENG = { has_idea = doomsdaymember }
+						ENG = { has_idea = doomsdayheadquarters}
+					}
+					OR = {
+						FRA = { has_idea = doomsdaymember }
+						FRA = { has_idea = doomsdayheadquarters}
+					}
+					OR = {
+						ITA = { has_idea = doomsdaymember }
+						ITA = { has_idea = doomsdayheadquarters}
+					}
+				}
+				AND = {
+					OR = {
+						GER = { has_idea = doomsdaymember_united }
+						GER = { has_idea = doomsdayheadquarters_united}
+					}
+					OR = {
+						ENG = { has_idea = doomsdaymember_united }
+						ENG = { has_idea = doomsdayheadquarters_united}
+					}
+					OR = {
+						FRA = { has_idea = doomsdaymember_united }
+						FRA = { has_idea = doomsdayheadquarters_united}
+					}
+					OR = {
+						ITA = { has_idea = doomsdaymember_united }
+						ITA = { has_idea = doomsdayheadquarters_united}
+					}
+				}
+			}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ITA ={
+				add_ideas = {
+					UNIfortress
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+			GER ={
+				add_ideas = {
+					UNIfortress
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+			FRA ={
+				add_ideas = {
+					UNIfortress
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+			ENG ={
+				add_ideas = {
+					UNIfortress
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+		}
+	}
+	shared_focus = {
+		id = ask_research_FRA
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = focus_on_europe }
+		relative_position_id = external
+		x = 2
+		y = 2
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			FRA ={
+				country_event = { id = doomsday.7 }
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = french_UNI
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = ask_research_FRA }
+		relative_position_id = external
+		x = 2
+		y = 3
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			FRA ={
+				add_ideas = {
+					UNI_base
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = french_UNI_artillerie
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = french_UNI }
+		relative_position_id = external
+		x = 0
+		y = 4
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			FRA ={
+				add_tech_bonus = {
+					name = arty_bonus
+					bonus = 1.0
+					uses = 2
+					category = artillery
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+			UNI ={
+				add_tech_bonus = {
+					name = arty_bonus
+					bonus = 1.0
+					uses = 2
+					category = artillery
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = french_infantry
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = french_UNI }
+		relative_position_id = external
+		x = 2
+		y = 4
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+	
+	shared_focus = {
+		id = prepare_syria_war
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = french_infantry }
+		relative_position_id = external
+		x = 2
+		y = 5
+		cost = 10
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			677 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+					add_building_construction = {
+						type = infrastructure
+						level = 6
+						instant_build = yes
+					}
+				}
+			}
+			680 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+					add_building_construction = {
+						type = infrastructure
+						level = 6
+						instant_build = yes
+					}
+				}
+			}
+			554 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+					add_building_construction = {
+						type = infrastructure
+						level = 6
+						instant_build = yes
+					}
+				}
+			}
+			553 = {
+				if = {
+					limit = { is_controlled_by = FRA }
+					add_building_construction = {
+						type = infrastructure
+						level = 6
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = prepare_syria_war_port
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { focus = prepare_syria_war }
+		relative_position_id = external
+		x = 2
+		y = 6
+		cost = 10
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			677 = {
+				add_building_construction = {
+					type = naval_base
+					province = 1088
+					level = 10
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = ask_research_GER
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = focus_on_europe }
+		relative_position_id = external
+		x = 4
+		y = 2
+		cost = 3
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			GER ={
+				country_event = { id = doomsday.7 }
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = german_UNI
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = ask_research_GER }
+		relative_position_id = external
+		x = 4
+		y = 3
+		cost = 3
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			GER ={
+				add_ideas = {
+					UNI_base
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = german_UNI_tanks
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = ask_research_GER }
+		relative_position_id = external
+		x = 6
+		y = 3
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			GER ={
+				add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+			UNI ={
+				add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = german_UNI_land
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = german_UNI_tanks }
+		relative_position_id = external
+		x = 6
+		y = 4
+		cost = 4
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			GER ={
+				add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1.0
+					uses = 2
+					category = land_doctrine
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+			UNI ={
+				add_tech_bonus = {
+					name = land_doc_bonus
+					bonus = 1.0
+					uses = 2
+					category = land_doctrine
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = german_french_troops
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = french_infantry }
+		prerequisite = { focus = german_UNI_land }
+		relative_position_id = external
+		x = 4
+		y = 5
+		cost = 10
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER  FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_manpower = 10000
+			GER ={
+				send_equipment = {
+					target = UNI
+					type = infantry_equipment
+					amount = 3000
+				}
+			}
+			FRA ={
+				send_equipment = {
+					target = UNI
+					type = infantry_equipment
+					amount = 3000
+				}
+			}
+			load_oob = "UNI_more"
+			load_oob = "UNI_more"
+			load_oob = "UNI_more"
+			load_oob = "UNI_more"
+		}
+	}
+	
+	shared_focus = {
+		id = UNI_rommel_anwerben
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = german_UNI}
+		relative_position_id = external
+		x = 4
+		y = 4
+		cost = 7
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { id = doomsday.12 }
+		}
+	}
+	shared_focus = {
+		id = ask_research_GB
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = focus_on_europe }
+		relative_position_id = external
+		x = 10
+		y = 2
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			ENG ={
+				country_event = { id = doomsday.7 }
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = english_UNI
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = ask_research_GB }
+		relative_position_id = external
+		x = 12
+		y = 3
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ENG ={
+				add_ideas = {
+					UNI_base
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+		}
+	
+	}
+	
+	shared_focus = {
+		id = english_UNI_fighter
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = ask_research_GB }
+		relative_position_id = external
+		x = 8
+		y = 3
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			ENG ={
+				add_tech_bonus = {
+					name = strat_dest_bonus
+					bonus = 1.0
+					uses = 2
+					category = battlefield_support_tree
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+			UNI ={
+				add_tech_bonus = {
+					name = strat_dest_bonus
+					bonus = 1.0
+					uses = 2
+					category = battlefield_support_tree
+				}
+			}
+		}
+	
+	}
+	
+	shared_focus = {
+		id = english_fighter
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = ask_research_GB }
+		relative_position_id = external
+		x = 10
+		y = 3
+		cost = 3
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			ENG ={
+				send_equipment = {
+					target = UNI
+					type = fighter_equipment
+					amount = 100
+				}
+			}
+		}
+	
+	} 
+	
+	shared_focus = {
+		id = english_motorized_equipment
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = english_UNI_fighter }
+		prerequisite = { focus = english_fighter }
+		relative_position_id = external
+		x = 9
+		y = 4
+		cost = 4
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			ENG = {
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1.0
+					uses = 1
+					category = motorized_equipment
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+			UNI = {
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1.0
+					uses = 1
+					category = motorized_equipment
+				}
+			}
+		}
+	
+	}
+	
+	shared_focus = {
+		id = prepare_jordan_war
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = english_motorized_equipment }
+		relative_position_id = external
+		x = 9
+		y = 5
+		cost = 10
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			454 = {
+				if = {
+					limit = { is_controlled_by = ENG }
+					add_building_construction = {
+						type = infrastructure
+						level = 6
+						instant_build = yes
+					}
+				}
+			}
+			455 = {
+				if = {
+					limit = { is_controlled_by = ENG }
+					add_building_construction = {
+						type = infrastructure
+						level = 6
+						instant_build = yes
+					}
+				}
+			}
+		}
+	
+	}
+	
+	shared_focus = {
+		id = prepare_jordan_war_port
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = prepare_jordan_war }
+		relative_position_id = external
+		x = 9
+		y = 6
+		cost = 10
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			454 = {
+				add_building_construction = {
+					type = naval_base
+					province = 4206
+					level = 10
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = research_pact
+		icon = GFX_focus_research2
+		prerequisite = { focus = french_UNI_artillerie }
+		prerequisite = { focus = english_motorized_equipment }
+		prerequisite = { focus = german_french_troops}
+		prerequisite = { focus = UNI_jap}
+		prerequisite = { focus = russian_UNI_panzer}
+		relative_position_id = external
+		x = 7
+		y = 6
+		cost = 20
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			if = {
+				limit = { has_dlc = "Together for Victory" }
+
+				add_to_tech_sharing_group = UNI_research
+			}
+			country_event = { id = doomsday.21 }
+		}
+	}
+
+####RUSSIA#####	
+	
+	shared_focus = {
+		id = focus_on_russia
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = external }
+		relative_position_id = external
+		x = 14
+		y = 1
+		cost = 5
+
+		available = {
+			OR = {
+				AND = {
+					OR = {
+						SOV = { has_idea = doomsdaymember }
+						SOV = { has_idea = doomsdayheadquarters}
+					}
+				}
+				AND = {
+					OR = {
+						SOV = { has_idea = doomsdaymember_united }
+						SOV = { has_idea = doomsdayheadquarters_united}
+					}
+				}
+			}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SOV ={
+				add_ideas = {
+					UNIfortress
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = russian_men
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = focus_on_russia }
+		relative_position_id = external
+		x = 14
+		y = 2
+		cost = 3
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			SOV ={
+				country_event = { id = doomsday.8 }
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = russian_UNI
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = focus_on_russia }
+		relative_position_id = external
+		x = 16
+		y = 2
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SOV ={
+				add_ideas = {
+					UNI_base
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = russian_UNI_panzer
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = russian_UNI }
+		prerequisite = { focus = russian_men }
+		relative_position_id = external
+		x = 15
+		y = 3
+		cost = 2
+
+		available = {
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			SOV ={
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1.0
+					uses = 1
+					category = armor
+				}
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1.0
+					uses = 2
+					category = land_doctrine
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+			UNI ={
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1.0
+					uses = 1
+					category = armor
+				}
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1.0
+					uses = 2
+					category = land_doctrine
+				}
+			}
+		}
+	}
+	
+####NORTH AMERICA####
+	
+	shared_focus = {
+		id = focus_on_north_america
+		icon = GFX_focus_chi_mission_to_the_us
+		prerequisite = { focus = external }
+		relative_position_id = external
+		x = 12
+		y = 1
+		cost = 5
+
+		available = {
+			OR = {
+				AND = {
+					OR = {
+						USA = { has_idea = doomsdaymember }
+						USA = { has_idea = doomsdayheadquarters}
+					}
+					OR = {
+						CAN = { has_idea = doomsdaymember }
+						CAN = { has_idea = doomsdayheadquarters}
+					}
+					OR = {
+						MEX = { has_idea = doomsdaymember }
+						MEX = { has_idea = doomsdayheadquarters}
+					}
+				}
+				AND = {
+					OR = {
+						USA = { has_idea = doomsdaymember_united }
+						USA = { has_idea = doomsdayheadquarters_united}
+					}
+					OR = {
+						CAN = { has_idea = doomsdaymember_united }
+						CAN = { has_idea = doomsdayheadquarters_united}
+					}
+					OR = {
+						MEX = { has_idea = doomsdaymember_united }
+						MEX = { has_idea = doomsdayheadquarters_united}
+					}
+				}
+			}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			USA ={
+				add_ideas = {
+					UNIfortress
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+			CAN ={
+				add_ideas = {
+					UNIfortress
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+			MEX ={
+				add_ideas = {
+					UNIfortress
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = us_UNI
+		icon = GFX_focus_chi_mission_to_the_us
+		prerequisite = { focus = focus_on_north_america }
+		relative_position_id = external
+		x = 12
+		y = 2
+		cost = 3
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			USA ={
+				add_ideas = {
+					UNI_base
+				}
+				hidden_effect = {
+					country_event = { days = 1 id = doomsday.32 }
+				} 
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = focus_on_world
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = external }
+		relative_position_id = external
+		x = 0
+		y = 1
+		cost = 10
+
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = {
+				country_event = { id = doomsday.9 }
+			}
+			custom_effect_tooltip = UNI_focus_world
+		}
+	}

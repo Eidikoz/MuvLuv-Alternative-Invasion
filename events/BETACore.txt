@@ -1,0 +1,28 @@
+
+add_namespace = BETACore
+
+country_event = {
+	id = BETACore.1
+	title = "BETACore.1.name"
+	desc = "BETACore.1.desc"
+	
+	hidden =yes
+	fire_only_once = yes
+	
+	trigger = {
+		NOT={tag=BET}
+		BET ={ exists = yes}
+	}
+	mean_time_to_happen = { days = 10 }
+
+	option = {
+		every_state = {
+			limit = {
+				AND = {
+					NOT={is_core_of = BET}
+				}
+			}
+			add_core_of = BET
+		}
+	}
+}

@@ -1,0 +1,83 @@
+entity = { 
+	name = "ZOM_infantry_entity"
+	pdxmesh = "zombie-mutant_mesh"	
+		
+	scale = 0.03
+	default_state = "idle"
+	state = { 
+		name = "attack"	
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+	state = { 
+		name = "idle" 
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+	state = { 
+		name = "move"	
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+	state = { 
+		name = "defend"
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+	state = { 
+		name = "support_attack"
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+}
+
+entity = { 
+	name = "ZOM_infantry_2_entity"
+	pdxmesh = "zombie-mutant_mesh"	
+		
+	scale = 0.03
+	default_state = "idle"
+	state = { 
+		name = "attack"	
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+	state = { 
+		name = "idle" 
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+	state = { 
+		name = "move"	
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+	state = { 
+		name = "defend"
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+	state = { 
+		name = "support_attack"
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+}
+
+entity = { 
+	name = "ZOM_infantry_3_entity"
+	pdxmesh = "zombie-mutant_mesh"	
+		
+	scale = 0.03
+	default_state = "idle"
+	state = { 
+		name = "attack"	
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+	state = { 
+		name = "idle" 
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+	state = { 
+		name = "move"	
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+	state = { 
+		name = "defend"
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+	state = { 
+		name = "support_attack"
+		event = {sound = { soundeffect = ZOM_infantry_rifle_attack }}
+	}
+}

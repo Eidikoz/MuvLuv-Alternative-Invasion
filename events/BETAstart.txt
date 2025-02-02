@@ -1,0 +1,518 @@
+
+add_namespace = BETAstart
+
+#####INDIA#######
+
+country_event = {
+	id = BETAstart.1
+	title = "BETAstart.1.name"
+	desc = "BETAstart.1.desc"
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BET_spawn
+			option = NORMAL
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = NORMAL
+				}
+			}
+			country_event = { id = BETAstart.2 days = 1 }
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = ONE_YEAR
+				}
+			}
+			country_event = { id = BETAstart.2 days = 365 }  
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = THREE_YEARS
+				}
+			}
+			country_event = { id = BETAstart.2 days = 1095 }
+		}
+	}
+	option = {
+		name = BETAInvasion
+		619 = {
+			add_core_of = BET
+		}
+		set_global_flag = BET_sinkiang
+	}
+}
+
+
+
+country_event = {
+	id = BETAstart.2
+	title = "BETAstart.2.name"
+	desc = "BETAstart.2.desc"
+	hidden =yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	mean_time_to_happen = { days = 5 }
+
+	option = {
+		name = BETAInvasion
+		SIK = {
+			release = BET 
+		}
+		BET = {
+			load_oob = "BET_1936_sinkiang"
+		}
+	}
+}
+
+#####RANDOM#####
+
+country_event = {
+	id = BETAstart.3
+	title = "BETAstart.3.name"
+	desc = "BETAstart.3.desc"
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BET_spawn
+			option = RANDOM
+		}
+	}
+
+	mean_time_to_happen = { days = 5 }
+
+	#### TURKEY ####
+	option = {
+		name = BETAInvasion
+		349 = {
+			add_core_of = BET
+		}
+
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = NORMAL
+				}
+			}
+			country_event = { id = BETAstart.4 days = 1 }  # Fire after 1 day
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = ONE_YEAR
+				}
+			}
+			country_event = { id = BETAstart.4 days = 365 }  # Fire after 1 year
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = THREE_YEARS
+				}
+			}
+			country_event = { id = BETAstart.4 days = 1095 }  # Fire after 3 years
+		}
+		set_global_flag = BET_turkey
+	}
+
+	#### TUNIS ####
+	option = {
+		name = BETAInvasion
+		665 = {
+			add_core_of = BET
+		}
+		
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = NORMAL
+				}
+			}
+			country_event = { id = BETAstart.6 days = 1 }  # Fire after 1 day
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = ONE_YEAR
+				}
+			}
+			country_event = { id = BETAstart.6 days = 365 }  # Fire after 1 year
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = THREE_YEARS
+				}
+			}
+			country_event = { id = BETAstart.6 days = 1095 }  # Fire after 3 years
+		}
+		set_global_flag = BET_tunis
+	}
+
+	#### SWEDEN ####
+	option = {
+		name = BETAInvasion
+		666 = {
+			add_core_of = BET
+		}
+
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = NORMAL
+				}
+			}
+			country_event = { id = BETAstart.8 days = 1 }  # Fire after 1 day
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = ONE_YEAR
+				}
+			}
+			country_event = { id = BETAstart.8 days = 365 }  # Fire after 1 year
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = THREE_YEARS
+				}
+			}
+			country_event = { id = BETAstart.8 days = 1095 }  # Fire after 3 years
+		}
+		set_global_flag = BET_sweden
+	}
+
+	#### RUSSIA ####
+	option = {
+		name = BETAInvasion
+		516 = {
+			add_core_of = BET
+		}
+		644 = {
+			add_core_of = BET
+		}
+		575 = {
+			add_core_of = BET
+		}
+		576 = {
+			add_core_of = BET
+		}
+		
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = NORMAL
+				}
+			}
+			country_event = { id = BETAstart.10 days = 1 }  # Fire after 1 day
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = ONE_YEAR
+				}
+			}
+			country_event = { id = BETAstart.10 days = 365 }  # Fire after 1 year
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = THREE_YEARS
+				}
+			}
+			country_event = { id = BETAstart.10 days = 1095 }  # Fire after 3 years
+		}
+		set_global_flag = BET_russia
+	}
+}
+
+
+country_event = {
+	id = BETAstart.4
+	title = "BETAstart.4.name"
+	desc = "BETAstart.4.desc"
+	hidden =yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	mean_time_to_happen = { days = 5 }
+
+	option = {
+		name = BETAInvasion
+		TUR = {
+			release = BET 
+		}
+		BET = {
+			load_oob = "BET_1936_turkey"
+		}
+	}
+}
+
+#####TUNIS#####
+
+country_event = {
+	id = BETAstart.6
+	title = "BETAstart.6.name"
+	desc = "BETAstart.6.desc"
+	hidden =yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	mean_time_to_happen = { days = 5 }
+
+	option = {
+		name = BETAInvasion
+		FRA = {
+			release = BET 
+		}
+		BET = {
+			load_oob = "BET_1936_tunis"
+		}
+	}
+}
+
+#####SWEDEN#####
+
+country_event = {
+	id = BETAstart.8
+	title = "BETAstart.8.name"
+	desc = "BETAstart.8.desc"
+	hidden =yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	mean_time_to_happen = { days = 5 }
+
+	option = {
+		name = BETAInvasion
+		SWE = {
+			release = BET 
+		}
+		BET = {
+			load_oob = "BET_1936_sweden"
+		}
+	}
+}
+
+#####RUSSIA#####
+
+country_event = {
+	id = BETAstart.10
+	title = "BETAstart.10.name"
+	desc = "BETAstart.10.desc"
+	hidden =yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	mean_time_to_happen = { days = 5 }
+
+	option = {
+		name = BETAInvasion
+		SOV = {
+			release = BET 
+		}
+		BET = {
+			load_oob = "BET_1936_russia"
+		}
+	}
+}
+
+
+#####INFECTION######
+
+country_event = {
+	id = BETAstart.11
+	title = "BETAstart.11.name"
+	desc = "BETAstart.11.desc"
+	hidden =yes
+	fire_only_once = yes
+
+	trigger = {
+		has_game_rule = {
+			rule = BET_spawn
+			option = INFECTION
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = NORMAL
+				}
+			}
+			country_event = { id = BETAstart.12 days = 1 }
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = ONE_YEAR
+				}
+			}
+			country_event = { id = BETAstart.12 days = 365 }  
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = BETA_spawn
+					option = THREE_YEARS
+				}
+			}
+			country_event = { id = BETAstart.12 days = 1095 }
+		}
+	}
+
+	option = {
+		name = BETAInvasion
+		173 = {
+			add_core_of = BET
+		}
+		169 = {
+			add_core_of = BET
+		}
+		789 = {
+			add_core_of = BET
+		}
+		170 = {
+			add_core_of = BET
+		}
+		292 = {
+			add_core_of = BET
+		}
+		679 = {
+			add_core_of = BET
+		}
+		678 = {
+			add_core_of = BET
+		}
+		659 = {
+			add_core_of = BET
+		}
+		293 = {
+			add_core_of = BET
+		}
+		294 = {
+			add_core_of = BET
+		}
+		658 = {
+			add_core_of = BET
+		}
+		765 = {
+			add_core_of = BET
+		}
+		675 = {
+			add_core_of = BET
+		}
+		291 = {
+			add_core_of = BET
+		}
+		676 = {
+			add_core_of = BET
+		}
+		680 = {
+			add_core_of = BET
+		}
+		677 = {
+			add_core_of = BET
+		}
+		554 = {
+			add_core_of = BET
+		}
+		553 = {
+			add_core_of = BET
+		}
+		455 = {
+			add_core_of = BET
+		}
+		498 = {
+			add_core_of = BET
+		}
+		497 = {
+			add_core_of = BET
+		}
+		499 = {
+			add_core_of = BET
+		}
+		304 = {
+			add_core_of = BET
+		}
+		685 = {
+			add_core_of = BET
+		}
+		316 = {
+			add_core_of = BET
+		}
+		317 = {
+			add_core_of = BET
+		}
+		312 = {
+			add_core_of = BET
+		}
+		set_global_flag = BET_infection
+	}
+}
+
+country_event = {
+	id = BETAstart.12
+	title = "BETAstart.12.name"
+	desc = "BETAstart.12.desc"
+	hidden =yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	mean_time_to_happen = { days = 5 }
+
+	option = {
+		name = BETAInvasion
+		every_country = {
+			release = BET 
+		}
+		BET = {
+			load_oob = "BET_1936_infection"
+		}
+	}
+}
+
+
+

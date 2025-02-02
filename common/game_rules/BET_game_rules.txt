@@ -1,0 +1,195 @@
+#
+# List of options showing in the Game Rules screen
+#
+# format is:
+# rule_token = {
+#	name = "TEXT_KEY_FOR_NAME"
+#	required_dlc = "Name of the Required DLC"
+#	desc = "TEXT_KEY_FOR_LONG_DESC"
+#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups 
+#	icon = gfx_option_token							# Optional icon
+#	option = {										# Unless other specified, the first option is the default option
+#		name = option_token
+#		text = "TEXT_KEY_FOR_OPTION_NAME"
+#		allow_achievements = no						# Achievements cannot be earned if one or more game rules are set to an option that has this property set to no.
+#													# If not specified, this is set to yes for default options and no for all other options.
+#	}
+#	default = {										# Specify an option with the "default" token to override the behavior of treating the first option as the default.
+#		name = option_token
+#		text = "TEXT_KEY_FOR_OPTION_NAME"
+#		...
+#	}
+# }
+
+normal_alliances = {
+	name = "RULE_NORMAL_ALLIANCES"
+	group = "RULE_Beta"
+	icon = "GFX_wargoals"
+	option = {
+		name = "NORMAL"
+		text = "RULE_NORMAL_ALLIANCES_NORMAL"
+		desc = "RULE_NORMAL_ALLIANCES_NORMAL_DESC"
+		allow_achievements = no	
+	}
+	default = {
+		name = "UNITED"
+		text = "RULE_NORMAL_ALLIANCES_UNITED"
+		desc = "RULE_NORMAL_ALLIANCES_UNITED_DESC"
+		allow_achievements = no	
+	}
+}
+
+Beta_difficulty = {
+	name = "RULE_Beta_DIFFICULTY"
+	group = "RULE_Beta"
+	icon = "GFX_wargoals"
+	default = {
+		name = "NORMAL"
+		text = "RULE_Beta_DIFFICULTY_NORMAL"
+		desc = "RULE_Beta_DIFFICULTY_NORMAL_DESC"
+		allow_achievements = no	
+	}
+	option = {
+		name = "HARD"
+		text = "RULE_Beta_DIFFICULTY_HARD"
+		desc = "RULE_Beta_DIFFICULTY_HARD_DESC"
+		allow_achievements = no	
+	}
+	option = {
+		name = "EXTREME"
+		text = "RULE_Beta_DIFFICULTY_EXTREME"
+		desc = "RULE_Beta_DIFFICULTY_EXTREME_DESC"
+		allow_achievements = no	
+	}
+	option = {
+		name = "INSANE"
+		text = "RULE_Beta_DIFFICULTY_INSANE"
+		desc = "RULE_Beta_DIFFICULTY_INSANE_DESC"
+		allow_achievements = no	
+	}
+}
+
+UNI_ai_behavior = {
+	name = "UNI_AI_BEHAVIOR"
+	group = "RULE_Beta"
+	default = {
+		name = "ALLIANCE"
+		text = "RULE_UNI_AI_BEHAVIOR_ALLIANCE"
+		desc = "RULE_UNI_AI_BEHAVIOR_ALLIANCE_DESC"
+		allow_achievements = no	
+	}
+	option = {
+		name = "ANTICOLONIAL"
+		text = "RULE_UNI_AI_BEHAVIOR_ANTICOLONIAL"
+		desc = "RULE_UNI_AI_BEHAVIOR_ANTICOLONIAL_DESC"
+		allow_achievements = no	
+	}
+	option = {
+		name = "DOMINANCE"
+		text = "RULE_UNI_AI_BEHAVIOR_DOMINANCE"
+		desc = "RULE_UNI_AI_BEHAVIOR_DOMINANCE_DESC"
+		allow_achievements = no	
+	}
+}
+
+BET_spawn = {
+	name = "BET_SPAWN"
+	group = "RULE_Beta"
+	icon = "GFX_volunteers"
+	default = {
+		name = "NORMAL"
+		text = "RULE_BET_SPAWN_NORMAL"
+		desc = "RULE_BET_SPAWN_NORMAL_DESC"
+		allow_achievements = no	
+	}
+	option = {
+		name = "RANDOM"
+		text = "RULE_BET_SPAWN_RANDOM"
+		desc = "RULE_BET_SPAWN_RANDOM_DESC"
+		allow_achievements = no	
+	}
+	option = {
+		name = "INFECTION"
+		text = "RULE_BET_SPAWN_INFECTION"
+		desc = "RULE_BET_SPAWN_INFECTION_DESC"
+		allow_achievements = no	
+	}
+}
+
+BET_mutation = {
+	name = "BET_MUTATION"
+	group = "RULE_Beta"
+	icon = "GFX_volunteers"
+	default = {
+		name = "NOMUTATION"
+		text = "RULE_BET_MUTATION_NOMUTATION"
+		desc = "RULE_BET_MUTATION_NOMUTATION_DESC"
+		allow_achievements = no	
+	}
+	option = {
+		name = "MUTATION"
+		text = "RULE_BET_MUTATION_MUTATION"
+		desc = "RULE_BET_MUTATION_MUTATION_DESC"
+		allow_achievements = no	
+	}
+}
+
+UNI_spawn = {
+	name = "UNI_SPAWN"
+	group = "RULE_Beta"
+	icon = "GFX_volunteers"
+	default = {
+		name = "NORMAL"
+		text = "RULE_UNI_SPAWN_NORMAL"
+		desc = "RULE_UNI_SPAWN_NORMAL_DESC"
+		allow_achievements = no	
+	}
+	option = {
+		name = "NO_SPAWN"
+		text = "RULE_UNI_SPAWN_NO_SPAWN"
+		desc = "RULE_UNI_SPAWN_NO_SPAWN_DESC"
+		allow_achievements = no	
+	}
+}
+
+Nations_capitulation = {
+	name = "NATION_CAPITULATION"
+	group = "RULE_Beta"
+	icon = "GFX_leave_faction"
+	default = {
+		name = "NORMAL"
+		text = "RULE_NATION_CAPITULATION_NORMAL"
+		desc = "RULE_NATION_CAPITULATION_NORMAL_DESC"
+		allow_achievements = no	
+	}
+	option = {
+		name = "NO_CAPITULATION"
+		text = "RULE_NATION_CAPITULATION_NO_CAPITULATION"
+		desc = "RULE_NATION_CAPITULATION_NO_CAPITULATION_DESC"
+		allow_achievements = no	
+	}
+}
+
+Beta_spawn = {
+	name = "TIME_Beta_SPAWN"
+	group = "RULE_Beta"
+	icon = "GFX_wargoals"
+	default = {
+		name = "NORMAL"
+		text = "RULE_TIME_Beta_SPAWN_NORMAL"
+		desc = "RULE_TIME_Beta_SPAWN_NORMAL_DESC"
+		allow_achievements = no	
+	}
+	option = {
+		name = "ONE_YEAR"
+		text = "RULE_TIME_Beta_SPAWN_ONE_YEAR"
+		desc = "RULE_TIME_Beta_SPAWN_ONE_YEAR_DESC"
+		allow_achievements = no	
+	}
+	option = {
+		name = "THREE_YEARS"
+		text = "RULE_TIME_Beta_SPAWN_THREE_YEARS"
+		desc = "RULE_TIME_Beta_SPAWN_THREE_YEARS_DESC"
+		allow_achievements = no	
+	}
+}

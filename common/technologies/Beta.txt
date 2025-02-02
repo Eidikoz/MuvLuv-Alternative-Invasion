@@ -1,0 +1,99 @@
+technologies = {
+
+	Betatech = {
+
+		enable_equipments = {
+			Beta_0
+		}
+		
+		enable_subunits = {
+			Betas
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		folder = {
+			name = armour_folder
+			position = { x = -2 y = -2 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+            tag = BET
+        }
+
+	}
+	Betatech2 = {
+
+		enable_equipments = {
+			Betamutation_0
+		}
+		
+		enable_subunits = {
+			Betas2
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		folder = {
+			name = armour_folder
+			position = { x = -2 y = -2 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+            tag = BET
+        }
+
+	}
+	Betatech3 = {
+
+		enable_equipments = {
+			Betabettermutation_0 
+		}
+		
+		enable_subunits = {
+			Betas3
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		folder = {
+			name = armour_folder
+			position = { x = -2 y = -2 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+            tag = BET
+        }
+
+	}
+}

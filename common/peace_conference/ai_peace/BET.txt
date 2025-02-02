@@ -1,0 +1,14 @@
+# Scripted AI desire for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_ai_desires = {
+
+    BET_take_everything = {
+        peace_action_type = { take_states }
+        enable = {
+            ROOT = { tag = BET }
+        }
+        ai_desire = 999
+    }
+
+}

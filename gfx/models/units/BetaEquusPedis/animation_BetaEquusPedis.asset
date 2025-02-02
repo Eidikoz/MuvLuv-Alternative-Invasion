@@ -1,0 +1,14 @@
+# animation = {
+# 	name = "BetaEquusPedis_attack_animation"
+# 	file = "BetaEquusPedis_attack.anim"
+# }
+
+# animation = {
+# 	name = "BetaEquusPedis_idle_animation"
+# 	file = "BetaEquusPedis_idle.anim"
+# }
+
+# animation = {
+# 	name = "BetaEquusPedis_moving_animation"
+# 	file = "BetaEquusPedis_moving.anim"
+# }

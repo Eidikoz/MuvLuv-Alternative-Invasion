@@ -1,0 +1,20 @@
+################
+##### UNI ######
+################
+
+Beta_decisions= {
+	
+	allowed = {
+	}
+}
+doomsday_initiative= {
+	
+	allowed = {
+	}
+}
+
+Black_market= {
+	
+	allowed = {
+	}
+}

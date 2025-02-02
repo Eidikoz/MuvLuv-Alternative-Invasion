@@ -1,0 +1,23 @@
+﻿division_template = {
+	name = "Monster Horde"
+
+	regiments = {
+		BETAs3= { x = 0 y = 0 }
+		BETAs3= { x = 0 y = 1 }
+		BETAs3= { x = 0 y = 2 }
+		BETAs3= { x = 0 y = 3 }
+		BETAs3= { x = 1 y = 0 }
+		BETAs3= { x = 1 y = 1 }
+		BETAs3= { x = 1 y = 2 }
+		BETAs3= { x = 1 y = 3 }
+		BETAs3= { x = 2 y = 0 }
+		BETAs3= { x = 2 y = 1 }
+		BETAs3= { x = 2 y = 2 }
+		BETAs3= { x = 2 y = 3 }
+		BETAs3= { x = 3 y = 0 }
+		BETAs3= { x = 3 y = 1 }
+		BETAs3= { x = 3 y = 2 }
+		BETAs3= { x = 3 y = 3 }
+	}
+	priority = 100
+}

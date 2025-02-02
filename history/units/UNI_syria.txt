@@ -1,0 +1,56 @@
+﻿division_template = {
+	name = "Syrian Militia"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "Syrian Militia"
+		location = 12473
+		division_template = "Syrian Militia"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Syrian Militia"
+		location = 12473
+		division_template = "Syrian Militia"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Syrian Militia"
+		location = 12473
+		division_template = "Syrian Militia"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Syrian Militia"
+		location = 12473
+		division_template = "Syrian Militia"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Syrian Militia"
+		location = 12473
+		division_template = "Syrian Militia"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Syrian Militia"
+		location = 12473
+		division_template = "Syrian Militia"
+		start_experience_factor = 0.0
+	}
+	division = {
+		name = "Syrian Militia"
+		location = 12473
+		division_template = "Syrian Militia"
+		start_experience_factor = 0.0
+	}
+	
+}

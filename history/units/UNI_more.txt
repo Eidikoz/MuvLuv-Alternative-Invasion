@@ -1,0 +1,8 @@
+﻿units = {
+	division = {
+		name = "Anti-BETA Division"
+		location = 859
+		division_template = "Anti-BETA Divisions"
+		start_experience_factor = 0.3
+	}
+}

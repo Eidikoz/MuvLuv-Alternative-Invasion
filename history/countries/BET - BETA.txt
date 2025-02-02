@@ -1,0 +1,48 @@
+﻿set_research_slots = 0
+set_convoys = 0
+set_stability = 1
+set_war_support = 1
+add_named_threat = { threat = 100 }
+capital = 619
+
+add_ideas = {
+	Beta
+	FocusWest
+	# FocusSoviet
+	# FocusMiddleEast
+	closed_economy
+	Beta_nation2
+}
+
+set_technology = {
+	Betatech=1
+}
+
+set_popularities = {
+	neutrality = 100
+}
+set_politics = {	
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+
+create_country_leader = {
+	name = "BETA"
+	picture = "Portrait_Beta.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Beta"
+	picture = "Portrait_Beta.dds"
+	traits = {}
+	skill = 1
+	id = 1000
+}

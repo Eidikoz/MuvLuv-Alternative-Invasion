@@ -1,0 +1,543 @@
+doomsday_initiative = {
+
+	Doomsday_founding = {
+
+		icon = generic_operation
+
+		available = {
+			is_major = yes
+			all_country ={
+			    NOT = {
+					has_idea = doomsdayheadquarters
+			    }
+			}
+			has_global_flag = doomsday_Beta
+			NOT = { has_global_flag = doomsday_leviathan }
+			NOT = {
+				has_game_rule = {
+					rule = UNI_spawn
+					option = NO_SPAWN
+				}
+			
+			}
+			BET = { exists = yes }
+		}
+		
+		visible = {
+			is_major = yes
+			all_country ={
+			    NOT = {
+					has_idea = doomsdayheadquarters
+			    }
+			}
+			NOT = {
+				tag = BET
+			}
+			has_global_flag = doomsday_Beta
+			NOT = { has_global_flag = doomsday_leviathan }
+		}
+		
+		cost = 150
+		fire_only_once = yes
+
+		complete_effect = {
+			add_manpower = -10000
+			add_ideas = {
+				doomsdayheadquarters
+			} 
+			# hidden_effect = {
+			# 	news_event = { days = 1 id = doomsday.1 }
+			# }
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				is_major = yes
+				has_war_with = BET
+				factor = 200
+			}
+		}
+	}
+	
+	Doomsday_join = {
+		icon = generic_operation
+
+		available = {
+			NOT = { has_idea = doomsdayheadquarters}
+			UNI = { exists = yes}
+		}
+		cost = 150
+		fire_only_once = yes
+		
+		visible = {
+			NOT = { has_idea = doomsdayheadquarters}
+			UNI={ exists=yes }
+			NOT = {
+				tag = UNI
+				tag = BET
+			}
+		}
+		complete_effect = {
+			add_manpower = -30000
+			add_ideas = {
+				doomsdaymember
+			}
+			hidden_effect = {
+				country_event = { days = 1 id = doomsday.2 }
+			} 
+		}
+
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				has_war_with = BET
+				factor = 500
+			}
+		}
+	}
+	
+	send_weapons = {
+		icon = generic_operation
+
+		available = {
+			UNI = { exists = yes}
+		}
+		
+		days_re_enable = 25
+		
+		visible = {
+			UNI={ exists=yes }
+			NOT = {
+				tag = UNI
+				tag = BET
+			}
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		complete_effect = {
+			send_equipment = {
+				target = UNI
+				type = infantry_equipment
+				amount = 1000
+			} 
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				has_global_flag = UNI2
+				factor = 5
+			}
+			modifier = {
+				has_equipment = {
+					infantry_equipment < 5000
+				}
+				factor = -15
+			}
+		}
+	}
+	
+	send_men = {
+		icon = generic_operation
+
+		available = {
+			UNI = { exists = yes}
+		}
+		
+		days_re_enable = 25
+		
+		visible = {
+			UNI={ exists=yes }
+			NOT = {
+				tag = UNI
+				tag = BET
+			}
+			has_manpower > 10000
+		}
+		complete_effect = {
+			add_manpower = -10000 
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				has_manpower < 200000
+				factor = -15
+			}
+			modifier = {
+				has_global_flag = UNI2
+				factor = 5
+			}
+		}
+	}
+
+	become_UNI = {
+		icon = generic_operation
+
+		available = {
+			is_ai = no
+			UNI = { exists = yes}
+		}
+		cost = 0
+		fire_only_once = yes
+		
+		visible = {
+			UNI={ exists=yes }
+			NOT = {
+				tag = UNI
+				tag = BET
+			}
+			is_ai = no
+		}
+		complete_effect = {
+			UNI = { change_tag_from = ROOT }
+			hidden_effect = {
+				UNI = { news_event = { days = 1 id = doomsday.33 } }
+			}
+		}
+
+		ai_will_do = {
+		}
+	}
+	
+	UNI_resurrect = {
+		icon = generic_operation
+		available = {
+			AND = {
+				is_major = yes
+				UNI = { exists = no }
+				any_country ={
+					has_idea = doomsdayheadquarters
+				}
+				has_capitulated = no
+			}
+		}
+		
+		visible = {
+			AND = {
+				is_major = yes
+				UNI = { exists = no }
+				any_country ={
+					has_idea = doomsdayheadquarters
+				}
+				date > 1936.02.01 
+				has_capitulated = no
+			}
+		}
+		
+		cost = 150
+		fire_only_once = yes
+
+		complete_effect = {
+			add_manpower = -20000
+			hidden_effect = {
+				news_event = { days = 1 id = doomsday.30 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+}
+
+
+
+Black_market = {
+	buy_weapon = {
+		icon = generic_operation
+
+		available = {
+			any_country ={
+				AND = {
+					has_equipment = {
+						infantry_equipment > 1
+					}
+					NOT = { tag = UNI }
+				}
+
+			}
+		}
+		
+		cost = 400		
+		days_re_enable = 25
+		
+		visible = {
+			has_completed_focus = Black_market_small_arms
+		}
+		complete_effect = {
+			custom_effect_tooltip = UNI_Black_market
+			UNI ={	
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = UNI
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				has_equipment = {
+					infantry_equipment < 1
+				}
+				factor = 40
+			}
+		}
+	}
+	
+	buy_medium_tanks = {
+		icon = generic_operation
+
+		available = {
+			any_country ={
+				AND = {
+					has_equipment = {
+						medium_tank_chassis > 1
+					}
+					NOT = { tag = UNI }
+				}
+			}
+		}
+		
+		cost = 400		
+		days_re_enable = 25
+		
+		visible = {
+			has_completed_focus = Black_market_heavy_weapons
+		}
+		complete_effect = {
+			custom_effect_tooltip = UNI_Black_market
+			UNI ={	
+				add_equipment_to_stockpile = {
+					type = medium_tank_chassis 
+					amount = 100
+					producer = UNI
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				has_equipment = {
+					medium_tank_chassis < 1
+				}
+				factor = 40
+			}
+		}
+	}
+	
+	buy_light_tanks = {
+		icon = generic_operation
+
+		available = {
+			any_country ={
+				AND = {
+					has_equipment = {
+						light_tank_chassis > 1
+					}
+					NOT = { tag = UNI }
+				}
+			}
+		}
+		
+		cost = 400		
+		days_re_enable = 25
+		
+		visible = {
+			has_completed_focus = Black_market_heavy_weapons
+		}
+		complete_effect = {
+			custom_effect_tooltip = UNI_Black_market
+			UNI ={	
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis
+					amount = 100
+					producer = UNI
+				}
+			} 
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				has_equipment = {
+					light_tank_chassis < 1
+				}
+				factor = 40
+			}
+		}
+	}
+	
+	buy_heavy_tanks = {
+		icon = generic_operation
+
+		available = {
+			any_country ={
+				AND = {
+					has_equipment = {
+						heavy_tank_chassis > 1
+					}
+					NOT = { tag = UNI }
+				}
+			}
+		}
+		
+		cost = 400		
+		days_re_enable = 25
+		
+		visible = {
+			has_completed_focus = Black_market_heavy_weapons
+		}
+		complete_effect = {
+			custom_effect_tooltip = UNI_Black_market
+			UNI ={	
+				add_equipment_to_stockpile = {
+					type = heavy_tank_chassis
+					amount = 100
+					producer = UNI
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war = yes
+				has_equipment = {
+					heavy_tank_chassis < 1
+				}
+				factor = 40
+			}
+		}
+	}
+	
+	recrute_merc = {
+		icon = generic_operation
+
+		available = {
+		}
+		
+		cost = 400		
+		days_re_enable = 25
+		
+		visible = {
+			has_completed_focus = recrute_soeldner
+		}
+		complete_effect = {
+			custom_effect_tooltip = UNI_Black_market
+			hidden_effect = {
+				country_event = { id = doomsday.18 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+	}
+	
+	buy_plane= {
+		icon = generic_operation
+
+		available = {
+			any_country ={			
+				AND = {
+					has_equipment = {
+						small_plane_airframe > 1
+					}
+					NOT = { tag = UNI }
+				}
+			}
+		}
+		
+		cost = 400
+		days_re_enable = 25		
+		
+		visible = {
+			has_completed_focus = Black_market_planes
+		}
+		complete_effect = {
+			UNI ={	
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe
+					amount = 100
+					producer = UNI
+				}
+			}
+			custom_effect_tooltip = UNI_Black_market
+		}
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				has_war = yes
+				has_equipment = {
+					small_plane_airframe < 1
+				}
+				factor = 40
+			}
+		}
+	}
+	
+	sell_Beta_parts= {
+		icon = generic_operation
+
+		available = {
+		}
+		
+		cost = 0
+		days_re_enable = 20		
+		
+		visible = {
+			has_completed_focus = sell_Beta_parts
+		}
+		complete_effect = {
+			hidden_effect ={
+				country_event = { id = doomsday.26 }
+			}
+			add_political_power = 300
+		}
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				has_war = yes
+				factor = 60
+			}
+		}
+	}
+	
+	verbindungen_kappen= {
+		icon = generic_operation
+
+		available = {
+		}
+		
+		cost = 0
+		fire_only_once = yes	
+		
+		visible = {
+			has_completed_focus = unite_with_triaden
+			has_completed_focus = unite_with_mafia
+			has_completed_focus = unite_with_yakuza
+		}
+		complete_effect = {
+			hidden_effect ={
+				country_event = { id = doomsday.19 }
+			}
+			custom_effect_tooltip = UNI_no_way_back
+		}
+
+		ai_will_do = {
+			factor = 150
+		}
+	}
+
+}

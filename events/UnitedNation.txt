@@ -1,0 +1,75 @@
+
+add_namespace = unitednation
+
+#########Doomsday-Division#########################
+
+country_event = {
+	id = unitednation.1
+	title = "unitednation.1.name"
+	desc = "unitednation.1.desc"
+	picture = GFX_news_event_eng_churchill_sign_treaty
+	hidden = yes
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		BET = { exists = yes }
+	}
+
+	immediate = {
+		982 = { add_core_of = UNI }
+		USA ={ release = UNI }
+		country_event = { days = 1 id = BETAnews.20 }
+		UNI ={
+			country_event = { days = 1 id = unitednation.6 }
+			ENG = { add_to_Faction = UNI }
+			delete_unit_template_and_units = { division_template = "Infantry Division" }
+			delete_unit_template_and_units = { division_template = "Cavalry Brigade" }
+			delete_unit_template_and_units = { division_template = "Tank Brigade" }
+			delete_unit_template_and_units = { division_template = "Colonial Garrison" }
+			delete_unit_template_and_units = { division_template = "Survivor" }
+		}
+	}
+
+	# option = {
+	# 	name = unitednation.1.a
+	# 	982 = { add_core_of = UNI }
+	# 	USA ={ release = UNI }
+	# 	country_event = { days = 1 id = BETAnews.20 }
+	# 	hidden_effect = {
+	# 		UNI ={
+	# 			country_event = { days = 1 id = unitednation.6 }
+	# 			ENG = { add_to_Faction = UNI }
+	# 			delete_unit_template_and_units = { division_template = "Infantry Division" }
+	# 			delete_unit_template_and_units = { division_template = "Cavalry Brigade" }
+	# 			delete_unit_template_and_units = { division_template = "Tank Brigade" }
+	# 			delete_unit_template_and_units = { division_template = "Colonial Garrison" }
+	# 			delete_unit_template_and_units = { division_template = "Survivor" }
+	# 		}
+	# 	}
+	# }
+	
+}
+
+country_event = {
+	id = unitednation.6
+	title = "unitednation.6.name"
+	desc = "unitednation.6.desc"
+	picture = GFX_news_event_chinese_soldiers_march
+	fire_only_once = yes
+	hidden = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		UNI = { exists = yes }
+	}
+
+	option = {
+		name = unitednation.6.a
+		hidden_effect ={
+			UNI ={
+				load_oob = "UNI"
+			}
+		}
+	}
+
+}

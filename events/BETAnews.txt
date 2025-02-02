@@ -1,0 +1,1330 @@
+
+add_namespace = BETAnews
+
+news_event = {
+	id = BETAnews.1
+	title = "BETAnews.1.name"
+	desc = "BETAnews.1.desc"
+	picture = GFX_event_mussolini_hitler
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = { 
+	}
+
+	option = {
+		name = BETAnews.1.a	
+	}
+}
+
+news_event = {
+	id = BETAnews.2
+	title = "BETAnews.2.name"
+	desc = "BETAnews.2.desc"
+	picture = GFX_event_mussolini
+	major = yes
+	is_triggered_only = yes
+	
+
+	trigger = {
+	}
+
+	option = {
+		name = BETAnews.2.a	
+	}
+}
+
+news_event = {
+	id = BETAnews.3
+	title = "BETAnews.3.name"
+	desc = "BETAnews.3.desc"
+	picture = GFX_event_goering
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = BETAnews.3.a
+	}
+}
+
+news_event = {
+	id = BETAnews.4
+	title = "BETAnews.4.name"
+	desc = "BETAnews.4.desc"
+	picture = GFX_news_event_german_volunteers
+	
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = BETAnews.4.a
+	}
+	
+}
+
+news_event = {
+	id = BETAnews.5
+	title = "BETAnews.5.name"
+	desc = "BETAnews.5.desc"
+	picture = GFX_news_event_japanese_parade	
+	
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+	option = {
+		trigger = { NOT= {TAG = JAP} }
+		name = BETAnews.5.a	
+	}
+	
+	option = {
+		name = BETAnews.5.b
+		trigger = { TAG = JAP }
+		hidden_effect = {
+			news_event = {
+				id = BETAevents.6 
+				random_days=500
+			}
+		}
+	}
+	
+}
+news_event = {
+	id = BETAnews.6
+	title = "BETAnews.6.name"
+	desc = "BETAnews.6.desc"
+	picture = GFX_news_event_japanese_army_parade
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+	
+	option = {
+		name = BETAnews.6.a	
+		hidden_effect = {
+			news_event = { id = BETAnews.7 days=30}
+		}
+	}	
+}
+
+news_event = {
+	id = BETAnews.7
+	title = "BETAnews.7.name"
+	desc = "BETAnews.7.desc"
+	picture = GFX_news_event_japanese_army_parade
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+	option = {
+		name = BETAnews.7.a	
+		hidden_effect = {
+			news_event = { id = BETAevents.7 days = 30}
+		}
+	}
+	option = {
+		name = BETAnews.7.b	
+	}
+	
+}
+
+news_event = {
+	id = BETAnews.8
+	title = "BETAnews.8.name"
+	desc = "BETAnews.8.desc"
+	picture = GFX_news_event_japanese_army_parade
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+	}
+	
+	
+	option = {
+		name = BETAnews.8.a
+		hidden_effect = {
+			BET={
+				load_oob = "BET_japanevent"
+				declare_war_on = {
+					type = take_state_focus
+					target = JAP	
+				}
+			}
+		}			
+	}
+}
+news_event = {
+	id = BETAnews.9
+	title = "BETAnews.9.name"
+	desc = "BETAnews.9.desc"
+	picture = GFX_news_event_indian_parade
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = BETAnews.9.a
+		
+	}
+}
+
+news_event = {
+	id = BETAnews.10
+	title = "BETAnews.10.name"
+	desc = "BETAnews.10.desc"
+	picture = GFX_event_churchill
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {	
+	}
+	
+	option = {
+		name = BETAnews.10.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.11
+	title = "BETAnews.11.name"
+	desc = "BETAnews.11.desc"
+	picture = GFX_event_spain
+	is_triggered_only=yes
+	major = yes
+	
+	trigger = {
+	}
+	
+	
+	option = {
+		name = BETAnews.11.a
+	}
+}
+
+news_event = {
+	id = BETAnews.12
+	title = "BETAnews.12.name"
+	desc = "BETAnews.12.desc"
+	picture = GFX_news_event_stalin_meeting
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	
+	option = {
+		name = BETAnews.12.a		
+	}
+}
+
+news_event = {
+	id = BETAnews.13
+	title = "BETAnews.13.name"
+	desc = "BETAnews.13.desc"
+	picture = GFX_event_widerstand1
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.13.a		
+	}
+}
+
+
+news_event = {
+	id = BETAnews.14
+	title = "BETAnews.14.name"
+	desc = "BETAnews.14.desc"
+	picture = GFX_event_widerstand2
+	is_triggered_only = yes
+	major = yes	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.13.a		
+	}
+}
+
+news_event = {
+	id = BETAnews.15
+	title = "BETAnews.15.name"
+	desc = "BETAnews.15.desc"
+	picture = GFX_event_widerstand3
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.13.a		
+	}
+}
+
+news_event = {
+	id = BETAnews.16
+	title = "BETAnews.16.name"
+	desc = "BETAnews.16.desc"
+	picture = GFX_event_widerstand4
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.13.a		
+	}
+}
+
+
+#########UNI#########################
+
+news_event = {
+	id = BETAnews.17
+	title = "BETAnews.17.name"
+	desc = "BETAnews.17.desc"
+	picture = GFX_news_event_ger_civil_war
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.17.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.18
+	title = "BETAnews.18.name"
+	desc = "BETAnews.18.desc"
+	picture = GFX_news_event_hitler_handshake
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.18.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.19
+	title = "BETAnews.19.name"
+	desc = "BETAnews.19.desc"
+	picture = GFX_news_event_worker_protests
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.19.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.20
+	title = "BETAnews.20.name"
+	desc = "BETAnews.20.desc"
+	picture = GFX_news_event_eng_churchill_sign_treaty
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.20.a			
+	}
+}
+
+####BETAlandungen#####
+
+news_event = {
+	id = BETAnews.21
+	title = "BETAnews.21.name"
+	desc = "BETAnews.21.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.21.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.22
+	title = "BETAnews.22.name"
+	desc = "BETAnews.22.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.22.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.23
+	title = "BETAnews.23.name"
+	desc = "BETAnews.23.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.22.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.24
+	title = "BETAnews.24.name"
+	desc = "BETAnews.24.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.24.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.25
+	title = "BETAnews.25.name"
+	desc = "BETAnews.25.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.25.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.26
+	title = "BETAnews.26.name"
+	desc = "BETAnews.26.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.26.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.27
+	title = "BETAnews.27.name"
+	desc = "BETAnews.27.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.27.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.28
+	title = "BETAnews.28.name"
+	desc = "BETAnews.28.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.28.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.29
+	title = "BETAnews.29.name"
+	desc = "BETAnews.29.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.29.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.30
+	title = "BETAnews.30.name"
+	desc = "BETAnews.30.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.30.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.31
+	title = "BETAnews.31.name"
+	desc = "BETAnews.31.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.31.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.32
+	title = "BETAnews.32.name"
+	desc = "BETAnews.32.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.32.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.33
+	title = "BETAnews.33.name"
+	desc = "BETAnews.33.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.33.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.34
+	title = "BETAnews.34.name"
+	desc = "BETAnews.34.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.34.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.35
+	title = "BETAnews.35.name"
+	desc = "BETAnews.35.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.35.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.36
+	title = "BETAnews.36.name"
+	desc = "BETAnews.36.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.36.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.37
+	title = "BETAnews.37.name"
+	desc = "BETAnews.37.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.37.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.38
+	title = "BETAnews.38.name"
+	desc = "BETAnews.38.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.38.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.39
+	title = "BETAnews.39.name"
+	desc = "BETAnews.39.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.39.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.40
+	title = "BETAnews.40.name"
+	desc = "BETAnews.40.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.40.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.41
+	title = "BETAnews.41.name"
+	desc = "BETAnews.41.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.41.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.42
+	title = "BETAnews.42.name"
+	desc = "BETAnews.42.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.42.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.43
+	title = "BETAnews.43.name"
+	desc = "BETAnews.43.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.43.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.44
+	title = "BETAnews.44.name"
+	desc = "BETAnews.44.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.44.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.45
+	title = "BETAnews.45.name"
+	desc = "BETAnews.45.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.45.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.46
+	title = "BETAnews.46.name"
+	desc = "BETAnews.46.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.46.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.47
+	title = "BETAnews.47.name"
+	desc = "BETAnews.47.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.47.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.48
+	title = "BETAnews.48.name"
+	desc = "BETAnews.48.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.48.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.49
+	title = "BETAnews.49.name"
+	desc = "BETAnews.49.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.49.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.50
+	title = "BETAnews.50.name"
+	desc = "BETAnews.50.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.50.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.51
+	title = "BETAnews.51.name"
+	desc = "BETAnews.51.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.51.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.52
+	title = "BETAnews.52.name"
+	desc = "BETAnews.52.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+
+	option = {
+		name = BETAnews.52.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.53
+	title = "BETAnews.53.name"
+	desc = "BETAnews.53.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = BETAnews.53.a			
+	}
+}
+
+news_event = {
+	id = BETAnews.54
+	title = "BETAnews.54.name"
+	desc = "BETAnews.54.desc"
+	picture = GFX_news_event_japanese_army_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = {
+		name = BETAnews.54.a
+		hidden_effect = {
+			set_technology = {
+				BETAtech = 1
+			}
+			load_oob = "JAP_BETAs"
+		}
+	}
+}
+
+news_event = {
+	id = BETAnews.55
+	title = "BETAnews.55.name"
+	desc = "BETAnews.55.desc"
+	picture = GFX_news_event_eng_churchill_sign_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = {
+		name = BETAnews.55.a
+	}
+}
+
+news_event = {
+	id = BETAnews.56
+	title = "BETAnews.56.name"
+	desc = "BETAnews.56.desc"
+	picture = GFX_event_BETA_landing
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = BETAnews.56.a
+	}
+}
+
+news_event = {
+	id = BETAnews.57
+	title = "BETAnews.57.name"
+	desc = "BETAnews.57.desc"
+	picture = GFX_event_BETA_landing
+	major = yes
+	fire_only_once = yes
+
+	
+	option = {
+		name = BETAnews.57.a
+	}
+}
+
+news_event = {
+	id = BETAnews.58
+	title = "BETAnews.58.name"
+	desc = "BETAnews.58.desc"
+	picture = GFX_news_event_indian_parade
+	major = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = BETAnews.58.a
+	}
+}
+
+news_event = {
+	id = BETAnews.59
+	title = "BETAnews.59.name"
+	desc = "BETAnews.59.desc"
+	picture = GFX_news_event_japanese_parade	
+	major = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = BETAnews.59.a	
+	}
+}
+
+news_event = {
+	id = BETAnews.60
+	title = "BETAnews.60.name"
+	desc = "BETAnews.60.desc"
+	picture = GFX_event_mutation	
+	major = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = BETAnews.60.a	
+	}
+	
+	
+}
+
+news_event = {
+	id = BETAnews.61
+	title = "BETAnews.61.name"
+	desc = "BETAnews.61.desc"
+	picture = GFX_event_cuba
+	major = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		trigger={
+			NOT = { tag=CUB }
+		}
+		name = BETAnews.61.a	
+	}
+	
+	option = {
+		trigger={
+			tag=CUB
+		}
+		name = BETAnews.61.a
+		add_stability = 0.1
+	}
+	
+}
+
+news_event = {
+	id = BETAnews.62
+	title = "BETAnews.62.name"
+	desc = "BETAnews.62.desc"
+	picture = GFX_event_sydney
+	major = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = BETAnews.62.a	
+	}
+	
+	
+}
+news_event = {
+	id = BETAnews.63
+	title = "BETAnews.63.name"
+	desc = "BETAnews.63.desc"
+	picture = GFX_news_event_mex_civil_war
+	major = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = BETAnews.63.a	
+	}
+	
+	
+}
+
+news_event = {
+	id = BETAnews.64
+	title = "BETAnews.64.name"
+	desc = "BETAnews.64.desc"
+	picture = GFX_news_event_SOV_supreme_soviet
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+	option = {
+		trigger={
+			NOT = { tag=SOV }
+		}
+		name = BETAnews.64.a	
+	}
+	
+	option = {
+		trigger={
+			tag=SOV
+		}
+		name = BETAnews.64.b
+		add_stability = 0.05
+	}
+	
+}
+
+news_event = {
+	id = BETAnews.65
+	title = "BETAnews.65.name"
+	desc = "BETAnews.65.desc"
+	picture = GFX_news_event_FIN_three_country_cairn_flag_raising
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+	option = {
+		trigger={
+			NOT = { tag=FIN }
+		}
+		name = BETAnews.65.a	
+	}
+	
+	option = {
+		trigger={
+			tag=FIN
+		}
+		name = BETAnews.65.b
+		add_manpower = 30000
+	}
+	
+	
+}
+
+news_event = {
+	id = BETAnews.66
+	title = "BETAnews.66.name"
+	desc = "BETAnews.66.desc"
+	picture = GFX_news_event_hungary_refused
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+	option = {
+		trigger={
+			NOT = { tag=HUN }
+		}
+		name = BETAnews.66.b	
+	}
+	
+	option = {
+		trigger={
+			tag=HUN
+		}
+		name = BETAnews.66.a
+		add_stability = 0.05
+	}
+	
+}
+
+news_event = {
+	id = BETAnews.67
+	title = "BETAnews.67.name"
+	desc = "BETAnews.67.desc"
+	picture = GFX_event_persia
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		trigger={
+			NOT = { tag=PER }
+		}
+		name = BETAnews.67.b	
+	}
+	
+	option = {
+		trigger={
+			tag=PER
+		}
+		name = BETAnews.67.a
+		add_war_support = 0.2
+		add_stability = 0.2
+	}
+	
+}
+
+news_event = {
+	id = BETAnews.68
+	title = "BETAnews.68.name"
+	desc = "BETAnews.68.desc"
+	picture = GFX_event_sweden
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		trigger={
+			NOT = { tag = GER }
+		}
+		name = BETAnews.68.a
+	}
+	option = {
+		trigger={
+			tag = GER
+		}
+		name = BETAnews.68.b
+		add_stability = -0.05
+	}
+	
+}
+
+news_event = {
+	id = BETAnews.69
+	title = "BETAnews.69.name"
+	desc = "BETAnews.69.desc"
+	picture = GFX_event_india_falling
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = BETAnews.69.a
+	}
+	
+}
+
+news_event = {
+	id = BETAnews.70
+	title = "BETAnews.70.name"
+	desc = "BETAnews.70.desc"
+	picture = GFX_event_soviet_falling
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = BETAnews.70.a
+	}
+	
+}
+
+news_event = {
+	id = BETAnews.71
+	title = "BETAnews.71.name"
+	desc = "BETAnews.71.desc"
+	picture = GFX_event_france_falling
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = BETAnews.71.a
+	}
+	
+}
+
+news_event = {
+	id = BETAnews.72
+	title = "BETAnews.72.name"
+	desc = "BETAnews.72.desc"
+	picture = GFX_event_germany_falling
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = BETAnews.72.a
+	}
+	
+}
+
+news_event = {
+	id = BETAnews.73
+	title = "BETAnews.73.name"
+	desc = "BETAnews.73.desc"
+	picture = GFX_event_uk_falling
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = BETAnews.73.a
+	}
+	
+}
+ 
+ 
+news_event = {
+	id = BETAnews.74
+	title = "BETAnews.74.name"
+	desc = "BETAnews.74.desc"
+	picture = GFX_event_japan_falling
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = BETAnews.74.a
+	}
+	
+}
+
+news_event = {
+	id = BETAnews.75
+	title = "BETAnews.75.name"
+	desc = "BETAnews.75.desc"
+	picture = GFX_event_usa_falling
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = BETAnews.75.a
+	}
+	
+}
+ 
+ 

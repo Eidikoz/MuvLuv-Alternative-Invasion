@@ -1,0 +1,387 @@
+
+add_namespace = BETAlanding
+
+country_event = {
+	id = BETAlanding.1
+	title = "BETAlanding.1.name"
+	desc = "BETAlanding.1.desc"
+	hidden =yes
+	fire_only_once = yes
+
+
+	trigger = {
+		AND ={
+			64 = {
+				is_fully_controlled_by = BET
+			}
+			16 = {
+				is_fully_controlled_by = BET
+			}
+			6 = {
+				is_fully_controlled_by = BET
+			}
+			31 = {
+				is_fully_controlled_by = BET
+			}
+			ENG = { has_capitulated = no }
+			ENG = { exists = yes }
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+
+	option = {
+		name = england
+		country_event = { days = 1 id = BETAnews.21 }
+		set_variable = {
+			var = BETA_fight_england
+			value = 0
+		}
+		ENG = { set_country_flag = BETA_find }	
+	}
+}
+country_event = {
+	id = BETAlanding.2
+	title = "BETAlanding.2.name"
+	desc = "BETAlanding.2.desc"
+	hidden=yes
+	fire_only_once = yes
+
+	trigger = {
+		AND ={
+			126 = {
+				is_fully_controlled_by = BET
+			}
+			122 = {
+				is_fully_controlled_by = BET
+			}
+			IRE = { has_capitulated = no }
+			IRE = { exists = yes }
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+
+	option = {
+		name = ireland
+		country_event = { days = 1 id = BETAnews.24 }
+		set_variable = {
+			var = BETA_fight_irland
+			value = 0
+		}
+		IRE = { set_country_flag = BETA_find }	
+	}
+}
+
+country_event = {
+	id = BETAlanding.3
+	title = "BETAlanding.3.name"
+	desc = "BETAlanding.3.desc"
+	hidden =yes
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			64 = {
+				is_fully_controlled_by = BET
+			}
+			16 = {
+				is_fully_controlled_by = BET
+			}
+			6 = {
+				is_fully_controlled_by = BET
+			}
+			126 = {
+				is_fully_controlled_by = BET
+			}
+			122 = {
+				is_fully_controlled_by = BET
+			}
+			USA = { has_capitulated = no }
+			USA = { exists = yes }
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+
+	option = {
+		name = america
+		country_event = { days = 1 id = BETAnews.27 }
+		set_variable = {
+			var = BETA_fight_usa
+			value = 0
+		}
+		USA = { set_country_flag = BETA_find }
+	}
+}
+country_event = {
+	id = BETAlanding.4
+	title = "BETAlanding.4.name"
+	desc = "BETAlanding.4.desc"
+	hidden =yes
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			613 = {
+				is_fully_controlled_by = BET
+			}
+			610 = {
+				is_fully_controlled_by = BET
+			}
+			525 = {
+				is_fully_controlled_by = BET
+			}
+			JAP = { has_capitulated = no }
+			JAP = { exists = yes }
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+
+	option = {
+		name = america
+		country_event = { days = 1 id = BETAnews.30 }
+		set_variable = {
+			var = BETA_fight_japan
+			value = 0
+		}
+		JAP = { set_country_flag = BETA_find }	
+	}
+}
+
+country_event = {
+	id = BETAlanding.5
+	title = "BETAlanding.5.name"
+	desc = "BETAlanding.5.desc"
+	hidden =yes
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			336 = {
+				is_fully_controlled_by = BET
+			}
+			289 = {
+				is_fully_controlled_by = BET
+			}
+			286 = {
+				is_fully_controlled_by = BET
+			}
+			AST = { has_capitulated = no }
+			AST = { exists = yes }
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+
+	option = {
+		name = america
+		country_event = { days = 1 id = BETAnews.33 }
+		set_variable = {
+			var = BETA_fight_australia
+			value = 0
+		}
+		AST = { set_country_flag = BETA_find }	
+	}
+}
+
+country_event = {
+	id = BETAlanding.6
+	title = "BETAlanding.6.name"
+	desc = "BETAlanding.6.desc"
+	hidden =yes
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			285 = {
+				is_fully_controlled_by = BET
+			}
+			519 = {
+				is_fully_controlled_by = BET
+			}
+			521 = {
+				is_fully_controlled_by = BET
+			}
+			NZL = { has_capitulated = no }
+			NZL = { exists = yes }
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+
+	option = {
+		name = america
+		country_event = { days = 1 id = BETAnews.36 }
+		set_variable = {
+			var = BETA_fight_nzl
+			value = 0
+		}
+		NZL = { set_country_flag = BETA_find }	
+	}
+}
+
+country_event = {
+	id = BETAlanding.7
+	title = "BETAlanding.7.name"
+	desc = "BETAlanding.7.desc"
+	hidden =yes
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			613 = {
+				is_fully_controlled_by = BET
+			}
+			610 = {
+				is_fully_controlled_by = BET
+			}
+			525 = {
+				is_fully_controlled_by = BET
+			}
+			PHI = { has_capitulated = no }
+			PHI = { exists = yes }
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+
+	option = {
+		name = america
+		country_event = { days = 1 id = BETAnews.39 }
+		set_variable = {
+			var = BETA_fight_phi
+			value = 0
+		}
+		PHI = { set_country_flag = BETA_find }
+	}
+}
+
+country_event = {
+	id = BETAlanding.8
+	title = "BETAlanding.8.name"
+	desc = "BETAlanding.8.desc"
+	hidden =yes
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			780 = {
+				is_fully_controlled_by = BET
+			}
+			779 = {
+				is_fully_controlled_by = BET
+			}
+			701 = {
+				is_fully_controlled_by = BET
+			}
+			BRA = { has_capitulated = no }
+			BRA = { exists = yes }
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+
+	option = {
+		name = america
+		country_event = { days = 1 id = BETAnews.42 }
+		set_variable = {
+			var = BETA_fight_bra
+			value = 0
+		}
+		BRA = { set_country_flag = BETA_find }	
+	}
+}
+
+country_event = {
+	id = BETAlanding.9
+	title = "BETAlanding.9.name"
+	desc = "BETAlanding.9.desc"
+	hidden =yes
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			474 = {
+				is_fully_controlled_by = BET
+			}
+			311 = {
+				is_fully_controlled_by = BET
+			}
+			366 = {
+				is_fully_controlled_by = BET
+			}
+			CUB = { has_capitulated = no }
+			CUB = { exists = yes }
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+
+	option = {
+		name = america
+		country_event = { days = 1 id = BETAnews.45 }
+		set_variable = {
+			var = BETA_fight_CUB
+			value = 0
+		}
+		CUB = { set_country_flag = BETA_find }	
+	}
+}
+
+country_event = {
+	id = BETAlanding.10
+	title = "BETAlanding.10.name"
+	desc = "BETAlanding.10.desc"
+	hidden =yes
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			493 = {
+				is_fully_controlled_by = BET
+			}
+			307 = {
+				is_fully_controlled_by = BET
+			}
+			DOM = { has_capitulated = no }
+			DOM = { exists = yes }
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+
+	option = {
+		name = america
+		country_event = { days = 1 id = BETAnews.48 }
+		set_variable = {
+			var = BETA_fight_DOM
+			value = 0
+		}
+		DOM = { set_country_flag = BETA_find }	
+	}
+}
+
+country_event = {
+	id = BETAlanding.11
+	title = "BETAlanding.11.name"
+	desc = "BETAlanding.11.desc"
+	hidden =yes
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			120 = {
+				is_fully_controlled_by = BET
+			}
+			142 = {
+				is_fully_controlled_by = BET
+			}
+			ICE = { has_capitulated = no }
+			ICE = { exists = yes }
+		}
+	}
+	mean_time_to_happen = { days = 100 }
+
+	option = {
+		name = america
+		country_event = { days = 1 id = BETAnews.51 }
+		set_variable = {
+			var = BETA_fight_ICE
+			value = 0
+		}
+		ICE = { set_country_flag = BETA_find }	
+	}
+}
+

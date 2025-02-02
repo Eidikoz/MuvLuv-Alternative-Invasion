@@ -1,0 +1,10 @@
+objectTypes = {
+	pdxmesh = {
+		name = "BetaLux_mesh"
+		file = "gfx/models/units/BetaLux/BetaLux.mesh"
+
+#		animation = { id = "attack"			type = "generic_tsf_attack_animation" }
+#		animation = { id = "idle"			type = "generic_tsf_idle_animation" }
+#		animation = { id = "move"			type = "generic_tsf_moving_animation" }
+	}
+}

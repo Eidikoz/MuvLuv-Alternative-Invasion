@@ -1,0 +1,82 @@
+scripted_gui = {
+	firebombs_powers1 = {
+	
+		context_type = selected_state_context
+		
+		window_name = "firebombs_button_powers1_container"
+		
+		visible = {
+			UNI = {
+				is_ai = no
+				has_completed_focus = firebombs
+			}
+			AND ={
+				is_fully_controlled_by = BET
+			}
+		}
+		
+		effects = {
+			Firebombs_click = {
+				set_state_flag = UNI_firebomb
+				add_manpower = -100000 
+			}
+		}
+		triggers = {
+			Firebombs_click_enabled = {
+			}
+		}
+		        
+		ai_check = {
+			check_variable = { ai_random > 0.65 }
+		}
+		
+		ai_weights = {
+			Firebombs_click = {
+				ai_will_do = {
+					factor = 40
+				}
+			}
+		}
+	}
+	
+	antipersonnel_powers1 = {
+	
+		context_type = selected_state_context
+		
+		window_name = "firebombs_button_powers1_container"
+		
+		visible = {
+			UNI = {
+				is_ai = no
+				has_completed_focus = weapons_of_mass_destruction
+			}
+			AND ={
+				is_fully_controlled_by = BET
+			}
+		}
+		
+		effects = {
+			antipersonnel_click = {
+				set_state_flag = UNI_antipersonnel
+				add_manpower = -500000 
+			}
+		}
+		triggers = {
+			antipersonnel_click_enabled = {
+			}
+		}
+		        
+		ai_check = {
+			check_variable = { ai_random > 0.65 }
+		}
+		
+		ai_weights = {
+			antipersonnel_click = {
+				ai_will_do = {
+					factor = 40
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,43 @@
+guiTypes = {
+	containerWindowType = {
+		name = "firebombs_button_powers1_container"
+		position = {x=0 y=820}
+		size = { width=270 height=280 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_BPT_areadef_conf_bg"
+		}
+
+		instantTextboxType = {
+			name = "title"
+			position = {x=14 y=6}
+			font = "hoi_18mbs"
+			text = "Usable_Weapons"
+			maxWidth = 340
+			maxHeight = 23
+			format = left
+		}
+		
+		buttonType = {
+			name = "Firebombs" 
+			position = {x=20 y=30}
+			shortcut = "ctrl+f"
+			spriteType = "GFX_decision_generic_ignite_civil_war"
+			pdx_tooltip = "FIREBOMBS_TOOLTIP"
+			scale = 1.1
+		}
+		buttonType = {
+			name = "antipersonnel" 
+			position = {x=60 y=30}
+			shortcut = "ctrl+a"
+			spriteType = "GFX_decision_generic_prepare_civil_war"
+			pdx_tooltip = "ANTIPERSONNEL_TOOLTIP"
+			scale = 1.1
+		}
+	}
+}	

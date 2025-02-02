@@ -1,0 +1,46 @@
+#坦克级
+animation = {
+	name = "Beta_Tank_Idle_animation"
+	file = "Beta_Tank_Idle.anim"
+}
+
+animation = {
+	name = "Beta_Tank_Move_animation"
+	file = "Beta_Tank_Move.anim"
+}
+
+#要击级
+animation = {
+	name = "Beta_Grappler_Idle_animation"
+	file = "Beta_Grappler_Idle.anim"
+}
+animation = {
+	name = "Beta_Grappler_Walk_animation"
+	file = "Beta_Grappler_Walk.anim"
+}
+animation = {
+	name = "Beta_Grappler_Attack1_animation"
+	file = "Beta_Grappler_Attack1.anim"
+}
+animation = {
+	name = "Beta_Grappler_Attack2_animation"
+	file = "Beta_Grappler_Attack2.anim"
+}
+
+#突击级
+animation = {
+	name = "Beta_Destroyer_Idle_animation"
+	file = "Beta_Destroyer_Idle.anim"
+}
+animation = {
+	name = "Beta_Destroyer_Walk_animation"
+	file = "Beta_Destroyer_Walk.anim"
+}
+animation = {
+	name = "Beta_Destroyer_FastMove_animation"
+	file = "Beta_Destroyer_FastMove.anim"
+}
+animation = {
+	name = "Beta_Destroyer_Charge_animation"
+	file = "Beta_Destroyer_Charge.anim"
+}

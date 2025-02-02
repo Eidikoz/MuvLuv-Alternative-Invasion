@@ -1,0 +1,35 @@
+objectTypes = {
+
+############## 坦克级 #############
+	pdxmesh = {
+		name = "Beta_Tank_pdx"
+		file = "gfx/models/units/beta/Beta_Tank.mesh"
+
+		animation = { id = "Idle"	type = "Beta_Tank_Idle_animation"}
+		animation = { id = "Move"	type = "Beta_Tank_Move_animation"}
+	}
+
+
+############## 坦克级 #############
+	pdxmesh = {
+		name = "Beta_Grappler_pdx"
+		file = "gfx/models/units/beta/Beta_Grappler.mesh"
+
+		animation = { id = "Idle"	type = "Beta_Grappler_Idle_animation"}
+		animation = { id = "Move"	type = "Beta_Grappler_Walk_animation"}
+		animation = { id = "Attack1"	type = "Beta_Grappler_Attack1_animation"}
+		animation = { id = "Attack2"	type = "Beta_Grappler_Attack2_animation"}
+	}
+
+############## 突击级 #############
+	pdxmesh = {
+		name = "Beta_Destroyer_pdx"
+		file = "gfx/models/units/beta/Beta_Destroyer.mesh"
+
+		animation = { id = "Idle"	type = "Beta_Destroyer_Idle_animation"}
+		animation = { id = "Move"	type = "Beta_Destroyer_Walk_animation"}
+		animation = { id = "FastMove"	type = "Beta_Destroyer_FastMove_animation"}
+		animation = { id = "Charge"	type = "Beta_Destroyer_Charge_animation"}
+	}
+
+}

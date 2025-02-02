@@ -1,0 +1,14 @@
+# animation = {
+# 	name = "BetaRuitare_attack_animation"
+# 	file = "BetaRuitare_attack.anim"
+# }
+
+# animation = {
+# 	name = "BetaRuitare_idle_animation"
+# 	file = "BetaRuitare_idle.anim"
+# }
+
+# animation = {
+# 	name = "BetaRuitare_moving_animation"
+# 	file = "BetaRuitare_moving.anim"
+# }

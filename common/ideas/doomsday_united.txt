@@ -1,0 +1,78 @@
+ideas = {
+
+	country = {
+		doomsdayheadquarters_united= {
+			picture = generic_fortify_the_borders_UNI
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = BET
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = LEV
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		
+		doomsdaymember_united= {
+			picture = generic_fortify_the_borders_UNI
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = BET
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}	
+			targeted_modifier = {
+				tag = LEV
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		MCOMunited= {
+			picture = MCOM
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = LEV
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+			targeted_modifier = {
+				tag = BET
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+		}
+		
+		
+	}
+
+}

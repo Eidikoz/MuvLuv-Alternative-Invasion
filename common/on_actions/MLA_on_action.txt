@@ -1,0 +1,23 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_in_faction_with = UNI
+					}
+					ROOT = {
+						tag = BET
+					}
+				}
+				FROM.FROM = {
+					population_cleaning_effect = yes
+					core_population_growth_effect = yes
+					add_dynamic_modifier = {
+						modifier = beta_no_pop_modifier
+					}
+				}
+			}
+		}
+	}
+}

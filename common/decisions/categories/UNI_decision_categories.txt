@@ -7,7 +7,7 @@ Beta_decisions= {
 	allowed = {
 	}
 }
-doomsday_initiative= {
+unitednation_security= {
 	
 	allowed = {
 	}

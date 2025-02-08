@@ -13,3 +13,4 @@ tags={
 picture="thumbnail.png"
 name="MuvLuv Alternative Invasion"
 supported_version="1.15.*"
+remote_file_id="3419463689"

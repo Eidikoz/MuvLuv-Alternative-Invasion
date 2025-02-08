@@ -39,9 +39,9 @@ create_country_leader = {
 }
 
 create_field_marshal = {
-	name = "Beta"
+	name = "Hive 00"
 	picture = "Portrait_Beta.dds"
 	traits = {}
-	skill = 1
+	skill = 5
 	id = 1000
 }

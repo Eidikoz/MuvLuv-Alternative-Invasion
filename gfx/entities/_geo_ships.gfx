@@ -1,0 +1,17 @@
+objectTypes = {
+
+##タイコンデロガ
+
+	pdxmesh = {
+		name = "geo_Ticonderoga_mesh"
+		file = "gfx/models/units/ships/geo_Ticonderoga.mesh"
+		
+		animation = { id = "idle"			type = "geo_ssw_Ticonderoga_idle_animation" }
+		animation = { id = "attack"			type = "geo_ssw_Ticonderoga_attack_animation" }
+		animation = { id = "defend"			type = "geo_ssw_Ticonderoga_defend_animation" }
+		animation = { id = "damaged_attack"	type = "geo_ssw_Ticonderoga_attack_animation" }
+		animation = { id = "damaged_defend"	type = "geo_ssw_Ticonderoga_defend_animation" }
+		animation = { id = "death"			type = "geo_ssw_Ticonderoga_death_animation" }
+		
+	}
+}

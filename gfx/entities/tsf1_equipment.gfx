@@ -1,0 +1,114 @@
+objectTypes = {
+###############################
+###########武器及附件###########
+###############################
+#######F4挂架#######
+	pdxmesh = {
+		name = "MountRack_USA"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/USA_MountRack.mesh"
+	}
+
+	pdxmesh = {
+		name = "MountRack_UNI"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/UNI_MountRack.mesh"
+	}
+
+	pdxmesh = {
+		name = "MountRack_GEU"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/GEU_MountRack.mesh"
+	}
+
+	pdxmesh = {
+		name = "MountRack_AFR"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/AFR_MountRack.mesh"
+	}
+
+	pdxmesh = {
+		name = "MountRack_JAP"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/JAP_MountRack.mesh"
+	}
+
+	pdxmesh = {
+		name = "MountRack_EUR"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/EUR_MountRack.mesh"
+	}
+
+#######MiG21挂架#######
+	pdxmesh = {
+		name = "MountRack_SOV"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/SOV_MountRack.mesh"
+	}
+
+	pdxmesh = {
+		name = "MountRack_CHI"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/CHI_MountRack.mesh"
+
+	}
+
+	pdxmesh = {
+		name = "MountRack_EEA"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/EEA_MountRack.mesh"
+
+	}
+
+#######武器#######
+	pdxmesh = {
+		name = "GunType82_MR"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/GunType82_MR.mesh"
+	}
+	pdxmesh = {
+		name = "GunType82_Hand"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/GunType82_Hand.mesh"
+	}
+
+	pdxmesh = {
+		name = "GunType87_MR"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/GunType87_MR.mesh"
+	}
+	pdxmesh = {
+		name = "GunType87_Hand"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/GunType87_Hand.mesh"
+	}
+
+	pdxmesh = {
+		name = "BladeType74_MR"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/BladeType74_MR.mesh"
+	}
+	pdxmesh = {
+		name = "BladeType74_Hand"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/BladeType74_Hand.mesh"
+	}
+
+	pdxmesh = {
+		name = "BladeType77_MR"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/BladeType77_MR.mesh"
+	}
+	pdxmesh = {
+		name = "BladeType77_Hand"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/BladeType77_Hand.mesh"
+	}
+
+#######盾牌#######
+	pdxmesh = {
+		name = "Shield_AFR"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/AFR_Shield.mesh"
+	}
+
+	pdxmesh = {
+		name = "Shield_EUR"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/EUR_Shield.mesh"
+	}
+
+	pdxmesh = {
+		name = "Shield_CHI"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/CHI_Shield.mesh"
+	}
+	pdxmesh = {
+		name = "Shield_EEA"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/EEA_Shield.mesh"
+	}
+	pdxmesh = {
+		name = "Shield_UNI"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/UNI_Shield.mesh"
+	}
+}

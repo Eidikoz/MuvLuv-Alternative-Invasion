@@ -2,18 +2,18 @@
 	name = "BETA Horde"
 
 	regiments = {
-		Betas= { x = 0 y = 0 }
-		Betas= { x = 0 y = 1 }
-		Betas= { x = 0 y = 2 }
-		Betas= { x = 1 y = 0 }
-		Betas= { x = 1 y = 1 }
-		Betas= { x = 1 y = 2 }
-		Betas= { x = 2 y = 0 }
-		Betas= { x = 2 y = 1 }
-		Betas= { x = 2 y = 2 }
-		Betas= { x = 3 y = 0 }
-		Betas= { x = 3 y = 1 }
-		Betas= { x = 3 y = 2 }
+		beta_soldier= { x = 0 y = 0 }
+		beta_soldier= { x = 0 y = 1 }
+		beta_soldier= { x = 0 y = 2 }
+		beta_soldier= { x = 1 y = 0 }
+		beta_soldier= { x = 1 y = 1 }
+		beta_soldier= { x = 1 y = 2 }
+		beta_soldier= { x = 2 y = 0 }
+		beta_soldier= { x = 2 y = 1 }
+		beta_soldier= { x = 2 y = 2 }
+		beta_soldier= { x = 3 y = 0 }
+		beta_soldier= { x = 3 y = 1 }
+		beta_soldier= { x = 3 y = 2 }
 	}
 	priority = 100
 }

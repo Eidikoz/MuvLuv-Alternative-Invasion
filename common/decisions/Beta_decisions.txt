@@ -11,7 +11,7 @@ Beta_decisions = {
 			}
 		}
 		cost = 0
-		days_re_enable = 120
+		days_re_enable = 30
 		days_remove = 1
 		
 		visible = {
@@ -19,7 +19,8 @@ Beta_decisions = {
 		}
 		complete_effect = {
 			BET = {
-				load_oob = "BET_1936_sinkiang"
+				load_oob = "BET_Hive"
+				target = 619
 			}
 		}
 
@@ -33,7 +34,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
-			168 = {
+			418 = {
 				is_fully_controlled_by = BET
 			}
 		}
@@ -46,7 +47,8 @@ Beta_decisions = {
 		}
 		complete_effect = {
 			BET = {
-				load_oob = "BET_Hive02"
+				load_oob = "BET_Hive"
+				target = 418
 			}
 		}
 
@@ -70,10 +72,11 @@ Beta_decisions = {
 		
 		visible = {
 			tag = BET
+			target = 407
 		}
 		complete_effect = {
 			BET = {
-				load_oob = "BET_Hive03"
+				load_oob = "BET_Hive"
 			}
 		}
 
@@ -100,7 +103,7 @@ Beta_decisions = {
 		}
 		complete_effect = {
 			BET = {
-				load_oob = "BET_Hive04"
+				load_oob = "BET_Hive"
 			}
 		}
 
@@ -127,7 +130,7 @@ Beta_decisions = {
 		}
 		complete_effect = {
 			BET = {
-				load_oob = "BET_Hive05"
+				load_oob = "BET_Hive"
 			}
 		}
 
@@ -154,7 +157,7 @@ Beta_decisions = {
 		}
 		complete_effect = {
 			BET = {
-				load_oob = "BET_Hive06"
+				load_oob = "BET_Hive"
 			}
 		}
 

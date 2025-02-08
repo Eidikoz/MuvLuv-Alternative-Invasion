@@ -192,83 +192,83 @@ country_event = {
 
 # }
 
-country_event = {
-	id = doomsday.7
-	title = "doomsday.7.name"
-	desc = "doomsday.7.desc"
-	picture = GFX_report_event_generic_research_lab
-	is_triggered_only = yes
+# country_event = {
+# 	id = doomsday.7
+# 	title = "doomsday.7.name"
+# 	desc = "doomsday.7.desc"
+# 	picture = GFX_report_event_generic_research_lab
+# 	is_triggered_only = yes
 	
-	trigger = {
-	}
+# 	trigger = {
+# 	}
 
-	option = {
-		trigger = {
-			NOT = { has_global_flag = doomsday_leviathan }
-		}
-		name = doomsday.7.a
-		UNI = {
-			add_research_slot = 1
-		}
-		FROM = {
-			add_research_slot = -1
-		}
-	}
-	option = {
-		trigger = {
-			has_global_flag = doomsday_leviathan
-		}
-		name = doomsday.7.a
-		UNZ = {
-			add_research_slot = 1
-		}
-		FROM = {
-			add_research_slot = -1
-		}
-	}
-	option = {
-		name = doomsday.7.b
+# 	option = {
+# 		trigger = {
+# 			NOT = { has_global_flag = doomsday_leviathan }
+# 		}
+# 		name = doomsday.7.a
+# 		UNI = {
+# 			add_research_slot = 1
+# 		}
+# 		FROM = {
+# 			add_research_slot = -1
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			has_global_flag = doomsday_leviathan
+# 		}
+# 		name = doomsday.7.a
+# 		UNZ = {
+# 			add_research_slot = 1
+# 		}
+# 		FROM = {
+# 			add_research_slot = -1
+# 		}
+# 	}
+# 	option = {
+# 		name = doomsday.7.b
 
-	}
+# 	}
 
-}
+# }
 
-country_event = {
-	id = doomsday.8
-	title = "doomsday.8.name"
-	desc = "doomsday.8.desc"
-	picture = GFX_report_event_chinese_soldiers
-	is_triggered_only = yes
+# country_event = {
+# 	id = doomsday.8
+# 	title = "doomsday.8.name"
+# 	desc = "doomsday.8.desc"
+# 	picture = GFX_report_event_chinese_soldiers
+# 	is_triggered_only = yes
 	
-	trigger = {
-	}
+# 	trigger = {
+# 	}
 
-	option = {
-		trigger = {
-			NOT = { has_global_flag = doomsday_leviathan }
-		}
-		name = doomsday.8.a
-		UNI = {
-			add_manpower = 10000
-		}
-		add_manpower = -10000
-	}
-	option = {
-		trigger = {
-			has_global_flag = doomsday_leviathan
-		}
-		name = doomsday.8.a
-		UNZ = {
-			add_manpower = 10000
-		}
-		add_manpower = -10000
-	}
-	option = {
-		name = doomsday.8.b
+# 	option = {
+# 		trigger = {
+# 			NOT = { has_global_flag = doomsday_leviathan }
+# 		}
+# 		name = doomsday.8.a
+# 		UNI = {
+# 			add_manpower = 10000
+# 		}
+# 		add_manpower = -10000
+# 	}
+# 	option = {
+# 		trigger = {
+# 			has_global_flag = doomsday_leviathan
+# 		}
+# 		name = doomsday.8.a
+# 		UNZ = {
+# 			add_manpower = 10000
+# 		}
+# 		add_manpower = -10000
+# 	}
+# 	option = {
+# 		name = doomsday.8.b
 
-	}
+# 	}
 
-}
+# }
 
 country_event = {
 	id = doomsday.9
@@ -301,77 +301,77 @@ country_event = {
 
 }
 
-country_event = {
-	id = doomsday.12
-	title = "doomsday.12.name"
-	desc = "doomsday.12.desc"
-	picture = GFX_news_event_chinese_soldiers_march
-	is_triggered_only = yes
-	hidden = yes
+# country_event = {
+# 	id = doomsday.12
+# 	title = "doomsday.12.name"
+# 	desc = "doomsday.12.desc"
+# 	picture = GFX_news_event_chinese_soldiers_march
+# 	is_triggered_only = yes
+# 	hidden = yes
 	
-	trigger = {
-	}
+# 	trigger = {
+# 	}
 
-	option = {
-		trigger = {
-			NOT = { has_global_flag = doomsday_leviathan }
-		}
-		GER = {
-			random_army_leader = { 
-				limit = { has_id = 4 }
-				set_nationality = UNI
-			}
-		}
-	}
-	option = {
-		trigger = {
-			has_global_flag = doomsday_leviathan
-		}
-		GER = {
-			random_army_leader = { 
-				limit = { has_id = 4 }
-				set_nationality = UNZ
-			}
-		}
-	}
+# 	option = {
+# 		trigger = {
+# 			NOT = { has_global_flag = doomsday_leviathan }
+# 		}
+# 		GER = {
+# 			random_army_leader = { 
+# 				limit = { has_id = 4 }
+# 				set_nationality = UNI
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			has_global_flag = doomsday_leviathan
+# 		}
+# 		GER = {
+# 			random_army_leader = { 
+# 				limit = { has_id = 4 }
+# 				set_nationality = UNZ
+# 			}
+# 		}
+# 	}
 
-}
+# }
 
-country_event = {
-	id = doomsday.13
-	title = "doomsday.13.name"
-	desc = "doomsday.13.desc"
-	picture = GFX_news_event_chinese_soldiers_march
-	is_triggered_only = yes
-	hidden = yes
+# country_event = {
+# 	id = doomsday.13
+# 	title = "doomsday.13.name"
+# 	desc = "doomsday.13.desc"
+# 	picture = GFX_news_event_chinese_soldiers_march
+# 	is_triggered_only = yes
+# 	hidden = yes
 	
-	trigger = {
-	}
+# 	trigger = {
+# 	}
 
-	option = {
-		trigger = {
-			NOT = { has_global_flag = doomsday_leviathan }
-		}
-		every_country = {
-			random_army_leader = { 
-				limit = { skill > 4}
-				set_nationality = UNI
-			}
-		}
-	}
-	option = {
-		trigger = {
-			has_global_flag = doomsday_leviathan
-		}
-		every_country = {
-			random_army_leader = { 
-				limit = { skill > 4}
-				set_nationality = UNZ
-			}
-		}
-	}
+# 	option = {
+# 		trigger = {
+# 			NOT = { has_global_flag = doomsday_leviathan }
+# 		}
+# 		every_country = {
+# 			random_army_leader = { 
+# 				limit = { skill > 4}
+# 				set_nationality = UNI
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			has_global_flag = doomsday_leviathan
+# 		}
+# 		every_country = {
+# 			random_army_leader = { 
+# 				limit = { skill > 4}
+# 				set_nationality = UNZ
+# 			}
+# 		}
+# 	}
 
-}
+# }
 
 country_event = {
 	id = doomsday.14
@@ -706,52 +706,52 @@ country_event = {
 		
 }
 
-country_event = {
-	id = doomsday.21
-	title = "doomsday.21.name"
-	desc = "doomsday.21.desc"
-	picture = GFX_country_event_stalin_meeting
-	fire_only_once = yes
-	hidden = yes
+# country_event = {
+# 	id = doomsday.21
+# 	title = "doomsday.21.name"
+# 	desc = "doomsday.21.desc"
+# 	picture = GFX_country_event_stalin_meeting
+# 	fire_only_once = yes
+# 	hidden = yes
 	
-	trigger = {
-	}
+# 	trigger = {
+# 	}
 	
-	option = {
-		trigger = {
-			NOT = { has_global_flag = doomsday_leviathan }
-		}
-		every_country = {
-			if = {
-				limit = {
-					OR = {
-						has_idea = doomsdayheadquarters
-						has_idea = doomsdaymember 
-						tag = UNI
-					}
-				}
-				add_research_slot = 1
-			}
-		}
-	}
-	option = {
-		trigger = {
-			has_global_flag = doomsday_leviathan
-		}
-		every_country = {
-			if = {
-				limit = {
-					OR = {
-						has_idea = doomsdayheadquarters_united
-						has_idea = doomsdaymember_united 
-						tag = UNZ
-					}
-				}
-				add_research_slot = 1
-			}
-		}
-	}	
-}
+# 	option = {
+# 		trigger = {
+# 			NOT = { has_global_flag = doomsday_leviathan }
+# 		}
+# 		every_country = {
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						has_idea = doomsdayheadquarters
+# 						has_idea = doomsdaymember 
+# 						tag = UNI
+# 					}
+# 				}
+# 				add_research_slot = 1
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			has_global_flag = doomsday_leviathan
+# 		}
+# 		every_country = {
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						has_idea = doomsdayheadquarters_united
+# 						has_idea = doomsdaymember_united 
+# 						tag = UNZ
+# 					}
+# 				}
+# 				add_research_slot = 1
+# 			}
+# 		}
+# 	}	
+# }
 
 country_event = {
 	id = doomsday.22
@@ -985,67 +985,67 @@ country_event = {
 
 }
 
-country_event = {
-	id = doomsday.27
-	title = "doomsday.27.name"
-	desc = "doomsday.27.desc"
-	picture = news_event_chinese_soldiers_march
-	hidden = yes
+# country_event = {
+# 	id = doomsday.27
+# 	title = "doomsday.27.name"
+# 	desc = "doomsday.27.desc"
+# 	picture = news_event_chinese_soldiers_march
+# 	hidden = yes
 	
-	trigger = {
-		any_state = {
-			has_state_flag= UNI_firebomb
-		}
-	}
+# 	trigger = {
+# 		any_state = {
+# 			has_state_flag= UNI_firebomb
+# 		}
+# 	}
 	
-	immediate = {
-		every_state = {
-			if = {
-				limit = {
-					has_state_flag= UNI_firebomb
-				}
-				add_province_modifier = {
-					static_modifiers = { firebombs }
-					province = {
-						all_provinces = yes
-					}
-				}
-			}
-		}
-	}
+# 	immediate = {
+# 		every_state = {
+# 			if = {
+# 				limit = {
+# 					has_state_flag= UNI_firebomb
+# 				}
+# 				add_province_modifier = {
+# 					static_modifiers = { firebombs }
+# 					province = {
+# 						all_provinces = yes
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-}
+# }
 
-country_event = {
-	id = doomsday.28
-	title = "doomsday.28.name"
-	desc = "doomsday.28.desc"
-	picture = GFX_news_event_chinese_soldiers_march
-	hidden = yes
+# country_event = {
+# 	id = doomsday.28
+# 	title = "doomsday.28.name"
+# 	desc = "doomsday.28.desc"
+# 	picture = GFX_news_event_chinese_soldiers_march
+# 	hidden = yes
 	
-	trigger = {
-		any_state = {
-			has_state_flag= UNI_antipersonnel
-		}
-	}
+# 	trigger = {
+# 		any_state = {
+# 			has_state_flag= UNI_antipersonnel
+# 		}
+# 	}
 	
-	immediate = {
-		every_state = {
-			if = {
-				limit = {
-					has_state_flag= UNI_antipersonnel
-				}
-				add_province_modifier = {
-					static_modifiers = { antipersonnel }
-					province = {
-						all_provinces = yes
-					}
-				}
-			}
-		}
-	}
+# 	immediate = {
+# 		every_state = {
+# 			if = {
+# 				limit = {
+# 					has_state_flag= UNI_antipersonnel
+# 				}
+# 				add_province_modifier = {
+# 					static_modifiers = { antipersonnel }
+# 					province = {
+# 						all_provinces = yes
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 
-}
+# }
 
 country_event = {
 	id = doomsday.29
@@ -1189,23 +1189,23 @@ news_event = {
 
 }
 
-news_event = {
-	id = doomsday.34
-	title = "doomsday.34.name"
-	desc = "doomsday.34.desc"
-	picture = GFX_event_BETA_landing
-	trigger = {
-		UNI = { exists = no }
-		any_country ={
-			has_idea = doomsdayheadquarters
-		}
-		any_country ={
-			has_idea = doomsdaymember
-		}
-	}
+# news_event = {
+# 	id = doomsday.34
+# 	title = "doomsday.34.name"
+# 	desc = "doomsday.34.desc"
+# 	picture = GFX_event_BETA_landing
+# 	trigger = {
+# 		UNI = { exists = no }
+# 		any_country ={
+# 			has_idea = doomsdayheadquarters
+# 		}
+# 		any_country ={
+# 			has_idea = doomsdaymember
+# 		}
+# 	}
 	
-	option = {
-		name = doomsday.34.a
-	}
+# 	option = {
+# 		name = doomsday.34.a
+# 	}
 
-}
+# }

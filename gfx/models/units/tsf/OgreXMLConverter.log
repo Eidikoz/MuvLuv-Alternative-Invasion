@@ -1,0 +1,7 @@
+13:30:16: *-*-* OGRE Shutdown
+13:30:16: Unregistering ResourceManager for type Compositor
+13:30:16: Unregistering ResourceManager for type Material
+13:30:16: Unregistering ResourceManager for type GpuProgram
+13:30:16: Unregistering ResourceManager for type Skeleton
+13:30:16: Unregistering ResourceManager for type Mesh
+13:30:16: Error: Header chunk didn't match either endian: Corrupted stream?

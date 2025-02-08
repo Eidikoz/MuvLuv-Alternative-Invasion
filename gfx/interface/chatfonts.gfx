@@ -1,0 +1,18 @@
+bitmapfonts = {
+	bitmapfont = {
+		name = "standard_font"
+		fontfiles = {
+			"gfx/fonts/standard"
+			"gfx/fonts/Arial_14"
+		}
+		color = -1
+	}
+	bitmapfont = {
+		name = "chat_input_font"
+		fontfiles = {
+			"gfx/fonts/standard"
+			"gfx/fonts/Arial_14"
+		}
+		color = -1
+	}
+}

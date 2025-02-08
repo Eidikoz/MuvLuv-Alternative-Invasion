@@ -6,40 +6,36 @@ country_event = {
 	title = "BETAwars.1.name"
 	desc = "BETAwars.1.desc"
 	hidden =yes
+	fire_only_once = yes
 
 	trigger = {
-		has_capitulated = no
-		tag = BET
-		any_neighbor_country = {
-			AND = {
-				NOT = { has_war_with = FROM }
-				NOT = { is_in_faction_with = FROM }
-				NOT = { is_puppet_of = FROM }
-				NOT = { is_subject_of = FROM }
-			}
-		}
+		country_exists = BET
 	}
-	mean_time_to_happen = { days = 5 }
+	# mean_time_to_happen = { days = 5 }
 
 	option = {
 		name = BETAInvasion
 		BET={
-			every_neighbor_country = {
-				if = {
-					limit = {
-						AND = {
-							NOT = { is_in_faction_with = FROM }
-							NOT = { has_war_with = FROM }
-							NOT = { is_puppet_of = FROM }
-							NOT = { is_subject_of = FROM }
-						}
-					}
-				
-					declare_war_on = {
-					type = take_state_focus
+			every_country = {
+				declare_war_on = {
+					type = annex_everything
 					target = FROM
-					}
 				}
+				# if = {
+				# 	limit = {
+				# 		AND = {
+				# 			NOT = { is_in_faction_with = FROM }
+				# 			NOT = { has_war_with = FROM }
+				# 			NOT = { is_puppet_of = FROM }
+				# 			NOT = { is_subject_of = FROM }
+				# 		}
+				# 	}
+				
+				# 	declare_war_on = {
+				# 		type = annex_everything
+				# 		target = FROM
+				# 	}
+				# }
 			}
 		}
 	}

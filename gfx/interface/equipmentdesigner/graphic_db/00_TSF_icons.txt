@@ -1,0 +1,413 @@
+UNI = {
+	MVLV_TSF_chassis_1_light = {
+		pool = {
+			models = {
+				UNI_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_1_heavy = {
+		pool = {
+			models = {
+				UNI_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_light = {
+		pool = {
+			models = {
+				UNI_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_heavy = {
+		pool = {
+			models = {
+				UNI_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_maneuver = {
+		pool = {
+			models = {
+				UNI_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	# MVLV_TSF_chassis_2_heavy_high_mobility = {
+		# pool = {
+			# models = {
+				# UNI_MVLV_tsf_battalion_6_entity
+			# }
+		# }
+	# }
+	# MVLV_TSF_chassis_3_light_normal
+	# MVLV_TSF_chassis_3_heavy_normal
+	# MVLV_TSF_chassis_3_light_high_mobility
+	# MVLV_TSF_chassis_3_heavy_high_mobility
+	# MVLV_TSF_chassis_3_light_normal_stealth
+	# MVLV_TSF_chassis_3_heavy_normal_stealth
+	# MVLV_TSF_chassis_3_light_high_mobility_stealth
+	# MVLV_TSF_chassis_3_heavy_high_mobility_stealth
+	# MVLV_TSF_chassis_4
+}
+
+USA = {
+	MVLV_TSF_chassis_1_light = {
+		pool = {
+			models = {
+				USA_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_1_heavy = {
+		pool = {
+			models = {
+				USA_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_light = {
+		pool = {
+			models = {
+				USA_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_heavy = {
+		pool = {
+			models = {
+				USA_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_maneuver = {
+		pool = {
+			models = {
+				USA_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	# MVLV_TSF_chassis_2_heavy_high_mobility = {
+		# pool = {
+			# models = {
+				# USA_MVLV_tsf_battalion_6_entity
+			# }
+		# }
+	# }
+}
+
+GEU = {
+	MVLV_TSF_chassis_1_light = {
+		pool = {
+			models = {
+				GEU_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_1_heavy = {
+		pool = {
+			models = {
+				GEU_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_light = {
+		pool = {
+			models = {
+				GEU_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_heavy = {
+		pool = {
+			models = {
+				GEU_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_maneuver = {
+		pool = {
+			models = {
+				GEU_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	# MVLV_TSF_chassis_2_heavy_high_mobility = {
+		# pool = {
+			# models = {
+				# GEU_MVLV_tsf_battalion_6_entity
+			# }
+		# }
+	# }
+}
+
+AFR = {
+	MVLV_TSF_chassis_1_light = {
+		pool = {
+			models = {
+				AFR_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_1_heavy = {
+		pool = {
+			models = {
+				AFR_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_light = {
+		pool = {
+			models = {
+				AFR_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_heavy = {
+		pool = {
+			models = {
+				AFR_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_maneuver = {
+		pool = {
+			models = {
+				AFR_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	# MVLV_TSF_chassis_2_heavy_high_mobility = {
+		# pool = {
+			# models = {
+				# AFR_MVLV_tsf_battalion_6_entity
+			# }
+		# }
+	# }
+}
+
+JAP = {
+	MVLV_TSF_chassis_1_light = {
+		pool = {
+			models = {
+				JAP_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_1_heavy = {
+		pool = {
+			models = {
+				JAP_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_light = {
+		pool = {
+			models = {
+				JAP_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_heavy = {
+		pool = {
+			models = {
+				JAP_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_maneuver = {
+		pool = {
+			models = {
+				JAP_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	# MVLV_TSF_chassis_2_heavy_high_mobility = {
+		# pool = {
+			# models = {
+				# JAP_MVLV_tsf_battalion_6_entity
+			# }
+		# }
+	# }
+}
+
+EUR = {
+	MVLV_TSF_chassis_1_light = {
+		pool = {
+			models = {
+				EUR_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_1_heavy = {
+		pool = {
+			models = {
+				EUR_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_light = {
+		pool = {
+			models = {
+				EUR_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_heavy = {
+		pool = {
+			models = {
+				EUR_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_maneuver = {
+		pool = {
+			models = {
+				EUR_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	# MVLV_TSF_chassis_2_heavy_high_mobility = {
+		# pool = {
+			# models = {
+				# EUR_MVLV_tsf_battalion_6_entity
+			# }
+		# }
+	# }
+}
+
+SOV = {
+	MVLV_TSF_chassis_1_light = {
+		pool = {
+			models = {
+				SOV_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_1_heavy = {
+		pool = {
+			models = {
+				SOV_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_light = {
+		pool = {
+			models = {
+				SOV_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_heavy = {
+		pool = {
+			models = {
+				SOV_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_maneuver = {
+		pool = {
+			models = {
+				SOV_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	# MVLV_TSF_chassis_2_heavy_high_mobility = {
+		# pool = {
+			# models = {
+				# SOV_MVLV_tsf_battalion_6_entity
+			# }
+		# }
+	# }
+}
+
+CHI = {
+	MVLV_TSF_chassis_1_light = {
+		pool = {
+			models = {
+				CHI_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_1_heavy = {
+		pool = {
+			models = {
+				CHI_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_light = {
+		pool = {
+			models = {
+				CHI_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_heavy = {
+		pool = {
+			models = {
+				CHI_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_maneuver = {
+		pool = {
+			models = {
+				CHI_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	# MVLV_TSF_chassis_2_heavy_high_mobility = {
+		# pool = {
+			# models = {
+				# CHI_MVLV_tsf_battalion_6_entity
+			# }
+		# }
+	# }
+}
+
+EEA = {
+	MVLV_TSF_chassis_1_light = {
+		pool = {
+			models = {
+				EEA_MVLV_tsf_battalion_1_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_1_heavy = {
+		pool = {
+			models = {
+				EEA_MVLV_tsf_battalion_2_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_light = {
+		pool = {
+			models = {
+				EEA_MVLV_tsf_battalion_3_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_heavy = {
+		pool = {
+			models = {
+				EEA_MVLV_tsf_battalion_4_entity
+			}
+		}
+	}
+	MVLV_TSF_chassis_2_maneuver = {
+		pool = {
+			models = {
+				EEA_MVLV_tsf_battalion_5_entity
+			}
+		}
+	}
+	# MVLV_TSF_chassis_2_heavy_high_mobility = {
+		# pool = {
+			# models = {
+				# EEA_MVLV_tsf_battalion_6_entity
+			# }
+		# }
+	# }
+}

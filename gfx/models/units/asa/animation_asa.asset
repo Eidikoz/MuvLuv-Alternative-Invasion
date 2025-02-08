@@ -1,0 +1,14 @@
+animation = {
+	name = "generic_asa_attack_animation"
+	file = "generic_asa_attack.anim"
+}
+
+animation = {
+	name = "generic_asa_idle_animation"
+	file = "generic_asa_idle.anim"
+}
+
+animation = {
+	name = "generic_asa_moving_animation"
+	file = "generic_asa_moving.anim"
+}

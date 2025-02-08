@@ -1,72 +1,6 @@
 ideas = {
 
 	country = {
-		FocusWest = {
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = aggressive_beta
-			
-			ai_strategy_plan = {
-				attack = {
-					target = 217
-					weight = 3.0
-				}
-				attack = {
-					target = 266
-					weight = 3.0
-				}
-				SOV = {
-					factor = 5.0
-				}
-				AFK = {
-					factor = 5.0
-				}
-				PER = {
-					factor = 5.0
-				}
-				IRQ = {
-					factor = 3.0
-				}
-				TUR = {
-					factor = 3.0
-				}
-				SAU = {
-					factor = 2.0
-				}
-				YEM = {
-					factor = 2.0
-				}
-				OMA = {
-					factor = 2.0
-				}
-				SIK = {
-					factor = -2.0
-				}
-				TIB = {
-					factor = -2.0
-				}
-				RAJ = {
-					factor = -2.0
-				}
-				XSM = {
-					factor = -2.0
-				}
-				CHI = {
-					factor = -2.0
-				}
-				YUN = {
-					factor = -2.0
-				}
-			}
-		}
 		FocusSoviet= {
 			allowed = {
 				always = yes
@@ -83,8 +17,17 @@ ideas = {
 			targeted_modifier = {
 				tag = SOV
 				attack_bonus_against = 0.5
-				defense_bonus_against = 0.5
 				breakthrough_bonus_against = 0.5
+			}
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = -0.5
+				breakthrough_bonus_against = -0.5
+			}
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = -0.5
+				breakthrough_bonus_against = -0.5
 			}
 		}
 		FocusMiddleEast={
@@ -103,43 +46,36 @@ ideas = {
 			targeted_modifier = {
 				tag = AFG
 				attack_bonus_against = 0.5
-				defense_bonus_against = 0.5
 				breakthrough_bonus_against = 0.5
 			}
 			targeted_modifier = {
 				tag = PER
 				attack_bonus_against = 0.5
-				defense_bonus_against = 0.5
 				breakthrough_bonus_against = 0.5
 			}
 			targeted_modifier = {
 				tag = TUR
 				attack_bonus_against = 0.5
-				defense_bonus_against = 0.5
 				breakthrough_bonus_against = 0.5
 			}
 			targeted_modifier = {
 				tag = IRQ
 				attack_bonus_against = 0.5
-				defense_bonus_against = 0.5
 				breakthrough_bonus_against = 0.5
 			}
 			targeted_modifier = {
 				tag = SAU
 				attack_bonus_against = 0.5
-				defense_bonus_against = 0.5
 				breakthrough_bonus_against = 0.5
 			}
 			targeted_modifier = {
 				tag = OMA
 				attack_bonus_against = 0.5
-				defense_bonus_against = 0.5
 				breakthrough_bonus_against = 0.5
 			}
 			targeted_modifier = {
 				tag = YEM
 				attack_bonus_against = 0.5
-				defense_bonus_against = 0.5
 				breakthrough_bonus_against = 0.5
 			}
 		}
@@ -148,7 +84,6 @@ ideas = {
 			allowed = {
 				always = yes
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
@@ -166,7 +101,7 @@ ideas = {
 				ai_focus_aggressive_factor = 2.5
 				political_power_gain = -2
 				experience_gain_army = -100.00
-				MONTHLY_POPULATION  = -3.5
+				weekly_manpower  = 10000
 				land_night_attack = 1.0
 				consumer_goods_factor = 10
 				surrender_limit = 1
@@ -593,7 +528,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				surrender_limit = +100.00
+				surrender_limit = 100.00
 			}
 		}
 	}

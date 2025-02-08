@@ -1,24 +1,24 @@
 on_actions = {
-	on_state_control_changed = {
-		effect = {
-			if = {
-				limit = {
-					FROM = {
-						NOT = { tag = BET }
-					}
-					ROOT = {
-						tag = BET
-					}
-				}
-				FROM.FROM = {
-					if = {
-						limit ={
-							state_population > 0
-						}
-						add_manpower = -99999999
-					}
-				}
-			}
-		}
-	}
+	# on_state_control_changed = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				FROM = {
+	# 					NOT = { tag = BET }
+	# 				}
+	# 				ROOT = {
+	# 					tag = BET
+	# 				}
+	# 			}
+	# 			FROM.FROM = {
+	# 				if = {
+	# 					limit ={
+	# 						state_population > 0
+	# 					}
+	# 					add_manpower = -99999999
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 }

@@ -1,9 +1,5 @@
 ﻿capital = 267
 
-every_owned_state = {
-	add_dynamic_modifier = { modifier = BET_offensive }
-}
-
 if = {
 	limit = {
 		NOT = {
@@ -65,7 +61,7 @@ recruit_character = AFG_mohammad_hashim_khan
 recruit_character = AFG_muhammed_nowroz
 
 
-1939.1.1 = {
+2099.1.1 = {
 
 	add_political_power = 1198
 	add_command_power = 100
@@ -140,7 +136,7 @@ set_popularities = {
 	neutrality = 75
 }
 
-1939.1.1 = {
+2099.1.1 = {
 	set_politics = {
 		ruling_party = neutrality
 		last_election = "1936.1.1"

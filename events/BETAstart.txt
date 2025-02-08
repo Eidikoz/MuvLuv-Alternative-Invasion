@@ -18,7 +18,7 @@ country_event = {
 	}
 
 	immediate = {
-		country_event = { id = BETAstart.2 days = 0 }
+		country_event = { id = BETAstart.2 days = 1 }
 	}
 	option = {
 		name = BETAInvasion
@@ -77,8 +77,6 @@ country_event = {
 	}
 }
 
-
-
 country_event = {
 	id = BETAstart.2
 	title = "BETAstart.2.name"
@@ -89,7 +87,7 @@ country_event = {
 
 	trigger = {
 	}
-	mean_time_to_happen = { days = 7 }
+	mean_time_to_happen = { days = 5 }
 
 	option = {
 		name = BETAInvasion
@@ -102,19 +100,18 @@ country_event = {
 		619 = {
 			add_manpower = -99999999
 		}
-		every_country = {
-            limit = {
-                NOT = { tag = BET } 
-            }
-            add_ideas = no_surrender
-			declare_war_on = {
-				type = annex_everything
-				target = BET
-			}
-        }
+		# every_country = {
+        #     limit = {
+        #         NOT = { tag = BET } 
+        #     }
+        #     add_ideas = no_surrender
+		# 	declare_war_on = {
+		# 		type = annex_everything
+		# 		target = BET
+		# 	}
+        # }
 		hidden_effect = {
 
 		}
 	}
 }
-

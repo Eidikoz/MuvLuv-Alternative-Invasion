@@ -25,7 +25,7 @@ sub_units = {
 		default_morale = 0
 		training_time = 250
 		weight = 0
-		supply_consumption = 0.1
+		supply_consumption = 0.3
 		#偵察、無線機能
 		#recon = 0.5
 		#initiative = 0.1

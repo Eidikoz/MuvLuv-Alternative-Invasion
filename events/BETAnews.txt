@@ -939,7 +939,7 @@ news_event = {
 		name = BETAnews.54.a
 		hidden_effect = {
 			set_technology = {
-				BETAtech = 1
+				soldiertech = 1
 			}
 			load_oob = "JAP_BETAs"
 		}

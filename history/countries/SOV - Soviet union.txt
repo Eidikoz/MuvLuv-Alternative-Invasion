@@ -868,7 +868,7 @@ add_ideas = {
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
 }
 
-1939.1.1 = {
+2099.1.1 = {
 
 	add_political_power = 1198
 	add_command_power = 100
@@ -1789,7 +1789,7 @@ if = {
 }
 
 # 1939 Start #
-1939.1.1 = {
+2099.1.1 = {
 	if = {
 		limit = {
 			has_dlc = "By Blood Alone"

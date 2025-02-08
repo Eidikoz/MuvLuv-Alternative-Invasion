@@ -1,0 +1,227 @@
+duplicate_archetypes = {
+	MVLV_TSF_support_chassis = {
+		archetype = MVLV_TSF_chassis
+		type = { armor artillery }
+		picture = archetype_light_tank_equipment
+		# for_each = {
+			# variant_name = { find_and_replace = { "chassis" "equipment" } }
+		# }
+	}
+}
+
+
+# equipments = {
+
+	# MVLV_TSF_equipment_0 = {
+		# #abbreviation = "MVLV_TSF0"
+		# visual_level = 0
+		# year = 1970
+		# active = no
+		# archetype = MVLV_TSF_chassis
+		# priority = 5
+	# }
+	# MVLV_TSF_equipment_1_light = {
+		# #abbreviation = "MVLV_TSF1_L"
+		# #derived_variant_name = MVLV_TSF_equipment_1_light
+		# visual_level = 1
+		# year = 1976
+		# archetype = MVLV_TSF_chassis
+		# parent = MVLV_TSF_equipment_0
+		# priority = 5
+	# }
+	# MVLV_TSF_equipment_1_heavy = {
+		# #abbreviation = "MVLV_TSF1_H"
+		# #derived_variant_name = MVLV_TSF_equipment_1_heavy
+		# visual_level = 2
+		# year = 1974
+		# archetype = MVLV_TSF_chassis
+		# parent = MVLV_TSF_equipment_0
+		# priority = 5
+	# }
+	# MVLV_TSF_equipment_2_light = {
+		# #abbreviation = "MVLV_TSF2_L"
+		# #derived_variant_name = MVLV_TSF_equipment_2_light
+		# visual_level = 3
+		# year = 1986
+		# parent = MVLV_TSF_equipment_1_light
+		# archetype = MVLV_TSF_chassis
+		# priority = 5
+	# }
+	# MVLV_TSF_equipment_2_heavy = {
+		# #abbreviation = "MVLV_TSF2_H"
+		# #derived_variant_name = MVLV_TSF_equipment_2_heavy
+		# visual_level = 4
+		# year = 1984
+		# parent = MVLV_TSF_equipment_1_heavy
+		# archetype = MVLV_TSF_chassis
+		# priority = 5
+	# }
+	# MVLV_TSF_equipment_2_maneuver = {
+		# #abbreviation = "MVLV_TSF2_M"
+		# #derived_variant_name = MVLV_TSF_equipment_2_maneuver
+		# visual_level = 5
+		# year = 1992
+		# parent = MVLV_TSF_equipment_1_heavy
+		# archetype = MVLV_TSF_chassis
+		# priority = 5
+	# }
+	# MVLV_TSF_equipment_3_light = {
+		# #abbreviation = "MVLV_TSF3_L"
+		# #derived_variant_name = MVLV_TSF_equipment_3_light
+		# visual_level = 6
+		# year = 2002
+		# parent = MVLV_TSF_equipment_2_light
+		# archetype = MVLV_TSF_chassis
+		# priority = 5
+	# }
+	# MVLV_TSF_equipment_3_heavy = {
+		# #abbreviation = "MVLV_TSF3_H"
+		# #derived_variant_name = MVLV_TSF_equipment_3_heavy
+		# visual_level = 7
+		# year = 2001
+		# parent = MVLV_TSF_equipment_2_heavy
+		# archetype = MVLV_TSF_chassis
+		# priority = 5
+	# }
+	# MVLV_TSF_equipment_3_maneuver = {
+		# #abbreviation = "MVLV_TSF3_M"
+		# #derived_variant_name = MVLV_TSF_equipment_3_maneuver
+		# visual_level = 8
+		# year = 1999
+		# parent = MVLV_TSF_equipment_2_maneuver
+		# archetype = MVLV_TSF_chassis
+		# priority = 5
+		# module_slots = inherit
+	# }
+	# MVLV_TSF_equipment_4 = {
+		# #abbreviation = "MVLV_TSF4"
+		# #derived_variant_name = MVLV_TSF_equipment_4
+		# visual_level = 15
+		# year = 2010
+		# parent = MVLV_TSF_equipment_3_heavy
+		# archetype = MVLV_TSF_chassis
+		# priority = 5
+	# }
+
+	# MVLV_TSF_support_equipment_0 = {
+		# #abbreviation = "MVLV_TSF0"
+		# visual_level = 0
+		# year = 1970
+		# active = no
+		# archetype = MVLV_TSF_support_chassis
+		# priority = 5
+		# can_convert_from = { 
+			# MVLV_TSF_equipment_0
+		# }
+	# }
+	# MVLV_TSF_support_equipment_1_light = {
+		# #abbreviation = "MVLV_TSF1_L"
+		# #derived_variant_name = MVLV_TSF_equipment_1_light
+		# visual_level = 1
+		# year = 1976
+		# archetype = MVLV_TSF_support_chassis
+		# parent = MVLV_TSF_support_equipment_0
+		# priority = 5
+		# can_convert_from = { 
+			# MVLV_TSF_equipment_1_light
+		# }
+	# }
+	# MVLV_TSF_support_equipment_1_heavy = {
+		# #abbreviation = "MVLV_TSF1_H"
+		# #derived_variant_name = MVLV_TSF_equipment_1_heavy
+		# visual_level = 2
+		# year = 1974
+		# archetype = MVLV_TSF_support_chassis
+		# parent = MVLV_TSF_support_equipment_0
+		# priority = 5
+		# can_convert_from = { 
+			# MVLV_TSF_equipment_1_heavy
+		# }
+	# }
+	# MVLV_TSF_support_equipment_2_light = {
+		# #abbreviation = "MVLV_TSF2_L"
+		# #derived_variant_name = MVLV_TSF_equipment_2_light
+		# visual_level = 3
+		# year = 1986
+		# parent = MVLV_TSF_support_equipment_1_light
+		# archetype = MVLV_TSF_support_chassis
+		# priority = 5
+		# can_convert_from = { 
+			# MVLV_TSF_equipment_2_light
+		# }
+	# }
+	# MVLV_TSF_support_equipment_2_heavy = {
+		# #abbreviation = "MVLV_TSF2_H"
+		# #derived_variant_name = MVLV_TSF_equipment_2_heavy
+		# visual_level = 4
+		# year = 1984
+		# parent = MVLV_TSF_support_equipment_1_heavy
+		# archetype = MVLV_TSF_support_chassis
+		# priority = 5
+		# can_convert_from = { 
+			# MVLV_TSF_equipment_2_heavy
+		# }
+	# }
+	# MVLV_TSF_support_equipment_2_maneuver = {
+		# #abbreviation = "MVLV_TSF2_M"
+		# #derived_variant_name = MVLV_TSF_equipment_2_maneuver
+		# visual_level = 5
+		# year = 1992
+		# parent = MVLV_TSF_support_equipment_1_heavy
+		# archetype = MVLV_TSF_support_chassis
+		# priority = 5
+		# can_convert_from = { 
+			# MVLV_TSF_equipment_2_maneuver
+		# }
+	# }
+	# MVLV_TSF_support_equipment_3_light = {
+		# #abbreviation = "MVLV_TSF3_L"
+		# #derived_variant_name = MVLV_TSF_equipment_3_light
+		# visual_level = 6
+		# year = 2002
+		# parent = MVLV_TSF_support_equipment_2_light
+		# archetype = MVLV_TSF_support_chassis
+		# priority = 5
+		# can_convert_from = { 
+			# MVLV_TSF_equipment_3_light
+		# }
+	# }
+	# MVLV_TSF_support_equipment_3_heavy = {
+		# #abbreviation = "MVLV_TSF3_H"
+		# #derived_variant_name = MVLV_TSF_equipment_3_heavy
+		# visual_level = 7
+		# year = 2001
+		# parent = MVLV_TSF_support_equipment_2_heavy
+		# archetype = MVLV_TSF_support_chassis
+		# priority = 5
+		# can_convert_from = { 
+			# MVLV_TSF_equipment_3_heavy
+		# }
+	# }
+	# MVLV_TSF_support_equipment_3_maneuver = {
+		# #abbreviation = "MVLV_TSF3_M"
+		# #derived_variant_name = MVLV_TSF_equipment_3_maneuver
+		# visual_level = 8
+		# year = 1999
+		# parent = MVLV_TSF_support_equipment_2_maneuver
+		# archetype = MVLV_TSF_support_chassis
+		# priority = 5
+		# module_slots = inherit
+		# can_convert_from = { 
+			# MVLV_TSF_equipment_3_maneuver
+		# }
+	# }
+	# MVLV_TSF_support_equipment_4 = {
+		# #abbreviation = "MVLV_TSF4"
+		# #derived_variant_name = MVLV_TSF_equipment_4
+		# visual_level = 15
+		# year = 2010
+		# parent = MVLV_TSF_support_equipment_3_heavy
+		# archetype = MVLV_TSF_support_chassis
+		# priority = 5
+		# can_convert_from = { 
+			# MVLV_TSF_equipment_4
+		# }
+	# }
+# }
+

@@ -46,7 +46,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				country_event = { id = doomsday.25 }
+				country_event = { id = unsecurity.25 }
 			}
 			custom_effect_tooltip = UNI_finance
 		}
@@ -63,7 +63,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				country_event = { id = doomsday.25 }
+				country_event = { id = unsecurity.25 }
 			}
 			custom_effect_tooltip = UNI_finance
 		}
@@ -80,7 +80,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				country_event = { id = doomsday.25 }
+				country_event = { id = unsecurity.25 }
 			}
 			custom_effect_tooltip = UNI_finance
 		}
@@ -328,7 +328,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = { id = doomsday.13 }
+			country_event = { id = unsecurity.13 }
 		}
 	}
 	
@@ -424,7 +424,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			ROOT = { country_event = { id = doomsday.3 } }
+			ROOT = { country_event = { id = unsecurity.3 } }
 		}
 	}
 	focus = {
@@ -438,7 +438,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			ROOT = { country_event = { id = doomsday.4 } }
+			ROOT = { country_event = { id = unsecurity.4 } }
 		}
 	}
 	focus = {
@@ -497,7 +497,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			country_event = { id = doomsday.14 }
+			country_event = { id = unsecurity.14 }
 		}
 	}
 	
@@ -528,7 +528,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect ={
-				country_event = { id = doomsday.24 }
+				country_event = { id = unsecurity.24 }
 			}
 			custom_effect_tooltip = UNI_black_market
 		}
@@ -547,7 +547,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect ={
-				country_event = { id = doomsday.24 }
+				country_event = { id = unsecurity.24 }
 			}
 			custom_effect_tooltip = UNI_black_market
 		}
@@ -567,8 +567,8 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				country_event = { id = doomsday.24 }
-				country_event = { id = doomsday.17 }
+				country_event = { id = unsecurity.24 }
+				country_event = { id = unsecurity.17 }
 			}
 			custom_effect_tooltip = UNI_soeldner
 		}
@@ -587,7 +587,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect ={
-				country_event = { id = doomsday.24 }
+				country_event = { id = unsecurity.24 }
 			}
 			custom_effect_tooltip = UNI_black_market
 		}
@@ -605,7 +605,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = { id = doomsday.24 }
+			country_event = { id = unsecurity.24 }
 			add_political_power = 300
 			army_experience = 10
 			create_corps_commander = {
@@ -639,7 +639,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = { id = doomsday.24 }
+			country_event = { id = unsecurity.24 }
 			add_political_power = 300
 			create_corps_commander = {
 				name = "Pietro De Luca"
@@ -671,7 +671,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = { id = doomsday.24 }
+			country_event = { id = unsecurity.24 }
 			add_political_power = 300
 			create_corps_commander = {
 				name = "Taro Chiba"
@@ -730,8 +730,8 @@ focus_tree = {
 				Pirate
 			}
 			hidden_effect = {
-				country_event = { id = doomsday.14 }
-				country_event = { id = doomsday.14 }
+				country_event = { id = unsecurity.14 }
+				country_event = { id = unsecurity.14 }
 			}
 		}
 	}
@@ -1141,7 +1141,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				country_event = { id = doomsday.20 }
+				country_event = { id = unsecurity.20 }
 			}
 			custom_effect_tooltip = UNI_norms
 		}
@@ -1220,7 +1220,7 @@ focus_tree = {
 				No_way_back
 			}
 			hidden_effect = {
-				country_event = { id = doomsday.28 }
+				country_event = { id = unsecurity.28 }
 			}
 		}
 	}

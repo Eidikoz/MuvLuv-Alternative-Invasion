@@ -36,7 +36,6 @@ country_event = {
 			var = BETA_fight_england
 			value = 0
 		}
-		ENG = { set_country_flag = BETA_find }	
 	}
 }
 country_event = {
@@ -67,7 +66,6 @@ country_event = {
 			var = BETA_fight_irland
 			value = 0
 		}
-		IRE = { set_country_flag = BETA_find }	
 	}
 }
 
@@ -108,7 +106,6 @@ country_event = {
 			var = BETA_fight_usa
 			value = 0
 		}
-		USA = { set_country_flag = BETA_find }
 	}
 }
 country_event = {
@@ -116,7 +113,7 @@ country_event = {
 	title = "BETAlanding.4.name"
 	desc = "BETAlanding.4.desc"
 	hidden =yes
-	fire_only_once = yes
+	fire_only_once = no
 
 	trigger = {
 		AND = {
@@ -142,7 +139,6 @@ country_event = {
 			var = BETA_fight_japan
 			value = 0
 		}
-		JAP = { set_country_flag = BETA_find }	
 	}
 }
 
@@ -177,7 +173,6 @@ country_event = {
 			var = BETA_fight_australia
 			value = 0
 		}
-		AST = { set_country_flag = BETA_find }	
 	}
 }
 
@@ -212,7 +207,6 @@ country_event = {
 			var = BETA_fight_nzl
 			value = 0
 		}
-		NZL = { set_country_flag = BETA_find }	
 	}
 }
 
@@ -247,7 +241,6 @@ country_event = {
 			var = BETA_fight_phi
 			value = 0
 		}
-		PHI = { set_country_flag = BETA_find }
 	}
 }
 
@@ -282,7 +275,6 @@ country_event = {
 			var = BETA_fight_bra
 			value = 0
 		}
-		BRA = { set_country_flag = BETA_find }	
 	}
 }
 
@@ -317,7 +309,6 @@ country_event = {
 			var = BETA_fight_CUB
 			value = 0
 		}
-		CUB = { set_country_flag = BETA_find }	
 	}
 }
 
@@ -349,7 +340,6 @@ country_event = {
 			var = BETA_fight_DOM
 			value = 0
 		}
-		DOM = { set_country_flag = BETA_find }	
 	}
 }
 
@@ -381,7 +371,6 @@ country_event = {
 			var = BETA_fight_ICE
 			value = 0
 		}
-		ICE = { set_country_flag = BETA_find }	
 	}
 }
 

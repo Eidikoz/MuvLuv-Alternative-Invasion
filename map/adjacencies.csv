@@ -190,4 +190,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13196;13314;sea;9092;-1;-1;-1;-1;;Northern Quebec
 1421;10184;sea;2899;-1;-1;-1;-1;;Sulu-Mindanao
 5864;5838;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto Strait
+7855;13254;sea;8662;-1;-1;-1;-1;;Soviet America North Pole
+12060;10011;sea;8662;-1;-1;-1;-1;;South Korea to Japan
+5745;4002;;-1;-1;-1;-1;-1;THAI_CANAL;Thai Canal
 -1;-1;;-1;-1;-1;-1;-1;-1 

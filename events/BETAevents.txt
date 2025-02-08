@@ -5,281 +5,304 @@ country_event = {
 	id = BETAevents.1
 	title = "BETAevents.1.name"
 	desc = "BETAevents.1.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
-	
-	trigger = { 
-		AND = {
-			date > 1937.04.20
-			GER = { 
-				has_government = fascism 
-				has_country_leader = {
-					name = "Adolf Hitler"
-					ruling_only = yes
-				}
-			}
-			ITA = { 
-				has_government = fascism 
-				has_country_leader = {
-					name = "Benito Mussolini"
-					ruling_only = yes
-				}
-			}
-		}
-	}
-	option = {
-		hidden_effect = {
-				country_event = { days = 1 id = BETAnews.1 }
-		}
-	}
-}
-
-country_event = {
-	id = BETAevents.2
-	title = "BETAevents.2.name"
-	desc = "BETAevents.2.desc"
-	picture = GFX_event_mussolini
-	fire_only_once = yes
-	hidden = yes
-	
-
-	trigger = {
-		AND = {
-			date > 1938.1.1 
-			ITA = { 
-				has_government = fascism 
-				has_country_leader = {
-					name = "Benito Mussolini"
-					ruling_only = yes
-				}
-			}
-		}
-	}
-	mean_time_to_happen = { days = 100 }
-
-	option = {
-		hidden_effect = {
-				country_event = { days = 1 id = BETAnews.2 }
-		}
-	}
-}
-
-country_event = {
-	id = BETAevents.3
-	title = "BETAevents.3.name"
-	desc = "BETAevents.3.desc"
-	picture = GFX_event_goering
-	fire_only_once = yes
-	major = yes
-	hidden = yes
-	
-	trigger = {
-		AND ={
-			tag = GER
-			GER = { 
-				has_government = fascism 
-			}
-			BET = { exists = yes }
-		}
-	}
-	mean_time_to_happen = { days = 500 }
-	
-	option = {
-		hidden_effect = {
-			country_event = { id = BETAevents.4 days=100}
-			country_event = { days = 1 id = BETAnews.3 }
-		}
-	}
-}
-
-country_event = {
-	id = BETAevents.4
-	title = "BETAevents.4.name"
-	desc = "BETAevents.4.desc"
-	picture = GFX_country_event_german_volunteers
-	fire_only_once = yes
-	is_triggered_only = yes
-	hidden = yes
-	
-	trigger = {
-		AND ={
-			tag = GER
-			GER = { 
-				has_government = fascism 
-			}
-		}
-	}
-	
-	option = {
-		hidden_effect = {
-		country_event = { days = 1 id = BETAnews.4 }
-			BET = {
-				if = {
-					limit = {
-						AND = {
-							NOT = { has_war_with = ENG }
-						}
-					}
-				}
-			BET={
-				load_oob = "BET_germany"
-				declare_war_on = {
-					type = take_state_focus
-					target = GER	
-				}
-			}
-			}
-		}
-	}
-	
-}
-
-country_event = {
-    id = BETAevents.5
-    title = "BETAevents.5.name"
-    desc = "BETAevents.5.desc"
-    picture = GFX_country_event_japanese_parade
-    fire_only_once = yes
-    hidden = yes
-    is_triggered_only = yes
-
-
-    immediate = {   
-		country_event = { 
-			random_days = 300
-			id = BETAnews.5 
-		}
-    }
-
-}
-country_event = {
-	id = BETAevents.6
-	title = "BETAevents.6.name"
-	desc = "BETAevents.6.desc"
-	picture = GFX_country_event_japanese_army_parade
-	fire_only_once = yes
-	is_triggered_only = yes
-	hidden = yes
-
-	trigger = {
-		tag =JAP
-	}
-	
-	option ={
-		hidden_effect = {
-				country_event = { days = 1 id = BETAnews.6 }
-		}	
-	}
-}
-
-country_event = {
-	id = BETAevents.7
-	title = "BETAevents.7.name"
-	desc = "BETAevents.7.desc"
-	picture = GFX_country_event_japanese_army_parade
-	fire_only_once = yes
-	is_triggered_only = yes
-	hidden = yes
-
-	trigger = {
-	}
-	
-	option ={
-		hidden_effect = {
-				country_event = { days = 1 id = BETAnews.8 }
-		}	
-	}
-	option ={
-		hidden_effect = {
-			JAP = {
-				country_event = { days = 1 id = BETAnews.54 }
-			}
-		}	
-	}
-}
-
-country_event = {
-	id = BETAevents.9
-	title = "BETAevents.9.name"
-	desc = "BETAevents.9.desc"
-	picture = GFX_country_event_indian_parade
-	fire_only_once = yes
-	hidden = yes
-	
-	trigger = {
-		RAJ ={ has_war_with = BET}
-		has_global_flag = BET_sinkiang
-	}
-	
-	mean_time_to_happen = { days = 30 }
-	option = {
-		hidden_effect = {
-			country_event = { days = 1 id = BETAnews.9}
-			RAJ ={
-				load_oob = "RAJ_Miliz"	
-			}
-		}
-	}
-}
-
-country_event = {
-	id = BETAevents.10
-	title = "BETAevents.10.name"
-	desc = "BETAevents.10.desc"
-	picture = GFX_event_churchill
-	fire_only_once = yes
-	major = yes
-	hidden = yes
-	
-	trigger = {
-		date > 1938.1.1	
-		GER = { 
-			has_government = democratic 
-		}		
-	}
-	
-	mean_time_to_happen = { days = 300 }
-	
-	option = {
-		hidden_effect = {
-			country_event = { days = 1 id = BETAnews.10}
-		}
-	}
-}
-
-country_event = {
-	id = BETAevents.12
-	title = "BETAevents.12.name"
-	desc = "BETAevents.12.desc"
 	picture = GFX_country_event_stalin_meeting
 	fire_only_once = yes
-	hidden = yes
-	
+
 	trigger = {
-		AND = {
-			SOV ={ has_war_with = BET}
-			SOV ={
-				has_government = communism
-				has_country_leader = {
-					name = "Joseph Stalin"
-					ruling_only = yes
-				}
+		195 = {
+			is_controlled_by = BET
+		}
+	}
+	option = {
+		hidden_effect = {
+			BET = {
+				remove_ideas = FocusSoviet
+				remove_ideas = FocusMiddleEast
 			}
 		}
 	}
-	
-	mean_time_to_happen = { days = 1 }
-	option = {
-		hidden_effect = {
-			country_event = { days = 1 id = BETAnews.12}
-			SOV={
-				add_political_power = 120
-				add_war_support = 0.1
-				add_manpower = 100000
-			}
-	}	}		
 }
+
+
+# country_event = {
+# 	id = BETAevents.1
+# 	title = "BETAevents.1.name"
+# 	desc = "BETAevents.1.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
+	
+# 	trigger = { 
+# 		AND = {
+# 			date > 1937.04.20
+# 			GER = { 
+# 				has_government = fascism 
+# 				has_country_leader = {
+# 					name = "Adolf Hitler"
+# 					ruling_only = yes
+# 				}
+# 			}
+# 			ITA = { 
+# 				has_government = fascism 
+# 				has_country_leader = {
+# 					name = "Benito Mussolini"
+# 					ruling_only = yes
+# 				}
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		hidden_effect = {
+# 				country_event = { days = 1 id = BETAnews.1 }
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAevents.2
+# 	title = "BETAevents.2.name"
+# 	desc = "BETAevents.2.desc"
+# 	picture = GFX_event_mussolini
+# 	fire_only_once = yes
+# 	hidden = yes
+	
+
+# 	trigger = {
+# 		AND = {
+# 			date > 1938.1.1 
+# 			ITA = { 
+# 				has_government = fascism 
+# 				has_country_leader = {
+# 					name = "Benito Mussolini"
+# 					ruling_only = yes
+# 				}
+# 			}
+# 		}
+# 	}
+# 	mean_time_to_happen = { days = 100 }
+
+# 	option = {
+# 		hidden_effect = {
+# 				country_event = { days = 1 id = BETAnews.2 }
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAevents.3
+# 	title = "BETAevents.3.name"
+# 	desc = "BETAevents.3.desc"
+# 	picture = GFX_event_goering
+# 	fire_only_once = yes
+# 	major = yes
+# 	hidden = yes
+	
+# 	trigger = {
+# 		AND ={
+# 			tag = GER
+# 			GER = { 
+# 				has_government = fascism 
+# 			}
+# 			BET = { exists = yes }
+# 		}
+# 	}
+# 	mean_time_to_happen = { days = 500 }
+	
+# 	option = {
+# 		hidden_effect = {
+# 			country_event = { id = BETAevents.4 days=100}
+# 			country_event = { days = 1 id = BETAnews.3 }
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAevents.4
+# 	title = "BETAevents.4.name"
+# 	desc = "BETAevents.4.desc"
+# 	picture = GFX_country_event_german_volunteers
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	hidden = yes
+	
+# 	trigger = {
+# 		AND ={
+# 			tag = GER
+# 			GER = { 
+# 				has_government = fascism 
+# 			}
+# 		}
+# 	}
+	
+# 	option = {
+# 		hidden_effect = {
+# 		country_event = { days = 1 id = BETAnews.4 }
+# 			BET = {
+# 				if = {
+# 					limit = {
+# 						AND = {
+# 							NOT = { has_war_with = ENG }
+# 						}
+# 					}
+# 				}
+# 			BET={
+# 				load_oob = "BET_germany"
+# 				declare_war_on = {
+# 					type = take_state_focus
+# 					target = GER	
+# 				}
+# 			}
+# 			}
+# 		}
+# 	}
+	
+# }
+
+# country_event = {
+#     id = BETAevents.5
+#     title = "BETAevents.5.name"
+#     desc = "BETAevents.5.desc"
+#     picture = GFX_country_event_japanese_parade
+#     fire_only_once = yes
+#     hidden = yes
+#     is_triggered_only = yes
+
+
+#     immediate = {   
+# 		country_event = { 
+# 			random_days = 300
+# 			id = BETAnews.5 
+# 		}
+#     }
+
+# }
+# country_event = {
+# 	id = BETAevents.6
+# 	title = "BETAevents.6.name"
+# 	desc = "BETAevents.6.desc"
+# 	picture = GFX_country_event_japanese_army_parade
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	hidden = yes
+
+# 	trigger = {
+# 		tag =JAP
+# 	}
+	
+# 	option ={
+# 		hidden_effect = {
+# 				country_event = { days = 1 id = BETAnews.6 }
+# 		}	
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAevents.7
+# 	title = "BETAevents.7.name"
+# 	desc = "BETAevents.7.desc"
+# 	picture = GFX_country_event_japanese_army_parade
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	hidden = yes
+
+# 	trigger = {
+# 	}
+	
+# 	option ={
+# 		hidden_effect = {
+# 				country_event = { days = 1 id = BETAnews.8 }
+# 		}	
+# 	}
+# 	option ={
+# 		hidden_effect = {
+# 			JAP = {
+# 				country_event = { days = 1 id = BETAnews.54 }
+# 			}
+# 		}	
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAevents.9
+# 	title = "BETAevents.9.name"
+# 	desc = "BETAevents.9.desc"
+# 	picture = GFX_country_event_indian_parade
+# 	fire_only_once = yes
+# 	hidden = yes
+	
+# 	trigger = {
+# 		RAJ ={ has_war_with = BET}
+# 		has_global_flag = BET_sinkiang
+# 	}
+	
+# 	mean_time_to_happen = { days = 30 }
+# 	option = {
+# 		hidden_effect = {
+# 			country_event = { days = 1 id = BETAnews.9}
+# 			RAJ ={
+# 				load_oob = "RAJ_Miliz"	
+# 			}
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAevents.10
+# 	title = "BETAevents.10.name"
+# 	desc = "BETAevents.10.desc"
+# 	picture = GFX_event_churchill
+# 	fire_only_once = yes
+# 	major = yes
+# 	hidden = yes
+	
+# 	trigger = {
+# 		date > 1938.1.1	
+# 		GER = { 
+# 			has_government = democratic 
+# 		}		
+# 	}
+	
+# 	mean_time_to_happen = { days = 300 }
+	
+# 	option = {
+# 		hidden_effect = {
+# 			country_event = { days = 1 id = BETAnews.10}
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAevents.12
+# 	title = "BETAevents.12.name"
+# 	desc = "BETAevents.12.desc"
+# 	picture = GFX_country_event_stalin_meeting
+# 	fire_only_once = yes
+# 	hidden = yes
+	
+# 	trigger = {
+# 		AND = {
+# 			SOV ={ has_war_with = BET}
+# 			SOV ={
+# 				has_government = communism
+# 				has_country_leader = {
+# 					name = "Joseph Stalin"
+# 					ruling_only = yes
+# 				}
+# 			}
+# 		}
+# 	}
+	
+# 	mean_time_to_happen = { days = 1 }
+# 	option = {
+# 		hidden_effect = {
+# 			country_event = { days = 1 id = BETAnews.12}
+# 			SOV={
+# 				add_political_power = 120
+# 				add_war_support = 0.1
+# 				add_manpower = 100000
+# 			}
+# 	}	}		
+# }
 
 country_event = {
 	id = BETAevents.13
@@ -293,866 +316,872 @@ country_event = {
 	trigger = {
 	}
 	immediate = {
-		ENG = {
-			create_faction = "Anti-BETA Coalition"
+		USA = {
+			create_faction = "United Nation Security"
+			add_to_Faction = ENG
+			add_to_Faction = CAN
+			add_to_Faction = AUS
+			add_to_Faction = SAF
+			add_to_Faction = NZL
+			add_to_Faction = RAJ
 		}
 		BET = {
 			add_ideas = {
 				BETA_nation1
 			}
 		}
-		set_global_flag = doomsday_BETA
+		set_global_flag = unsecurity_BETA
 	}
 }
 
 
-country_event = {
-	id = BETAevents.14
-	title = "BETAevents.14.name"
-	desc = "BETAevents.14.desc"
-	picture = GFX_country_event_stalin_meeting
-	hidden = yes
+# country_event = {
+# 	id = BETAevents.14
+# 	title = "BETAevents.14.name"
+# 	desc = "BETAevents.14.desc"
+# 	picture = GFX_country_event_stalin_meeting
+# 	hidden = yes
 	
-	trigger = {
-		BET = { exists = yes }
-		UNI = { exists = yes }
-	}
-	mean_time_to_happen = { days = 100 }
-	immediate = {
-		BET = {
-			send_equipment = {
-				target = UNI
-				type = amphibious_mechanized_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = anti_tank_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = anti_air_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = armored_car_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = artillery_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = rocket_artillery_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = convoy
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = floating_harbor_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = guided_missile_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = infantry_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = mechanized_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = motorized_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = small_plane_airframe
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = cv_small_plane_airframe
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = medium_plane_airframe
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = large_plane_airframe
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = transport_plane_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = railway_gun_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = support_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = light_tank_chassis
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = medium_tank_chassis
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = heavy_tank_chassis
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = modern_tank_chassis
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = super_heavy_tank_chassis
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = amphibious_tank_chassis
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = train_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = jet_strat_bomber_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = jet_tac_bomber_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = rocket_interceptor_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = jet_fighter_equipment
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = small_plane_cas_airframe
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = small_plane_naval_bomber_airframe
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = cv_small_plane_naval_bomber_airframe
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = small_plane_suicide_airframe
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = cv_small_plane_suicide_airframe
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = medium_plane_scout_plane_airframe
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = large_plane_maritime_patrol_plane_airframe
-				amount = 10000
-			}
-			send_equipment = {
-				target = UNI
-				type = medium_plane_fighter_airframe
-				amount = 10000
-			}
-		}
-	}
+# 	trigger = {
+# 		BET = { exists = yes }
+# 		UNI = { exists = yes }
+# 	}
+# 	mean_time_to_happen = { days = 100 }
+# 	immediate = {
+# 		BET = {
+# 			send_equipment = {
+# 				target = UNI
+# 				type = amphibious_mechanized_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = anti_tank_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = anti_air_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = armored_car_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = artillery_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = rocket_artillery_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = convoy
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = floating_harbor_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = guided_missile_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = infantry_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = mechanized_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = motorized_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = small_plane_airframe
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = cv_small_plane_airframe
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = medium_plane_airframe
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = large_plane_airframe
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = transport_plane_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = railway_gun_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = support_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = light_tank_chassis
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = medium_tank_chassis
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = heavy_tank_chassis
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = modern_tank_chassis
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = super_heavy_tank_chassis
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = amphibious_tank_chassis
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = train_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = jet_strat_bomber_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = jet_tac_bomber_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = rocket_interceptor_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = jet_fighter_equipment
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = small_plane_cas_airframe
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = small_plane_naval_bomber_airframe
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = cv_small_plane_naval_bomber_airframe
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = small_plane_suicide_airframe
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = cv_small_plane_suicide_airframe
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = medium_plane_scout_plane_airframe
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = large_plane_maritime_patrol_plane_airframe
+# 				amount = 10000
+# 			}
+# 			send_equipment = {
+# 				target = UNI
+# 				type = medium_plane_fighter_airframe
+# 				amount = 10000
+# 			}
+# 		}
+# 	}
 		
-}
+# }
 
-country_event = {
-	id = BETAevents.15
-	title = "BETAevents.15.name"
-	desc = "BETAevents.15.desc"
-	picture = GFX_country_event_indian_parade
-	fire_only_once = yes
-	hidden = yes
+# country_event = {
+# 	id = BETAevents.15
+# 	title = "BETAevents.15.name"
+# 	desc = "BETAevents.15.desc"
+# 	picture = GFX_country_event_indian_parade
+# 	fire_only_once = yes
+# 	hidden = yes
 	
-	trigger = {
-		RAJ ={ has_war_with = BET}
-		NOT = { has_global_flag = BET_sinkiang }
-	}
+# 	trigger = {
+# 		RAJ ={ has_war_with = BET}
+# 		NOT = { has_global_flag = BET_sinkiang }
+# 	}
 	
-	option = {
-		hidden_effect = {
-			country_event = { days = 1 id = BETAnews.58}
-			RAJ ={
-				load_oob = "RAJ_Miliz"	
-			}
-		}
-	}
-}
+# 	option = {
+# 		hidden_effect = {
+# 			country_event = { days = 1 id = BETAnews.58}
+# 			RAJ ={
+# 				load_oob = "RAJ_Miliz"	
+# 			}
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = BETAevents.16
-	title = "BETAevents.16.name"
-	desc = "BETAevents.16.desc"
-	picture = GFX_country_event_indian_parade
-	hidden = yes
+# country_event = {
+# 	id = BETAevents.16
+# 	title = "BETAevents.16.name"
+# 	desc = "BETAevents.16.desc"
+# 	picture = GFX_country_event_indian_parade
+# 	hidden = yes
 	
-	trigger = {
-		BET ={ is_in_faction = yes }
-	}
+# 	trigger = {
+# 		BET ={ is_in_faction = yes }
+# 	}
 	
-	mean_time_to_happen = { days = 2 }
+# 	mean_time_to_happen = { days = 2 }
 	
-	option = {
-		BET = { leave_faction = yes }
-	}
-}
+# 	option = {
+# 		BET = { leave_faction = yes }
+# 	}
+# }
 
-country_event = {
-	id = BETAevents.17
-	title = "BETAevents.17.name"
-	desc = "BETAevents.17.desc"
-	picture = GFX_country_event_indian_parade
-	hidden = yes
+# country_event = {
+# 	id = BETAevents.17
+# 	title = "BETAevents.17.name"
+# 	desc = "BETAevents.17.desc"
+# 	picture = GFX_country_event_indian_parade
+# 	hidden = yes
 	
-	trigger = {
-		BET ={amount_research_slots > 0}
-	}
+# 	trigger = {
+# 		BET ={amount_research_slots > 0}
+# 	}
 	
-	mean_time_to_happen = { days = 2 }
+# 	mean_time_to_happen = { days = 2 }
 	
-	option = {
-		BET = { add_research_slot = 0 }
-	}
-}
+# 	option = {
+# 		BET = { add_research_slot = 0 }
+# 	}
+# }
 
-country_event = {
-	id = BETAevents.18
-	title = "BETAevents.18.name"
-	desc = "BETAevents.18.desc"
-	picture = GFX_country_event_indian_parade
-	hidden = yes
-	fire_only_once = yes
+# country_event = {
+# 	id = BETAevents.18
+# 	title = "BETAevents.18.name"
+# 	desc = "BETAevents.18.desc"
+# 	picture = GFX_country_event_indian_parade
+# 	hidden = yes
+# 	fire_only_once = yes
 	
-	trigger = {
-		has_game_rule = {
-			rule = BET_mutation
-			option = MUTATION
-		}
-		date > 1936.06.01
-	}
+# 	trigger = {
+# 		has_game_rule = {
+# 			rule = BET_mutation
+# 			option = MUTATION
+# 		}
+# 		date > 1936.06.01
+# 	}
 	
-	mean_time_to_happen = { days = 2 }
+# 	mean_time_to_happen = { days = 2 }
 	
-	option = {
-		country_event = { days = 1 id = BETAnews.60}
-		country_event = { days = 1 id = BETAevents.19}
-		country_event = { days = 90 id = BETAevents.20}
-		BET = {
-			set_technology = { BETAtech2 = 1}
-			load_oob = "BET_mutation"
-		}
-		set_division_template_lock = {
-			division_template = "Mutated Horde"
-			is_locked = yes
-		}
-	}
-}
+# 	option = {
+# 		country_event = { days = 1 id = BETAnews.60}
+# 		country_event = { days = 1 id = BETAevents.19}
+# 		country_event = { days = 90 id = BETAevents.20}
+# 		BET = {
+# 			set_technology = { soldiertech2 = 1}
+# 			load_oob = "BET_mutation"
+# 		}
+# 		set_division_template_lock = {
+# 			division_template = "Mutated Horde"
+# 			is_locked = yes
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = BETAevents.19
-	title = "BETAevents.19.name"
-	desc = "BETAevents.19.desc"
-	picture = GFX_country_event_indian_parade
-	hidden = yes
-	fire_only_once = yes
-	is_triggered_only = yes
+# country_event = {
+# 	id = BETAevents.19
+# 	title = "BETAevents.19.name"
+# 	desc = "BETAevents.19.desc"
+# 	picture = GFX_country_event_indian_parade
+# 	hidden = yes
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
 	
-	mean_time_to_happen = { days = 2 }
+# 	mean_time_to_happen = { days = 2 }
 	
-	option = {
-		trigger = {
-			AND = {
-				has_game_rule = {
-					rule = BET_spawn
-					option = NORMAL
-				}
-				has_global_flag = BET_sinkiang
-			}
-		}
-		BET={
-			load_oob = "BET_mutation_india"
-		}
-	}
-	option = {
-		trigger = {
-			AND = {
-				has_game_rule = {
-					rule = BET_spawn
-					option = RANDOM
-				}
-				has_global_flag = BET_turkey
-			}
-		}
-		BET={
-			load_oob = "BET_mutation_turkey"
-		}
-	}
-	option = {
-		trigger = {
-			AND = {
-				has_game_rule = {
-					rule = BET_spawn
-					option = RANDOM
-				}
-				has_global_flag = BET_tunis
-			}
-		}
-		BET={
-			load_oob = "BET_mutation_tunis"
-		}
-	}
-	option = {
-		trigger = {
-			AND = {
-				has_game_rule = {
-					rule = BET_spawn
-					option = RANDOM
-				}
-				has_global_flag = BET_sweden
-			}
-		}
-		BET={
-			load_oob = "BET_mutation_sweden"
-		}
-	}
-	option = {
-		trigger = {
-			AND = {
-				has_game_rule = {
-					rule = BET_spawn
-					option = RANDOM
-				}
-				has_global_flag = BET_russia
-			}
-		}
-		BET={
-			load_oob = "BET_mutation_russia"
-		}
-	}
-	option = {
-		trigger = {
-			AND = {
-				has_game_rule = {
-					rule = BET_spawn
-					option = INFECTION
-				}
-				has_global_flag = BET_infection
-			}
-		}
-		BET={
-			load_oob = "BET_mutation_infection"
-		}
-	}
-}
+# 	option = {
+# 		trigger = {
+# 			AND = {
+# 				has_game_rule = {
+# 					rule = BET_spawn
+# 					option = NORMAL
+# 				}
+# 				has_global_flag = BET_sinkiang
+# 			}
+# 		}
+# 		BET={
+# 			load_oob = "BET_mutation_india"
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			AND = {
+# 				has_game_rule = {
+# 					rule = BET_spawn
+# 					option = RANDOM
+# 				}
+# 				has_global_flag = BET_turkey
+# 			}
+# 		}
+# 		BET={
+# 			load_oob = "BET_mutation_turkey"
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			AND = {
+# 				has_game_rule = {
+# 					rule = BET_spawn
+# 					option = RANDOM
+# 				}
+# 				has_global_flag = BET_tunis
+# 			}
+# 		}
+# 		BET={
+# 			load_oob = "BET_mutation_tunis"
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			AND = {
+# 				has_game_rule = {
+# 					rule = BET_spawn
+# 					option = RANDOM
+# 				}
+# 				has_global_flag = BET_sweden
+# 			}
+# 		}
+# 		BET={
+# 			load_oob = "BET_mutation_sweden"
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			AND = {
+# 				has_game_rule = {
+# 					rule = BET_spawn
+# 					option = RANDOM
+# 				}
+# 				has_global_flag = BET_russia
+# 			}
+# 		}
+# 		BET={
+# 			load_oob = "BET_mutation_russia"
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			AND = {
+# 				has_game_rule = {
+# 					rule = BET_spawn
+# 					option = INFECTION
+# 				}
+# 				has_global_flag = BET_infection
+# 			}
+# 		}
+# 		BET={
+# 			load_oob = "BET_mutation_infection"
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = BETAevents.20
-	title = "BETAevents.20.name"
-	desc = "BETAevents.20.desc"
-	picture = GFX_country_event_indian_parade
-	hidden = yes
-	fire_only_once = yes
-	is_triggered_only = yes
+# country_event = {
+# 	id = BETAevents.20
+# 	title = "BETAevents.20.name"
+# 	desc = "BETAevents.20.desc"
+# 	picture = GFX_country_event_indian_parade
+# 	hidden = yes
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
 	
-	option = {
-		country_event = { days = 1 id = BETAnews.60}
-		country_event = { days = 1 id = BETAevents.21}
-		BET = {
-			set_technology = { BETAtech3 = 1}
-			load_oob = "BET_mutation_better"
-		}
-		set_division_template_lock = {
-			division_template = "Monster Horde"
-			is_locked = yes
-		}
-	}
-}
+# 	option = {
+# 		country_event = { days = 1 id = BETAnews.60}
+# 		country_event = { days = 1 id = BETAevents.21}
+# 		BET = {
+# 			set_technology = { soldiertech3 = 1}
+# 			load_oob = "BET_mutation_better"
+# 		}
+# 		set_division_template_lock = {
+# 			division_template = "Monster Horde"
+# 			is_locked = yes
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = BETAevents.21
-	title = "BETAevents.21.name"
-	desc = "BETAevents.21.desc"
-	picture = GFX_country_event_indian_parade
-	hidden = yes
-	fire_only_once = yes
-	is_triggered_only = yes
+# country_event = {
+# 	id = BETAevents.21
+# 	title = "BETAevents.21.name"
+# 	desc = "BETAevents.21.desc"
+# 	picture = GFX_country_event_indian_parade
+# 	hidden = yes
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
 	
-	mean_time_to_happen = { days = 2 }
+# 	mean_time_to_happen = { days = 2 }
 	
-	option = {
-		trigger = {
-			AND = {
-				has_game_rule = {
-					rule = BET_spawn
-					option = NORMAL
-				}
-				has_global_flag = BET_sinkiang
-			}
-		}
-		BET={
-			load_oob = "BET_mutation_better_india"
-		}
-	}
-	option = {
-		trigger = {
-			AND = {
-				has_game_rule = {
-					rule = BET_spawn
-					option = RANDOM
-				}
-				has_global_flag = BET_turkey
-			}
-		}
-		BET={
-			load_oob = "BET_mutation_better_turkey"
-		}
-	}
-	option = {
-		trigger = {
-			AND = {
-				has_game_rule = {
-					rule = BET_spawn
-					option = RANDOM
-				}
-				has_global_flag = BET_tunis
-			}
-		}
-		BET={
-			load_oob = "BET_mutation_better_tunis"
-		}
-	}
-	option = {
-		trigger = {
-			AND = {
-				has_game_rule = {
-					rule = BET_spawn
-					option = RANDOM
-				}
-				has_global_flag = BET_sweden
-			}
-		}
-		BET={
-			load_oob = "BET_mutation_better_sweden"
-		}
-	}
-	option = {
-		trigger = {
-			AND = {
-				has_game_rule = {
-					rule = BET_spawn
-					option = RANDOM
-				}
-				has_global_flag = BET_russia
-			}
-		}
-		BET={
-			load_oob = "BET_mutation_better_russia"
-		}
-	}
-	option = {
-		trigger = {
-			AND = {
-				has_game_rule = {
-					rule = BET_spawn
-					option = INFECTION
-				}
-				has_global_flag = BET_infection
-			}
-		}
-		BET={
-			load_oob = "BET_mutation_better_infection"
-		}
-	}
-}
+# 	option = {
+# 		trigger = {
+# 			AND = {
+# 				has_game_rule = {
+# 					rule = BET_spawn
+# 					option = NORMAL
+# 				}
+# 				has_global_flag = BET_sinkiang
+# 			}
+# 		}
+# 		BET={
+# 			load_oob = "BET_mutation_better_india"
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			AND = {
+# 				has_game_rule = {
+# 					rule = BET_spawn
+# 					option = RANDOM
+# 				}
+# 				has_global_flag = BET_turkey
+# 			}
+# 		}
+# 		BET={
+# 			load_oob = "BET_mutation_better_turkey"
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			AND = {
+# 				has_game_rule = {
+# 					rule = BET_spawn
+# 					option = RANDOM
+# 				}
+# 				has_global_flag = BET_tunis
+# 			}
+# 		}
+# 		BET={
+# 			load_oob = "BET_mutation_better_tunis"
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			AND = {
+# 				has_game_rule = {
+# 					rule = BET_spawn
+# 					option = RANDOM
+# 				}
+# 				has_global_flag = BET_sweden
+# 			}
+# 		}
+# 		BET={
+# 			load_oob = "BET_mutation_better_sweden"
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			AND = {
+# 				has_game_rule = {
+# 					rule = BET_spawn
+# 					option = RANDOM
+# 				}
+# 				has_global_flag = BET_russia
+# 			}
+# 		}
+# 		BET={
+# 			load_oob = "BET_mutation_better_russia"
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			AND = {
+# 				has_game_rule = {
+# 					rule = BET_spawn
+# 					option = INFECTION
+# 				}
+# 				has_global_flag = BET_infection
+# 			}
+# 		}
+# 		BET={
+# 			load_oob = "BET_mutation_better_infection"
+# 		}
+# 	}
+# }
 
 
-country_event = {
-	id = BETAevents.22
-	title = "BETAevents.22.name"
-	desc = "BETAevents.22.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
+# country_event = {
+# 	id = BETAevents.22
+# 	title = "BETAevents.22.name"
+# 	desc = "BETAevents.22.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
 	
-	trigger = { 
-		FRA = { exists = no }
-	}
+# 	trigger = { 
+# 		FRA = { exists = no }
+# 	}
 	
-	immediate = {
-		country_event = { id = BETAnews.62 }
-	}
-}
+# 	immediate = {
+# 		country_event = { id = BETAnews.62 }
+# 	}
+# }
 
-country_event = {
-	id = BETAevents.23
-	title = "BETAevents.23.name"
-	desc = "BETAevents.23.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
+# country_event = {
+# 	id = BETAevents.23
+# 	title = "BETAevents.23.name"
+# 	desc = "BETAevents.23.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
 	
-	trigger = { 
-		AND = {
-			MEX={ has_war = no }
-			has_global_flag = flag_mexico_cedillo_has_revolted
-			date > 1937.01.01
-			RAJ ={ has_war_with = BET}
-		}
+# 	trigger = { 
+# 		AND = {
+# 			MEX={ has_war = no }
+# 			has_global_flag = flag_mexico_cedillo_has_revolted
+# 			date > 1937.01.01
+# 			RAJ ={ has_war_with = BET}
+# 		}
 		
-	}
+# 	}
 	
-	immediate = {
-		country_event = { id = BETAnews.63 }
-	}
-}
+# 	immediate = {
+# 		country_event = { id = BETAnews.63 }
+# 	}
+# }
 
-country_event = {
-	id = BETAevents.24
-	title = "BETAevents.24.name"
-	desc = "BETAevents.24.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
+# country_event = {
+# 	id = BETAevents.24
+# 	title = "BETAevents.24.name"
+# 	desc = "BETAevents.24.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
 	
-	trigger = { 
-		SOV ={ has_war_with = BET }	
-	}
+# 	trigger = { 
+# 		SOV ={ has_war_with = BET }	
+# 	}
 	
-	immediate = {
-		country_event = { id = BETAnews.64 }
-	}
-}
+# 	immediate = {
+# 		country_event = { id = BETAnews.64 }
+# 	}
+# }
 
-country_event = {
-	id = BETAevents.25
-	title = "BETAevents.25.name"
-	desc = "BETAevents.25.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
+# country_event = {
+# 	id = BETAevents.25
+# 	title = "BETAevents.25.name"
+# 	desc = "BETAevents.25.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
 	
-	trigger = { 
-		FIN ={ has_war_with = BET }	
-	}
+# 	trigger = { 
+# 		FIN ={ has_war_with = BET }	
+# 	}
 	
-	immediate = {
-		country_event = { id = BETAnews.65 }
-	}
-}
+# 	immediate = {
+# 		country_event = { id = BETAnews.65 }
+# 	}
+# }
 
-country_event = {
-	id = BETAevents.26
-	title = "BETAevents.26.name"
-	desc = "BETAevents.26.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
+# country_event = {
+# 	id = BETAevents.26
+# 	title = "BETAevents.26.name"
+# 	desc = "BETAevents.26.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
 	
-	trigger = { 
-		HUN ={ has_war_with = BET }	
-	}
+# 	trigger = { 
+# 		HUN ={ has_war_with = BET }	
+# 	}
 	
-	immediate = {
-		country_event = { id = BETAnews.66 }
-	}
-}
-
-
-country_event = {
-	id = BETAevents.27
-	title = "BETAevents.27.name"
-	desc = "BETAevents.27.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
-	
-	trigger = { 
-		PER ={ has_war_with = BET }	
-	}
-	
-	immediate = {
-		country_event = { id = BETAnews.67 }
-	}
-}
-
-country_event = {
-    id = BETAevents.28
-    title = "BETAevents.28.name"
-    desc = "BETAevents.28.desc"
-    picture = GFX_event_mussolini_hitler
-    fire_only_once = yes
-    hidden = yes
-
-    trigger = { 
-        BET = { exists = yes }  
-    }
-
-    immediate = {
-		country_event = { 
-			id = BETAnews.68
-			random_days = 30			
-		}
-    }
-}
-
-country_event = {
-    id = BETAevents.29
-    title = "BETAevents.29.name"
-    desc = "BETAevents.29.desc"
-    picture = GFX_event_mussolini_hitler
-    fire_only_once = yes
-    hidden = yes
-	
-    trigger = { 
-        OR = {
-            RAJ = {
-                has_capitulated = yes
-            }
-            RAJ ={ exists = no }
-        }
-    }
-
-    immediate = {
-        country_event = { id = BETAnews.69 }
-    }
-}
-
-country_event = {
-	id = BETAevents.30
-	title = "BETAevents.30.name"
-	desc = "BETAevents.30.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
-	
-	trigger = { 
-		SOV ={ exists = no }	
-	}
-	
-	immediate = {
-		country_event = { id = BETAnews.70 }
-	}
-}
-
-country_event = {
-	id = BETAevents.31
-	title = "BETAevents.31.name"
-	desc = "BETAevents.31.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
-	
-	trigger = { 
-		FRA ={ exists = no }	
-	}
-	immediate = {
-		country_event = { id = BETAnews.71 }
-	}
-}
-
-country_event = {
-	id = BETAevents.32
-	title = "BETAevents.32.name"
-	desc = "BETAevents.32.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
-	
-	trigger = { 
-		GER ={ exists = no }	
-	}
-	
-	immediate = {
-		country_event = { id = BETAnews.72 }
-	}
-}
-
-country_event = {
-	id = BETAevents.33
-	title = "BETAevents.33.name"
-	desc = "BETAevents.33.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
-	
-	trigger = { 
-		JAP ={ exists = no }	
-	}
-	
-	immediate = {
-		country_event = { id = BETAnews.74 }
-	}
-}
-
-country_event = {
-	id = BETAevents.34
-	title = "BETAevents.34.name"
-	desc = "BETAevents.34.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
-	
-	trigger = { 
-		USA ={ exists = no }	
-	}
-	immediate = {
-		country_event = { id = BETAnews.75 }
-	}
-}
-
-country_event = {
-	id = BETAevents.35
-	title = "BETAevents.35.name"
-	desc = "BETAevents.35.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
-	
-	trigger = { 
-		ENG ={ exists = no }	
-	}
-	immediate = {
-		country_event = { id = BETAnews.73 }
-	}
-}
-
-country_event = {
-	id = BETAevents.36
-	title = "BETAevents.36.name"
-	desc = "BETAevents.36.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
-	
-	trigger = { 
-		AND = {
-			date > 1938.01.01
-			CUB ={ has_war_with = BET}
-		}
-	}
-	immediate = {
-		country_event = { id = BETAnews.61 }
-	}
-}
+# 	immediate = {
+# 		country_event = { id = BETAnews.66 }
+# 	}
+# }
 
 
-country_event = {
-	id = BETAevents.37
-	title = "BETAevents.37.name"
-	desc = "BETAevents.37.desc"
-	picture = GFX_event_mussolini_hitler
-	hidden = yes
-	is_triggered_only = yes
+# country_event = {
+# 	id = BETAevents.27
+# 	title = "BETAevents.27.name"
+# 	desc = "BETAevents.27.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
+	
+# 	trigger = { 
+# 		PER ={ has_war_with = BET }	
+# 	}
+	
+# 	immediate = {
+# 		country_event = { id = BETAnews.67 }
+# 	}
+# }
+
+# country_event = {
+#     id = BETAevents.28
+#     title = "BETAevents.28.name"
+#     desc = "BETAevents.28.desc"
+#     picture = GFX_event_mussolini_hitler
+#     fire_only_once = yes
+#     hidden = yes
+
+#     trigger = { 
+#         BET = { exists = yes }  
+#     }
+
+#     immediate = {
+# 		country_event = { 
+# 			id = BETAnews.68
+# 			random_days = 30			
+# 		}
+#     }
+# }
+
+# country_event = {
+#     id = BETAevents.29
+#     title = "BETAevents.29.name"
+#     desc = "BETAevents.29.desc"
+#     picture = GFX_event_mussolini_hitler
+#     fire_only_once = yes
+#     hidden = yes
+	
+#     trigger = { 
+#         OR = {
+#             RAJ = {
+#                 has_capitulated = yes
+#             }
+#             RAJ ={ exists = no }
+#         }
+#     }
+
+#     immediate = {
+#         country_event = { id = BETAnews.69 }
+#     }
+# }
+
+# country_event = {
+# 	id = BETAevents.30
+# 	title = "BETAevents.30.name"
+# 	desc = "BETAevents.30.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
+	
+# 	trigger = { 
+# 		SOV ={ exists = no }	
+# 	}
+	
+# 	immediate = {
+# 		country_event = { id = BETAnews.70 }
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAevents.31
+# 	title = "BETAevents.31.name"
+# 	desc = "BETAevents.31.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
+	
+# 	trigger = { 
+# 		FRA ={ exists = no }	
+# 	}
+# 	immediate = {
+# 		country_event = { id = BETAnews.71 }
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAevents.32
+# 	title = "BETAevents.32.name"
+# 	desc = "BETAevents.32.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
+	
+# 	trigger = { 
+# 		GER ={ exists = no }	
+# 	}
+	
+# 	immediate = {
+# 		country_event = { id = BETAnews.72 }
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAevents.33
+# 	title = "BETAevents.33.name"
+# 	desc = "BETAevents.33.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
+	
+# 	trigger = { 
+# 		JAP ={ exists = no }	
+# 	}
+	
+# 	immediate = {
+# 		country_event = { id = BETAnews.74 }
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAevents.34
+# 	title = "BETAevents.34.name"
+# 	desc = "BETAevents.34.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
+	
+# 	trigger = { 
+# 		USA ={ exists = no }	
+# 	}
+# 	immediate = {
+# 		country_event = { id = BETAnews.75 }
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAevents.35
+# 	title = "BETAevents.35.name"
+# 	desc = "BETAevents.35.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
+	
+# 	trigger = { 
+# 		ENG ={ exists = no }	
+# 	}
+# 	immediate = {
+# 		country_event = { id = BETAnews.73 }
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAevents.36
+# 	title = "BETAevents.36.name"
+# 	desc = "BETAevents.36.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
+	
+# 	trigger = { 
+# 		AND = {
+# 			date > 1938.01.01
+# 			CUB ={ has_war_with = BET}
+# 		}
+# 	}
+# 	immediate = {
+# 		country_event = { id = BETAnews.61 }
+# 	}
+# }
+
+
+# country_event = {
+# 	id = BETAevents.37
+# 	title = "BETAevents.37.name"
+# 	desc = "BETAevents.37.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	hidden = yes
+# 	is_triggered_only = yes
 	
 
-	immediate = {
-		USA = {
-			load_oob = "USA_Special_forces"
-		}
-	}
-}
+# 	immediate = {
+# 		USA = {
+# 			load_oob = "USA_Special_forces"
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = BETAevents.38
-	title = "BETAevents.38.name"
-	desc = "BETAevents.38.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
+# country_event = {
+# 	id = BETAevents.38
+# 	title = "BETAevents.38.name"
+# 	desc = "BETAevents.38.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
 	
-	trigger = { 
-		USA ={ has_war_with = BET}
-	}
-	immediate = {
-		USA = {
-			load_oob = "USA_Special_forces_template"
-		}
-	}
-}
+# 	trigger = { 
+# 		USA ={ has_war_with = BET}
+# 	}
+# 	immediate = {
+# 		USA = {
+# 			load_oob = "USA_Special_forces_template"
+# 		}
+# 	}
+# }
 
-country_event = {
-	id = BETAevents.39
-	title = "BETAevents.39.name"
-	desc = "BETAevents.39.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
+# country_event = {
+# 	id = BETAevents.39
+# 	title = "BETAevents.39.name"
+# 	desc = "BETAevents.39.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	fire_only_once = yes
+# 	hidden = yes
 	
-	trigger = { 
-		has_game_rule = {
-			rule = Nations_capitulation
-			option = NO_CAPITULATION
-		}
-	}
-	immediate = {
-        every_country = {
-            limit = {
-                NOT = { tag = BET } 
-            }
-            add_ideas = no_surrender 
-        }
-	}
-}
+# 	trigger = { 
+# 		has_game_rule = {
+# 			rule = Nations_capitulation
+# 			option = NO_CAPITULATION
+# 		}
+# 	}
+# 	immediate = {
+#         every_country = {
+#             limit = {
+#                 NOT = { tag = BET } 
+#             }
+#             add_ideas = no_surrender 
+#         }
+# 	}
+# }
 
-#########UNI#########################
+# #########UNI#########################
 
  

@@ -75,7 +75,6 @@ BET_blitzkrieg_afg_with_force_concentration = {
 		execute_order = yes
 	}
 }
-
 BET_blitzkrieg_per_with_force_concentration = {
 	allowed = {
 		original_tag = BET
@@ -115,7 +114,6 @@ BET_blitzkrieg_per_with_force_concentration = {
 		execute_order = yes
 	}
 }
-
 BET_blitzkrieg_southsoviet_with_force_concentration = {
 	allowed = {
 		original_tag = BET
@@ -155,20 +153,26 @@ BET_blitzkrieg_southsoviet_with_force_concentration = {
 		execute_order = yes
 	}
 }
-
-BET_blitzkrieg_soviet_with_force_concentration = {
+BET_blitzkrieg_westsoviet_with_force_concentration = {
 	allowed = {
 		original_tag = BET
 	}
 	enable = {
 		AND = {
 			229 = {
-				NOT = { is_controlled_by = BET }
+				is_controlled_by = BET 
 			}
 			217 = {
-				NOT = { is_controlled_by = BET }
+				is_controlled_by = BET
 			}
 			234 = {
+				is_controlled_by = BET
+			}
+
+			219 = {
+				NOT = { is_controlled_by = BET }
+			}
+			195 = {
 				NOT = { is_controlled_by = BET }
 			}
 		}
@@ -180,7 +184,7 @@ BET_blitzkrieg_soviet_with_force_concentration = {
 		state = 195
 		state = 219
 
-		value = 25 # +25%
+		value = 50 # +25%
 	}
 	ai_strategy = {
 		type = consider_weak
@@ -201,7 +205,6 @@ BET_blitzkrieg_soviet_with_force_concentration = {
 		execute_order = yes
 	}
 }
-
 BET_force_concentration_through_gobi_hurts_too_much = {
 	allowed = {
 		original_tag = BET

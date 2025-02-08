@@ -1,0 +1,24 @@
+BET_force_concentration_through_suez = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		291 = {
+			is_controlled_by = BET
+		}
+		907 = {
+			is_controlled_by = ENG
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = force_concentration_target_weight
+		state = 446 
+	}
+	ai_strategy = {
+		type = front_unit_request
+		state = 446
+		value = 50  # +30 %
+	}
+}

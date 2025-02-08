@@ -1,30 +1,30 @@
 
 add_namespace = BETApopulation
 
-country_event = {
-	id = BETApopulation.1
-	title = "BETApopulation.1.name"
-	desc = "BETApopulation.1.desc"
-	hidden =yes
-	mean_time_to_happen = { days = 90 }
-	trigger = {
-		BET = { exists = yes }
-	}
+# country_event = {
+# 	id = BETApopulation.1
+# 	title = "BETApopulation.1.name"
+# 	desc = "BETApopulation.1.desc"
+# 	hidden =yes
+# 	mean_time_to_happen = { days = 90 }
+# 	trigger = {
+# 		BET = { exists = yes }
+# 	}
 
 
-	option = {
-		name = BETApopulation.1.a
-		every_state={ 
-			if = {
-				limit ={
-					state_population > 0
-					is_owned_by = BET
-				}
-				add_manpower = -1000000
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = BETApopulation.1.a
+# 		every_state={ 
+# 			if = {
+# 				limit ={
+# 					state_population > 0
+# 					is_owned_by = BET
+# 				}
+# 				add_manpower = -1000000
+# 			}
+# 		}
+# 	}
+# }
 
 # country_event = {
 # 	id = BETApopulation.2

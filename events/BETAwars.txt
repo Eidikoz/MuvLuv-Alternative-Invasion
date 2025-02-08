@@ -36,11 +36,11 @@ country_event = {
 					}
 				
 					declare_war_on = {
-					type = take_state_focus
-					target = FROM
+						type = take_state_focus
+						target = FROM
 					}
 				}
 			}
 		}
 	}
-}
+}	

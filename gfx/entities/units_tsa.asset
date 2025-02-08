@@ -1,0 +1,6 @@
+entity = {
+	name = "tsa_entity"
+	pdxmesh = "GENERIC_Tsa_A10"
+
+	scale = 0.5
+}

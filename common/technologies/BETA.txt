@@ -1,0 +1,37 @@
+technologies = {
+
+	soldiertech = {
+
+		enable_equipments = {
+			Beta_venator
+			Beta_laser
+		}
+		
+		enable_subunits = {
+			beta_soldier
+			beta_laser
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		folder = {
+			name = armour_folder
+			position = { x = -2 y = -2 }
+		}
+		
+		categories = {
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+            tag = ZOM
+        }
+
+	}
+}

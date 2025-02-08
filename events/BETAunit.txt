@@ -1,0 +1,169 @@
+
+add_namespace = BETAunit
+
+#####INDIA#######
+
+# country_event = {
+# 	id = BETAunit.1
+# 	title = "BETAunit.1.name"
+# 	desc = "BETAunit.1.desc"
+# 	hidden = yes
+
+
+# 	trigger = {
+# 		AND ={ 
+# 			has_global_flag = BET_sinkiang
+# 			has_army_manpower = {
+# 				size < 12000000
+# 			}
+# 			BET = { exists = yes }
+# 			tag = BET
+# 		}
+# 	}
+# 	mean_time_to_happen = { days = 5 }
+
+# 	option = {
+# 		name = BETAInvasion
+# 		BET = {
+# 			load_oob = "BET_sinkiang"
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAunit.2
+# 	title = "BETAunit.2.name"
+# 	desc = "BETAunit.2.desc"
+# 	hidden =yes
+
+
+# 	trigger = {
+# 		AND ={ 
+# 			has_global_flag = BET_turkey
+# 			has_army_manpower = {
+# 				size < 12000000
+# 			}
+# 			BET = { exists = yes }
+# 			tag = BET
+# 		}
+# 	}
+# 	mean_time_to_happen = { days = 5 }
+
+# 	option = {
+# 		name = BETAInvasion
+# 		BET = {
+# 			load_oob = "BET_turkey"
+# 		}
+# 	}
+# }	
+
+# country_event = {
+# 	id = BETAunit.3
+# 	title = "BETAunit.3.name"
+# 	desc = "BETAunit.3.desc"
+# 	hidden =yes
+
+
+# 	trigger = {
+# 		AND ={ 
+# 			has_global_flag = BET_tunis
+# 			has_army_manpower = {
+# 				size < 12000000
+# 			}
+# 			BET = { exists = yes }
+# 			tag = BET
+# 		}
+# 	}
+# 	mean_time_to_happen = { days = 5 }
+
+# 	option = {
+# 		name = BETAInvasion
+# 		BET = {
+# 			load_oob = "BET_tunis"
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAunit.4
+# 	title = "BETAunit.4.name"
+# 	desc = "BETAunit.4.desc"
+# 	hidden =yes
+
+
+# 	trigger = {
+# 		AND ={ 
+# 			has_global_flag = BET_sweden
+# 			has_army_manpower = {
+# 				size < 12000000
+# 			}
+# 			BET = { exists = yes }
+# 			tag = BET
+# 		}
+# 	}
+# 	mean_time_to_happen = { days = 5 }
+
+# 	option = {
+# 		name = BETAInvasion
+# 		BET = {
+# 			load_oob = "BET_sweden"
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAunit.5
+# 	title = "BETAunit.5.name"
+# 	desc = "BETAunit.5.desc"
+# 	hidden =yes
+
+
+# 	trigger = {
+# 		AND = { 
+# 			has_global_flag = BET_russia
+# 			has_army_manpower = {
+# 				size < 12000000
+# 			}
+# 			BET = { exists = yes }
+# 			tag = BET
+# 		}
+# 	}
+# 	mean_time_to_happen = { days = 5 }
+
+# 	option = {
+# 		name = BETAInvasion
+# 		BET = {
+# 			load_oob = "BET_russia"
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = BETAunit.6
+# 	title = "BETAunit.6.name"
+# 	desc = "BETAunit.6.desc"
+# 	hidden =yes
+
+
+# 	trigger = {
+# 		AND ={ 
+# 			has_global_flag = BET_infection
+# 			has_army_manpower = {
+# 				size < 12000000
+# 			}
+# 			BET = { exists = yes }
+# 			tag = BET
+# 		}
+# 	}
+# 	mean_time_to_happen = { days = 5 }
+
+# 	option = {
+# 		name = BETAInvasion
+# 		BET = {
+# 			load_oob = "BET_infection"
+# 		}
+# 	}
+# }
+
+
+

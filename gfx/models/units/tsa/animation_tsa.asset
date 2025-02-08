@@ -1,0 +1,14 @@
+animation = {
+	name = "generic_tsa_attack_animation"
+	file = "generic_tsa_attack.anim"
+}
+
+animation = {
+	name = "generic_tsa_idle_animation"
+	file = "generic_tsa_idle.anim"
+}
+
+animation = {
+	name = "generic_tsa_moving_animation"
+	file = "generic_tsa_moving.anim"
+}

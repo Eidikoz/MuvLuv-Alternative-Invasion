@@ -10,7 +10,7 @@
 
     available = {
         is_in_faction_with = UNI
-        has_idea = doomsdaymember
+        has_idea = unsecuritymember
     }
 
 }

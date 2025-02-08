@@ -1,0 +1,99 @@
+##########坦克级##########
+entity = {
+	name = "MVLV_beta_tank_entity"
+	pdxmesh = "Beta_Tank_pdx"
+		
+	state = { name = "idle"  animation = "Idle"   animation_blend_time = 0.1  animation_speed = 0.1 }
+	state = { name = "move"  animation = "Move"   animation_blend_time = 0.1  animation_speed = 0.6 looping = no  next_state = "move"
+	}
+	state = { name = "retreat"  animation = "Move"   animation_blend_time = 0.1  animation_speed = 0.6  looping = no  next_state = "move"
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 0.1	}
+
+	state = { name = "attack"  animation = "Move"   animation_blend_time = 0.1  animation_speed = 0.6  looping = no  next_state = "attack" 
+	}
+
+	state = { name = "defend"  animation = "Move"   animation_blend_time = 0.1  animation_speed = 0.6  looping = no  next_state = "defend" 
+	}
+
+	state = { name = "support_attack"   animation = "Move"  animation_blend_time = 0.1  animation_speed = 0.6  looping = no  next_state = "support_attack" 
+	}
+
+	scale = 1
+}
+entity = {
+	clone = "MVLV_beta_tank_entity"
+	name = "MVLV_beta_tank_0_entity"
+	pdxmesh = "Beta_Tank_pdx"
+}
+########## 要击级 ##########
+entity = {
+	name = "MVLV_beta_grappler_entity"
+	pdxmesh = "Beta_Grappler_pdx"
+		
+	state = { name = "idle"  animation = "Idle"   animation_blend_time = 0.1  animation_speed = 0.1 }
+	state = { name = "move"  animation = "Move"   animation_blend_time = 0.1  animation_speed = 0.7 looping = no  next_state = "move"
+	}
+	state = { name = "retreat"  animation = "Move"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "move"
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 0.1	}
+
+	state = { name = "attack"  animation = "Attack1"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  chance = 1
+	}
+	state = { name = "attack"  animation = "Attack1"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  chance = 1
+	}
+	state = { name = "attack"  animation = "Move"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  chance = 2
+	}
+	state = { name = "attack"  animation = "Attack2"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  chance = 5
+	}
+
+	state = { name = "defend"  animation = "Attack1"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  chance = 1
+	}
+	state = { name = "defend"  animation = "Attack2"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  chance = 2
+	}
+
+	state = { name = "support_attack"   animation = "Attack1"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack"  chance = 1
+	}
+	state = { name = "support_attack"   animation = "Attack2"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack"  chance = 2
+	}
+
+	scale = 0.4
+}
+entity = {
+	clone = "MVLV_beta_grappler_entity"
+	name = "MVLV_beta_grappler_0_entity"
+	pdxmesh = "Beta_Grappler_pdx"
+}
+
+########## 突击级 ##########
+entity = {
+	name = "MVLV_beta_destroyer_entity"
+	pdxmesh = "Beta_Destroyer_pdx"
+		
+	state = { name = "idle"  animation = "Idle"   animation_blend_time = 0.1  animation_speed = 0.2 }
+	state = { name = "move"  animation = "Move"   animation_blend_time = 0.1  animation_speed = 0.7 looping = no  next_state = "move"
+	}
+	state = { name = "retreat"  animation = "Move"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "move"
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 0.2	}
+
+	state = { name = "attack"  animation = "Charge"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  chance = 1
+	}
+	state = { name = "attack"  animation = "FastMove"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  chance = 3
+	}
+
+	state = { name = "defend"  animation = "Charge"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  chance = 1
+	}
+
+	state = { name = "support_attack"   animation = "Charge"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack"  chance = 1
+	}
+	state = { name = "support_attack"   animation = "FastMove"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack"  chance = 3
+	}
+
+	scale = 0.4
+}
+entity = {
+	clone = "MVLV_beta_destroyer_entity"
+	name = "MVLV_beta_destroyer_0_entity"
+	pdxmesh = "Beta_Destroyer_pdx"
+}

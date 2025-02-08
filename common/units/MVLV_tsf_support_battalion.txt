@@ -62,18 +62,6 @@ sub_units = {
 		amphibious = {
 			attack = 0.5
 		}
-		hive_gateclass = {
-			movement = 0.55
-		}
-		hive_mainhall = {
-			movement = 0.55
-		}
-		hive_drift = {
-			movement = 0.55
-		}
-		hive_gate = {
-			movement = 0.55
-		}
 	}
 	MVLV_tsf_support_company = {
 		abbreviation = "SP_TSF"

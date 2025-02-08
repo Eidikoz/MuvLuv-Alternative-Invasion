@@ -18,7 +18,7 @@ country_event = {
 	}
 
 	immediate = {
-		country_event = { id = BETAstart.2 days = 1 }
+		country_event = { id = BETAstart.2 days = 0 }
 	}
 	option = {
 		name = BETAInvasion
@@ -27,7 +27,53 @@ country_event = {
 			add_core_of = BET
 		}
 		set_global_flag = BET_sinkiang
-
+		
+		release = {
+        	country = EGY   # Tag for Egypt
+        	puppet = yes    # Make Egypt a puppet
+        	owner = ENG     # The United Kingdom is the releasing country
+        }
+		JAP = {
+			release = CHI
+		}
+		PRC = {
+			annex_country = { 
+				target = SIK
+				transfer_troops = yes
+			}
+			annex_country = { 
+				target = XSM
+				transfer_troops = yes
+			}
+			annex_country = { 
+				target = TIB
+				transfer_troops = yes
+			}
+			annex_country = { 
+				target = CHI
+				transfer_troops = yes
+			}
+			annex_country = { 
+				target = SHX
+				transfer_troops = yes
+			}
+			annex_country = { 
+				target = MEN
+				transfer_troops = yes
+			}
+			annex_country = { 
+				target = MAN
+				transfer_troops = yes
+			}
+			annex_country = { 
+				target = YUN
+				transfer_troops = yes
+			}
+			annex_country = { 
+				target = GXC
+				transfer_troops = yes
+			}
+		}
 	}
 }
 
@@ -43,7 +89,7 @@ country_event = {
 
 	trigger = {
 	}
-	mean_time_to_happen = { days = 5 }
+	mean_time_to_happen = { days = 7 }
 
 	option = {
 		name = BETAInvasion
@@ -61,49 +107,13 @@ country_event = {
                 NOT = { tag = BET } 
             }
             add_ideas = no_surrender
+			declare_war_on = {
+				type = annex_everything
+				target = BET
+			}
         }
 		hidden_effect = {
-			JAP = {
-				release = CHI
-			}
-			PRC = {
-				annex_country = { 
-					target = SIK
-					transfer_troops = yes
-				}
-				annex_country = { 
-					target = XSM
-					transfer_troops = yes
-				}
-				annex_country = { 
-					target = TIB
-					transfer_troops = yes
-				}
-				annex_country = { 
-					target = CHI
-					transfer_troops = yes
-				}
-				annex_country = { 
-					target = SHX
-					transfer_troops = yes
-				}
-				annex_country = { 
-					target = MEN
-					transfer_troops = yes
-				}
-				annex_country = { 
-					target = MAN
-					transfer_troops = yes
-				}
-				annex_country = { 
-					target = YUN
-					transfer_troops = yes
-				}
-				annex_country = { 
-					target = GXC
-					transfer_troops = yes
-				}
-			}
+
 		}
 	}
 }

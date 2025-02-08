@@ -619,7 +619,7 @@ country_event = {
 # 		country_event = { days = 1 id = BETAevents.19}
 # 		country_event = { days = 90 id = BETAevents.20}
 # 		BET = {
-# 			set_technology = { BETAtech2 = 1}
+# 			set_technology = { soldiertech2 = 1}
 # 			load_oob = "BET_mutation"
 # 		}
 # 		set_division_template_lock = {
@@ -739,7 +739,7 @@ country_event = {
 # 		country_event = { days = 1 id = BETAnews.60}
 # 		country_event = { days = 1 id = BETAevents.21}
 # 		BET = {
-# 			set_technology = { BETAtech3 = 1}
+# 			set_technology = { soldiertech3 = 1}
 # 			load_oob = "BET_mutation_better"
 # 		}
 # 		set_division_template_lock = {

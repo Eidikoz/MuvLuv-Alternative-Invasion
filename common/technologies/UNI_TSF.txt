@@ -1,22 +1,28 @@
 technologies = {
 
-###TSF###
+	###TSF###
 	
-	UNI_basic_concept_research = {
+	UNI_basic_concept_research = { enable_subunits = { MVLV_tsf_battalion }
+		allow_branch = {
+			NOT = {
+				tag = BET
+			}
+		}
 
-#コスト、開始年#
+		#コスト、開始年#
 		research_cost = 1
 		start_year = 1970
-#完了したらどうなるか#
+		#完了したらどうなるか#
 		on_research_complete = {
 			hidden_effect = { load_oob = "unlock_tsf" }
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
-#どれに繋がるか#
-		path = { leads_to_tech = generic_F-5 research_cost_coeff = 1 }
-		path = { leads_to_tech = generic_F-4 research_cost_coeff = 1 }
+		#どれに繋がるか#
+		# path = { leads_to_tech = generic_F-5 research_cost_coeff = 1 }
+		# path = { leads_to_tech = generic_F-4 research_cost_coeff = 1 }
 		path = { leads_to_tech = generic_A-6 research_cost_coeff = 1 }
+		path = { leads_to_tech = tsf_sub_weapons research_cost_coeff = 1 }
 		path = { leads_to_tech = UNI_Assault_gun_improvement_1 research_cost_coeff = 1 }
 		path = { leads_to_tech = UNI_Blade_improvement_1 research_cost_coeff = 1 }
 		path = { leads_to_tech = UNI_Schurzen_1 research_cost_coeff = 1 }
@@ -49,66 +55,79 @@ technologies = {
 		path = { leads_to_tech = AFR_F-4 research_cost_coeff = 1 }
 		path = { leads_to_tech = AFR_MiG-21 research_cost_coeff = 1 }
 		
-#フォルダ、カテゴリ#
+		#フォルダ、カテゴリ#
 		folder = { name = UNI_tsf_folder position = { x = 0 y = -1 } }
 		categories = { MVLV_tsf_tech }
 		ai_will_do = { factor = 20000 }
 	}	
 	
-	generic_F-5 = { enable_equipments = { tsf_equipment_F-5 }
+	# generic_F-5 = { enable_equipments = { tsf_equipment_F-5 }
 
-		research_cost = 2
-		start_year = 1976
+	# 	research_cost = 2
+	# 	start_year = 1976
 
-		allow_branch = {
-			not = { 
-				tag = BET
-			}
-		}
+	# 	allow_branch = {
+	# 		NOT = { 
+	# 			OR = {
+	# 				tag = BET
+	# 				tag = EGY
+	# 				tag = ISR
+	# 				tag = JAP
+	# 				tag = SOV
+	# 				tag = PRC
+	# 			}
+	# 		}
+	# 	}
 
-		#USA
-		path = { leads_to_tech = USA_F-16 research_cost_coeff = 1 }
+	# 	#USA
+	# 	path = { leads_to_tech = USA_F-16 research_cost_coeff = 1 }
 
-		#EUR
-		path = { leads_to_tech = EUR_F-5GIDS research_cost_coeff = 1 }
-		path = { leads_to_tech = EUR_MIII research_cost_coeff = 1 }
-		path = { leads_to_tech = EUR_JA-37 research_cost_coeff = 1 }
+	# 	#EUR
+	# 	path = { leads_to_tech = EUR_F-5GIDS research_cost_coeff = 1 }
+	# 	path = { leads_to_tech = EUR_MIII research_cost_coeff = 1 }
+	# 	path = { leads_to_tech = EUR_JA-37 research_cost_coeff = 1 }
 
-		#generic
-		path = { leads_to_tech = generic_F-16 research_cost_coeff = 1 }
+	# 	#generic
+	# 	path = { leads_to_tech = generic_F-16 research_cost_coeff = 1 }
 
-		folder = { name = UNI_tsf_folder position = { x = 3 y = 2 } }
-		categories = { MVLV_tsf_tech }
-		show_effect_as_desc = no
-		ai_will_do = { factor = 20000 }
-	}
+	# 	folder = { name = UNI_tsf_folder position = { x = 3 y = 2 } }
+	# 	categories = { MVLV_tsf_tech }
+	# 	show_effect_as_desc = no
+	# 	ai_will_do = { factor = 20000 }
+	# }
 	
-	generic_F-4 = { enable_equipments = { tsf_equipment_F-4 }
+	# generic_F-4 = { enable_equipments = { tsf_equipment_F-4 }
 
-		research_cost = 2
-		start_year = 1974
+	# 	research_cost = 2
+	# 	start_year = 1974
 
-		allow_branch = {
-			not = { 
-				tag = BET
-			}
-		}
+	# 	allow_branch = {
+	# 		NOT = { 
+	# 			OR = {
+	# 				tag = EGY
+	# 				tag = ISR
+	# 				tag = JAP
+	# 				tag = SOV
+	# 				tag = PRC
+	# 			}
+	# 		}
+	# 	}
 
-		#USA
-		path = { leads_to_tech = USA_F-15 research_cost_coeff = 1 }
-		path = { leads_to_tech = USA_F-14 research_cost_coeff = 1 }
+	# 	#USA
+	# 	path = { leads_to_tech = USA_F-15 research_cost_coeff = 1 }
+	# 	path = { leads_to_tech = USA_F-14 research_cost_coeff = 1 }
 
-		#EUR
-		path = { leads_to_tech = EUR_F-15 research_cost_coeff = 1 }
+	# 	#EUR
+	# 	path = { leads_to_tech = EUR_F-15 research_cost_coeff = 1 }
 
-		#generic
-		path = { leads_to_tech = generic_F-15 research_cost_coeff = 1 }
-		path = { leads_to_tech = generic_F-14 research_cost_coeff = 1 }
+	# 	#generic
+	# 	path = { leads_to_tech = generic_F-15 research_cost_coeff = 1 }
+	# 	path = { leads_to_tech = generic_F-14 research_cost_coeff = 1 }
 
-		folder = { name = UNI_tsf_folder position = { x = 0 y = 2 } }
-		categories = { MVLV_tsf_tech }
-		ai_will_do = { factor = 20000 }
-	}
+	# 	folder = { name = UNI_tsf_folder position = { x = 0 y = 2 } }
+	# 	categories = { MVLV_tsf_tech }
+	# 	ai_will_do = { factor = 20000 }
+	# }
 
 	UNI_F-5 = { enable_equipments = { tsf_equipment_F-5 }
 
@@ -116,8 +135,14 @@ technologies = {
 		start_year = 1976
 
 		allow_branch = {
-			not = { 
-				tag = BET
+			NOT = { 
+				OR = {
+					tag = EGY
+					tag = ISR
+					tag = JAP
+					tag = SOV
+					tag = PRC
+				}
 			}
 		}
 
@@ -135,8 +160,14 @@ technologies = {
 		start_year = 1976
 
 		allow_branch = {
-			not = { 
-				tag = BET
+			NOT = { 
+				OR = {
+					tag = EGY
+					tag = ISR
+					tag = JAP
+					tag = SOV
+					tag = PRC
+				}
 			}
 		}
 
@@ -153,8 +184,14 @@ technologies = {
 		start_year = 1977
 
 		allow_branch = {
-			not = { 
-				tag = BET
+			NOT = { 
+				OR = {
+					tag = EGY
+					tag = ISR
+					tag = JAP
+					tag = SOV
+					tag = PRC
+				}
 			}
 		}
 
@@ -171,8 +208,14 @@ technologies = {
 		start_year = 1975
 
 		allow_branch = {
-			not = { 
-				tag = BET
+			NOT = { 
+				OR = {
+					tag = EGY
+					tag = ISR
+					tag = JAP
+					tag = SOV
+					tag = PRC
+				}
 			}
 		}
 
@@ -188,8 +231,7 @@ technologies = {
 
 	# 	research_cost = 2
 	# 	start_year = 1986
-
-	# 	path = { leads_to_tech = UNI_F-18 research_cost_coeff = 1 }
+	# 	# path = { leads_to_tech = UNI_F-18 research_cost_coeff = 1 }
 
 	# 	folder = { name = UNI_tsf_folder position = { x = -3 y = 7 } }
 	# 	categories = { MVLV_tsf_tech }
@@ -197,37 +239,55 @@ technologies = {
 	# 	ai_will_do = { factor = 20000 }
 	# }	
 	
-	# UNI_F-15 = { enable_equipments = { tsf_equipment_F-15 }
+	UNI_F-15 = { enable_equipments = { tsf_equipment_F-15 }
 
-	# 	research_cost = 2
-	# 	start_year = 1983
+		research_cost = 2
+		start_year = 1983
 
-	# 	path = { leads_to_tech = UNI_F-16 research_cost_coeff = 1 }
+		allow_branch = {
+			NOT = { 
+				OR = {
+					tag = EGY
+					tag = ISR
+					tag = JAP
+					tag = SOV
+					tag = PRC
+				}
+			}
+		}
 
-	# 	folder = { name = UNI_tsf_folder position = { x = -3 y = 5 } }
-	# 	categories = { MVLV_tsf_tech }
-	# 	show_effect_as_desc = no
-	# 	ai_will_do = { factor = 20000 }
-	# }	
+		# path = { leads_to_tech = UNI_F-16 research_cost_coeff = 1 }
 
-	# UNI_F-14 = { enable_equipments = { tsf_equipment_F-14 }
+		folder = { name = UNI_tsf_folder position = { x = -3 y = 5 } }
+		categories = { MVLV_tsf_tech }
+		show_effect_as_desc = no
+		ai_will_do = { factor = 20000 }
+	}	
 
-	# 	research_cost = 2
-	# 	start_year = 1982
+	UNI_F-14 = { enable_equipments = { tsf_equipment_F-14 }
 
-	# 	allow_branch = {
-	# 		not = { 
-	# 			tag = BET
-	# 		}
-	# 	}
+		research_cost = 2
+		start_year = 1982
+
+		allow_branch = {
+			NOT = { 
+				OR = {
+					tag = EGY
+					tag = ISR
+					tag = JAP
+					tag = SOV
+					tag = PRC
+				}
+			}
+		}
 		
-	# 	path = { leads_to_tech = UNI_F-15 research_cost_coeff = 1 }
+		path = { leads_to_tech = UNI_F-15 research_cost_coeff = 1 }
 
-	# 	folder = { name = UNI_tsf_folder position = { x = -3 y = 3 } }
-	# 	categories = { MVLV_tsf_tech }
-	# 	show_effect_as_desc = no
-	# 	ai_will_do = { factor = 20000 }
-	# }	
+		folder = { name = UNI_tsf_folder position = { x = -3 y = 3 } }
+		categories = { MVLV_tsf_tech }
+		show_effect_as_desc = no
+		ai_will_do = { factor = 20000 }
+	}	
 	
 	# UNI_F-18 = { enable_equipments = { tsf_equipment_F-18 }
 
@@ -242,37 +302,31 @@ technologies = {
 	# 	ai_will_do = { factor = 20000 }
 	# }
 
-	# UNI_M2000 = { enable_equipments = { tsf_equipment_M2000 }
+	UNI_M2000 = { enable_equipments = { tsf_equipment_M2000 }
 
-	# 	research_cost = 2
-	# 	start_year = 1981
+		research_cost = 2
+		start_year = 1981
 
-	# 	allow_branch = {
-	# 		not = { 
-	# 			tag = BET
-	# 		}
-	# 	}
+		path = { leads_to_tech = UNI_F-5EADV research_cost_coeff = 1 }
 
-	# 	path = { leads_to_tech = UNI_F-5EADV research_cost_coeff = 1 }
-
-	# 	folder = { name = UNI_tsf_folder position = { x = 0 y = 3 } }
-	# 	categories = { MVLV_tsf_tech }
-	# 	show_effect_as_desc = no
-	# 	ai_will_do = { factor = 20000 }
-	# }
+		folder = { name = UNI_tsf_folder position = { x = 0 y = 3 } }
+		categories = { MVLV_tsf_tech }
+		show_effect_as_desc = no
+		ai_will_do = { factor = 20000 }
+	}
 	
-	# UNI_F-5EADV = { enable_equipments = { tsf_equipment_F-5EADV }
+	UNI_F-5EADV = { enable_equipments = { tsf_equipment_F-5EADV }
 
-	# 	research_cost = 2
-	# 	start_year = 1982
+		research_cost = 2
+		start_year = 1982
 
-	# 	path = { leads_to_tech = UNI_JA-37 research_cost_coeff = 1 }
+		path = { leads_to_tech = UNI_JA-37 research_cost_coeff = 1 }
 
-	# 	folder = { name = UNI_tsf_folder position = { x = 0 y = 5 } }
-	# 	categories = { MVLV_tsf_tech }
-	# 	show_effect_as_desc = no
-	# 	ai_will_do = { factor = 20000 }
-	# }	
+		folder = { name = UNI_tsf_folder position = { x = 0 y = 5 } }
+		categories = { MVLV_tsf_tech }
+		show_effect_as_desc = no
+		ai_will_do = { factor = 20000 }
+	}	
 	
 	# UNI_JA-37 = { enable_equipments = { tsf_equipment_JA-37 }
 
@@ -356,11 +410,6 @@ technologies = {
 	# 	research_cost = 2
 	# 	start_year = 1994
 
-	# 	allow_branch = {
-	# 		not = { 
-	# 			tag = BET
-	# 		}
-	# 	}
 
 	# 	path = { leads_to_tech = UNI_T97 research_cost_coeff = 1 }
 
@@ -435,31 +484,31 @@ technologies = {
 	# 	ai_will_do = { factor = 20000 } 
 	# }
 	
-	# UNI_MiG-23 = { enable_equipments = { tsf_equipment_MiG-23 }
+	UNI_MiG-23 = { enable_equipments = { tsf_equipment_MiG-23 }
 
-	# 	research_cost = 2
-	# 	start_year = 1980
+		research_cost = 2
+		start_year = 1980
 
-	# 	path = { leads_to_tech = UNI_MiG-27 research_cost_coeff = 1 }
+		path = { leads_to_tech = UNI_MiG-27 research_cost_coeff = 1 }
 
-	# 	folder = { name = UNI_tsf_folder position = { x = 6 y = 3 } }
-	# 	categories = { MVLV_tsf_tech }
-	# 	show_effect_as_desc = no
-	# 	ai_will_do = { factor = 20000 }
-	# }
+		folder = { name = UNI_tsf_folder position = { x = 6 y = 3 } }
+		categories = { MVLV_tsf_tech }
+		show_effect_as_desc = no
+		ai_will_do = { factor = 20000 }
+	}
 	
-	# UNI_MiG-27 = { enable_equipments = { tsf_equipment_MiG-27 }
+	UNI_MiG-27 = { enable_equipments = { tsf_equipment_MiG-27 }
 
-	# 	research_cost = 2
-	# 	start_year = 1983
+		research_cost = 2
+		start_year = 1983
 
-	# 	path = { leads_to_tech = UNI_MiG-25 research_cost_coeff = 1 }
+		path = { leads_to_tech = UNI_MiG-25 research_cost_coeff = 1 }
 
-	# 	folder = { name = UNI_tsf_folder position = { x = 6 y = 5 } }
-	# 	categories = { MVLV_tsf_tech }
-	# 	show_effect_as_desc = no
-	# 	ai_will_do = { factor = 20000 }
-	# }
+		folder = { name = UNI_tsf_folder position = { x = 6 y = 5 } }
+		categories = { MVLV_tsf_tech }
+		show_effect_as_desc = no
+		ai_will_do = { factor = 20000 }
+	}
 
 	# UNI_MiG-25 = { enable_equipments = { tsf_equipment_MiG-25 }
 
@@ -553,7 +602,7 @@ technologies = {
 	# 	ai_will_do = { factor = 20000 }
 	# }
 
-#################################
+	#################################
 	UNI_Assault_gun_improvement_1 = {
 		research_cost = 2
 		start_year = 1976
@@ -572,8 +621,7 @@ technologies = {
 			ap_attack = 0.05
 		}
 
-		path = { leads_to_tech = tsf_sub_weapons research_cost_coeff = 1 }
-		path = { leads_to_tech = tsf_railgun_1 research_cost_coeff = 1 }
+		#path = { leads_to_tech = tsf_railgun_1 research_cost_coeff = 1 }
 		path = { leads_to_tech = UNI_Assault_gun_improvement_2 research_cost_coeff = 1 }
 
 		folder = { name = UNI_tsf_folder position = { x = 10 y = 4 } }
@@ -593,52 +641,52 @@ technologies = {
 			hard_attack = 0.02
 		}
 
-		path = { leads_to_tech = UNI_Assault_gun_improvement_3 research_cost_coeff = 1 }
+		# path = { leads_to_tech = UNI_Assault_gun_improvement_3 research_cost_coeff = 1 }
 
 		folder = { name = UNI_tsf_folder position = { x = 10 y = 6 } }
 		categories = { MVLV_tsf_tech }
 		ai_will_do = { factor = 20000 }
 	}
-	UNI_Assault_gun_improvement_3 = {
-		research_cost = 2
-		start_year = 2000
+	# UNI_Assault_gun_improvement_3 = {
+	# 	research_cost = 2
+	# 	start_year = 2000
 
-		MVLV_tsf_battalion = {
-			soft_attack = 0.02
-			hard_attack = 0.02
-		}	
-		mountaineers = {
-			soft_attack = 0.02
-			hard_attack = 0.02
-		}
-		path = { leads_to_tech = UNI_Assault_gun_improvement_4 research_cost_coeff = 1 }
+	# 	MVLV_tsf_battalion = {
+	# 		soft_attack = 0.02
+	# 		hard_attack = 0.02
+	# 	}	
+	# 	mountaineers = {
+	# 		soft_attack = 0.02
+	# 		hard_attack = 0.02
+	# 	}
+	# 	path = { leads_to_tech = UNI_Assault_gun_improvement_4 research_cost_coeff = 1 }
 
-		folder = { name = UNI_tsf_folder position = { x = 10 y = 8 } }
-		categories = { MVLV_tsf_tech }
-		ai_will_do = { factor = 20000 }
-	}
-	UNI_Assault_gun_improvement_4 = {
-		research_cost = 2
-		start_year = 2001
+	# 	folder = { name = UNI_tsf_folder position = { x = 10 y = 8 } }
+	# 	categories = { MVLV_tsf_tech }
+	# 	ai_will_do = { factor = 20000 }
+	# }
+	# UNI_Assault_gun_improvement_4 = {
+	# 	research_cost = 2
+	# 	start_year = 2001
 
-		MVLV_tsf_battalion = {
-			soft_attack = 0.02
-			hard_attack = 0.02
-		}	
-		mountaineers = {
-			soft_attack = 0.02
-			hard_attack = 0.02
-		}
-		MVLV_tsa_battalion = {
-			soft_attack = 0.02
-			hard_attack = 0.02
-			ap_attack = 0.05
-		}
+	# 	MVLV_tsf_battalion = {
+	# 		soft_attack = 0.02
+	# 		hard_attack = 0.02
+	# 	}	
+	# 	mountaineers = {
+	# 		soft_attack = 0.02
+	# 		hard_attack = 0.02
+	# 	}
+	# 	MVLV_tsa_battalion = {
+	# 		soft_attack = 0.02
+	# 		hard_attack = 0.02
+	# 		ap_attack = 0.05
+	# 	}
 
-		folder = { name = UNI_tsf_folder position = { x = 10 y = 10 } }
-		categories = { MVLV_tsf_tech }
-		ai_will_do = { factor = 20000 }
-	}
+	# 	folder = { name = UNI_tsf_folder position = { x = 10 y = 10 } }
+	# 	categories = { MVLV_tsf_tech }
+	# 	ai_will_do = { factor = 20000 }
+	# }
 
 	UNI_Blade_improvement_1 = {
 		research_cost = 2
@@ -672,48 +720,48 @@ technologies = {
 			ap_attack = 0.02
 		}
 
-		path = { leads_to_tech = UNI_Blade_improvement_3 research_cost_coeff = 1 }
+		# path = { leads_to_tech = UNI_Blade_improvement_3 research_cost_coeff = 1 }
 
 		folder = { name = UNI_tsf_folder position = { x = 8 y = 6 } }
 		categories = { MVLV_tsf_tech }
 		ai_will_do = { factor = 20000 }
 	}
-	UNI_Blade_improvement_3 = {
-		research_cost = 2
-		start_year = 2000
+	# UNI_Blade_improvement_3 = {
+	# 	research_cost = 2
+	# 	start_year = 2000
 
-		MVLV_tsf_battalion = {
-			defense = 0.02
-			ap_attack = 0.02
-		}	
-		mountaineers = {
-			defense = 0.02
-			ap_attack = 0.02
-		}
+	# 	MVLV_tsf_battalion = {
+	# 		defense = 0.02
+	# 		ap_attack = 0.02
+	# 	}	
+	# 	mountaineers = {
+	# 		defense = 0.02
+	# 		ap_attack = 0.02
+	# 	}
 
-		path = { leads_to_tech = UNI_Blade_improvement_4 research_cost_coeff = 1 }
+	# 	path = { leads_to_tech = UNI_Blade_improvement_4 research_cost_coeff = 1 }
 
-		folder = { name = UNI_tsf_folder position = { x = 8 y = 8 } }
-		categories = { MVLV_tsf_tech }
-		ai_will_do = { factor = 20000 }
-	}
-	UNI_Blade_improvement_4 = {
-		research_cost = 2
-		start_year = 2001
+	# 	folder = { name = UNI_tsf_folder position = { x = 8 y = 8 } }
+	# 	categories = { MVLV_tsf_tech }
+	# 	ai_will_do = { factor = 20000 }
+	# }
+	# UNI_Blade_improvement_4 = {
+	# 	research_cost = 2
+	# 	start_year = 2001
 
-		MVLV_tsf_battalion = {
-			defense = 0.02
-			ap_attack = 0.02
-		}	
-		mountaineers = {
-			defense = 0.02
-			ap_attack = 0.02
-		}
+	# 	MVLV_tsf_battalion = {
+	# 		defense = 0.02
+	# 		ap_attack = 0.02
+	# 	}	
+	# 	mountaineers = {
+	# 		defense = 0.02
+	# 		ap_attack = 0.02
+	# 	}
 
-		folder = { name = UNI_tsf_folder position = { x = 8 y = 10 } }
-		categories = { MVLV_tsf_tech }
-		ai_will_do = { factor = 20000 }
-	}
+	# 	folder = { name = UNI_tsf_folder position = { x = 8 y = 10 } }
+	# 	categories = { MVLV_tsf_tech }
+	# 	ai_will_do = { factor = 20000 }
+	# }
 
 	UNI_Schurzen_1 = {
 		research_cost = 2
@@ -743,44 +791,44 @@ technologies = {
 			armor_value = 0.02
 		}
 
-		path = { leads_to_tech = UNI_Schurzen_3 research_cost_coeff = 1 }
+		# path = { leads_to_tech = UNI_Schurzen_3 research_cost_coeff = 1 }
 
 		folder = { name = UNI_tsf_folder position = { x = 12 y = 6 } }
 		categories = { MVLV_tsf_tech }
 		ai_will_do = { factor = 20000 }
 	}
-	UNI_Schurzen_3 = {
-		research_cost = 2
-		start_year = 2000
+	# UNI_Schurzen_3 = {
+	# 	research_cost = 2
+	# 	start_year = 2000
 
-		MVLV_tsf_battalion = {
-			armor_value = 0.02
-		}	
-		mountaineers = {
-			armor_value = 0.02
-		}
+	# 	MVLV_tsf_battalion = {
+	# 		armor_value = 0.02
+	# 	}	
+	# 	mountaineers = {
+	# 		armor_value = 0.02
+	# 	}
 
-		path = { leads_to_tech = UNI_Schurzen_4 research_cost_coeff = 1 }
+	# 	path = { leads_to_tech = UNI_Schurzen_4 research_cost_coeff = 1 }
 
-		folder = { name = UNI_tsf_folder position = { x = 12 y = 8 } }
-		categories = { MVLV_tsf_tech }
-		ai_will_do = { factor = 20000 }
-	}
-	UNI_Schurzen_4 = {
-		research_cost = 2
-		start_year = 2001
+	# 	folder = { name = UNI_tsf_folder position = { x = 12 y = 8 } }
+	# 	categories = { MVLV_tsf_tech }
+	# 	ai_will_do = { factor = 20000 }
+	# }
+	# UNI_Schurzen_4 = {
+	# 	research_cost = 2
+	# 	start_year = 2001
 
-		MVLV_tsf_battalion = {
-			armor_value = 0.02
-		}	
-		mountaineers = {
-			armor_value = 0.02
-		}
+	# 	MVLV_tsf_battalion = {
+	# 		armor_value = 0.02
+	# 	}	
+	# 	mountaineers = {
+	# 		armor_value = 0.02
+	# 	}
 
-		folder = { name = UNI_tsf_folder position = { x = 12 y = 10 } }
-		categories = { MVLV_tsf_tech }
-		ai_will_do = { factor = 20000 }
-	}
+	# 	folder = { name = UNI_tsf_folder position = { x = 12 y = 10 } }
+	# 	categories = { MVLV_tsf_tech }
+	# 	ai_will_do = { factor = 20000 }
+	# }
 
 	tsf_sub_weapons = {
 		enable_equipments = {
@@ -790,7 +838,7 @@ technologies = {
 		start_year = 1995
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 9 y = 12 }
+			position = { x = 14 y = 4 }
 		}
 		categories = {
 			artillery
@@ -867,12 +915,10 @@ technologies = {
 # 	start_year = 1982
 
 # 	allow_branch = {
-# 		not = { 
-# 			tag = BET
-# 		}
+# 		tag = USA
 # 	}
 
-# 	path = { leads_to_tech = USA_F-14Ex research_cost_coeff = 0.5 }
+# 	# path = { leads_to_tech = USA_F-14Ex research_cost_coeff = 0.5 }
 
 # 	folder = { name = UNI_tsf_folder position = { x = -3 y = 6 } }
 # 	categories = { MVLV_tsf_tech }
@@ -883,10 +929,6 @@ technologies = {
 
 # 	research_cost = 2
 # 	start_year = 1983
-
-# 	allow_branch = {
-# 		tag = USA
-# 	}
 
 # 	path = { leads_to_tech = USA_F-15E research_cost_coeff = 1 }
 
@@ -1040,7 +1082,7 @@ JAP_F-4J = { enable_equipments = { tsf_equipment_F-4J }
 	}
 
 	# path = { leads_to_tech = JAP_F-4JK research_cost_coeff = 1 }
-	# path = { leads_to_tech = JAP_F-15J research_cost_coeff = 1 }
+	path = { leads_to_tech = JAP_F-15J research_cost_coeff = 1 }
 
 	folder = { name = UNI_tsf_folder position = { x = 0 y = 4 } }
 	categories = { MVLV_tsf_tech }
@@ -1060,18 +1102,18 @@ JAP_F-4J = { enable_equipments = { tsf_equipment_F-4J }
 # 	ai_will_do = {factor = 20000 } 
 # }
 
-# JAP_F-15J = { enable_equipments = { tsf_equipment_F-15 }
+JAP_F-15J = { enable_equipments = { tsf_equipment_F-15 }
 
-# 	research_cost = 2
-# 	start_year = 1986
+	research_cost = 2
+	start_year = 1984
 
-# 	path = { leads_to_tech = JAP_T94 research_cost_coeff = 1 }
+	# path = { leads_to_tech = JAP_T94 research_cost_coeff = 1 }
 
-# 	folder = { name = UNI_tsf_folder position = { x = 2 y = 7 } }
-# 	categories = { MVLV_tsf_tech }
-# 	show_effect_as_desc = no
-# 	ai_will_do = { factor = 20000 }
-# }
+	folder = { name = UNI_tsf_folder position = { x = 0 y = 7 } }
+	categories = { MVLV_tsf_tech }
+	show_effect_as_desc = no
+	ai_will_do = { factor = 20000 }
+}
 
 # JAP_F-16J = { enable_equipments = { tsf_equipment_F-16 }
 
@@ -1230,7 +1272,7 @@ SOV_Su-11 = { enable_equipments = { tsf_equipment_Su-11 }
 
 	allow_branch = { tag = SOV }
 
-	path = { leads_to_tech = SOV_Su-27 research_cost_coeff = 1 }
+	# path = { leads_to_tech = SOV_Su-27 research_cost_coeff = 1 }
 
 	folder = { name = UNI_tsf_folder position = { x = 4 y = 2 } }
 	categories = { MVLV_tsf_tech }
@@ -1245,53 +1287,53 @@ SOV_MiG-21 = { enable_equipments = { tsf_equipment_MiG-21 }
 
 	allow_branch = { tag = SOV }
 
-	# path = { leads_to_tech = SOV_MiG-23 research_cost_coeff = 1 }
+	path = { leads_to_tech = SOV_MiG-23 research_cost_coeff = 1 }
 
 	folder = { name = UNI_tsf_folder position = { x = 0 y = 2 } }
 	categories = { MVLV_tsf_tech }
 	ai_will_do = { factor = 20000 }
 }
 
-# SOV_MiG-23 = { enable_equipments = { tsf_equipment_MiG-23 }
+SOV_MiG-23 = { enable_equipments = { tsf_equipment_MiG-23 }
 
-# 	research_cost = 2
-# 	start_year = 1980
+	research_cost = 2
+	start_year = 1980
 
-# 	path = { leads_to_tech = SOV_MiG-27 research_cost_coeff = 1 }
+	path = { leads_to_tech = SOV_MiG-27 research_cost_coeff = 1 }
 
-# 	folder = { name = UNI_tsf_folder position = { x = 0 y = 6 } }
-# 	categories = { MVLV_tsf_tech }
-# 	show_effect_as_desc = no
-# 	ai_will_do = { factor = 20000 }
-# }
+	folder = { name = UNI_tsf_folder position = { x = 0 y = 6 } }
+	categories = { MVLV_tsf_tech }
+	show_effect_as_desc = no
+	ai_will_do = { factor = 20000 }
+}
 
-# SOV_Su15 = { enable_equipments = { tsf_equipment_Su-15 }
+SOV_Su15 = { enable_equipments = { tsf_equipment_Su-15 }
 
-# 	research_cost = 2
-# 	start_year = 1979
+	research_cost = 2
+	start_year = 1979
 
-# 	path = { leads_to_tech = MVLV_F14AN3_tsf research_cost_coeff = 1 }
+	path = { leads_to_tech = MVLV_F14AN3_tsf research_cost_coeff = 1 }
 
-# 	folder = { name = UNI_tsf_folder position = { x = 4 y = 4 } }
-# 	categories = { MVLV_tsf_tech }
-# 	show_effect_as_desc = no
-# 	ai_will_do = { factor = 20000 }
-#}
+	folder = { name = UNI_tsf_folder position = { x = 4 y = 4 } }
+	categories = { MVLV_tsf_tech }
+	show_effect_as_desc = no
+	ai_will_do = { factor = 20000 }
+}
 
-# SOV_MiG-27 = { enable_equipments = { tsf_equipment_MiG-27 }
+SOV_MiG-27 = { enable_equipments = { tsf_equipment_MiG-27 }
 
-# 	research_cost = 2
-# 	start_year = 1983
+	research_cost = 2
+	start_year = 1983
 
 	
-# 	path = { leads_to_tech = SOV_MiG-25 research_cost_coeff = 1 }
-# 	path = { leads_to_tech = SOV_MiG-29 research_cost_coeff = 1 }
+	path = { leads_to_tech = SOV_MiG-25 research_cost_coeff = 1 }
+	path = { leads_to_tech = SOV_MiG-29 research_cost_coeff = 1 }
 
-# 	folder = { name = UNI_tsf_folder position = { x = 0 y = 8 } }
-# 	categories = { MVLV_tsf_tech }
-# 	show_effect_as_desc = no
-# 	ai_will_do = { factor = 20000 }
-# }
+	folder = { name = UNI_tsf_folder position = { x = 0 y = 8 } }
+	categories = { MVLV_tsf_tech }
+	show_effect_as_desc = no
+	ai_will_do = { factor = 20000 }
+}
 
 
 # SOV_MiG-25 = { enable_equipments = { tsf_equipment_MiG-25 }
@@ -1412,9 +1454,7 @@ CHI_F-5 = { enable_equipments = { tsf_equipment_F-5 }
 	research_cost = 2
 	start_year = 1976
 
-	allow_branch = { tag = CHI }
-
-	path = { leads_to_tech = CHI_F-16 research_cost_coeff = 1 }
+	#path = { leads_to_tech = CHI_F-16 research_cost_coeff = 1 }
 	folder = { name = UNI_tsf_folder position = { x = 0 y = 2 } }
 	categories = { MVLV_tsf_tech }
 	ai_will_do = { factor = 20000 }
@@ -1425,25 +1465,23 @@ CHI_J-8 = { enable_equipments = { tsf_equipment_MiG-21 }
 	research_cost = 2
 	start_year = 1975
 
-	allow_branch = { tag = CHI }
-
-	# path = { leads_to_tech = CHI_MiG-23 research_cost_coeff = 1 }
+	path = { leads_to_tech = CHI_MiG-23 research_cost_coeff = 1 }
 	folder = { name = UNI_tsf_folder position = { x = 6 y = 2 } }
 	categories = { MVLV_tsf_tech }
 	ai_will_do = { factor = 20000 }
 }
 
-# CHI_F-15 = { enable_equipments = { tsf_equipment_F-15 }
+CHI_F-15 = { enable_equipments = { tsf_equipment_F-15 }
 
-# 	research_cost = 2
-# 	start_year = 1984
+	research_cost = 2
+	start_year = 1984
 
-# 	path = { leads_to_tech = CHI_F-15E research_cost_coeff = 1 }
+	path = { leads_to_tech = CHI_F-15E research_cost_coeff = 1 }
 
-# 	folder = { name = UNI_tsf_folder position = { x = -3 y = 8 } }
-# 	categories = { MVLV_tsf_tech }
-# 	ai_will_do = { factor = 20000 }
-# }
+	folder = { name = UNI_tsf_folder position = { x = -3 y = 8 } }
+	categories = { MVLV_tsf_tech }
+	ai_will_do = { factor = 20000 }
+}
 
 # CHI_F-15E = { enable_equipments = { tsf_equipment_F-15E }
 
@@ -1544,16 +1582,16 @@ CHI_J-8 = { enable_equipments = { tsf_equipment_MiG-21 }
 # 	ai_will_do = { factor = 20000 }
 # }
 
-# CHI_MiG-23 = { enable_equipments = { tsf_equipment_MiG-23 }
+CHI_MiG-23 = { enable_equipments = { tsf_equipment_MiG-23 }
 
-# 	research_cost = 2
-# 	start_year = 1980
+	research_cost = 2
+	start_year = 1980
 
-# 	path = { leads_to_tech = CHI_Su-27 research_cost_coeff = 1 }
-# 	folder = { name = UNI_tsf_folder position = { x = 6 y = 6 } }
-# 	categories = { MVLV_tsf_tech }
-# 	ai_will_do = { factor = 20000 }
-# }
+	#path = { leads_to_tech = CHI_Su-27 research_cost_coeff = 1 }
+	folder = { name = UNI_tsf_folder position = { x = 6 y = 6 } }
+	categories = { MVLV_tsf_tech }
+	ai_will_do = { factor = 20000 }
+}
 
 # CHI_Su-27 = { enable_equipments = { tsf_equipment_Su-27 }
 
@@ -1590,33 +1628,29 @@ CHI_J-8 = { enable_equipments = { tsf_equipment_MiG-21 }
 #____________________________________________________________
 #EURツリー
 
-# EUR_F-15 = { enable_equipments = { tsf_equipment_F-15 }
+EUR_F-15 = { enable_equipments = { tsf_equipment_F-15 }
 
-# 	research_cost = 2
-# 	start_year = 1983
+	research_cost = 2
+	start_year = 1983
 
-# 	allow_branch = {
-# 		tag = EUR
-# 	}
+	allow_branch = {
+		tag = EUR
+	}
 	
-# 	path = { leads_to_tech = EUR_F-15E research_cost_coeff = 1 }
+	path = { leads_to_tech = EUR_F-15E research_cost_coeff = 1 }
 
-# 	folder = { name = UNI_tsf_folder position = { x = -3 y = 8 } }		
-# 	categories = { MVLV_tsf_tech }
-# 	show_effect_as_desc = no
-# 	ai_will_do = { factor = 20000}
-# }
+	folder = { name = UNI_tsf_folder position = { x = -3 y = 8 } }		
+	categories = { MVLV_tsf_tech }
+	show_effect_as_desc = no
+	ai_will_do = { factor = 20000}
+}
 
 EUR_F-5GIDS = { enable_equipments = { tsf_equipment_F-5GIDS }
 
 	research_cost = 2
 	start_year = 1976
 
-	allow_branch = {
-		tag = EUR
-	}
-
-	# path = { leads_to_tech = EUR_F-5EADV research_cost_coeff = 1 }
+	path = { leads_to_tech = EUR_F-5EADV research_cost_coeff = 1 }
 
 	folder = { name = UNI_tsf_folder position = { x = 0 y = 4 } }		
 	categories = { MVLV_tsf_tech }
@@ -1624,18 +1658,18 @@ EUR_F-5GIDS = { enable_equipments = { tsf_equipment_F-5GIDS }
 	ai_will_do = { factor = 20000 }
 }
 
-# EUR_F-5EADV = { enable_equipments = { tsf_equipment_F-5EADV }
+EUR_F-5EADV = { enable_equipments = { tsf_equipment_F-5EADV }
 
-# 	research_cost = 2
-# 	start_year = 1982
+	research_cost = 2
+	start_year = 1982
 
-# 	path = { leads_to_tech = EUR_EF-2000 research_cost_coeff = 1 }
+	path = { leads_to_tech = EUR_EF-2000 research_cost_coeff = 1 }
 
-# 	folder = { name = UNI_tsf_folder position = { x = 0 y = 6 } }		
-# 	categories = { MVLV_tsf_tech }
-# 	show_effect_as_desc = no
-# 	ai_will_do = { factor = 20000 }
-# }
+	folder = { name = UNI_tsf_folder position = { x = 0 y = 6 } }		
+	categories = { MVLV_tsf_tech }
+	show_effect_as_desc = no
+	ai_will_do = { factor = 20000 }
+}
 
 EUR_MIII = { enable_equipments = { tsf_equipment_MIII }
 
@@ -1646,7 +1680,7 @@ EUR_MIII = { enable_equipments = { tsf_equipment_MIII }
 		tag = EUR
 	}
 
-	# path = { leads_to_tech = EUR_M2000 research_cost_coeff = 1 }
+	path = { leads_to_tech = EUR_M2000 research_cost_coeff = 1 }
 
 	folder = { name = UNI_tsf_folder position = { x = 3 y = 4 } }		
 	categories = { MVLV_tsf_tech }
@@ -1654,18 +1688,18 @@ EUR_MIII = { enable_equipments = { tsf_equipment_MIII }
 	ai_will_do = { factor = 20000 }
 }
 
-# EUR_M2000 = { enable_equipments = { tsf_equipment_M2000 }
+EUR_M2000 = { enable_equipments = { tsf_equipment_M2000 }
 
-# 	research_cost = 2
-# 	start_year = 1981
+	research_cost = 2
+	start_year = 1981
 
-# 	path = { leads_to_tech = EUR_Rafale research_cost_coeff = 1 }
+	path = { leads_to_tech = EUR_Rafale research_cost_coeff = 1 }
 
-# 	folder = { name = UNI_tsf_folder position = { x = 3 y = 6 } }
-# 	categories = { MVLV_tsf_tech }
-# 	show_effect_as_desc = no
-# 	ai_will_do = { factor = 20000 }
-# }
+	folder = { name = UNI_tsf_folder position = { x = 3 y = 6 } }
+	categories = { MVLV_tsf_tech }
+	show_effect_as_desc = no
+	ai_will_do = { factor = 20000 }
+}
 
 # EUR_JA-37 = { enable_equipments = { tsf_equipment_JA-37 } 
 
@@ -1795,22 +1829,22 @@ EEA_F-5GIDS = { enable_equipments = { tsf_equipment_F-5GIDS }
 	show_effect_as_desc = no
 	ai_will_do = { factor = 20000 }
 
-	# path = { leads_to_tech = EEA_F-5EADV research_cost_coeff = 1 }
+	path = { leads_to_tech = EEA_F-5EADV research_cost_coeff = 1 }
+}
+
+EEA_F-5EADV = { enable_equipments = { tsf_equipment_F-5EADV }
+
+	research_cost = 2
+	start_year = 1982
+
+	folder = { name = UNI_tsf_folder position = { x = 3 y = 6 } }
+	categories = { MVLV_tsf_tech }
+	show_effect_as_desc = no
+	ai_will_do = { factor = 20000 }
+
+	path = { leads_to_tech = EEA_JA-37 research_cost_coeff = 1 }
+	path = { leads_to_tech = EEA_EF-2000 research_cost_coeff = 1 }
 	}
-
-# EEA_F-5EADV = { enable_equipments = { tsf_equipment_F-5EADV }
-
-# 	research_cost = 2
-# 	start_year = 1982
-
-# 	folder = { name = UNI_tsf_folder position = { x = 3 y = 6 } }
-# 	categories = { MVLV_tsf_tech }
-# 	show_effect_as_desc = no
-# 	ai_will_do = { factor = 20000 }
-
-# 	path = { leads_to_tech = EEA_JA-37 research_cost_coeff = 1 }
-# 	path = { leads_to_tech = EEA_EF-2000 research_cost_coeff = 1 }
-# 	}
 # EEA_JA-37 = { enable_equipments = { tsf_equipment_JA-37 }
 
 # 	research_cost = 2
@@ -1872,35 +1906,35 @@ EEA_MiG-21 = { enable_equipments = { tsf_equipment_MiG-21 }
 	show_effect_as_desc = no
 	ai_will_do = { factor = 20000 }
 
-	# path = { leads_to_tech = EEA_MiG-23 research_cost_coeff = 1 }
+	path = { leads_to_tech = EEA_MiG-23 research_cost_coeff = 1 }
+}
+
+EEA_MiG-23 = { enable_equipments = { tsf_equipment_MiG-23 }
+
+	research_cost = 2
+	start_year = 1980
+
+	folder = { name = UNI_tsf_folder position = { x = 0 y = 6 } }
+	categories = { MVLV_tsf_tech }
+	show_effect_as_desc = no
+	ai_will_do = { factor = 20000 }
+
+	path = { leads_to_tech = EEA_MiG-27 research_cost_coeff = 1 }
 	}
 
-# EEA_MiG-23 = { enable_equipments = { tsf_equipment_MiG-23 }
+EEA_MiG-27 = { enable_equipments = { tsf_equipment_MiG-27 }
 
-# 	research_cost = 2
-# 	start_year = 1980
+	research_cost = 2
+	start_year = 1983
 
-# 	folder = { name = UNI_tsf_folder position = { x = 0 y = 6 } }
-# 	categories = { MVLV_tsf_tech }
-# 	show_effect_as_desc = no
-# 	ai_will_do = { factor = 20000 }
+	folder = { name = UNI_tsf_folder position = { x = 0 y = 8 } }
+	categories = { MVLV_tsf_tech }
+	show_effect_as_desc = no
+	ai_will_do = { factor = 20000 }
 
-# 	path = { leads_to_tech = EEA_MiG-27 research_cost_coeff = 1 }
-# 	}
-
-# EEA_MiG-27 = { enable_equipments = { tsf_equipment_MiG-27 }
-
-# 	research_cost = 2
-# 	start_year = 1983
-
-# 	folder = { name = UNI_tsf_folder position = { x = 0 y = 8 } }
-# 	categories = { MVLV_tsf_tech }
-# 	show_effect_as_desc = no
-# 	ai_will_do = { factor = 20000 }
-
-# 	path = { leads_to_tech = EEA_MiG-25 research_cost_coeff = 1 }
-# 	path = { leads_to_tech = EEA_MiG-29 research_cost_coeff = 1 }
-# 	}
+	path = { leads_to_tech = EEA_MiG-25 research_cost_coeff = 1 }
+	path = { leads_to_tech = EEA_MiG-29 research_cost_coeff = 1 }
+	}
 
 # EEA_MiG-29 = { enable_equipments = { tsf_equipment_MiG-29 }
 
@@ -1971,7 +2005,12 @@ AFR_F-4 = { enable_equipments = { tsf_equipment_F-4 }
 	research_cost = 2
 	start_year = 1974
 
-	allow_branch = { tag = EGY }
+	allow_branch = { 
+		OR = {
+			tag = EGY
+			tag = ISR
+		}
+	}
 
 	path = { leads_to_tech = AFR_F-14 research_cost_coeff = 1 }
 	folder = { name = UNI_tsf_folder position = { x = -3 y = 2 } }
@@ -1984,7 +2023,12 @@ AFR_F-5 = { enable_equipments = { tsf_equipment_F-5 }
 	research_cost = 2
 	start_year = 1976
 
-	allow_branch = { tag = EGY }
+	allow_branch = { 
+		OR = {
+			tag = EGY
+			tag = ISR
+		}
+	}
 
 	path = { leads_to_tech = AFR_Kfir research_cost_coeff = 1 }
 	path = { leads_to_tech = AFR_F-16 research_cost_coeff = 1 }
@@ -1998,26 +2042,24 @@ AFR_MiG-21 = { enable_equipments = { tsf_equipment_MiG-21 }
 	research_cost = 2
 	start_year = 1975
 
-	allow_branch = { tag = EGY }
-
-	# path = { leads_to_tech = AFR_MiG-23 research_cost_coeff = 1 }
+	path = { leads_to_tech = AFR_MiG-23 research_cost_coeff = 1 }
 	folder = { name = UNI_tsf_folder position = { x = 6 y = 2 } }
 	categories = { MVLV_tsf_tech }
 	ai_will_do = { factor = 20000 }
 }
 
-# AFR_F-14 = { enable_equipments = { tsf_equipment_F-14 }
+AFR_F-14 = { enable_equipments = { tsf_equipment_F-14 }
 
-# 	research_cost = 2
-# 	start_year = 1982
+	research_cost = 2
+	start_year = 1982
 
-# 	path = { leads_to_tech = AFR_F-15 research_cost_coeff = 1 }
-# 	path = { leads_to_tech = AFR_F-14Ex research_cost_coeff = 1 }
+	path = { leads_to_tech = AFR_F-15 research_cost_coeff = 1 }
+	path = { leads_to_tech = AFR_F-14Ex research_cost_coeff = 1 }
 
-# 	folder = { name = UNI_tsf_folder position = { x = -3 y = 6 } }
-# 	categories = { MVLV_tsf_tech }
-# 	ai_will_do = { factor = 20000 }
-# }
+	folder = { name = UNI_tsf_folder position = { x = -3 y = 6 } }
+	categories = { MVLV_tsf_tech }
+	ai_will_do = { factor = 20000 }
+}
 
 # AFR_F-14Ex = { enable_equipments = { tsf_equipment_F-14Ex }
 
@@ -2029,17 +2071,17 @@ AFR_MiG-21 = { enable_equipments = { tsf_equipment_MiG-21 }
 # 	ai_will_do = { factor = 20000 }
 # }
 
-# AFR_F-15 = { enable_equipments = { tsf_equipment_F-15 }
+AFR_F-15 = { enable_equipments = { tsf_equipment_F-15 }
 
-# 	research_cost = 2
-# 	start_year = 1983
+	research_cost = 2
+	start_year = 1983
 
-# 	path = { leads_to_tech = AFR_F-15E research_cost_coeff = 1 }
+	# path = { leads_to_tech = AFR_F-15E research_cost_coeff = 1 }
 
-# 	folder = { name = UNI_tsf_folder position = { x = -3 y = 8 } }
-# 	categories = { MVLV_tsf_tech }
-# 	ai_will_do = { factor = 20000 }
-# }
+	folder = { name = UNI_tsf_folder position = { x = -3 y = 8 } }
+	categories = { MVLV_tsf_tech }
+	ai_will_do = { factor = 20000 }
+}
 
 # AFR_F-15E = { enable_equipments = { tsf_equipment_F-15E }
 
@@ -2103,25 +2145,32 @@ AFR_Kfir = { enable_equipments = { tsf_equipment_MIII }
 	research_cost = 2
 	start_year = 1976
 
-	# path = { leads_to_tech = AFR_M2000 research_cost_coeff = 1 }
+	path = { leads_to_tech = AFR_M2000 research_cost_coeff = 1 }
+
+	allow_branch = { 
+		OR = {
+			tag = EGY
+			tag = ISR
+		}
+	}
 
 	folder = { name = UNI_tsf_folder position = { x = 3 y = 4 } }
 	categories = { MVLV_tsf_tech }
 	ai_will_do = { factor = 20000 }
 }
 
-# AFR_M2000 = { enable_equipments = { tsf_equipment_M2000 }
+AFR_M2000 = { enable_equipments = { tsf_equipment_M2000 }
 
-# 	research_cost = 2
-# 	start_year = 1981
+	research_cost = 2
+	start_year = 1981
 
-# 	path = { leads_to_tech = AFR_M2000K research_cost_coeff = 1 }
-# 	path = { leads_to_tech = AFR_Rafale research_cost_coeff = 1 }
+	# path = { leads_to_tech = AFR_M2000K research_cost_coeff = 1 }
+	# path = { leads_to_tech = AFR_Rafale research_cost_coeff = 1 }
 
-# 	folder = { name = UNI_tsf_folder position = { x = 3 y = 6 } }
-# 	categories = { MVLV_tsf_tech }
-# 	ai_will_do = { factor = 20000 }
-# }
+	folder = { name = UNI_tsf_folder position = { x = 3 y = 6 } }
+	categories = { MVLV_tsf_tech }
+	ai_will_do = { factor = 20000 }
+}
 
 # AFR_M2000K = { enable_equipments = { tsf_equipment_M2000K }
 
@@ -2156,27 +2205,42 @@ AFR_Kfir = { enable_equipments = { tsf_equipment_MIII }
 # 	ai_will_do = { factor = 20000 }
 # }
 
-# AFR_MiG-23 = { enable_equipments = { tsf_equipment_MiG-23 }
+AFR_MiG-23 = { enable_equipments = { tsf_equipment_MiG-23 }
 
-# 	research_cost = 2
-# 	start_year = 1980
+	research_cost = 2
+	start_year = 1980
 
-# 	path = { leads_to_tech = AFR_MiG-27 research_cost_coeff = 1 }
-# 	folder = { name = UNI_tsf_folder position = { x = 6 y = 6 } }
-# 	categories = { MVLV_tsf_tech }
-# 	ai_will_do = { factor = 20000 }
-# }
+	path = { leads_to_tech = AFR_MiG-27 research_cost_coeff = 1 }
 
-# AFR_MiG-27 = { enable_equipments = { tsf_equipment_MiG-27 }
+	allow_branch = { 
+		OR = {
+			tag = EGY
+			tag = ISR
+		}
+	}
 
-# 	research_cost = 2
-# 	start_year = 1983
+	folder = { name = UNI_tsf_folder position = { x = 6 y = 6 } }
+	categories = { MVLV_tsf_tech }
+	ai_will_do = { factor = 20000 }
+}
 
-# 	path = { leads_to_tech = AFR_MiG-29 research_cost_coeff = 1 }
-# 	folder = { name = UNI_tsf_folder position = { x = 6 y = 8 } }
-# 	categories = { MVLV_tsf_tech }
-# 	ai_will_do = { factor = 20000 }
-# }
+AFR_MiG-27 = { enable_equipments = { tsf_equipment_MiG-27 }
+
+	research_cost = 2
+	start_year = 1983
+
+	allow_branch = { 
+		OR = {
+			tag = EGY
+			tag = ISR
+		}
+	}
+
+	# path = { leads_to_tech = AFR_MiG-29 research_cost_coeff = 1 }
+	folder = { name = UNI_tsf_folder position = { x = 6 y = 8 } }
+	categories = { MVLV_tsf_tech }
+	ai_will_do = { factor = 20000 }
+}
 
 # AFR_MiG-29 = { enable_equipments = { tsf_equipment_MiG-29 }
 
@@ -2196,15 +2260,13 @@ AFR_Kfir = { enable_equipments = { tsf_equipment_MIII }
 # 	research_cost = 2
 # 	start_year = 1982
 
-# 	     allow_branch = {
-# 	        OR = {
-# 		tag = CAN
-# 	        tag = AFR
-# 	        tag = CEA
-# 	        tag = SOA
-# 	        tag = GEU
-# 	        tag = OSE
-# 	    }
+# 	allow_branch = {
+# 		NOT = { 
+# 			tag = BET		
+# 			tag = EGY
+# 			tag = ISR
+# 			tag = JAP
+# 		}
 #     }
 
 # 	path = { leads_to_tech = generic_F-14Ex research_cost_coeff = 0.5 }
@@ -2379,30 +2441,30 @@ AFR_Kfir = { enable_equipments = { tsf_equipment_MIII }
 		path = { leads_to_tech = UNI_Manipulator_improvement research_cost_coeff = 1 }
 		path = { leads_to_tech = generic_A-10 research_cost_coeff = 1 }
 
-		folder = { name = UNI_tsf_folder position = { x = -6 y = 4 } }
+		folder = { name = UNI_tsf_folder position = { x = -10 y = 4 } }
 		categories = { MVLV_tsf_tech }
 		ai_will_do = { factor = 1 }
 	}	
 	
-# 	UNI_Manipulator_improvement = {
+	UNI_Manipulator_improvement = {
 
-# 		research_cost = 1
-# 		start_year = 1980
+		research_cost = 1
+		start_year = 1980
 			
-# 		MVLV_asa_battalion = {
-# 			maximum_speed = 0.05
-# 		}
+		MVLV_asa_battalion = {
+			maximum_speed = 0.05
+		}
 			
-# 		MVLV_tsa_battalion = {
-# 			maximum_speed = 0.05
-# 		}
+		MVLV_tsa_battalion = {
+			maximum_speed = 0.05
+		}
 
-# 		path = { leads_to_tech = UNI_Carrying_ammunition_increase research_cost_coeff = 1 }
+		#path = { leads_to_tech = UNI_Carrying_ammunition_increase research_cost_coeff = 1 }
 
-# 		folder = { name = UNI_tsf_folder position = { x = -6 y = 8 } }
-# 		categories = { MVLV_tsf_tech }
-# 		ai_will_do = { factor = 1 }
-# 	}
+		folder = { name = UNI_tsf_folder position = { x = -8 y = 6 } }
+		categories = { MVLV_tsf_tech }
+		ai_will_do = { factor = 1 }
+	}
 	
 # 	UNI_Manipulator_improvement = {
 
@@ -2441,17 +2503,17 @@ AFR_Kfir = { enable_equipments = { tsf_equipment_MIII }
 # #____________________________________________________________
 # ###TSA###	
 	
-# 	generic_A-10 = { enable_equipments = { tsa_equipment_A-10 }
+	generic_A-10 = { enable_equipments = { tsa_equipment_A-10 }
 
-# 		research_cost = 2
-# 		start_year = 1978
+		research_cost = 2
+		start_year = 1978
 
-# 		path = { leads_to_tech = generic_A-10C research_cost_coeff = 1 }
+		path = { leads_to_tech = generic_A-10C research_cost_coeff = 1 }
 		
-# 		folder = { name = UNI_tsf_folder position = { x = -8 y = 6 } }
-# 		categories = { MVLV_tsf_tech }
-# 		ai_will_do = { factor = 1} 
-# 	}	
+		folder = { name = UNI_tsf_folder position = { x = -10 y = 6 } }
+		categories = { MVLV_tsf_tech }
+		ai_will_do = { factor = 1} 
+	}	
 
 # 	generic_A-10C = {
 

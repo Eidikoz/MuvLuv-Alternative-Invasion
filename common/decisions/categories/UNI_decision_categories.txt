@@ -12,9 +12,3 @@ unitednation_security= {
 	allowed = {
 	}
 }
-
-Black_market= {
-	
-	allowed = {
-	}
-}

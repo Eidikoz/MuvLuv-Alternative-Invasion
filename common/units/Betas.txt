@@ -42,7 +42,7 @@ sub_units = {
 		supply_consumption = 0.01
 	
 		need = {
-			Beta_0 = 1
+			Beta_venator = 1
 		}
 	}
 	beta_tank = {

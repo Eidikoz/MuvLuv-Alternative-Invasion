@@ -1,0 +1,106 @@
+###############################
+###########武器及附件###########
+###############################
+#######F4挂架#######
+entity = {
+	name = "MountRack_UNI_entity"
+	pdxmesh = "MountRack_UNI"
+}
+
+entity = {
+	name = "MountRack_USA_entity"
+	pdxmesh = "MountRack_USA"
+}
+entity = {
+	name = "MountRack_JAP_entity"
+	pdxmesh = "MountRack_JAP"
+}
+entity = {
+	name = "MountRack_GEU_entity"
+	pdxmesh = "MountRack_GEU"
+}
+
+entity = {
+	name = "MountRack_AFR_entity"
+	pdxmesh = "MountRack_AFR"
+}
+
+entity = {
+	name = "MountRack_EUR_entity"
+	pdxmesh = "MountRack_EUR"
+}
+
+#######MiG21挂架#######
+entity = {
+	name = "MountRack_SOV_entity"
+	pdxmesh = "MountRack_SOV"
+}
+
+entity = {
+	name = "MountRack_CHI_entity"
+	pdxmesh = "MountRack_CHI"
+}
+
+entity = {
+	name = "MountRack_EEA_entity"
+	pdxmesh = "MountRack_EEA"
+}
+
+#######武器#######
+entity = {
+	name = "GunType82_MR_entity"
+	pdxmesh = "GunType82_MR"
+}
+entity = {
+	name = "GunType82_Hand_entity"
+	pdxmesh = "GunType82_Hand"
+}
+
+entity = {
+	name = "GunType87_MR_entity"
+	pdxmesh = "GunType87_MR"
+}
+entity = {
+	name = "GunType87_Hand_entity"
+	pdxmesh = "GunType87_Hand"
+}
+
+entity = {
+	name = "BladeType74_MR_entity"
+	pdxmesh = "BladeType74_MR"
+}
+entity = {
+	name = "BladeType74_Hand_entity"
+	pdxmesh = "BladeType74_Hand"
+}
+
+entity = {
+	name = "BladeType77_MR_entity"
+	pdxmesh = "BladeType77_MR"
+}
+entity = {
+	name = "BladeType77_Hand_entity"
+	pdxmesh = "BladeType77_Hand"
+}
+
+#######盾牌#######
+entity = {
+	name = "Shield_AFR_entity"
+	pdxmesh = "Shield_AFR"
+}
+entity = {
+	name = "Shield_EUR_entity"
+	pdxmesh = "Shield_EUR"
+}
+entity = {
+	name = "Shield_CHI_entity"
+	pdxmesh = "Shield_CHI"
+}
+entity = {
+	name = "Shield_EEA_entity"
+	pdxmesh = "Shield_EEA"
+}
+entity = {
+	name = "Shield_UNI_entity"
+	pdxmesh = "Shield_UNI"
+}

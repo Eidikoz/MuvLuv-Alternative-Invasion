@@ -6,7 +6,7 @@ equipments = {
 		year = 1936
 	
 		is_archetype = yes
-		picture = Betatech_medium		
+		picture = soldiertech_medium		
 		is_buildable = no
 		type = infantry
 		
@@ -36,11 +36,11 @@ equipments = {
 		}
 		
 	}
-	Beta_0 = {
+	Beta_venator = {
 		year = 2000
 	
 		archetype = Beta
-		picture = Betatech_medium	
+		picture = soldiertech_medium	
 		active = no
 		priority = 05
 		visual_level = 0

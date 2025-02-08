@@ -1,0 +1,5 @@
+entity = {
+	name = "building_hive"
+	pdxmesh = "building_hive"
+
+}

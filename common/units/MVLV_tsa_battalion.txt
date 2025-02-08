@@ -74,26 +74,6 @@ sub_units = {
 			attack = 0.1
 			defence = 0.3
 		}
-		hive_gateclass = {
-			attack = -0.25
-			defence = -0.3
-			movement = 0.3
-		}
-		hive_mainhall = {
-			attack = -0.25
-			defence = -0.3
-			movement = 0.3
-		}
-		hive_drift = {
-			attack = -0.25
-			defence = -0.3
-			movement = 0.3
-		}
-		hive_gate = {
-			attack = -0.25
-			defence = -0.3
-			movement = 0.3
-		}
 	}
 	MVLV_tsa_support = {
 		sprite = "tsa"

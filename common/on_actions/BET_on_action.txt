@@ -2,10 +2,7 @@ on_actions = {
 	
 	on_startup = {
 		effect = {
-			# news_event = Betanews.57
-			# ENG  = { 
-			# 	country_event = Betaevents.13
-			# }
+        	
 		}
 	}
 

@@ -1,0 +1,1211 @@
+
+add_namespace = unsecurity
+
+#########unsecurity-Division#########################
+
+# country_event = {
+# 	id = unsecurity.1
+# 	title = "unsecurity.1.name"
+# 	desc = "unsecurity.1.desc"
+# 	picture = GFX_news_event_eng_churchill_sign_treaty
+# 	hidden = yes
+# 	is_triggered_only = yes
+	
+# 	trigger = {
+# 	}
+
+# 	option = {
+# 		name = unsecurity.1.a
+# 		183 = { add_core_of = UNI }
+# 		ENG ={ release = UNI }
+# 		country_event = { days = 1 id = BETAnews.20 }
+# 		hidden_effect = {
+# 			UNI ={
+# 				country_event = { days = 1 id = unsecurity.6 }
+# 				ENG = { add_to_Faction = UNI }
+# 				delete_unit_template_and_units = { division_template = "Infantry Division" }
+# 				delete_unit_template_and_units = { division_template = "Cavalry Brigade" }
+# 				delete_unit_template_and_units = { division_template = "Tank Brigade" }
+# 				delete_unit_template_and_units = { division_template = "Colonial Garrison" }
+# 				delete_unit_template_and_units = { division_template = "Survivor" }
+# 			}
+# 		}
+# 	}
+# }
+
+
+news_event = {
+	id = unsecurity.2
+	title = "unsecurity.2.name"
+	desc = "unsecurity.2.desc"
+	picture = GFX_news_event_saf_soldiers_2
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = unsecurity.2.a
+		add_manpower = -30000
+		send_equipment = {
+			target = UNI
+			type = infantry_equipment
+			amount = 1000
+		}
+		send_equipment = {
+			target = UNI
+			type = artillery_equipment
+			amount = 100
+		}
+		send_equipment = {
+			target = UNI
+			type = support_equipment
+			amount = 100
+		}
+		hidden_effect = {
+			UNI ={
+				load_oob = "UNI_more"
+				add_manpower = 30000
+				country_event = { days = 1 id = unsecurity.31 }
+			}
+		}
+	}
+	option = {
+		name = unsecurity.2.a
+	}
+}
+country_event = {
+	id = unsecurity.3
+	title = "unsecurity.3.name"
+	desc = "unsecurity.3.desc"
+	picture = GFX_news_event_saf_soldiers_2
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+
+	option = {
+			183 = {
+				add_building_construction = {
+					type = bunker
+					province = 7193
+					level = 10
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 11984
+					level = 10
+					instant_build = yes
+				}
+			}
+
+	}
+
+}
+country_event = {
+	id = unsecurity.4
+	title = "unsecurity.4.name"
+	desc = "unsecurity.4.desc"
+	picture = GFX_news_event_saf_soldiers_2
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+
+	option = {
+			183 = {
+				add_building_construction = {
+					type = naval_base
+					province = 7193
+					level = 10
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 11984
+					level = 10
+					instant_build = yes
+				}
+			}
+
+	}
+
+}
+country_event = {
+	id = unsecurity.5
+	title = "unsecurity.5.name"
+	desc = "unsecurity.5.desc"
+	picture = GFX_news_event_chinese_soldiers_march
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+	option = {
+		name = unsecurity.5.a
+		hidden_effect ={
+			282 = {
+				add_building_construction = {
+					type = bunker
+					province = 1182
+					level = 6
+					instant_build = yes
+				}
+			}
+			
+			613 = {
+				add_building_construction = {
+					type = bunker
+					province = 11913
+					level = 6
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+}
+
+# country_event = {
+# 	id = unsecurity.6
+# 	title = "unsecurity.6.name"
+# 	desc = "unsecurity.6.desc"
+# 	picture = GFX_news_event_chinese_soldiers_march
+# 	fire_only_once = yes
+# 	hidden = yes
+# 	mean_time_to_happen = { days = 1 }
+# 	trigger = {
+# 		UNI = { exists = yes }
+# 	}
+
+# 	option = {
+# 		name = unsecurity.6.a
+# 		hidden_effect ={
+# 			UNI ={
+# 				load_oob = "UNI"
+# 			}
+# 		}
+# 	}
+
+# }
+
+# country_event = {
+# 	id = unsecurity.7
+# 	title = "unsecurity.7.name"
+# 	desc = "unsecurity.7.desc"
+# 	picture = GFX_report_event_generic_research_lab
+# 	is_triggered_only = yes
+	
+# 	trigger = {
+# 	}
+
+# 	option = {
+# 		trigger = {
+# 			NOT = { has_global_flag = unsecurity_leviathan }
+# 		}
+# 		name = unsecurity.7.a
+# 		UNI = {
+# 			add_research_slot = 1
+# 		}
+# 		FROM = {
+# 			add_research_slot = -1
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			has_global_flag = unsecurity_leviathan
+# 		}
+# 		name = unsecurity.7.a
+# 		UNZ = {
+# 			add_research_slot = 1
+# 		}
+# 		FROM = {
+# 			add_research_slot = -1
+# 		}
+# 	}
+# 	option = {
+# 		name = unsecurity.7.b
+
+# 	}
+
+# }
+
+# country_event = {
+# 	id = unsecurity.8
+# 	title = "unsecurity.8.name"
+# 	desc = "unsecurity.8.desc"
+# 	picture = GFX_report_event_chinese_soldiers
+# 	is_triggered_only = yes
+	
+# 	trigger = {
+# 	}
+
+# 	option = {
+# 		trigger = {
+# 			NOT = { has_global_flag = unsecurity_leviathan }
+# 		}
+# 		name = unsecurity.8.a
+# 		UNI = {
+# 			add_manpower = 10000
+# 		}
+# 		add_manpower = -10000
+# 	}
+# 	option = {
+# 		trigger = {
+# 			has_global_flag = unsecurity_leviathan
+# 		}
+# 		name = unsecurity.8.a
+# 		UNZ = {
+# 			add_manpower = 10000
+# 		}
+# 		add_manpower = -10000
+# 	}
+# 	option = {
+# 		name = unsecurity.8.b
+
+# 	}
+
+# }
+
+country_event = {
+	id = unsecurity.9
+	title = "unsecurity.9.name"
+	desc = "unsecurity.9.desc"
+	picture = GFX_news_event_chinese_soldiers_march
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+
+	option = {
+		every_country ={
+			if = {
+				limit = {
+					OR = {
+						has_idea = unsecuritymember
+						has_idea = unsecuritymember_united
+					}
+				}
+					
+				add_ideas = {
+					UNIhelp
+				}
+			}
+		}
+		country_event = { days = 1 id = BETAnews.18 }
+	}
+
+}
+
+# country_event = {
+# 	id = unsecurity.12
+# 	title = "unsecurity.12.name"
+# 	desc = "unsecurity.12.desc"
+# 	picture = GFX_news_event_chinese_soldiers_march
+# 	is_triggered_only = yes
+# 	hidden = yes
+	
+# 	trigger = {
+# 	}
+
+# 	option = {
+# 		trigger = {
+# 			NOT = { has_global_flag = unsecurity_leviathan }
+# 		}
+# 		GER = {
+# 			random_army_leader = { 
+# 				limit = { has_id = 4 }
+# 				set_nationality = UNI
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			has_global_flag = unsecurity_leviathan
+# 		}
+# 		GER = {
+# 			random_army_leader = { 
+# 				limit = { has_id = 4 }
+# 				set_nationality = UNZ
+# 			}
+# 		}
+# 	}
+
+# }
+
+# country_event = {
+# 	id = unsecurity.13
+# 	title = "unsecurity.13.name"
+# 	desc = "unsecurity.13.desc"
+# 	picture = GFX_news_event_chinese_soldiers_march
+# 	is_triggered_only = yes
+# 	hidden = yes
+	
+# 	trigger = {
+# 	}
+
+# 	option = {
+# 		trigger = {
+# 			NOT = { has_global_flag = unsecurity_leviathan }
+# 		}
+# 		every_country = {
+# 			random_army_leader = { 
+# 				limit = { skill > 4}
+# 				set_nationality = UNI
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			has_global_flag = unsecurity_leviathan
+# 		}
+# 		every_country = {
+# 			random_army_leader = { 
+# 				limit = { skill > 4}
+# 				set_nationality = UNZ
+# 			}
+# 		}
+# 	}
+
+# }
+
+country_event = {
+	id = unsecurity.14
+	title = "unsecurity.14.name"
+	desc = "unsecurity.14.desc"
+	picture = GFX_news_event_chinese_soldiers_march
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_global_flag = unsecurity_leviathan }
+		}
+		every_country = {
+			if = {
+				limit = {
+					has_idea = unsecuritymember
+				}
+				add_opinion_modifier = {
+						target = UNI
+						modifier = criminal_way
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			has_global_flag = unsecurity_leviathan
+		}
+		every_country = {
+			if = {
+				limit = {
+					has_idea = unsecuritymember
+				}
+				add_opinion_modifier = {
+						target = UNI
+						modifier = criminal_way
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = unsecurity.16
+	title = "unsecurity.16.name"
+	desc = "unsecurity.16.desc"
+	picture = GFX_report_event_germany_politician_handshake
+	
+	trigger = {
+		focus_progress = {
+			focus = international_weapons
+			progress > 0
+		}
+	}
+	
+	mean_time_to_happen = { days = 60 }
+	
+	immediate = {
+		random_country ={
+			limit = {
+				NOT = { tag = BET }
+			}
+			send_equipment = {
+				target = UNI
+				type = infantry_equipment
+				amount = 1000
+			}
+			send_equipment = {
+				target = UNI
+				type = artillery_equipment
+				amount = 100
+			}
+			send_equipment = {
+				target = UNI
+				type = support_equipment
+				amount = 100
+			}
+		}
+	}
+	option = {
+		name = unsecurity.16.a
+	}	
+}
+
+country_event = {
+	id = unsecurity.17
+	title = "unsecurity.17.name"
+	desc = "unsecurity.17.desc"
+	picture = GFX_news_event_chinese_soldiers_march
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+
+	option = {
+ 		division_template = {
+			name = "Mercenary Infantry"
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 0 y = 4 }
+			}
+	
+			support = {
+				mot_recon = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 }			
+			}
+		}
+		division_template = {
+			name = "Mercenary Infantry2"
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 0 y = 4 }
+				infantry = { x = 0 y = 5 }
+				infantry = { x = 0 y = 6 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+				infantry = { x = 1 y = 4 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3 }
+				infantry = { x = 2 y = 4 }
+				infantry = { x = 2 y = 5 }
+				infantry = { x = 2 y = 6 }
+				infantry = { x = 3 y = 0 }
+				infantry = { x = 3 y = 1 }
+				infantry = { x = 3 y = 2 }
+				infantry = { x = 3 y = 3 }
+				infantry = { x = 3 y = 4 }
+				infantry = { x = 4 y = 0 }
+				infantry = { x = 4 y = 1 }
+				infantry = { x = 4 y = 2 }
+				infantry = { x = 4 y = 3 }
+				infantry = { x = 4 y = 4 }
+			}
+		}
+		
+		division_template = {
+			name = "Mercenary Motorized"
+
+			regiments = {
+				motorized = { x = 0 y = 0 }
+				motorized = { x = 0 y = 1 }
+				motorized = { x = 0 y = 2 }
+				motorized = { x = 1 y = 0 }
+				motorized = { x = 1 y = 1 }
+				motorized = { x = 1 y = 2 }
+				motorized = { x = 2 y = 0 }
+				motorized = { x = 2 y = 1 }
+				motorized = { x = 2 y = 2 }
+			}
+			support = {
+				mot_recon = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 }			
+			}
+		}
+		
+		division_template = {
+			name = "Mercenary Mountaineers"
+
+			regiments = {
+				mountaineers = { x = 0 y = 0 }
+				mountaineers = { x = 0 y = 1 }
+				mountaineers = { x = 0 y = 2 }
+				mountaineers = { x = 1 y = 0 }
+				mountaineers = { x = 1 y = 1 }
+				mountaineers = { x = 1 y = 2 }
+				mountaineers = { x = 2 y = 0 }
+				mountaineers = { x = 2 y = 1 }
+				mountaineers = { x = 2 y = 2 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+			}
+		}
+		
+		division_template = {
+			name = "Mercenary light tanks"
+
+			regiments = {
+				light_armor = { x = 0 y = 0 }
+				light_armor = { x = 0 y = 1 }
+				light_armor = { x = 0 y = 2 }
+				light_armor = { x = 0 y = 3 }
+				light_armor = { x = 0 y = 4 }
+				light_armor = { x = 1 y = 0 }
+				light_armor = { x = 1 y = 1 }
+				light_armor = { x = 1 y = 2 }
+				light_armor = { x = 1 y = 3 }
+				light_armor = { x = 1 y = 4 }
+			}
+		}
+		
+		division_template = {
+			name = "Mercenary heavy tanks"
+
+			regiments = {
+				heavy_armor = { x = 0 y = 0 }
+				heavy_armor = { x = 0 y = 1 }
+				heavy_armor = { x = 0 y = 2 }
+				heavy_armor = { x = 0 y = 3 }
+			}
+		}
+		set_division_template_lock = {
+			division_template = "Mercenary Infantry"
+			is_locked = yes
+		}
+		set_division_template_lock = {
+			division_template = "Mercenary Infantry2"
+			is_locked = yes
+		}
+		set_division_template_lock = {
+			division_template = "Mercenary Motorized"
+			is_locked = yes
+		}
+		set_division_template_lock = {
+			division_template = "Mercenary Mountaineers"
+			is_locked = yes
+		}
+		set_division_template_lock = {
+			division_template = "Mercenary light tanks"
+			is_locked = yes
+		}
+		set_division_template_lock = {
+			division_template = "Mercenary heavy tanks"
+			is_locked = yes
+		}
+
+	}
+
+}
+
+country_event = {
+	id = unsecurity.18
+	title = "unsecurity.18.name"
+	desc = "unsecurity.18.desc"
+	picture = GFX_news_event_chinese_soldiers_march
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+
+	option = {		
+		load_oob = "MERC_Infantry"
+	}
+	
+	option = {
+		load_oob = "MERC_Infantry2"
+	}
+	
+	option = {
+		load_oob = "MERC_Tanks"
+	}
+	
+	option = {
+		load_oob = "MERC_Tanks2"
+	}
+	
+	option = {
+		load_oob = "MERC_Motorized"
+	}
+	
+	option = {
+		load_oob = "MERC_Mountain"
+	}
+
+}
+
+country_event = {
+	id = unsecurity.19
+	title = "unsecurity.19.name"
+	desc = "unsecurity.19.desc"
+	picture = GFX_country_event_stalin_meeting
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+	immediate = {
+		add_ideas = {
+				the_other_way
+		}
+		unlock_national_focus = the_other_way2
+		create_faction = "Criminal Syndicate"
+		add_to_faction = UNI
+		country_event = { days = 1 id = BETAnews.19 }
+	}
+		
+}
+
+country_event = {
+	id = unsecurity.20
+	title = "unsecurity.20.name"
+	desc = "unsecurity.20.desc"
+	picture = GFX_country_event_stalin_meeting
+	fire_only_once = yes
+	major = yes
+	hidden = yes
+	
+	trigger = {
+		UNI = { has_idea = Minewar }
+		UNI = { has_war = yes }
+	}
+	immediate = {
+		every_country = {
+			add_opinion_modifier = {
+				target = UNI
+				modifier = broke_international_norm
+			}
+		}
+	}
+		
+}
+
+# country_event = {
+# 	id = unsecurity.21
+# 	title = "unsecurity.21.name"
+# 	desc = "unsecurity.21.desc"
+# 	picture = GFX_country_event_stalin_meeting
+# 	fire_only_once = yes
+# 	hidden = yes
+	
+# 	trigger = {
+# 	}
+	
+# 	option = {
+# 		trigger = {
+# 			NOT = { has_global_flag = unsecurity_leviathan }
+# 		}
+# 		every_country = {
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						has_idea = unsecurityheadquarters
+# 						has_idea = unsecuritymember 
+# 						tag = UNI
+# 					}
+# 				}
+# 				add_research_slot = 1
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		trigger = {
+# 			has_global_flag = unsecurity_leviathan
+# 		}
+# 		every_country = {
+# 			if = {
+# 				limit = {
+# 					OR = {
+# 						has_idea = unsecurityheadquarters_united
+# 						has_idea = unsecuritymember_united 
+# 						tag = UNZ
+# 					}
+# 				}
+# 				add_research_slot = 1
+# 			}
+# 		}
+# 	}	
+# }
+
+country_event = {
+	id = unsecurity.22
+	title = "unsecurity.22.name"
+	desc = "unsecurity.22.desc"
+	picture = GFX_report_event_soldiers_marching
+	
+	trigger = {
+		focus_progress = {
+			focus = new_soldiers
+			progress > 0
+		}
+	}
+	
+	mean_time_to_happen = { days = 60 }
+	
+	immediate = {
+		load_oob = "UNI_more"
+	}
+	option = {
+		name = unsecurity.22.a
+	}	
+}
+
+
+country_event = {
+	id = unsecurity.24
+	title = "unsecurity.24.name"
+	desc = "unsecurity.24.desc"
+	picture = GFX_news_event_chinese_soldiers_march
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_idea = criminal_way5 
+			}
+			swap_ideas = {
+				remove_idea = criminal_way5
+				add_idea = criminal_way6
+			}
+		}
+		if = {
+			limit = {
+				has_idea = criminal_way4 
+			}
+			swap_ideas = {
+				remove_idea = criminal_way4
+				add_idea = criminal_way5
+			}
+		}
+		if = {
+			limit = {
+				has_idea = criminal_way3 
+			}
+			swap_ideas = {
+				remove_idea = criminal_way3
+				add_idea = criminal_way4
+			}
+		}
+		if = {
+			limit = {
+				has_idea = criminal_way2 
+			}
+			swap_ideas = {
+				remove_idea = criminal_way2
+				add_idea = criminal_way3
+			}
+		}	
+		if = {
+			limit = {
+				has_idea = criminal_way 
+			}
+			swap_ideas = {
+				remove_idea = criminal_way
+				add_idea = criminal_way2
+			}
+		}		
+		if = {
+			limit = {
+				has_idea = international_finance 
+			}
+			swap_ideas = {
+				remove_idea = international_finance
+				add_idea = criminal_way
+			}
+		} 
+		if = {
+			limit = {
+				has_idea = international_finance2 
+			}
+			swap_ideas = {
+				remove_idea = international_finance2
+				add_idea = international_finance
+			}
+		} 
+		if = {
+			limit = {
+				has_idea = international_finance3 
+			}
+			swap_ideas = {
+				remove_idea = international_finance3
+				add_idea = international_finance2
+			}
+		} 
+	}
+	option = {
+	}
+
+}
+
+
+country_event = {
+	id = unsecurity.25
+	title = "unsecurity.25.name"
+	desc = "unsecurity.25.desc"
+	picture = GFX_news_event_chinese_soldiers_march
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_idea = international_finance2
+			}
+			swap_ideas = {
+				remove_idea = international_finance2
+				add_idea = international_finance3
+			}
+		}
+		if = {
+			limit = {
+				has_idea = international_finance
+			}
+			swap_ideas = {
+				remove_idea = international_finance
+				add_idea = international_finance2
+			}
+		}
+		if = {
+			limit = {
+				has_idea = criminal_way 
+			}
+			swap_ideas = {
+				remove_idea = criminal_way
+				add_idea = international_finance
+			}
+		}
+		if = {
+			limit = {
+				has_idea = criminal_way2 
+			}
+			swap_ideas = {
+				remove_idea = criminal_way2
+				add_idea = criminal_way
+			}
+		}
+		if = {
+			limit = {
+				has_idea = criminal_way3 
+			}
+			swap_ideas = {
+				remove_idea = criminal_way3
+				add_idea = criminal_way2
+			}
+		}
+		if = {
+			limit = {
+				has_idea = criminal_way4 
+			}
+			swap_ideas = {
+				remove_idea = criminal_way4
+				add_idea = criminal_way3
+			}
+		}	
+		if = {
+			limit = {
+				has_idea = criminal_way5 
+			}
+			swap_ideas = {
+				remove_idea = criminal_way5
+				add_idea = criminal_way4
+			}
+		}		
+		if = {
+			limit = {
+				has_idea = criminal_way6 
+			}
+			swap_ideas = {
+				remove_idea = criminal_way6
+				add_idea = criminal_way5
+			}
+		} 
+	}
+	option = {
+	}
+
+}
+
+country_event = {
+	id = unsecurity.26
+	title = "unsecurity.26.name"
+	desc = "unsecurity.26.desc"
+	picture = GFX_news_event_chinese_soldiers_march
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+	
+	immediate = {
+		every_country = {
+			if = {
+				limit = {
+					has_idea = unsecuritymember
+				}
+				add_opinion_modifier = {
+						target = UNI
+						modifier = sold_BETAs
+				}
+			}
+		}
+	}
+
+}
+
+# country_event = {
+# 	id = unsecurity.27
+# 	title = "unsecurity.27.name"
+# 	desc = "unsecurity.27.desc"
+# 	picture = news_event_chinese_soldiers_march
+# 	hidden = yes
+	
+# 	trigger = {
+# 		any_state = {
+# 			has_state_flag= UNI_firebomb
+# 		}
+# 	}
+	
+# 	immediate = {
+# 		every_state = {
+# 			if = {
+# 				limit = {
+# 					has_state_flag= UNI_firebomb
+# 				}
+# 				add_province_modifier = {
+# 					static_modifiers = { firebombs }
+# 					province = {
+# 						all_provinces = yes
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+
+# }
+
+# country_event = {
+# 	id = unsecurity.28
+# 	title = "unsecurity.28.name"
+# 	desc = "unsecurity.28.desc"
+# 	picture = GFX_news_event_chinese_soldiers_march
+# 	hidden = yes
+	
+# 	trigger = {
+# 		any_state = {
+# 			has_state_flag= UNI_antipersonnel
+# 		}
+# 	}
+	
+# 	immediate = {
+# 		every_state = {
+# 			if = {
+# 				limit = {
+# 					has_state_flag= UNI_antipersonnel
+# 				}
+# 				add_province_modifier = {
+# 					static_modifiers = { antipersonnel }
+# 					province = {
+# 						all_provinces = yes
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+
+# }
+
+country_event = {
+	id = unsecurity.29
+	title = "unsecurity.29.name"
+	desc = "unsecurity.29.desc"
+	picture = GFX_news_event_chinese_soldiers_march
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+	
+	immediate = {
+		every_state = {
+			if = {
+				limit = {
+					is_fully_controlled_by = BET
+				}
+				add_core_of = UNI
+			}
+		}
+		country_event = { days = 1 id = BETAnews.17 }
+	}
+
+}
+
+country_event = {
+	id = unsecurity.30
+	title = "unsecurity.30.name"
+	desc = "unsecurity.30.desc"
+	picture = GFX_news_event_chinese_soldiers_march
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				tag = USA
+			}
+			629 = {
+				add_core_of = UNI
+			}
+			USA = {
+				release = UNI 
+				puppet = UNI
+			}
+		}
+		if = {
+			limit = {
+				tag = ENG
+			}
+			696 = {
+				add_core_of = UNI
+			}
+			ENG = {
+				release = UNI 
+				puppet = UNI
+			}
+		}
+		if = {
+			limit = {
+				tag = JAP
+			}
+			524 = {
+				add_core_of = UNI
+			}
+			JAP = {
+				release = UNI 
+				puppet = UNI
+			}
+		}
+		if = {
+			limit = {
+				NOT = { tag = ENG }
+				NOT = { tag = USA }
+				NOT = { tag = JAP }
+			}
+			696 = {
+				add_core_of = UNI
+			}
+			ENG = {
+				release = UNI 
+			}
+			FROM = {
+				puppet = UNI
+			}
+		}
+		UNI = { remove_ideas = international_finance }
+		UNI = { remove_ideas = international_finance2 }
+		UNI = { remove_ideas = international_finance3 }
+		UNI = { remove_ideas = criminal_way }
+		UNI = { remove_ideas = criminal_way2 }
+		UNI = { remove_ideas = criminal_way3 }
+		UNI = { remove_ideas = criminal_way4 }
+		UNI = { remove_ideas = criminal_way5 }
+		UNI = { remove_ideas = criminal_way6 }
+		set_global_flag = UNI2
+		country_event = { days = 1 id = BETAnews.55 }
+	}
+}
+
+news_event = {
+	id = unsecurity.31
+	title = "unsecurity.31.name"
+	desc = "unsecurity.31.desc"
+	picture = GFX_news_event_chinese_soldiers_march
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = unsecurity.31.a
+	}
+
+}
+
+news_event = {
+	id = unsecurity.32
+	title = "unsecurity.32.name"
+	desc = "unsecurity.32.desc"
+	picture = GFX_news_event_eng_churchill_sign_treaty
+	is_triggered_only = yes
+	
+	option = {
+		name = unsecurity.32.a
+	}
+
+}
+news_event = {
+	id = unsecurity.33
+	title = "unsecurity.33.name"
+	desc = "unsecurity.33.desc"
+	picture = GFX_news_event_eng_churchill_sign_treaty
+	is_triggered_only = yes
+	
+	option = {
+		name = unsecurity.33.a
+	}
+
+}
+
+# news_event = {
+# 	id = unsecurity.34
+# 	title = "unsecurity.34.name"
+# 	desc = "unsecurity.34.desc"
+# 	picture = GFX_event_BETA_landing
+# 	trigger = {
+# 		UNI = { exists = no }
+# 		any_country ={
+# 			has_idea = unsecurityheadquarters
+# 		}
+# 		any_country ={
+# 			has_idea = unsecuritymember
+# 		}
+# 	}
+	
+# 	option = {
+# 		name = unsecurity.34.a
+# 	}
+
+# }

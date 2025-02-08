@@ -1,0 +1,20 @@
+objectTypes = {
+	# pdxmesh = {
+	# 	name = "generic_tsa_mesh"
+	# 	file = "gfx/models/units/tsa/generic_tsa.mesh"
+	# }
+	
+	# pdxmesh = {
+	# 	name = "JAP_generic_tsa_mesh"
+	# 	file = "gfx/models/units/tsa/JAP_generic_tsa.mesh"
+	# }
+	# pdxmesh = {
+	# 	name = "SOV_generic_tsa_mesh"
+	# 	file = "gfx/models/units/tsa/SOV_generic_tsa.mesh"
+	# }
+	pdxmesh = {
+		name = "GENERIC_Tsa_A10"
+		file = "gfx/models/units/tsa/Tsa_A10.mesh"
+	}
+}
+

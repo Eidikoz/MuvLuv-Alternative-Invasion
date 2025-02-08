@@ -14,7 +14,7 @@ add_ideas = {
 }
 
 set_technology = {
-	Betatech=1
+	soldiertech=1
 }
 
 set_popularities = {

@@ -6,7 +6,6 @@ country_event = {
 	title = "BETAwars.1.name"
 	desc = "BETAwars.1.desc"
 	hidden =yes
-	fire_only_once = yes
 
 	trigger = {
 		has_capitulated = no
@@ -20,7 +19,7 @@ country_event = {
 			}
 		}
 	}
-	mean_time_to_happen = { days = 3 }
+	mean_time_to_happen = { days = 5 }
 
 	option = {
 		name = BETAInvasion

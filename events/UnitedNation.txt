@@ -1,7 +1,7 @@
 
 add_namespace = unitednation
 
-#########Doomsday-Division#########################
+#########unsecurity-Division#########################
 
 country_event = {
 	id = unitednation.1
@@ -22,7 +22,7 @@ country_event = {
 		country_event = { days = 1 id = BETAnews.20 }
 		UNI ={
 			country_event = { days = 1 id = unitednation.6 }
-			ENG = { add_to_Faction = UNI }
+			USA = { add_to_Faction = UNI }
 			delete_unit_template_and_units = { division_template = "Infantry Division" }
 			delete_unit_template_and_units = { division_template = "Cavalry Brigade" }
 			delete_unit_template_and_units = { division_template = "Tank Brigade" }
@@ -39,7 +39,7 @@ country_event = {
 	# 	hidden_effect = {
 	# 		UNI ={
 	# 			country_event = { days = 1 id = unitednation.6 }
-	# 			ENG = { add_to_Faction = UNI }
+	# 			USA = { add_to_Faction = UNI }
 	# 			delete_unit_template_and_units = { division_template = "Infantry Division" }
 	# 			delete_unit_template_and_units = { division_template = "Cavalry Brigade" }
 	# 			delete_unit_template_and_units = { division_template = "Tank Brigade" }

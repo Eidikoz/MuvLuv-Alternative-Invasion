@@ -27,12 +27,6 @@ country_event = {
 			add_core_of = BET
 		}
 		set_global_flag = BET_sinkiang
-		
-		release = {
-        	country = EGY   # Tag for Egypt
-        	puppet = yes    # Make Egypt a puppet
-        	owner = ENG     # The United Kingdom is the releasing country
-        }
 		JAP = {
 			release = CHI
 		}
@@ -74,6 +68,7 @@ country_event = {
 				transfer_troops = yes
 			}
 		}
+		
 	}
 }
 
@@ -91,27 +86,20 @@ country_event = {
 
 	option = {
 		name = BETAInvasion
-		SIK = {
+		PRC = {
 			release = BET 
 		}
 		BET = {
-			load_oob = "BET_1936_sinkiang"
+			load_oob = "BET_0_sinkiang"
 		}
 		619 = {
 			add_manpower = -99999999
 		}
-		# every_country = {
-        #     limit = {
-        #         NOT = { tag = BET } 
-        #     }
-        #     add_ideas = no_surrender
-		# 	declare_war_on = {
-		# 		type = annex_everything
-		# 		target = BET
-		# 	}
-        # }
-		hidden_effect = {
-
-		}
+		every_country = {
+            limit = {
+                NOT = { tag = BET } 
+            }
+            add_ideas = no_surrender 
+        }
 	}
 }

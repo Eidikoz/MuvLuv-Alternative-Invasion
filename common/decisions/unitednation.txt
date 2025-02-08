@@ -1,18 +1,20 @@
 _security = {
 
-	Doomsday_founding = {
+	unsecurity_founding = {
 
 		icon = generic_operation
-
+		ai_will_do = {
+			factor = 100
+		}
 		available = {
-			is_major = yes
+			tag = USA
 			all_country ={
 			    NOT = {
-					has_idea = doomsdayheadquarters
+					has_idea = unsecuritybase
 			    }
 			}
-			has_global_flag = doomsday_Beta
-			NOT = { has_global_flag = doomsday_leviathan }
+			has_global_flag = unsecurity_Beta
+			NOT = { has_global_flag = unsecurity_leviathan }
 			NOT = {
 				has_game_rule = {
 					rule = UNI_spawn
@@ -24,29 +26,29 @@ _security = {
 		}
 		
 		visible = {
-			is_major = yes
+			tag = USA
 			all_country ={
 			    NOT = {
-					has_idea = doomsdayheadquarters
+					has_idea = unsecuritybase
 			    }
 			}
 			NOT = {
 				tag = BET
 			}
-			has_global_flag = doomsday_Beta
-			NOT = { has_global_flag = doomsday_leviathan }
+			has_global_flag = unsecurity_Beta
+			NOT = { has_global_flag = unsecurity_leviathan }
 		}
 		
-		cost = 150
+		cost = 0
 		fire_only_once = yes
 
 		complete_effect = {
 			add_manpower = -10000
 			add_ideas = {
-				doomsdayheadquarters
+				unsecuritybase
 			} 
 			# hidden_effect = {
-			# 	news_event = { days = 1 id = doomsday.1 }
+			# 	news_event = { days = 1 id = unsecurity.1 }
 			# }
 		}
 
@@ -60,18 +62,18 @@ _security = {
 		}
 	}
 	
-	Doomsday_join = {
+	unsecurity_join = {
 		icon = generic_operation
 
 		available = {
-			NOT = { has_idea = doomsdayheadquarters}
+			NOT = { has_idea = unsecuritybase}
 			UNI = { exists = yes}
 		}
-		cost = 150
+		cost = 50
 		fire_only_once = yes
 		
 		visible = {
-			NOT = { has_idea = doomsdayheadquarters}
+			NOT = { has_idea = unsecuritybase}
 			UNI={ exists=yes }
 			NOT = {
 				tag = UNI
@@ -81,10 +83,10 @@ _security = {
 		complete_effect = {
 			add_manpower = -30000
 			add_ideas = {
-				doomsdaymember
+				unsecuritymember
 			}
 			hidden_effect = {
-				country_event = { days = 1 id = doomsday.2 }
+				country_event = { days = 1 id = unsecurity.2 }
 			} 
 		}
 
@@ -194,7 +196,7 @@ _security = {
 		complete_effect = {
 			UNI = { change_tag_from = ROOT }
 			hidden_effect = {
-				UNI = { news_event = { days = 1 id = doomsday.33 } }
+				UNI = { news_event = { days = 1 id = unsecurity.33 } }
 			}
 		}
 
@@ -209,7 +211,7 @@ _security = {
 				is_major = yes
 				UNI = { exists = no }
 				any_country ={
-					has_idea = doomsdayheadquarters
+					has_idea = unsecuritybase
 				}
 				has_capitulated = no
 			}
@@ -220,7 +222,7 @@ _security = {
 				is_major = yes
 				UNI = { exists = no }
 				any_country ={
-					has_idea = doomsdayheadquarters
+					has_idea = unsecuritybase
 				}
 				date > 1936.02.01 
 				has_capitulated = no
@@ -233,7 +235,7 @@ _security = {
 		complete_effect = {
 			add_manpower = -20000
 			hidden_effect = {
-				news_event = { days = 1 id = doomsday.30 }
+				news_event = { days = 1 id = unsecurity.30 }
 			}
 		}
 
@@ -434,7 +436,7 @@ Black_market = {
 		complete_effect = {
 			custom_effect_tooltip = UNI_Black_market
 			hidden_effect = {
-				country_event = { id = doomsday.18 }
+				country_event = { id = unsecurity.18 }
 			}
 		}
 
@@ -500,7 +502,7 @@ Black_market = {
 		}
 		complete_effect = {
 			hidden_effect ={
-				country_event = { id = doomsday.26 }
+				country_event = { id = unsecurity.26 }
 			}
 			add_political_power = 300
 		}
@@ -530,7 +532,7 @@ Black_market = {
 		}
 		complete_effect = {
 			hidden_effect ={
-				country_event = { id = doomsday.19 }
+				country_event = { id = unsecurity.19 }
 			}
 			custom_effect_tooltip = UNI_no_way_back
 		}

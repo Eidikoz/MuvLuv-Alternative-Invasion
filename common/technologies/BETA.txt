@@ -4,10 +4,12 @@ technologies = {
 
 		enable_equipments = {
 			Beta_venator
+			Beta_laser
 		}
 		
 		enable_subunits = {
 			beta_soldier
+			beta_laser
 		}
 		
 		path = {

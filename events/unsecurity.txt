@@ -22,7 +22,7 @@ add_namespace = unsecurity
 # 		hidden_effect = {
 # 			UNI ={
 # 				country_event = { days = 1 id = unsecurity.6 }
-# 				ENG = { add_to_Faction = UNI }
+# 				USA = { add_to_Faction = UNI }
 # 				delete_unit_template_and_units = { division_template = "Infantry Division" }
 # 				delete_unit_template_and_units = { division_template = "Cavalry Brigade" }
 # 				delete_unit_template_and_units = { division_template = "Tank Brigade" }
@@ -116,7 +116,7 @@ country_event = {
 	}
 
 	option = {
-			183 = {
+			982 = {
 				add_building_construction = {
 					type = naval_base
 					province = 7193
@@ -168,6 +168,22 @@ country_event = {
 	}
 
 }
+
+# country_event = {
+# 	id = unsecurity.6
+# 	title = "unsecurity.6.name"
+# 	desc = "unsecurity.6.desc"
+# 	hidden =yes
+# 	mean_time_to_happen = { days = 30 }
+# 	trigger = {
+# 		BET = { exists = yes}
+# 		date > 1974.01.01 
+# 	}
+
+# 	option = {
+# 	}
+# }
+
 
 # country_event = {
 # 	id = unsecurity.6
@@ -725,7 +741,7 @@ country_event = {
 # 			if = {
 # 				limit = {
 # 					OR = {
-# 						has_idea = unsecurityheadquarters
+# 						has_idea = unsecuritybase
 # 						has_idea = unsecuritymember 
 # 						tag = UNI
 # 					}
@@ -742,7 +758,7 @@ country_event = {
 # 			if = {
 # 				limit = {
 # 					OR = {
-# 						has_idea = unsecurityheadquarters_united
+# 						has_idea = unsecuritybase_united
 # 						has_idea = unsecuritymember_united 
 # 						tag = UNZ
 # 					}
@@ -1197,7 +1213,7 @@ news_event = {
 # 	trigger = {
 # 		UNI = { exists = no }
 # 		any_country ={
-# 			has_idea = unsecurityheadquarters
+# 			has_idea = unsecuritybase
 # 		}
 # 		any_country ={
 # 			has_idea = unsecuritymember

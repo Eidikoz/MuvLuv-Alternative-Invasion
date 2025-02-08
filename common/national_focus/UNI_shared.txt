@@ -59,22 +59,22 @@
 			OR = {
 				AND = {
 					OR = {
-						JAP = { has_idea = doomsdaymember }
-						JAP = { has_idea = doomsdayheadquarters }
+						JAP = { has_idea = unsecuritymember }
+						JAP = { has_idea = unsecuritybase }
 					}
 					OR = {
-						CHI = { has_idea = doomsdaymember }
-						CHI = { has_idea = doomsdayheadquarters }
+						CHI = { has_idea = unsecuritymember }
+						CHI = { has_idea = unsecuritybase }
 					}
 				}
 				AND = {
 					OR = {
-						JAP = { has_idea = doomsdaymember_united }
-						JAP = { has_idea = doomsdayheadquarters_united }
+						JAP = { has_idea = unsecuritymember_united }
+						JAP = { has_idea = unsecuritybase_united }
 					}
 					OR = {
-						CHI = { has_idea = doomsdaymember_united }
-						CHI = { has_idea = doomsdayheadquarters_united }
+						CHI = { has_idea = unsecuritymember_united }
+						CHI = { has_idea = unsecuritybase_united }
 					}
 				}
 			}
@@ -84,14 +84,14 @@
 
 		completion_reward = {
 			hidden_effect = {
-				country_event = { days = 1 id = doomsday.5 }
+				country_event = { days = 1 id = unsecurity.5 }
 			}
 			JAP ={
 				add_ideas = {
 					UNIfortress
 				}			
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 			CHI ={
@@ -99,7 +99,7 @@
 					UNIfortress
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 		}
@@ -123,7 +123,7 @@
 					UNI_base
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 		}
@@ -144,7 +144,7 @@
 
 		completion_reward = {
 			JAP ={
-				country_event = { id = doomsday.7 }
+				country_event = { id = unsecurity.7 }
 			}
 		}
 	}
@@ -190,7 +190,7 @@
 
 		completion_reward = {
 			CHI ={
-				country_event = { id = doomsday.8 }
+				country_event = { id = unsecurity.8 }
 			}
 		}
 	}
@@ -213,7 +213,7 @@
 					UNI_training
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 		}
@@ -236,7 +236,7 @@
 				load_oob = "UNI"
 				load_oob = "UNI_more"
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 		}
@@ -257,38 +257,38 @@
 			OR = {
 				AND = {
 					OR = {
-						GER = { has_idea = doomsdaymember }
-						GER = { has_idea = doomsdayheadquarters}
+						GER = { has_idea = unsecuritymember }
+						GER = { has_idea = unsecuritybase}
 					}
 					OR = {
-						ENG = { has_idea = doomsdaymember }
-						ENG = { has_idea = doomsdayheadquarters}
+						ENG = { has_idea = unsecuritymember }
+						ENG = { has_idea = unsecuritybase}
 					}
 					OR = {
-						FRA = { has_idea = doomsdaymember }
-						FRA = { has_idea = doomsdayheadquarters}
+						FRA = { has_idea = unsecuritymember }
+						FRA = { has_idea = unsecuritybase}
 					}
 					OR = {
-						ITA = { has_idea = doomsdaymember }
-						ITA = { has_idea = doomsdayheadquarters}
+						ITA = { has_idea = unsecuritymember }
+						ITA = { has_idea = unsecuritybase}
 					}
 				}
 				AND = {
 					OR = {
-						GER = { has_idea = doomsdaymember_united }
-						GER = { has_idea = doomsdayheadquarters_united}
+						GER = { has_idea = unsecuritymember_united }
+						GER = { has_idea = unsecuritybase_united}
 					}
 					OR = {
-						ENG = { has_idea = doomsdaymember_united }
-						ENG = { has_idea = doomsdayheadquarters_united}
+						ENG = { has_idea = unsecuritymember_united }
+						ENG = { has_idea = unsecuritybase_united}
 					}
 					OR = {
-						FRA = { has_idea = doomsdaymember_united }
-						FRA = { has_idea = doomsdayheadquarters_united}
+						FRA = { has_idea = unsecuritymember_united }
+						FRA = { has_idea = unsecuritybase_united}
 					}
 					OR = {
-						ITA = { has_idea = doomsdaymember_united }
-						ITA = { has_idea = doomsdayheadquarters_united}
+						ITA = { has_idea = unsecuritymember_united }
+						ITA = { has_idea = unsecuritybase_united}
 					}
 				}
 			}
@@ -301,7 +301,7 @@
 					UNIfortress
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 			GER ={
@@ -309,7 +309,7 @@
 					UNIfortress
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 			FRA ={
@@ -317,7 +317,7 @@
 					UNIfortress
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 			ENG ={
@@ -325,7 +325,7 @@
 					UNIfortress
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 		}
@@ -346,7 +346,7 @@
 
 		completion_reward = {
 			FRA ={
-				country_event = { id = doomsday.7 }
+				country_event = { id = unsecurity.7 }
 			}
 		}
 	}
@@ -370,7 +370,7 @@
 					UNI_base
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 		}
@@ -399,7 +399,7 @@
 					category = artillery
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 			UNI ={
@@ -529,7 +529,7 @@
 
 		completion_reward = {
 			GER ={
-				country_event = { id = doomsday.7 }
+				country_event = { id = unsecurity.7 }
 			}
 		}
 	}
@@ -553,7 +553,7 @@
 					UNI_base
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 		}
@@ -582,7 +582,7 @@
 				technology = improved_medium_tank
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 			UNI ={
@@ -619,7 +619,7 @@
 					category = land_doctrine
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 			UNI ={
@@ -685,7 +685,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = { id = doomsday.12 }
+			country_event = { id = unsecurity.12 }
 		}
 	}
 	shared_focus = {
@@ -704,7 +704,7 @@
 
 		completion_reward = {
 			ENG ={
-				country_event = { id = doomsday.7 }
+				country_event = { id = unsecurity.7 }
 			}
 		}
 	}
@@ -728,7 +728,7 @@
 					UNI_base
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 		}
@@ -758,7 +758,7 @@
 					category = battlefield_support_tree
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 			UNI ={
@@ -823,7 +823,7 @@
 					category = motorized_equipment
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 			UNI = {
@@ -925,7 +925,7 @@
 
 				add_to_tech_sharing_group = UNI_research
 			}
-			country_event = { id = doomsday.21 }
+			country_event = { id = unsecurity.21 }
 		}
 	}
 
@@ -944,14 +944,14 @@
 			OR = {
 				AND = {
 					OR = {
-						SOV = { has_idea = doomsdaymember }
-						SOV = { has_idea = doomsdayheadquarters}
+						SOV = { has_idea = unsecuritymember }
+						SOV = { has_idea = unsecuritybase}
 					}
 				}
 				AND = {
 					OR = {
-						SOV = { has_idea = doomsdaymember_united }
-						SOV = { has_idea = doomsdayheadquarters_united}
+						SOV = { has_idea = unsecuritymember_united }
+						SOV = { has_idea = unsecuritybase_united}
 					}
 				}
 			}
@@ -964,7 +964,7 @@
 					UNIfortress
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 		}
@@ -986,7 +986,7 @@
 
 		completion_reward = {
 			SOV ={
-				country_event = { id = doomsday.8 }
+				country_event = { id = unsecurity.8 }
 			}
 		}
 	}
@@ -1010,7 +1010,7 @@
 					UNI_base
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 		}
@@ -1046,7 +1046,7 @@
 					category = land_doctrine
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 			UNI ={
@@ -1081,30 +1081,30 @@
 			OR = {
 				AND = {
 					OR = {
-						USA = { has_idea = doomsdaymember }
-						USA = { has_idea = doomsdayheadquarters}
+						USA = { has_idea = unsecuritymember }
+						USA = { has_idea = unsecuritybase}
 					}
 					OR = {
-						CAN = { has_idea = doomsdaymember }
-						CAN = { has_idea = doomsdayheadquarters}
+						CAN = { has_idea = unsecuritymember }
+						CAN = { has_idea = unsecuritybase}
 					}
 					OR = {
-						MEX = { has_idea = doomsdaymember }
-						MEX = { has_idea = doomsdayheadquarters}
+						MEX = { has_idea = unsecuritymember }
+						MEX = { has_idea = unsecuritybase}
 					}
 				}
 				AND = {
 					OR = {
-						USA = { has_idea = doomsdaymember_united }
-						USA = { has_idea = doomsdayheadquarters_united}
+						USA = { has_idea = unsecuritymember_united }
+						USA = { has_idea = unsecuritybase_united}
 					}
 					OR = {
-						CAN = { has_idea = doomsdaymember_united }
-						CAN = { has_idea = doomsdayheadquarters_united}
+						CAN = { has_idea = unsecuritymember_united }
+						CAN = { has_idea = unsecuritybase_united}
 					}
 					OR = {
-						MEX = { has_idea = doomsdaymember_united }
-						MEX = { has_idea = doomsdayheadquarters_united}
+						MEX = { has_idea = unsecuritymember_united }
+						MEX = { has_idea = unsecuritybase_united}
 					}
 				}
 			}
@@ -1117,7 +1117,7 @@
 					UNIfortress
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 			CAN ={
@@ -1125,7 +1125,7 @@
 					UNIfortress
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 			MEX ={
@@ -1133,7 +1133,7 @@
 					UNIfortress
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 		}
@@ -1158,7 +1158,7 @@
 					UNI_base
 				}
 				hidden_effect = {
-					country_event = { days = 1 id = doomsday.32 }
+					country_event = { days = 1 id = unsecurity.32 }
 				} 
 			}
 		}
@@ -1179,7 +1179,7 @@
 
 		completion_reward = {
 			hidden_effect = {
-				country_event = { id = doomsday.9 }
+				country_event = { id = unsecurity.9 }
 			}
 			custom_effect_tooltip = UNI_focus_world
 		}

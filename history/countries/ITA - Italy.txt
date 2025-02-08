@@ -1052,7 +1052,7 @@ if = {
 		has_dlc = "No Step Back"
 	}
 	create_equipment_variant = {
-		name = "Fiat 2099.1.1"
+		name = "Fiat 3000"
 		type = light_tank_chassis_0
 		parent_version = 0
 		obsolete = yes
@@ -1073,7 +1073,7 @@ if = {
 	add_equipment_to_stockpile = {
 		type = light_tank_chassis_0
 		amount = 150
-		variant_name = "Fiat 2099.1.1"
+		variant_name = "Fiat 3000"
 	}
 
 	create_equipment_variant = {
@@ -1128,7 +1128,7 @@ if = {
 		type = gw_tank_equipment
 		amount = 190
 		producer = ITA
-		variant_name = "Fiat 2099.1.1"
+		variant_name = "Fiat 3000"
 	}
 }
 

@@ -131,7 +131,7 @@ ideas = {
 				army_core_attack_factor = 1
 			}
 		}
-		doomsdayheadquarters= {
+		unsecuritybase= {
 			picture = generic_fortify_the_borders_UNI
 			allowed = {
 				always = yes
@@ -150,7 +150,7 @@ ideas = {
 			}
 		}
 		
-		doomsdaymember= {
+		unsecuritymember= {
 			picture = generic_fortify_the_borders_UNI
 			allowed = {
 				always = yes
@@ -528,7 +528,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				surrender_limit = 100.00
+				surrender_limit = 100
 			}
 		}
 	}

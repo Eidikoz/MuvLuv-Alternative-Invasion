@@ -1,0 +1,9 @@
+BET= {
+  color = rgb { 0  0  0 }
+  color_ui = rgb { 0  0  0 }
+}
+
+UNI= {
+  color = rgb { 0  158  219 }
+  color_ui = rgb { 0  158  219 }
+}

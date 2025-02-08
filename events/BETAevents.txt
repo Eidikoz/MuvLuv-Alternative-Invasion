@@ -23,6 +23,7 @@ country_event = {
 	}
 }
 
+
 # country_event = {
 # 	id = BETAevents.1
 # 	title = "BETAevents.1.name"
@@ -303,29 +304,35 @@ country_event = {
 # 	}	}		
 # }
 
-# country_event = {
-# 	id = BETAevents.13
-# 	title = "BETAevents.13.name"
-# 	desc = "BETAevents.13.desc"
-# 	picture = GFX_country_event_stalin_meeting
-# 	fire_only_once = yes
-# 	major = yes
-# 	hidden = yes
+country_event = {
+	id = BETAevents.13
+	title = "BETAevents.13.name"
+	desc = "BETAevents.13.desc"
+	picture = GFX_country_event_stalin_meeting
+	fire_only_once = yes
+	major = yes
+	hidden = yes
 	
-# 	trigger = {
-# 	}
-# 	immediate = {
-# 		ENG = {
-# 			create_faction = "Anti-BETA Coalition"
-# 		}
-# 		BET = {
-# 			add_ideas = {
-# 				BETA_nation1
-# 			}
-# 		}
-# 		set_global_flag = doomsday_BETA
-# 	}
-# }
+	trigger = {
+	}
+	immediate = {
+		USA = {
+			create_faction = "United Nation Security"
+			add_to_Faction = ENG
+			add_to_Faction = CAN
+			add_to_Faction = AUS
+			add_to_Faction = SAF
+			add_to_Faction = NZL
+			add_to_Faction = RAJ
+		}
+		BET = {
+			add_ideas = {
+				BETA_nation1
+			}
+		}
+		set_global_flag = unsecurity_BETA
+	}
+}
 
 
 # country_event = {

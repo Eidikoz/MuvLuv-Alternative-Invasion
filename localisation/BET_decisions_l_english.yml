@@ -1,7 +1,7 @@
 ﻿l_english:
  unitednation_security:0 "United Nation Security Council"
- Doomsday_founding:0 "Establish the Doomsday division to protect humanity."
- Doomsday_join:0 "Join the Doomsday division."
+ unsecurity_founding:0 "Establish the United Nation Security division to protect humanity."
+ unsecurity_join:0 "Join the United Nation Security division."
  send_weapons:0 "Send weapons to United Nation."
  send_men:0 "Send men to United Nation."
  Black_market:0 "The Black Market"
@@ -13,7 +13,7 @@
  recrute_merc:0 "Recruit mercenaries"
  buy_plane:0 "Buy planes on the black market"
  sell_BET_parts:0 "Sell BETA parts on the black market"
- verbindungen_kappen:0 "Cut connections to the Doomsday division"
+ verbindungen_kappen:0 "Cut connections to the United Nation Security division"
  UNI_no_way_back:0 "If we do that, the nations will no longer consider us an ally. There will be no way back."
  become_UNI:0 "Play as United Nation"
  find_the_BETAs_england:0 "Give bounty for finding BETAs"

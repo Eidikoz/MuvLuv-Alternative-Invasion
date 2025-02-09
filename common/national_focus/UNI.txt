@@ -1148,65 +1148,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = minewar
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = dominance }
-		x = 22
-		y = 6
-		cost = 3
-
-		available = {
-		}
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = {
-				Minewar
-			}
-		}
-	}
-	
-	focus = {
-		id = firebombs
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = international_norms }
-		prerequisite = { focus = minewar }
-		x = 22
-		y = 7
-		cost = 3
-
-		available = {
-		}
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = UNI_bombs
-		}
-	}
-	
-	focus = {
-		id = weapons_of_mass_destruction
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = international_norms }
-		prerequisite = { focus = minewar }
-		x = 20
-		y = 7
-		cost = 3
-
-		available = {
-		}
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = UNI_bombs
-		}
-	}
-	
-	focus = {
 		id = no_way_back
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = firebombs }
-		prerequisite = { focus = weapons_of_mass_destruction }
+		prerequisite = { focus = international_norms }
 		x = 21
 		y = 8
 		cost = 3

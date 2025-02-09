@@ -12,7 +12,7 @@ technologies = {
 		#コスト、開始年#
 		research_cost = 1
 		start_year = 1970
-		United Nation Security
+		
 		#完了したらどうなるか#
 		on_research_complete = {
 			hidden_effect = { load_oob = "unlock_tsf" }
@@ -27,7 +27,7 @@ technologies = {
 		path = { leads_to_tech = UNI_Assault_gun_improvement_1 research_cost_coeff = 1 }
 		path = { leads_to_tech = UNI_Blade_improvement_1 research_cost_coeff = 1 }
 		path = { leads_to_tech = UNI_Schurzen_1 research_cost_coeff = 1 }
-		path = { leads_to_tech = tech_special_forces research_cost_coeff = 1 }
+		#path = { leads_to_tech = tech_special_forces research_cost_coeff = 1 }
 		
 		path = { leads_to_tech = UNI_F-4 research_cost_coeff = 1 }
 		path = { leads_to_tech = UNI_F-5 research_cost_coeff = 1 }
@@ -629,14 +629,14 @@ technologies = {
 		#path = { leads_to_tech = tsf_railgun_1 research_cost_coeff = 1 }
 		path = { leads_to_tech = UNI_Assault_gun_improvement_2 research_cost_coeff = 1 }
 
-		United Nation Security
-		folder = { name = UNI_tsf_folder position = { x = 10 y = 4 } }
+		
+		folder = { name = UNI_tsf_folder position = { x = 10 y = 1 } }
 		categories = { MVLV_tsf_tech }
 		ai_will_do = { factor = 20000 }
 	}
 	UNI_Assault_gun_improvement_2 = {
 		research_cost = 2
-		start_year = 1999
+		start_year = 1985
 
 		MVLV_tsf_battalion = {
 			soft_attack = 0.02
@@ -648,7 +648,7 @@ technologies = {
 		}
 
 		# path = { leads_to_tech = UNI_Assault_gun_improvement_3 research_cost_coeff = 1 }
-		folder = { name = UNI_tsf_folder position = { x = 10 y = 6 } }
+		folder = { name = UNI_tsf_folder position = { x = 10 y = 2 } }
 		categories = { MVLV_tsf_tech }
 		ai_will_do = { factor = 20000 }
 	}
@@ -707,14 +707,14 @@ technologies = {
 		}
 
 		path = { leads_to_tech = UNI_Blade_improvement_2 research_cost_coeff = 1 }
-		United Nation Security
-		folder = { name = UNI_tsf_folder position = { x = 8 y = 4 } }
+		
+		folder = { name = UNI_tsf_folder position = { x = 8 y = 1 } }
 		categories = { MVLV_tsf_tech }
 		ai_will_do = { factor = 20000 }
 	}
 	UNI_Blade_improvement_2 = {
 		research_cost = 2
-		start_year = 1999
+		start_year = 1985
 
 		MVLV_tsf_battalion = {
 			defense = 0.02
@@ -726,8 +726,8 @@ technologies = {
 		}
 
 		# path = { leads_to_tech = UNI_Blade_improvement_3 research_cost_coeff = 1 }
-		United Nation Security
-		folder = { name = UNI_tsf_folder position = { x = 8 y = 6 } }
+		
+		folder = { name = UNI_tsf_folder position = { x = 8 y = 2 } }
 		categories = { MVLV_tsf_tech }
 		ai_will_do = { factor = 20000 }
 	}
@@ -780,14 +780,14 @@ technologies = {
 		}
 
 		path = { leads_to_tech = UNI_Schurzen_2 research_cost_coeff = 1 }
-		United Nation Security
-		folder = { name = UNI_tsf_folder position = { x = 12 y = 4 } }
+		
+		folder = { name = UNI_tsf_folder position = { x = 12 y = 1 } }
 		categories = { MVLV_tsf_tech }
 		ai_will_do = { factor = 20000 }
 	}
 	UNI_Schurzen_2 = {
 		research_cost = 2
-		start_year = 1999
+		start_year = 1985
 
 		MVLV_tsf_battalion = {
 			armor_value = 0.02
@@ -797,8 +797,8 @@ technologies = {
 		}
 
 		# path = { leads_to_tech = UNI_Schurzen_3 research_cost_coeff = 1 }
-		United Nation Security
-		folder = { name = UNI_tsf_folder position = { x = 12 y = 6 } }
+		
+		folder = { name = UNI_tsf_folder position = { x = 12 y = 2 } }
 		categories = { MVLV_tsf_tech }
 		ai_will_do = { factor = 20000 }
 	}
@@ -840,11 +840,11 @@ technologies = {
 			tsf_sub_weapons_equipment_1
 		}
 		research_cost = 1
-		start_year = 1995
-		United Nation Security
+		start_year = 1985
+		
 		folder = {
 			name = UNI_tsf_folder
-			position = { x = 14 y = 4 }
+			position = { x = 14 y = 1 }
 		}
 		categories = {
 			artillery
@@ -1061,6 +1061,22 @@ technologies = {
 
 #____________________________________________________________
 #JAPツリー
+JAP_F-4J = { enable_equipments = { tsf_equipment_F-4J }
+
+	research_cost = 2
+	start_year = 1977
+
+	allow_branch = {
+		tag = JAP
+	}
+
+	path = { leads_to_tech = JAP_F-4JK research_cost_coeff = 1 }
+	path = { leads_to_tech = JAP_F-15J research_cost_coeff = 1 }
+
+	folder = { name = UNI_tsf_folder position = { x = 0 y = 4 } }
+	categories = { MVLV_tsf_tech }
+	ai_will_do = { factor = 20000 }
+}
 JAP_F-5J = { enable_equipments = { tsf_equipment_F-5 }
 
 	research_cost = 2
@@ -1078,35 +1094,22 @@ JAP_F-5J = { enable_equipments = { tsf_equipment_F-5 }
 	ai_will_do = { factor = 20000 }
 }
 
-JAP_F-4J = { enable_equipments = { tsf_equipment_F-4J }
+JAP_F-4JK = { enable_equipments = { jeg_equipment_F-4JK } enable_subunits = { mountaineers }
 
 	research_cost = 2
-	start_year = 1977
+	start_year = 1982
 
 	allow_branch = {
 		tag = JAP
 	}
 
-	# path = { leads_to_tech = JAP_F-4JK research_cost_coeff = 1 }
-	path = { leads_to_tech = JAP_F-15J research_cost_coeff = 1 }
+	path = { leads_to_tech = JAP_T00 research_cost_coeff = 1 }
 
-	folder = { name = UNI_tsf_folder position = { x = 0 y = 4 } }
+	folder = { name = UNI_tsf_folder position = { x = -3 y = 8 } }
 	categories = { MVLV_tsf_tech }
-	ai_will_do = { factor = 20000 }
+	show_effect_as_desc = no
+	ai_will_do = {factor = 20000 } 
 }
-
-# JAP_F-4JK = { enable_equipments = { jeg_equipment_F-4JK } enable_subunits = { mountaineers }
-
-# 	research_cost = 2
-# 	start_year = 1982
-
-# 	path = { leads_to_tech = JAP_T00 research_cost_coeff = 1 }
-
-# 	folder = { name = UNI_tsf_folder position = { x = -3 y = 8 } }
-# 	categories = { MVLV_tsf_tech }
-# 	show_effect_as_desc = no
-# 	ai_will_do = {factor = 20000 } 
-# }
 
 JAP_F-15J = { enable_equipments = { tsf_equipment_F-15 }
 

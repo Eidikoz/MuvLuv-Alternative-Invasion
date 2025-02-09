@@ -926,25 +926,25 @@ news_event = {
 	}
 }
 
-news_event = {
-	id = BETAnews.54
-	title = "BETAnews.54.name"
-	desc = "BETAnews.54.desc"
-	picture = GFX_news_event_japanese_army_parade
-	is_triggered_only = yes
-	fire_only_once = yes
+# news_event = {
+# 	id = BETAnews.54
+# 	title = "BETAnews.54.name"
+# 	desc = "BETAnews.54.desc"
+# 	picture = GFX_news_event_japanese_army_parade
+# 	is_triggered_only = yes
+# 	fire_only_once = yes
 	
 	
-	option = {
-		name = BETAnews.54.a
-		hidden_effect = {
-			set_technology = {
-				soldiertech = 1
-			}
-			load_oob = "JAP_BETAs"
-		}
-	}
-}
+# 	option = {
+# 		name = BETAnews.54.a
+# 		hidden_effect = {
+# 			set_technology = {
+# 				betatech = 1
+# 			}
+# 			load_oob = "JAP_BETAs"
+# 		}
+# 	}
+# }
 
 news_event = {
 	id = BETAnews.55

@@ -1,6 +1,6 @@
 technologies = {
 
-	soldiertech = {
+	betatech = {
 
 		enable_equipments = {
 			Beta_venator

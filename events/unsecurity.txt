@@ -1001,35 +1001,6 @@ country_event = {
 
 }
 
-# country_event = {
-# 	id = unsecurity.27
-# 	title = "unsecurity.27.name"
-# 	desc = "unsecurity.27.desc"
-# 	picture = news_event_chinese_soldiers_march
-# 	hidden = yes
-	
-# 	trigger = {
-# 		any_state = {
-# 			has_state_flag= UNI_firebomb
-# 		}
-# 	}
-	
-# 	immediate = {
-# 		every_state = {
-# 			if = {
-# 				limit = {
-# 					has_state_flag= UNI_firebomb
-# 				}
-# 				add_province_modifier = {
-# 					static_modifiers = { firebombs }
-# 					province = {
-# 						all_provinces = yes
-# 					}
-# 				}
-# 			}
-# 		}
-# 	}
-
 # }
 
 # country_event = {

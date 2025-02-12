@@ -5,6 +5,7 @@ sub_units = {
 		priority = 500
 		ai_priority = 3000
 		active = yes
+		special_forces = yes
 		can_exfiltrate_from_coast = yes
 		type = {
 			armor

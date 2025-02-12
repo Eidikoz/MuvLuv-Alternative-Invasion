@@ -215,7 +215,8 @@ BET_force_concentration_through_gobi_hurts_too_much = {
 		}
 	}
 	abort_when_not_enabled = yes
-	
+
+		
 	ai_strategy = {
 		type = force_concentration_front_factor
 		state = 617  

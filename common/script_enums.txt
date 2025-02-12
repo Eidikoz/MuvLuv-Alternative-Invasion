@@ -196,55 +196,6 @@ script_enum_equipment_bonus_type = {
 	small_plane_airframe_5
 	mothership_equipment
 	strat_bomber_intercontinental_equipment
-	# ballistic_missile_equipment_1
-	# ballistic_missile_equipment_2
-	# ballistic_missile_equipment_3
-	# explosive_ammo_equipment
-	# explosive_ammo_equipment_1
-	# strat_bomber_intercontinental_equipment_1
-	# nuclear_missile_equipment
-	# nuclear_missile_equipment_1
-	# nuclear_missile_equipment_2
-	# fighter_equipment_0
-	# fighter_equipment_1
-	# fighter_equipment_2
-	# fighter_equipment_3
-	# jet_fighter_equipment_1
-	# jet_fighter_equipment_2
-	# cv_fighter_equipment_0
-	# cv_fighter_equipment_1
-	# cv_fighter_equipment_2
-	# cv_fighter_equipment_3
-	# CAS_equipment_3
-	# cv_CAS_equipment_1
-	# cv_CAS_equipment_2
-	# cv_CAS_equipment_3
-	# nav_bomber_equipment_1
-	# nav_bomber_equipment_2
-	# nav_bomber_equipment_3
-	# cv_nav_bomber_equipment_1
-	# cv_nav_bomber_equipment_2
-	# cv_nav_bomber_equipment_3
-	# rocket_interceptor_equipment_1
-	# rocket_interceptor_equipment_2
-	# rocket_interceptor_equipment_3
-	# rocket_suicide_equipment_1
-	# tac_bomber_equipment_0
-	# tac_bomber_equipment_1
-	# tac_bomber_equipment_2
-	# tac_bomber_equipment_3
-	# heavy_fighter_equipment_1
-	# heavy_fighter_equipment_2
-	# heavy_fighter_equipment_3
-	# scout_plane_equipment_1
-	# scout_plane_equipment_2
-	# strat_bomber_equipment_2
-	# strat_bomber_equipment_3
-	# jet_strat_bomber_equipment_1
-	# super_heavy_railway_gun_equipment
-	# super_heavy_railway_gun_equipment_1
-	# sam_missile_equipment_1
-	#erroed
 	emplacement_gun_ammo
 	ballistic_missile
 	nuclear_missile
@@ -276,28 +227,28 @@ script_enum_equipment_bonus_type = {
 	railway_gun
 	MVLV_AL_shell
 	MVLV_AL_shell_1
-	MVLV_TSF_chassis_0
-	MVLV_TSF_chassis_1_light
-	MVLV_TSF_chassis_1_light_mod
-	MVLV_TSF_chassis_2_light
-	MVLV_TSF_chassis_3_light
-	MVLV_TSF_chassis_1_heavy
-	MVLV_TSF_chassis_2_heavy
-	MVLV_TSF_chassis_3_heavy
-	MVLV_TSF_chassis_2_maneuver
-	MVLV_TSF_chassis_3_maneuver
-	MVLV_TSF_chassis_4
-	MVLV_TSF_support_chassis_0
-	MVLV_TSF_support_chassis_1_light
-	MVLV_TSF_support_chassis_1_light_mod
-	MVLV_TSF_support_chassis_2_light
-	MVLV_TSF_support_chassis_3_light
-	MVLV_TSF_support_chassis_1_heavy
-	MVLV_TSF_support_chassis_2_heavy
-	MVLV_TSF_support_chassis_3_heavy
-	MVLV_TSF_support_chassis_2_maneuver
-	MVLV_TSF_support_chassis_3_maneuver
-	MVLV_TSF_support_chassis_4
+	# MVLV_TSF_chassis_0
+	# MVLV_TSF_chassis_1_light
+	# MVLV_TSF_chassis_1_light_mod
+	# MVLV_TSF_chassis_2_light
+	# MVLV_TSF_chassis_3_light
+	# MVLV_TSF_chassis_1_heavy
+	# MVLV_TSF_chassis_2_heavy
+	# MVLV_TSF_chassis_3_heavy
+	# MVLV_TSF_chassis_2_maneuver
+	# MVLV_TSF_chassis_3_maneuver
+	# MVLV_TSF_chassis_4
+	# MVLV_TSF_support_chassis_0
+	# MVLV_TSF_support_chassis_1_light
+	# MVLV_TSF_support_chassis_1_light_mod
+	# MVLV_TSF_support_chassis_2_light
+	# MVLV_TSF_support_chassis_3_light
+	# MVLV_TSF_support_chassis_1_heavy
+	# MVLV_TSF_support_chassis_2_heavy
+	# MVLV_TSF_support_chassis_3_heavy
+	# MVLV_TSF_support_chassis_2_maneuver
+	# MVLV_TSF_support_chassis_3_maneuver
+	# MVLV_TSF_support_chassis_4
 	MVLV_TSF_support_chassis
 	asa_equipment_A6
 	jet_tac_bomber_equipment_1
@@ -386,8 +337,7 @@ script_enum_equipment_bonus_type = {
 	beta_fort_0
 	beta_grappler
 	beta_grappler_0
-	beta_soldier
-	beta_soldier_0
+
 	beta_srf
 	beta_srf_0
 	beta_tank
@@ -867,6 +817,13 @@ script_enum_equipment_bonus_type = {
 	super_heavy_tank_aa_equipment_1
 	amphibious_tank_equipment_1
 	amphibious_tank_equipment_2
+
+	Beta_venator
+	Beta_soldier
+	Beta_heavy
+	Beta_destroyer
+	Beta_aa
+	Beta_laser
 }
 
 script_enum_operative_mission_type = {

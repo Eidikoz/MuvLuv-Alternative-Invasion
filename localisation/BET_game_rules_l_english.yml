@@ -23,7 +23,7 @@
  RULE_UNI_AI_BEHAVIOR_DOMINANCE_DESC:0 "United Nation will choose the path of dominance."
  BET_SPAWN:0 "BETA spawn rules"
  RULE_BET_SPAWN_NORMAL:0 "Normal"
- RULE_BET_SPAWN_NORMAL_DESC:0 "The BETAs spawn in the middle of India."
+ RULE_BET_SPAWN_NORMAL_DESC:0 "The BETAs spawn in the Sinkiang."
  RULE_BET_SPAWN_RANDOM:0 "Random"
  RULE_BET_SPAWN_RANDOM_DESC:0 "The BETAs will spawn somewhere in the old world."
  RULE_BET_SPAWN_INFECTION:0 "Infection spawn"

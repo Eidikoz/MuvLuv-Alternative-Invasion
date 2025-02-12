@@ -58,12 +58,15 @@ equipments = {
 			steel = 1
 		}
 	}
-####################
+	####################
 	#F-4#	
 	tsf_equipment_F-4 = {
 		year = 1973
 
 		archetype = MVLV_TSF_chassis 
+
+		build_cost_ic = 70
+
 		priority = 4
 		visual_level = 0
 		is_convertable = yes
@@ -2232,7 +2235,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 60000
 		
-		build_cost_ic = 300
+		build_cost_ic = 390
 		resources = {
 			aluminium = 1
 			chromium = 1
@@ -2268,7 +2271,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 60000
 		
-		build_cost_ic = 200
+		build_cost_ic = 260
 		resources = {
 			aluminium = 1
 			chromium = 1

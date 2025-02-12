@@ -34,152 +34,647 @@ tsf_role = {
 	}
 }
 
-infantry_brigade_artillery = {
-	role = infantry_brigade_artillery
-	upgrade_prio = {
-		factor = 1
-	}
+armor_generic = {
+
 	blocked_for = {
-		BET
+		GER
+		JAP
+		ENG
+		USA
+		ITA
+		SOV
+		HUN
 	}
 
-	infantry_brigade_artillery_template = {
-		upgrade_prio = {
-			factor = 0.01
-		}
+	role = armor
+	
+	upgrade_prio = {
+		base = 2
 
-		# TEMPLATE
+		modifier = {
+			factor = 3
+			OR = {
+				has_tech = basic_medium_tank
+				has_tech = basic_medium_tank_chassis
+			}
+		}
 		
+		modifier = {
+			factor = 2
+			OR = {
+				has_tech = main_battle_tank
+				has_tech = main_battle_tank_chassis
+			}
+		}
+	}
+
+	light_armor_early = {
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 2
+			}
+		}
 		
+		can_upgrade_in_field = {
+			has_equipment = { light_tank_chassis < 500 } 
+		}
 		
-		reinforce_prio = 1
 		target_template = {
 			
-			
-			regiments = {
-				infantry = 7
-				artillery_brigade = 1
-				rocket_artillery_brigade = 1
-			}
 			support = {
 				engineer = 1
-				maintenance_company = 1
-				recon = 1
-				rocket_artillery = 1
+				mot_recon = 1
 				artillery = 1
+				anti_tank = 1
+			}
+			
+			regiments = {
+				light_armor = 5
+				motorized = 4
+			}
+		}
+		
+		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
+		replace_with = medium_armor_early
+		target_min_match = 0.5
+	}
+
+
+
+	medium_armor_early = {
+	
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				OR = {
+					has_tech = basic_medium_tank
+					has_tech = basic_medium_tank_chassis
+				}
 			}
 		}
 
-	}
-}
-
-armor_brigade_artillery = {
-	role = armor_brigade_artillery
-
-	upgrade_prio = {
-		factor = 1
-	}
-	blocked_for = {
-		BET
-	}
-
-	armor_brigade_artillery_template = {
-		upgrade_prio = {
-			factor = 0.01
-		}
-
-		# TEMPLATE
-		
-		
-		
-		reinforce_prio = 1
 		target_template = {
 			
+			support = {
+				engineer = 1
+				mot_recon = 1
+				maintenance_company = 1
+				logistics_company = 1
+			}
+			
+			regiments = {
+				medium_armor = 4
+				light_armor = 2
+				motorized = 4
+			}
+		}
+		
+		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
+		replace_with = medium_armor_mid
+		target_min_match = 0.5
+	}
+
+	medium_armor_mid = {
+	
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 4
+				OR = {
+					has_tech = improved_medium_tank
+					has_tech = improved_medium_tank_chassis
+				}
+			}
+
+			modifier = {
+				factor = 0
+				NOT = { has_tech = armored_car1 }
+			}
+		}
+
+		target_template = {
+			
+			support = {
+				engineer = 1
+				armored_car_recon = 1
+				maintenance_company = 1
+				logistics_company = 1
+			}
 			
 			regiments = {
 				medium_armor = 6
-				infantry = 1
-				artillery_brigade = 1
-				rocket_artillery_brigade = 1
+				motorized = 4
 			}
-			support = {
-				engineer = 1
-				maintenance_company = 1
-				recon = 1
-				rocket_artillery = 1
-				artillery = 1
+		}
+		
+		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
+		replace_with = modern_armor_default
+		target_min_match = 0.5
+	}
+
+	modern_armor_default = {
+	
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 5
+				OR = {
+					has_tech = main_battle_tank
+					has_tech = main_battle_tank_chassis
+				}
 			}
 		}
 
+		target_template = {
+			
+			support = {
+				engineer = 1
+				light_tank_recon = 1
+				maintenance_company = 1
+				logistics_company = 1
+				signal_company = 1
+			}
+			
+			regiments = {
+				modern_armor = 6
+				mechanized = 4
+				modern_sp_artillery_brigade = 1
+			}
+		}
 	}
 }
 
-gunship = {
-	role = gunship
+garrison_generic = {
 
-	upgrade_prio = {
-		factor = 1
-	}
 	blocked_for = {
-		BET
+		GER
+		JAP
+		ENG
+		USA
+		ITA
+		SOV
+		HUN
+	}
+	
+	role = garrison
+	
+	upgrade_prio = {
+		base = 0.5
+
+		modifier = {
+			factor = 20
+			NOT = { ai_has_role_template = garrison }
+		}
 	}
 
-	gunship_template = {
+	garrison_generic = {
+		reinforce_prio = 0
+		custom_icon = 7
+	
 		upgrade_prio = {
-			factor = 0.01
-		}
+			base = 2
 
-		# TEMPLATE
+			modifier = {
+				factor = 1
+			}
+		}
 		
-		
-		
-		reinforce_prio = 1
 		target_template = {
 			
+			support = { 
+				engineer = 1
+			}
 			
 			regiments = {
-				light_armor = 12
 				infantry = 4
 			}
-			support = {
-				engineer = 1
-				maintenance_company = 1
-				recon = 1
-				rocket_artillery = 1
-				artillery = 1
-			}
 		}
-
 	}
 }
 
-diver = {
-	role = diver
-
+suppression_generic = {
+	
+	role = suppression
+	
 	upgrade_prio = {
-		factor = 1
-	}
-	blocked_for = {
-		BET
-	}
+		base = 0.5
 
-	diver_template = {
-		upgrade_prio = {
-			factor = 0.01
+		modifier = {
+			factor = 20
+			has_war = yes
 		}
 
-		# TEMPLATE
+		modifier = {
+			factor = 50
+			tag = GER
+			OR = {
+				AND = {
+					has_completed_focus = GER_anschluss
+					NOT = { ai_has_role_template = garrison }
+				}
+
+				AND = {
+					any_country = {
+						is_justifying_wargoal_against = ROOT
+					}
+					NOT = { ai_has_role_template = garrison }
+				}
+			}
+		}
+	}
+
+	suppression_generic = {
+	
+		reinforce_prio = 0
+		custom_icon = 13
+	
+		upgrade_prio = {
+			base = 2
+		}
 		
-		
-		
-		reinforce_prio = 1
 		target_template = {
 			
+			support = { 
+				military_police = 1
+			}
+
+			regiments = {
+				cavalry = 4
+			}
+		}
+	}
+}
+
+infantry_generic = {
+
+	blocked_for = {
+		GER
+		JAP
+		ENG
+		USA
+		ITA
+		SOV
+		HUN
+		CHI
+		PRC
+		GXC
+		YUN
+		SHX
+		XSM
+		SIK
+		MEN
+		MAN
+	}
+
+	role = infantry
+	
+	upgrade_prio = {
+		base = 5
+	}
+	
+	infantry_early = {
+	
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 2
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				recon = 1
+				logistics_company = 1
+				anti_air = 1
+				artillery = 1
+			}
 			
 			regiments = {
-				paratrooper = 10
+				infantry = 9
+				artillery_brigade = 1
 			}
 		}
 
+		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
+		replace_with = infantry_improved
+		target_min_match = 0.9
+	}
+
+	infantry_mid = {
+
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > 1940.1.1
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				recon = 1
+				logistics_company = 1
+				anti_air = 1
+				anti_tank = 1
+			}
+			
+			regiments = {
+				infantry = 9
+				artillery_brigade = 2
+			}
+		}
+	}
+}
+
+mountaineers_generic = {
+
+	blocked_for = {
+		GER
+		JAP
+		ENG
+		USA
+		ITA
+		SOV
+	}
+
+	role = mountaineers
+	
+	upgrade_prio = {
+		base = 2
+
+		modifier = {
+			factor = 0
+			NOT = {
+				has_tech = tech_mountaineers
+			}
+		}
+	}
+
+	mountaineers_default = {
+	
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 1
+			}
+		}
+
+		target_template = {
+			
+			support = {
+				engineer = 1
+				artillery = 1
+				anti_tank = 1
+				logistics_company = 1
+			}
+			
+			regiments = {
+				mountaineers = 8
+				artillery_brigade = 2
+			}
+		}
+	}
+}
+
+marines_generic = {
+
+	blocked_for = {
+		GER
+		JAP
+		ENG
+		USA
+		ITA
+		SOV
+	}
+
+	role = marines
+	
+	upgrade_prio = {
+		base = 2
+
+		modifier = {
+			factor = 0
+			NOT = {
+				has_tech = marines
+			}
+		}
+	}
+
+	marine_default = {
+	
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 1
+			}
+		}
+
+		target_template = {
+			
+			support = {
+				recon = 1
+				logistics_company = 1
+			}
+			
+			regiments = {
+				marine = 9
+			}
+		}
+	}
+	marine_armored = {
+	
+		upgrade_prio = {
+			base = 3
+
+			modifier = {
+				factor = 0
+
+				# disable if we are missing either of amph mech inf or amph tank
+				OR = {
+					NOT = {
+						has_tech = amphibious_mechanized_infantry
+					}
+					NOT = {
+						OR = {
+							has_tech = amphibious_tank
+							has_tech = amphibious_tank_chassis
+						}
+					}
+				}
+
+			}
+			modifier = {
+				is_major = no
+				factor = 0
+			}
+		}
+
+		target_template = {
+			
+			support = {
+				recon = 1
+				logistics_company = 1
+				engineer = 1
+			}
+			
+			regiments = {
+				amphibious_armor = 4
+				amphibious_mechanized = 6
+			}
+		}
+	}
+}
+
+
+paratrooper_generic = {
+
+	blocked_for = {
+		GER
+		JAP
+		ENG
+		USA
+		ITA
+		SOV
+	}
+
+	role = paratroopers
+	
+	upgrade_prio = {
+		base = 2
+
+		modifier = {
+			factor = 0
+			NOT = {
+				has_tech = paratroopers
+			}
+		}
+	}
+	
+	paratrooper_default = {
+	
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 1
+			}
+		}
+
+		target_template = {
+			
+			support = {
+				engineer = 1
+				artillery = 1
+				anti_tank = 1
+			}
+			
+			regiments = {
+				paratrooper = 9
+			}
+		}
+	}
+}
+
+landcruiser_generic = {
+
+
+	role = mega_heavy_breakthrough_role
+	
+	upgrade_prio = {
+		base = 2
+
+		modifier = {
+			factor = 0
+			NOT = { is_special_project_completed = sp:sp_land_land_cruiser }
+		}
+	}
+	 
+	landcruiser_default = {
+	
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 1
+			}
+		}
+
+		target_template = {
+			
+			support = {
+				engineer = 1
+				land_cruiser = 1
+				anti_air = 1
+			}
+			
+			regiments = {
+				medium_armor = 2
+				heavy_armor = 1
+				motorized = 6
+			}
+		}
+	}
+}
+
+super_heavy_generic = {
+
+
+	role = super_heavy_breakthrough_role
+	
+	upgrade_prio = {
+		base = 0
+
+		modifier = {
+			add = 1
+			is_major = yes
+			num_of_military_factories > 150 # nly if we have loads of factories
+			date > 1973.6.1 # Lets wait until late war
+			NOT = { has_tech = main_battle_tank_chassis } # Abandon Super heavy projects if we start doing modern tanks instead
+			NOT = { has_government = democratic } # Let the authoritarian regimes spend money on this 
+		}
+
+		modifier = {
+			factor = 0
+			is_special_project_completed = sp:sp_land_land_cruiser # Lets stop this if and when we have landcruisers
+		}
+	}
+	 
+	super_heavy_default = {
+	
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 1
+			}
+		}
+
+		target_template = {
+			
+			support = {
+				engineer = 1
+				anti_air = 1
+				super_heavy_armor = 1
+			}
+			
+			regiments = {
+				medium_armor = 2
+				motorized = 6
+			}
+		}
 	}
 }

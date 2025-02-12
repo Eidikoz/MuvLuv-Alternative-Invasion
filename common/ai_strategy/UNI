@@ -1,27 +1,24 @@
-ENG_force_concentration_through_suez = {
+UNI_force_concentration_through_suez = {
 	allowed = {
-		original_tag = ENG
+		original_tag = UNI
 	}
 	enable = {
-		291 = {
+		454 = {
 			is_controlled_by = BET
-		}
-		907 = {
-			is_controlled_by = ENG
 		}
 	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = force_concentration_front_factor
-		state = 446
+		state = 446 
 		ratio = 0.3
 		value = 50
 	}
 	
 	ai_strategy = {
 		type = force_concentration_target_weight
-		state = 446
+		state = 446 
 		value = 50
 	}
 	ai_strategy = {
@@ -31,17 +28,13 @@ ENG_force_concentration_through_suez = {
 	}
 }
 
-ENG_unit_buffer_for_african_defense = {
+UNI_unit_buffer_for_african_defense = {
 	allowed = {
-		original_tag = ENG
+		original_tag = UNI
 	}
 	enable = {
-		OR = {
-			has_war = no
-			AND = {
-				has_war = yes
-				surrender_progress < 0.9
-			}
+		446 = {
+			not = { is_controlled_by = BET }
 		}
 	}
 
@@ -51,7 +44,7 @@ ENG_unit_buffer_for_african_defense = {
 		type = put_unit_buffers
 
 		# ratio of total armies in country to be buffered
-		ratio = 0.3
+		ratio = 0.2
 
 		state = {
 			446
@@ -67,8 +60,8 @@ ENG_unit_buffer_for_african_defense = {
 	}
 }
 
-ENG_lifeline_of_the_empire = {
-	allowed = { original_tag = ENG }
+UNI_first_important_choke  = {
+	allowed = { original_tag = UNI }
 	enable = {
 		always = yes
 	}
@@ -85,16 +78,13 @@ ENG_lifeline_of_the_empire = {
 
 ### Malaya
 
-ENG_force_concentration_through_malaya = {
+UNI_force_concentration_through_malaya = {
 	allowed = {
-		original_tag = ENG
+		original_tag = UNI
 	}
 	enable = {
-		291 = {
+		288 = {
 			is_controlled_by = BET
-		}
-		907 = {
-			is_controlled_by = ENG
 		}
 	}
 	abort_when_not_enabled = yes
@@ -127,18 +117,15 @@ ENG_force_concentration_through_malaya = {
 	}
 }
 
-ENG_unit_buffer_for_malaya_defense = {
+UNI_unit_buffer_for_malaya_defense = {
 	allowed = {
-		original_tag = ENG
+		original_tag = UNI
 	}
 	enable = {
-		OR = {
-			has_war = no
-			AND = {
-				has_war = yes
-				surrender_progress < 0.9
-			}
+		336 = {
+			not = { is_controlled_by = BET }
 		}
+		
 	}
 
 	abort_when_not_enabled = yes
@@ -147,7 +134,7 @@ ENG_unit_buffer_for_malaya_defense = {
 		type = put_unit_buffers
 
 		# ratio of total armies in country to be buffered
-		ratio = 0.3
+		ratio = 0.2
 
 		# you can specify an order id. ratio of same orders ids will be share same ratio
 		#order_id = 2
@@ -164,8 +151,8 @@ ENG_unit_buffer_for_malaya_defense = {
 	}
 }
 
-ENG_second_lifeline_of_the_empire = {
-	allowed = { original_tag = ENG }
+UNI_second_important_choke = {
+	allowed = { original_tag = UNI }
 	enable = {
 		always = yes
 	}

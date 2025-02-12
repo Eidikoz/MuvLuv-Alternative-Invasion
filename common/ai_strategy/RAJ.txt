@@ -1,0 +1,63 @@
+RAJ_force_concentration_through_gobi = {
+	allowed = {
+		original_tag = RAJ
+	}
+	enable = {
+		219 = {
+			is_controlled_by = SOV
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = force_concentration_front_factor
+		area = kashmir
+		ratio = 0.50 
+		value = 100
+	}
+	ai_strategy = {
+		type = force_concentration_target_weight
+		area = kashmir
+		value = 100 
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = kashmir
+		value = 50  # +30 %
+	}
+}
+
+CHI_time_to_ditch_SOV = {
+	allowed = {
+		original_tag = RAJ
+	}
+
+	enable = {
+		219 = {
+			is_controlled_by = SOV
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SOV
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = AFG
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = PER
+		value = 100
+	}
+	# ai_strategy = {
+	# 	type = dont_defend_ally_borders
+	# 	id = RAJ
+	# 	value = 100
+	# }
+}

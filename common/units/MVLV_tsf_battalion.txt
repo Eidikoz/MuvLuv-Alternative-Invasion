@@ -5,6 +5,7 @@ sub_units = {
 		priority = 3500
 		ai_priority = 4000
 		active = no
+		special_forces = yes
 		can_exfiltrate_from_coast = yes
 		
 		type = {

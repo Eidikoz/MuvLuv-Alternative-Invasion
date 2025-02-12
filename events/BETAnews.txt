@@ -382,7 +382,7 @@ news_event = {
 
 
 	option = {
-		name = BETAnews.21.a			
+		name = BETAnews.21.a
 	}
 }
 

@@ -23,41 +23,6 @@ country_event = {
 	}
 }
 
-
-country_event = {
-	id = BETAevents.1
-	title = "BETAevents.1.name"
-	desc = "BETAevents.1.desc"
-	picture = GFX_event_mussolini_hitler
-	fire_only_once = yes
-	hidden = yes
-	
-	trigger = { 
-		AND = {
-			date > 1937.04.20
-			GER = { 
-				has_government = fascism 
-				has_country_leader = {
-					name = "Adolf Hitler"
-					ruling_only = yes
-				}
-			}
-			ITA = { 
-				has_government = fascism 
-				has_country_leader = {
-					name = "Benito Mussolini"
-					ruling_only = yes
-				}
-			}
-		}
-	}
-	option = {
-		hidden_effect = {
-				country_event = { days = 1 id = BETAnews.1 }
-		}
-	}
-}
-
 country_event = {
 	id = BETAevents.2
 	title = "BETAevents.2.name"

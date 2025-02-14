@@ -1,0 +1,113 @@
+
+# # MAIN THEME
+# music = {
+# 	name = "Mobius"
+# 	file = "01.Mobius.ogg"
+# 	volume = 0.65
+# }
+
+# General Peace:
+music = {
+	name = "XI"
+	file = "02.XI.ogg"
+	volume = 0.65
+}
+# music = {
+# 	name = "Maintheme"
+# 	file = "03.EARth.ogg"
+# 	volume = 0.65
+# }
+music = {
+	name = "CC···12yl"
+	file = "04.CC···12yl.ogg"
+	volume = 0.65
+}
+
+# General war:
+music = {
+	name = "MANhUNTer"
+	file = "05.MANhUNTer.ogg"
+	volume = 0.65
+}
+music = {
+	name = "KNS"
+	file = "06.KNS.ogg"
+	volume = 0.65
+}
+
+
+# Allies Peace:
+music = {
+	name = "uc0105"
+	file = "07.uc0105.ogg"
+	volume = 0.65
+}
+music = {
+	name = "83UeI"
+	file = "08.83UeI.ogg"
+	volume = 0.65
+}
+
+
+# Allies War:
+music = {
+	name = "MNE"
+	file = "09.MNE.ogg"
+	volume = 0.65
+}
+music = {
+	name = "TRACER"
+	file = "10.TRACER.ogg"
+	volume = 0.65
+}
+
+
+# Axis Peace:
+music = {
+	name = "G1x2"
+	file = "11.G1x2.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mSgH"
+	file = "12.mSgH.ogg"
+	volume = 0.65
+}
+
+
+# Axis War:
+music = {
+	name = "car5p3_PENELOPE"
+	file = "13.car5p3_PENELOPE.ogg"
+	volume = 0.65
+}
+music = {
+	name = "ESIRNUS"
+	file = "14.ESIRNUS.ogg"
+	volume = 0.65
+}
+music = {
+	name = "kdk-GT"
+	file = "15.kdk-GT.ogg"
+	volume = 0.65
+}
+music = {
+	name = "UCNT0100"
+	file = "16.UCNT0100.ogg"
+	volume = 0.65
+}
+
+
+# Comintern Peace:
+
+music = {
+	name = "[I]"
+	file = "17.[I].ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "20200723zr"
+	file = "18.20200723zr.ogg"
+	volume = 0.65
+}

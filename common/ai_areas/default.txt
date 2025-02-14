@@ -1,23 +1,23 @@
 areas = {
-	# kashmir = {
-	# 	strategic_regions = {
-	# 		251
-	# 		190
-	# 	}
-	# }
+	kashmir = {
+		strategic_regions = {
+			251
+			190
+		}
+	}
 
-	# gobi = {
-	# 	strategic_regions = {
-	# 		145
-	# 		146
-	# 		252
-	# 	}
-	# }
-	# malaya = {
-	# 	strategic_regions = {
-	# 		188
-	# 	}
-	# }
+	gobi = {
+		strategic_regions = {
+			145
+			146
+			252
+		}
+	}
+	malaya = {
+		strategic_regions = {
+			188
+		}
+	}
 
 	suez = {
         strategic_regions = {

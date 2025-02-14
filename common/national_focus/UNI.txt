@@ -502,7 +502,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = sell_Beta_parts
+		id = funding_program
 		icon = GFX_focus_fra_devalue_the_franc
 		prerequisite = { focus = criminal_way_focus }
 		x = 17

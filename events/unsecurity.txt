@@ -185,28 +185,28 @@ country_event = {
 # }
 
 
-# country_event = {
-# 	id = unsecurity.6
-# 	title = "unsecurity.6.name"
-# 	desc = "unsecurity.6.desc"
-# 	picture = GFX_news_event_chinese_soldiers_march
-# 	fire_only_once = yes
-# 	hidden = yes
-# 	mean_time_to_happen = { days = 1 }
-# 	trigger = {
-# 		UNI = { exists = yes }
-# 	}
+country_event = {
+	id = unsecurity.6
+	title = "unsecurity.6.name"
+	desc = "unsecurity.6.desc"
+	picture = GFX_news_event_chinese_soldiers_march
+	fire_only_once = yes
+	hidden = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		UNI = { exists = yes }
+	}
 
-# 	option = {
-# 		name = unsecurity.6.a
-# 		hidden_effect ={
-# 			UNI ={
-# 				load_oob = "UNI"
-# 			}
-# 		}
-# 	}
+	option = {
+		name = unsecurity.6.a
+		hidden_effect ={
+			UNI ={
+				load_oob = "UNI"
+			}
+		}
+	}
 
-# }
+}
 
 # country_event = {
 # 	id = unsecurity.7
@@ -489,8 +489,9 @@ country_event = {
 	}
 
 	option = {
+		# Infantry
  		division_template = {
-			name = "Mercenary Infantry"
+			name = "United Nation Infantry"
 
 			regiments = {
 				infantry = { x = 0 y = 0 }
@@ -506,8 +507,9 @@ country_event = {
 				artillery = { x = 0 y = 2 }			
 			}
 		}
+		# Guard
 		division_template = {
-			name = "Mercenary Infantry2"
+			name = "United Nation Guard"
 
 			regiments = {
 				infantry = { x = 0 y = 0 }
@@ -515,8 +517,6 @@ country_event = {
 				infantry = { x = 0 y = 2 }
 				infantry = { x = 0 y = 3 }
 				infantry = { x = 0 y = 4 }
-				infantry = { x = 0 y = 5 }
-				infantry = { x = 0 y = 6 }
 				infantry = { x = 1 y = 0 }
 				infantry = { x = 1 y = 1 }
 				infantry = { x = 1 y = 2 }
@@ -527,23 +527,19 @@ country_event = {
 				infantry = { x = 2 y = 2 }
 				infantry = { x = 2 y = 3 }
 				infantry = { x = 2 y = 4 }
-				infantry = { x = 2 y = 5 }
-				infantry = { x = 2 y = 6 }
 				infantry = { x = 3 y = 0 }
 				infantry = { x = 3 y = 1 }
 				infantry = { x = 3 y = 2 }
 				infantry = { x = 3 y = 3 }
 				infantry = { x = 3 y = 4 }
-				infantry = { x = 4 y = 0 }
-				infantry = { x = 4 y = 1 }
-				infantry = { x = 4 y = 2 }
-				infantry = { x = 4 y = 3 }
-				infantry = { x = 4 y = 4 }
+			}
+			support = {
+				engineer = { x = 0 y = 1 }			
 			}
 		}
-		
+		# Motorized
 		division_template = {
-			name = "Mercenary Motorized"
+			name = "United Nation Motorized"
 
 			regiments = {
 				motorized = { x = 0 y = 0 }
@@ -562,75 +558,51 @@ country_event = {
 				artillery = { x = 0 y = 2 }			
 			}
 		}
-		
+		# TSF
 		division_template = {
-			name = "Mercenary Mountaineers"
+			name = "United Nation TSF"
 
 			regiments = {
-				mountaineers = { x = 0 y = 0 }
-				mountaineers = { x = 0 y = 1 }
-				mountaineers = { x = 0 y = 2 }
-				mountaineers = { x = 1 y = 0 }
-				mountaineers = { x = 1 y = 1 }
-				mountaineers = { x = 1 y = 2 }
-				mountaineers = { x = 2 y = 0 }
-				mountaineers = { x = 2 y = 1 }
-				mountaineers = { x = 2 y = 2 }
-			}
-			support = {
-				engineer = { x = 0 y = 0 }
+				MVLV_tsf_battalion = { x = 0 y = 0 }
+				MVLV_tsf_battalion = { x = 0 y = 1 }
+				MVLV_tsf_battalion = { x = 0 y = 2 }
 			}
 		}
-		
+		# heavy tanks
 		division_template = {
-			name = "Mercenary light tanks"
-
-			regiments = {
-				light_armor = { x = 0 y = 0 }
-				light_armor = { x = 0 y = 1 }
-				light_armor = { x = 0 y = 2 }
-				light_armor = { x = 0 y = 3 }
-				light_armor = { x = 0 y = 4 }
-				light_armor = { x = 1 y = 0 }
-				light_armor = { x = 1 y = 1 }
-				light_armor = { x = 1 y = 2 }
-				light_armor = { x = 1 y = 3 }
-				light_armor = { x = 1 y = 4 }
-			}
-		}
-		
-		division_template = {
-			name = "Mercenary heavy tanks"
+			name = "United Nation heavy tanks"
 
 			regiments = {
 				heavy_armor = { x = 0 y = 0 }
 				heavy_armor = { x = 0 y = 1 }
 				heavy_armor = { x = 0 y = 2 }
 				heavy_armor = { x = 0 y = 3 }
+				motorized = { x = 1 y = 0 }
+				motorized = { x = 1 y = 1 }
+				motorized = { x = 1 y = 2 }
+				motorized = { x = 1 y = 3 }
+				motorized = { x = 2 y = 0 }
+				motorized = { x = 2 y = 1 }
 			}
 		}
 		set_division_template_lock = {
-			division_template = "Mercenary Infantry"
+			division_template = "United Nation Infantry"
 			is_locked = yes
 		}
 		set_division_template_lock = {
-			division_template = "Mercenary Infantry2"
+			division_template = "United Nation Guard"
 			is_locked = yes
 		}
 		set_division_template_lock = {
-			division_template = "Mercenary Motorized"
+			division_template = "United Nation Motorized"
 			is_locked = yes
 		}
 		set_division_template_lock = {
-			division_template = "Mercenary Mountaineers"
+			division_template = "United Nation TSF"
 			is_locked = yes
 		}
 		set_division_template_lock = {
-			division_template = "Mercenary light tanks"
-			is_locked = yes
-		}
-		set_division_template_lock = {
-			division_template = "Mercenary heavy tanks"
+			division_template = "United Nation heavy tanks"
 			is_locked = yes
 		}
 
@@ -650,27 +622,23 @@ country_event = {
 	}
 
 	option = {		
-		load_oob = "MERC_Infantry"
+		load_oob = "UNI_Infantry"
 	}
 	
 	option = {
-		load_oob = "MERC_Infantry2"
+		load_oob = "UNI_Infantry2"
 	}
 	
 	option = {
-		load_oob = "MERC_Tanks"
+		load_oob = "UNI_Tanks"
 	}
 	
 	option = {
-		load_oob = "MERC_Tanks2"
+		load_oob = "UNI_Motorized"
 	}
 	
 	option = {
-		load_oob = "MERC_Motorized"
-	}
-	
-	option = {
-		load_oob = "MERC_Mountain"
+		load_oob = "UNI_TSF"
 	}
 
 }

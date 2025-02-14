@@ -1,0 +1,8 @@
+﻿units = {
+	division = {
+		name = "United Nation TSF Division"
+		location = 11984
+		division_template = "United Nation TSF"
+		start_experience_factor = 0.5
+	}
+}

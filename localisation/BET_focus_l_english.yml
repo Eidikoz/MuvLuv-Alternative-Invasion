@@ -46,7 +46,7 @@
  Black_market_planes_desc:0 "The arming of our troops requires constant supply of weapons and ammtion. The black market can provide us with the necessary equipment, even if many countries may be dissatisfied with this decision."
  recrute_soeldner:0 "Recruit mercenaries"
  recrute_soeldner_desc:0 "Mercenaries are not as reliable as regular troops, but they can still be useful. We should try to hire some."
- UNI_soeldner: "This focus unlocks a "recute mercenary" decision"
+ UNI_soeldner: "This focus unlocks a "recruit volunteer" decision"
  te_with_triaden:0 "Form alliance with the triads"
  te_with_triaden_desc:0 "An alliance with the most powerful gangster groups in the world would make us financially independent. However, many nations will not be enthusiastic about it."
  te_with_mafia:0 "Form alliance with the Italian mafia"

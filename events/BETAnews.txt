@@ -1,54 +1,54 @@
 
 add_namespace = BETAnews
 
-news_event = {
-	id = BETAnews.1
-	title = "BETAnews.1.name"
-	desc = "BETAnews.1.desc"
-	picture = GFX_event_mussolini_hitler
-	major = yes
-	is_triggered_only = yes
+# news_event = {
+# 	id = BETAnews.1
+# 	title = "BETAnews.1.name"
+# 	desc = "BETAnews.1.desc"
+# 	picture = GFX_event_mussolini_hitler
+# 	major = yes
+# 	is_triggered_only = yes
 	
-	trigger = { 
-	}
+# 	trigger = { 
+# 	}
 
-	option = {
-		name = BETAnews.1.a	
-	}
-}
+# 	option = {
+# 		name = BETAnews.1.a	
+# 	}
+# }
 
-news_event = {
-	id = BETAnews.2
-	title = "BETAnews.2.name"
-	desc = "BETAnews.2.desc"
-	picture = GFX_event_mussolini
-	major = yes
-	is_triggered_only = yes
+# news_event = {
+# 	id = BETAnews.2
+# 	title = "BETAnews.2.name"
+# 	desc = "BETAnews.2.desc"
+# 	picture = GFX_event_mussolini
+# 	major = yes
+# 	is_triggered_only = yes
 	
 
-	trigger = {
-	}
+# 	trigger = {
+# 	}
 
-	option = {
-		name = BETAnews.2.a	
-	}
-}
+# 	option = {
+# 		name = BETAnews.2.a	
+# 	}
+# }
 
-news_event = {
-	id = BETAnews.3
-	title = "BETAnews.3.name"
-	desc = "BETAnews.3.desc"
-	picture = GFX_event_goering
-	major = yes
-	is_triggered_only = yes
+# news_event = {
+# 	id = BETAnews.3
+# 	title = "BETAnews.3.name"
+# 	desc = "BETAnews.3.desc"
+# 	picture = GFX_event_goering
+# 	major = yes
+# 	is_triggered_only = yes
 	
-	trigger = {
-	}
+# 	trigger = {
+# 	}
 
-	option = {
-		name = BETAnews.3.a
-	}
-}
+# 	option = {
+# 		name = BETAnews.3.a
+# 	}
+# }
 
 news_event = {
 	id = BETAnews.4
@@ -1316,15 +1316,21 @@ news_event = {
 	id = BETAnews.75
 	title = "BETAnews.75.name"
 	desc = "BETAnews.75.desc"
-	picture = GFX_event_usa_falling
+	picture = GFX_event_BETA_landing
 	major = yes
 	is_triggered_only = yes
 	
-	
-	option = {
-		name = BETAnews.75.a
+	trigger = {
 	}
-	
+
+
+	option = {
+		name = BETAnews.75.a			
+	}
 }
+
+
+
+
  
  

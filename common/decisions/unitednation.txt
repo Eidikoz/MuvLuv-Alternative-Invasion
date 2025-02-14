@@ -1,4 +1,4 @@
-_security = {
+unitednation_decisions = {
 
 	unsecurity_founding = {
 
@@ -15,13 +15,13 @@ _security = {
 			}
 			has_global_flag = unsecurity_Beta
 			NOT = { has_global_flag = unsecurity_leviathan }
-			NOT = {
-				has_game_rule = {
-					rule = UNI_spawn
-					option = NO_SPAWN
-				}
+			# NOT = {
+			# 	has_game_rule = {
+			# 		rule = UNI_spawn
+			# 		option = NO_SPAWN
+			# 	}
 			
-			}
+			# }
 			BET = { exists = yes }
 		}
 		
@@ -61,7 +61,6 @@ _security = {
 			}
 		}
 	}
-	
 	unsecurity_join = {
 		icon = generic_operation
 
@@ -98,7 +97,78 @@ _security = {
 			}
 		}
 	}
-	
+	join_unsecurity = {
+		icon = generic_operation
+
+		available = {
+			OR ={
+				AND = {
+					has_capitulated = no
+					is_major = yes
+					FROM={ NOT = { is_in_faction_with = UNI }}
+					FROM={ NOT = { has_war_with = UNI }}
+					# has_game_rule = {
+					# 	rule = normal_alliances
+					# 	option = UNITED
+					# }
+					NOT = { tag = BET }
+					NOT = { tag = UNI }
+					BET = { exists = yes }
+				}
+				AND = {
+					FROM = { has_war_with = BET }
+					FROM={ NOT = { is_in_faction_with = UNI }}
+					# has_game_rule = {
+					# 	rule = normal_alliances
+					# 	option = UNITED
+					# }
+					has_capitulated = no
+					NOT = { tag = BET }
+					NOT = { tag = UNI }
+					BET = { exists = yes }
+				}
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		
+		visible = {
+			OR ={
+				AND = {
+					has_capitulated = no
+					is_major = yes
+					FROM={ NOT = { is_in_faction_with = UNI }}
+					FROM={ NOT = { has_war_with = UNI }}
+					# has_game_rule = {
+					# 	rule = normal_alliances
+					# 	option = UNITED
+					# }
+					NOT = { tag = BET }
+					NOT = { tag = UNI }
+				}
+				AND = {
+					FROM = { has_war_with = BET }
+					FROM={ NOT = { is_in_faction_with = ENG }}
+					# has_game_rule = {
+					# 	rule = normal_alliances
+					# 	option = UNITED
+					# }
+					has_capitulated = no
+					NOT = { tag = BET }
+					NOT = { tag = UNI }
+				}
+			}
+			date > 1936.03.01 
+		}
+		complete_effect = {
+			USA = { add_to_Faction = FROM }
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
 	send_weapons = {
 		icon = generic_operation
 
@@ -247,7 +317,7 @@ _security = {
 
 
 
-Black_market = {
+international_security = {
 	buy_weapon = {
 		icon = generic_operation
 
@@ -292,7 +362,7 @@ Black_market = {
 		}
 	}
 	
-	buy_medium_tanks = {
+	buy_tsf = {
 		icon = generic_operation
 
 		available = {
@@ -316,8 +386,8 @@ Black_market = {
 			custom_effect_tooltip = UNI_Black_market
 			UNI ={	
 				add_equipment_to_stockpile = {
-					type = medium_tank_chassis 
-					amount = 100
+					type = tsf_equipment_F-4 
+					amount = 108
 					producer = UNI
 				}
 			}
@@ -329,49 +399,6 @@ Black_market = {
 				has_war = yes
 				has_equipment = {
 					medium_tank_chassis < 1
-				}
-				factor = 40
-			}
-		}
-	}
-	
-	buy_light_tanks = {
-		icon = generic_operation
-
-		available = {
-			any_country ={
-				AND = {
-					has_equipment = {
-						light_tank_chassis > 1
-					}
-					NOT = { tag = UNI }
-				}
-			}
-		}
-		
-		cost = 400		
-		days_re_enable = 25
-		
-		visible = {
-			has_completed_focus = Black_market_heavy_weapons
-		}
-		complete_effect = {
-			custom_effect_tooltip = UNI_Black_market
-			UNI ={	
-				add_equipment_to_stockpile = {
-					type = light_tank_chassis
-					amount = 100
-					producer = UNI
-				}
-			} 
-		}
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war = yes
-				has_equipment = {
-					light_tank_chassis < 1
 				}
 				factor = 40
 			}
@@ -421,7 +448,7 @@ Black_market = {
 		}
 	}
 	
-	recrute_merc = {
+	international_volunteer = {
 		icon = generic_operation
 
 		available = {
@@ -434,7 +461,7 @@ Black_market = {
 			has_completed_focus = recrute_soeldner
 		}
 		complete_effect = {
-			custom_effect_tooltip = UNI_Black_market
+			custom_effect_tooltip = UNI_voluntion
 			hidden_effect = {
 				country_event = { id = unsecurity.18 }
 			}
@@ -488,7 +515,7 @@ Black_market = {
 		}
 	}
 	
-	sell_Beta_parts= {
+	funding_program= {
 		icon = generic_operation
 
 		available = {

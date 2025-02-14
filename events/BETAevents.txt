@@ -24,285 +24,243 @@ country_event = {
 }
 
 
-# country_event = {
-# 	id = BETAevents.1
-# 	title = "BETAevents.1.name"
-# 	desc = "BETAevents.1.desc"
-# 	picture = GFX_event_mussolini_hitler
-# 	fire_only_once = yes
-# 	hidden = yes
+country_event = {
+	id = BETAevents.1
+	title = "BETAevents.1.name"
+	desc = "BETAevents.1.desc"
+	picture = GFX_event_mussolini_hitler
+	fire_only_once = yes
+	hidden = yes
 	
-# 	trigger = { 
-# 		AND = {
-# 			date > 1937.04.20
-# 			GER = { 
-# 				has_government = fascism 
-# 				has_country_leader = {
-# 					name = "Adolf Hitler"
-# 					ruling_only = yes
-# 				}
-# 			}
-# 			ITA = { 
-# 				has_government = fascism 
-# 				has_country_leader = {
-# 					name = "Benito Mussolini"
-# 					ruling_only = yes
-# 				}
-# 			}
-# 		}
-# 	}
-# 	option = {
-# 		hidden_effect = {
-# 				country_event = { days = 1 id = BETAnews.1 }
-# 		}
-# 	}
-# }
+	trigger = { 
+		AND = {
+			date > 1937.04.20
+			GER = { 
+				has_government = fascism 
+				has_country_leader = {
+					name = "Adolf Hitler"
+					ruling_only = yes
+				}
+			}
+			ITA = { 
+				has_government = fascism 
+				has_country_leader = {
+					name = "Benito Mussolini"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+	option = {
+		hidden_effect = {
+				country_event = { days = 1 id = BETAnews.1 }
+		}
+	}
+}
 
-# country_event = {
-# 	id = BETAevents.2
-# 	title = "BETAevents.2.name"
-# 	desc = "BETAevents.2.desc"
-# 	picture = GFX_event_mussolini
-# 	fire_only_once = yes
-# 	hidden = yes
+country_event = {
+	id = BETAevents.2
+	title = "BETAevents.2.name"
+	desc = "BETAevents.2.desc"
+	picture = GFX_event_mussolini
+	fire_only_once = yes
+	hidden = yes
 	
 
-# 	trigger = {
-# 		AND = {
-# 			date > 1938.1.1 
-# 			ITA = { 
-# 				has_government = fascism 
-# 				has_country_leader = {
-# 					name = "Benito Mussolini"
-# 					ruling_only = yes
-# 				}
-# 			}
-# 		}
-# 	}
-# 	mean_time_to_happen = { days = 100 }
+	trigger = {
+		AND = {
+			date > 1938.1.1 
+			ITA = { 
+				has_government = fascism 
+				has_country_leader = {
+					name = "Benito Mussolini"
+					ruling_only = yes
+				}
+			}
+		}
+	}
+	mean_time_to_happen = { days = 100 }
 
-# 	option = {
-# 		hidden_effect = {
-# 				country_event = { days = 1 id = BETAnews.2 }
-# 		}
-# 	}
-# }
+	option = {
+		hidden_effect = {
+				country_event = { days = 1 id = BETAnews.2 }
+		}
+	}
+}
 
-# country_event = {
-# 	id = BETAevents.3
-# 	title = "BETAevents.3.name"
-# 	desc = "BETAevents.3.desc"
-# 	picture = GFX_event_goering
-# 	fire_only_once = yes
-# 	major = yes
-# 	hidden = yes
+country_event = {
+	id = BETAevents.3
+	title = "BETAevents.3.name"
+	desc = "BETAevents.3.desc"
+	picture = GFX_event_goering
+	fire_only_once = yes
+	major = yes
+	hidden = yes
 	
-# 	trigger = {
-# 		AND ={
-# 			tag = GER
-# 			GER = { 
-# 				has_government = fascism 
-# 			}
-# 			BET = { exists = yes }
-# 		}
-# 	}
-# 	mean_time_to_happen = { days = 500 }
+	trigger = {
+		AND ={
+			tag = GER
+			GER = { 
+				has_government = fascism 
+			}
+			BET = { exists = yes }
+		}
+	}
+	mean_time_to_happen = { days = 500 }
 	
-# 	option = {
-# 		hidden_effect = {
-# 			country_event = { id = BETAevents.4 days=100}
-# 			country_event = { days = 1 id = BETAnews.3 }
-# 		}
-# 	}
-# }
+	option = {
+		hidden_effect = {
+			country_event = { id = BETAevents.4 days=100}
+			country_event = { days = 1 id = BETAnews.3 }
+		}
+	}
+}
 
-# country_event = {
-# 	id = BETAevents.4
-# 	title = "BETAevents.4.name"
-# 	desc = "BETAevents.4.desc"
-# 	picture = GFX_country_event_german_volunteers
-# 	fire_only_once = yes
-# 	is_triggered_only = yes
-# 	hidden = yes
-	
-# 	trigger = {
-# 		AND ={
-# 			tag = GER
-# 			GER = { 
-# 				has_government = fascism 
-# 			}
-# 		}
-# 	}
-	
-# 	option = {
-# 		hidden_effect = {
-# 		country_event = { days = 1 id = BETAnews.4 }
-# 			BET = {
-# 				if = {
-# 					limit = {
-# 						AND = {
-# 							NOT = { has_war_with = ENG }
-# 						}
-# 					}
-# 				}
-# 			BET={
-# 				load_oob = "BET_germany"
-# 				declare_war_on = {
-# 					type = take_state_focus
-# 					target = GER	
-# 				}
-# 			}
-# 			}
-# 		}
-# 	}
-	
-# }
-
-# country_event = {
-#     id = BETAevents.5
-#     title = "BETAevents.5.name"
-#     desc = "BETAevents.5.desc"
-#     picture = GFX_country_event_japanese_parade
-#     fire_only_once = yes
-#     hidden = yes
-#     is_triggered_only = yes
+country_event = {
+    id = BETAevents.5
+    title = "BETAevents.5.name"
+    desc = "BETAevents.5.desc"
+    picture = GFX_country_event_japanese_parade
+    fire_only_once = yes
+    hidden = yes
+    is_triggered_only = yes
 
 
-#     immediate = {   
-# 		country_event = { 
-# 			random_days = 300
-# 			id = BETAnews.5 
-# 		}
-#     }
+    immediate = {   
+		country_event = { 
+			random_days = 300
+			id = BETAnews.5 
+		}
+    }
 
-# }
-# country_event = {
-# 	id = BETAevents.6
-# 	title = "BETAevents.6.name"
-# 	desc = "BETAevents.6.desc"
-# 	picture = GFX_country_event_japanese_army_parade
-# 	fire_only_once = yes
-# 	is_triggered_only = yes
-# 	hidden = yes
+}
+country_event = {
+	id = BETAevents.6
+	title = "BETAevents.6.name"
+	desc = "BETAevents.6.desc"
+	picture = GFX_country_event_japanese_army_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
 
-# 	trigger = {
-# 		tag =JAP
-# 	}
+	trigger = {
+		tag =JAP
+	}
 	
-# 	option ={
-# 		hidden_effect = {
-# 				country_event = { days = 1 id = BETAnews.6 }
-# 		}	
-# 	}
-# }
+	option ={
+		hidden_effect = {
+				country_event = { days = 1 id = BETAnews.6 }
+		}	
+	}
+}
 
-# country_event = {
-# 	id = BETAevents.7
-# 	title = "BETAevents.7.name"
-# 	desc = "BETAevents.7.desc"
-# 	picture = GFX_country_event_japanese_army_parade
-# 	fire_only_once = yes
-# 	is_triggered_only = yes
-# 	hidden = yes
+country_event = {
+	id = BETAevents.7
+	title = "BETAevents.7.name"
+	desc = "BETAevents.7.desc"
+	picture = GFX_country_event_japanese_army_parade
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
 
-# 	trigger = {
-# 	}
+	trigger = {
+	}
 	
-# 	option ={
-# 		hidden_effect = {
-# 				country_event = { days = 1 id = BETAnews.8 }
-# 		}	
-# 	}
-# 	option ={
-# 		hidden_effect = {
-# 			JAP = {
-# 				country_event = { days = 1 id = BETAnews.54 }
-# 			}
-# 		}	
-# 	}
-# }
+	option ={
+		hidden_effect = {
+				country_event = { days = 1 id = BETAnews.8 }
+		}	
+	}
+	option ={
+		hidden_effect = {
+			JAP = {
+				country_event = { days = 1 id = BETAnews.54 }
+			}
+		}	
+	}
+}
 
-# country_event = {
-# 	id = BETAevents.9
-# 	title = "BETAevents.9.name"
-# 	desc = "BETAevents.9.desc"
-# 	picture = GFX_country_event_indian_parade
-# 	fire_only_once = yes
-# 	hidden = yes
+country_event = {
+	id = BETAevents.9
+	title = "BETAevents.9.name"
+	desc = "BETAevents.9.desc"
+	picture = GFX_country_event_indian_parade
+	fire_only_once = yes
+	hidden = yes
 	
-# 	trigger = {
-# 		RAJ ={ has_war_with = BET}
-# 		has_global_flag = BET_sinkiang
-# 	}
+	trigger = {
+		RAJ ={ has_war_with = BET}
+		has_global_flag = BET_sinkiang
+	}
 	
-# 	mean_time_to_happen = { days = 30 }
-# 	option = {
-# 		hidden_effect = {
-# 			country_event = { days = 1 id = BETAnews.9}
-# 			RAJ ={
-# 				load_oob = "RAJ_Miliz"	
-# 			}
-# 		}
-# 	}
-# }
+	mean_time_to_happen = { days = 30 }
+	option = {
+		hidden_effect = {
+			country_event = { days = 1 id = BETAnews.9}
+			RAJ ={
+				load_oob = "RAJ_Miliz"	
+			}
+		}
+	}
+}
 
-# country_event = {
-# 	id = BETAevents.10
-# 	title = "BETAevents.10.name"
-# 	desc = "BETAevents.10.desc"
-# 	picture = GFX_event_churchill
-# 	fire_only_once = yes
-# 	major = yes
-# 	hidden = yes
+country_event = {
+	id = BETAevents.10
+	title = "BETAevents.10.name"
+	desc = "BETAevents.10.desc"
+	picture = GFX_event_churchill
+	fire_only_once = yes
+	major = yes
+	hidden = yes
 	
-# 	trigger = {
-# 		date > 1938.1.1	
-# 		GER = { 
-# 			has_government = democratic 
-# 		}		
-# 	}
+	trigger = {
+		date > 1938.1.1	
+		GER = { 
+			has_government = democratic 
+		}		
+	}
 	
-# 	mean_time_to_happen = { days = 300 }
+	mean_time_to_happen = { days = 300 }
 	
-# 	option = {
-# 		hidden_effect = {
-# 			country_event = { days = 1 id = BETAnews.10}
-# 		}
-# 	}
-# }
+	option = {
+		hidden_effect = {
+			country_event = { days = 1 id = BETAnews.10}
+		}
+	}
+}
 
-# country_event = {
-# 	id = BETAevents.12
-# 	title = "BETAevents.12.name"
-# 	desc = "BETAevents.12.desc"
-# 	picture = GFX_country_event_stalin_meeting
-# 	fire_only_once = yes
-# 	hidden = yes
+country_event = {
+	id = BETAevents.12
+	title = "BETAevents.12.name"
+	desc = "BETAevents.12.desc"
+	picture = GFX_country_event_stalin_meeting
+	fire_only_once = yes
+	hidden = yes
 	
-# 	trigger = {
-# 		AND = {
-# 			SOV ={ has_war_with = BET}
-# 			SOV ={
-# 				has_government = communism
-# 				has_country_leader = {
-# 					name = "Joseph Stalin"
-# 					ruling_only = yes
-# 				}
-# 			}
-# 		}
-# 	}
+	trigger = {
+		AND = {
+			SOV ={ has_war_with = BET}
+			SOV ={
+				has_government = communism
+				has_country_leader = {
+					name = "Joseph Stalin"
+					ruling_only = yes
+				}
+			}
+		}
+	}
 	
-# 	mean_time_to_happen = { days = 1 }
-# 	option = {
-# 		hidden_effect = {
-# 			country_event = { days = 1 id = BETAnews.12}
-# 			SOV={
-# 				add_political_power = 120
-# 				add_war_support = 0.1
-# 				add_manpower = 100000
-# 			}
-# 	}	}		
-# }
+	mean_time_to_happen = { days = 1 }
+	option = {
+		hidden_effect = {
+			country_event = { days = 1 id = BETAnews.12}
+			SOV={
+				add_political_power = 120
+				add_war_support = 0.1
+				add_manpower = 100000
+			}
+	}	}		
+}
 
 country_event = {
 	id = BETAevents.13

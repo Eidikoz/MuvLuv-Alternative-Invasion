@@ -777,183 +777,123 @@ Beta_decisions = {
 		}
 	}
 
-	find_the_zombies_japan3 = {                         
-		allowed = { tag = JAP }                
+	beta_invasion_japan = {                         
+		allowed = { tag = BET }                
 		available = {                           
-			check_variable = { zombie_fight_japan > 50 }                
+			check_variable = { beta_fight_japan = 1 }
 		}
-		activation = {                         
-			JAP = { has_country_flag = zombie_find }              
-		}
-		is_good = no  
-		fire_only_once = yes
-		days_mission_timeout = 100              
-		timeout_effect = {                      
-			ZOM ={
+		cost = 0
+		days_re_enable = 300
+
+		complete_effect = {
+			BET ={
 				declare_war_on = {
 					type = take_state_focus
 					target = JAP
 				}
 			}
 			hidden_effect = {
-				ZOM = { load_oob = "ZOM_japan" }
-				JAP = { clr_country_flag = zombie_find }
+				BET = { load_oob = "BET_japan" }
 			}
-			country_event = { days = 1 id = Zombienews.32 }             
-		}
-		complete_effect = {
-			hidden_effect = {
-				country_event = { days = 1 id = Zombienews.31 }
-				JAP = { clr_country_flag = zombie_find }				
-			}
+			country_event = { days = 1 id = betanews.32 }   
 		}
 	}
-	
-	fightBeta_japan = {
-		icon = generic_operation
 
-		available = {
-			AND = {
-				tag = JAP
-				BET = { exists = yes }
+	beta_invasion_japan = {                         
+		allowed = { tag = BET }                
+		available = {                           
+			529 = {
+				is_controlled_by = BET
 			}
-		}
-		cost = 300
-		fire_only_once = yes
-		
-		visible = {
-			AND = {
-				JAP = { exists = yes }
-				tag = JAP
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				country_event = { days = 1 id = Betaevents.5 } 
-				country_event = { days = 1 id = Betanews.59 } 
-			}
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-	Betas_spain = {
-			icon = generic_operation
-
-		available = {
-			AND = {
-				tag = D01
-				SPR={ has_war_with = D01 }
-			}
-		}
-		cost = 50
-		fire_only_once = yes
-		
-		visible = {
-			AND = {
-				SPR={ has_war_with = D01 }
-				tag = D01
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				country_event = { days = 1 id = Betanews.11}
-				BET={
-					load_oob = "BET_spain"
-					declare_war_on = {
-						type = take_state_focus
-						target = SPR	
-					}
-					declare_war_on = {
-						type = take_state_focus
-						target = D01	
-					}
-				}		
-			}
-		}
-
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				has_war_with = BET
-				factor = 0
-			}
-		}
-	}
-	
-	join_unsecurity = {
-		icon = generic_operation
-
-		available = {
-			OR ={
-				AND = {
-					has_capitulated = no
-					is_major = yes
-					FROM={ NOT = { is_in_faction_with = ENG }}
-					FROM={ NOT = { has_war_with = ENG }}
-					# has_game_rule = {
-					# 	rule = normal_alliances
-					# 	option = UNITED
-					# }
-					NOT = { tag = BET }
-					NOT = { tag = UNI }
-					BET = { exists = yes }
-				}
-				AND = {
-					FROM = { has_war_with = BET }
-					FROM={ NOT = { is_in_faction_with = ENG }}
-					# has_game_rule = {
-					# 	rule = normal_alliances
-					# 	option = UNITED
-					# }
-					has_capitulated = no
-					NOT = { tag = BET }
-					NOT = { tag = UNI }
-					BET = { exists = yes }
-				}
+			530 = {
+				is_controlled_by = BET
 			}
 		}
 		cost = 0
-		fire_only_once = yes
-		
-		visible = {
-			OR ={
-				AND = {
-					has_capitulated = no
-					is_major = yes
-					FROM={ NOT = { is_in_faction_with = ENG }}
-					FROM={ NOT = { has_war_with = ENG }}
-					# has_game_rule = {
-					# 	rule = normal_alliances
-					# 	option = UNITED
-					# }
-					NOT = { tag = BET }
-					NOT = { tag = UNI }
-				}
-				AND = {
-					FROM = { has_war_with = BET }
-					FROM={ NOT = { is_in_faction_with = ENG }}
-					# has_game_rule = {
-					# 	rule = normal_alliances
-					# 	option = UNITED
-					# }
-					has_capitulated = no
-					NOT = { tag = BET }
-					NOT = { tag = UNI }
-				}
-			}
-			date > 1936.03.01 
-		}
-		complete_effect = {
-			USA = { add_to_Faction = FROM }
-		}
+		days_re_enable = 300
 
-		ai_will_do = {
-			factor = 20
+		complete_effect = {
+			hidden_effect = {
+				BET = { load_oob = "BET_japan" }
+			}
+			country_event = { days = 1 id = betanews.32 }   
 		}
 	}
+	
+	# fightBeta_japan = {
+	# 	icon = generic_operation
+
+	# 	available = {
+	# 		AND = {
+	# 			tag = JAP
+	# 			BET = { exists = yes }
+	# 		}
+	# 	}
+	# 	cost = 0
+	# 	fire_only_once = yes
+		
+	# 	visible = {
+	# 		AND = {
+	# 			JAP = { exists = yes }
+	# 			tag = JAP
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		hidden_effect = {
+	# 			country_event = { days = 1 id = Betanews.59 } 
+	# 		}
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 10
+	# 	}
+	# }
+	
+	# Betas_spain = {
+	# 		icon = generic_operation
+
+	# 	available = {
+	# 		AND = {
+	# 			tag = D01
+	# 			SPR={ has_war_with = D01 }
+	# 		}
+	# 	}
+	# 	cost = 50
+	# 	fire_only_once = yes
+		
+	# 	visible = {
+	# 		AND = {
+	# 			SPR={ has_war_with = D01 }
+	# 			tag = D01
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		hidden_effect = {
+	# 			country_event = { days = 1 id = Betanews.11}
+	# 			BET={
+	# 				load_oob = "BET_spain"
+	# 				declare_war_on = {
+	# 					type = take_state_focus
+	# 					target = SPR	
+	# 				}
+	# 				declare_war_on = {
+	# 					type = take_state_focus
+	# 					target = D01	
+	# 				}
+	# 			}		
+	# 		}
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 20
+	# 		modifier = {
+	# 			has_war_with = BET
+	# 			factor = 0
+	# 		}
+	# 	}
+	# }
+	
+	
 	usa_special_forces_decision = {
         icon = GFX_decision_generic_build_troops
         available = {
@@ -980,4 +920,99 @@ Beta_decisions = {
 			}
 		}
     }
+
+	# BETA_offensive = {
+	# 	activation = {
+	# 		always = no
+	# 	}
+	# 	available = { always = yes }
+	# 	# cancel_trigger = {
+	# 	# 	OR = {
+	# 	# 		check_variable = {
+	# 	# 			num_divisions < @setF
+	#  	# 		}
+	# 	# 		has_idea = hive_thinning_state
+	# 	# 		has_idea = mvlv_brokenhive
+	# 	# 	}
+	# 	# }
+	# 	icon = mission_icon
+	# 	is_good = yes
+	# 	fire_only_once = no
+	# 	days_mission_timeout = 15
+	# 	# cancel_effect = {
+	# 	# 	#必要ならイベント
+	# 	# 	set_country_flag = mvlv_aggressive_beta_cool_down_flag
+	# 	# 	clr_country_flag = MVLV_aggressive_preparation_flag
+	# 	# }
+	# 	timeout_effect = {
+	# 		# clr_country_flag = MVLV_aggressive_preparation_flag
+	# 		every_enemy_country = {
+	# 			limit = {
+	# 				any_neighbor_country = {
+	#  					tag = ROOT
+	#  				}
+	# 				NOT = { has_country_flag = MVLV_underground_notice_flag }
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					defficulty_hell_trigger = yes
+	# 				}
+	# 				country_event = mvlv_uni.35
+	# 			}
+	# 			else = {
+	# 				country_event = mvlv_uni.34
+	# 			}
+	# 		}
+	# 		every_enemy_country = {
+	# 			limit = {
+	# 				has_country_flag = MVLV_underground_notice_flag
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					defficulty_hell_trigger = yes
+	# 				}
+	# 				country_event = mvlv_uni.35
+	# 			}
+	# 			else = {
+	# 				country_event = mvlv_uni.34
+	# 			}
+	# 		}
+			
+	# 		add_ideas = { mvlv_aggressive_beta }
+	# 		if = {
+	# 			limit = { tag = H21 }
+	# 			country_event = BETA.10
+	# 		}
+	# 	}
+	# }
+
+	# BETA_exhaustion = {
+	# 	activation = {
+	# 		has_idea = OffensiveBETA
+	# 	}
+	# 	available = { always = no }
+	# 	icon = mission_icon
+	# 	is_good = yes
+	# 	fire_only_once = no
+	# 	days_mission_timeout = 35
+	# 	timeout_effect = {
+	# 		#必要ならイベント
+	# 		every_neighbor_country = {
+	# 			limit = {
+	# 				is_in_faction_with = UNI
+	# 				NOT = { has_country_flag = MVLV_underground_notice_flag }
+	# 			}
+	# 			country_event = mvlv_uni.39
+	# 		}
+	# 		every_country = {
+	# 			limit = {
+	# 				is_in_faction_with = UNI
+	# 				has_country_flag = MVLV_underground_notice_flag
+	# 			}
+	# 			country_event = mvlv_uni.39
+	# 		}
+	# 		remove_ideas = { mvlv_aggressive_beta }
+	# 		set_country_flag = mvlv_aggressive_beta_cool_down_flag
+	# 	}
+	# }
 }

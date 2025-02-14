@@ -1,0 +1,8 @@
+﻿units = {
+	division = {
+		name = "United Nation Motorized Division"
+		location = 11984
+		division_template = "United Nation Motorized"
+		start_experience_factor = 0.3
+	}
+}

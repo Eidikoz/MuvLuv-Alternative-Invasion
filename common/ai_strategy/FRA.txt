@@ -1,0 +1,60 @@
+FRA_time_to_ditch_SOV = {
+	allowed = {
+		original_tag = FRA
+	}
+
+	enable = {
+		219 = {
+			is_controlled_by = SOV
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SOV
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = AFG
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = PER
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = RAJ
+		value = 100
+	}
+	# ai_strategy = {
+	# 	type = dont_defend_ally_borders
+	# 	id = RAJ
+	# 	value = 100
+	# }
+}
+
+FRA_middleeast_protector = {
+	allowed = { original_tag = FRA }
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 30 # this is extra on top of 50 base (now equal to other territory)
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = kashmir
+		value = 15  # +30 %
+	}
+}

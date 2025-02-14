@@ -1,0 +1,182 @@
+
+music_station = "dawn_of_the_new_era_main"
+
+# music = {
+# 	song = "maintheme"
+# 	chance = {
+# 		modifier = {
+# 			factor = 1
+# 		}		
+# 	}
+# }
+
+# PEACE SONGS ##################
+music = {
+	song = "XI"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "maintheme"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "CC···12yl"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "MANhUNTer"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "KNS"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "uc0105"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "83UeI"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+
+music = {
+	song = "MNE"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "TRACER"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "G1x2"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "mSgH"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "car5p3_PENELOPE"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "ESIRNUS"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "kdk-GT"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "UCNT0100"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "[I]"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+
+music = {
+	song = "20200723zr"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}

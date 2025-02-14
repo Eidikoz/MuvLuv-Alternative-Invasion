@@ -3,7 +3,6 @@ technologies = {
 ###TSF###
 	
 	UNI_basic_concept_research = {
-		enable_subunits = { MVLV_tsf_battalion }
 #コスト、開始年#
 		research_cost = 1
 		start_year = 1970
@@ -1041,7 +1040,7 @@ JAP_F-4J = { enable_equipments = { tsf_equipment_F-4J }
 	ai_will_do = { factor = 20000 }
 }
 
-JAP_F-4JK = { enable_equipments = { jeg_equipment_F-4JK } enable_subunits = { mountaineers }
+JAP_F-4JK = { enable_equipments = { jeg_equipment_F-4JK }
 
 	research_cost = 2
 	start_year = 1982

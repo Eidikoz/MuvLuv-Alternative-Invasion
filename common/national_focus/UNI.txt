@@ -516,7 +516,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = Black_market_small_arms
+		id = United_nation_lendlease_small_arms
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = criminal_way_focus}
 		
@@ -530,14 +530,14 @@ focus_tree = {
 			hidden_effect ={
 				country_event = { id = unsecurity.24 }
 			}
-			custom_effect_tooltip = UNI_black_market
+			custom_effect_tooltip = UNI_United_nation_lendlease
 		}
 	}
 		
 	focus = {
-		id = Black_market_heavy_weapons
+		id = United_nation_lendlease_heavy_weapons
 		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = Black_market_small_arms}
+		prerequisite = { focus = United_nation_lendlease_small_arms}
 		
 		x = 13
 		y = 2
@@ -549,7 +549,7 @@ focus_tree = {
 			hidden_effect ={
 				country_event = { id = unsecurity.24 }
 			}
-			custom_effect_tooltip = UNI_black_market
+			custom_effect_tooltip = UNI_United_nation_lendlease
 		}
 	}
 	
@@ -575,7 +575,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = Black_market_planes
+		id = United_nation_lendlease_planes
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = recrute_soeldner}
 		
@@ -589,14 +589,14 @@ focus_tree = {
 			hidden_effect ={
 				country_event = { id = unsecurity.24 }
 			}
-			custom_effect_tooltip = UNI_black_market
+			custom_effect_tooltip = UNI_United_nation_lendlease
 		}
 	}
 	
 	focus = {
 		id = unite_with_triaden
 		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = Black_market_planes }
+		prerequisite = { focus = United_nation_lendlease_planes }
 		
 		x = 16
 		y = 3
@@ -629,8 +629,8 @@ focus_tree = {
 	focus = {
 		id = unite_with_mafia
 		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = Black_market_planes }
-		prerequisite = { focus = Black_market_heavy_weapons }
+		prerequisite = { focus = United_nation_lendlease_planes }
+		prerequisite = { focus = United_nation_lendlease_heavy_weapons }
 		
 		x = 14
 		y = 3
@@ -662,7 +662,7 @@ focus_tree = {
 	focus = {
 		id = unite_with_yakuza
 		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = Black_market_heavy_weapons }
+		prerequisite = { focus = United_nation_lendlease_heavy_weapons }
 		
 		x = 12
 		y = 3

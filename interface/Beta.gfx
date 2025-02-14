@@ -14,13 +14,10 @@ spriteTypes = {
         name = "GFX_idea_un_force"				
         textureFile = "gfx/interface/counters/divisions_large/UN_force.dds"
     }
+	
 	spriteType = {
 		name = "GFX_idea_no_way_back"
 		texturefile = "gfx/interface/ideas/idea_no_way_back.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_minewar"
-		texturefile = "gfx/interface/ideas/idea_minewar.dds"
 	}
 
 }

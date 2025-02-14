@@ -101,5 +101,11 @@ country_event = {
             }
             add_ideas = no_surrender 
         }
+		PRC = {
+			load_oob = "PRC_defensive"
+		}
+		RAJ = {
+			load_oob = "RAJ_defensive"
+		}
 	}
 }

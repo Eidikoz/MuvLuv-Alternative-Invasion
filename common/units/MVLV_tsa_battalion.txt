@@ -5,6 +5,7 @@ sub_units = {
 		priority = 2500
 		ai_priority = 3000
 		active = yes
+		special_forces = yes
 		can_exfiltrate_from_coast = yes
 		type = {
 			armor
@@ -26,7 +27,7 @@ sub_units = {
 		default_morale = 1
 		training_time = 60
 		weight = 2
-		supply_consumption = 0.01
+		supply_consumption = 0.2
 		#偵察、無線機能
 		recon = 0.5
 		initiative = 0.1
@@ -105,7 +106,7 @@ sub_units = {
 		default_morale = 0.1
 		training_time = 60
 		weight = 2
-		supply_consumption = 0.01
+		supply_consumption = 0.1
 		defense = -0.4
 		breakthrough = -0.4
 		soft_attack = -0.4

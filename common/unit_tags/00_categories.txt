@@ -34,4 +34,10 @@ sub_unit_categories = {
 	category_self_propelled_anti_air
 	category_tank_destroyers
 	category_helicopter_support_companies
+	category_MVLV_tsf_family
+	category_MVLV_tsf
+	category_support_battalions
+	category_MVLV_tsa
+	category_MVLV_tsf_except_family
+	category_MVLV_asa
 }

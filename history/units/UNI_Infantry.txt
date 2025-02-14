@@ -1,0 +1,9 @@
+﻿
+units = {
+	division = {
+		name = "United Nation Infantry Division"
+		location = 11984
+		division_template = "United Nation Infantry"
+		start_experience_factor = 0.3
+	}
+}

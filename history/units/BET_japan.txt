@@ -1,80 +1,110 @@
 ﻿units = {
 	division= {
 		name = "BETA Horde"
-		location = 11997
+		location = 1158
 		division_template = "BETA Horde"
 		start_experience_factor = 0.3
 	}
 		division= {
 		name = "BETA Horde"
-		location = 1051
+		location = 1158
 		division_template = "BETA Horde"
 		start_experience_factor = 0.3
 	}
 		division= {
 		name = "BETA Horde"
-		location = 1051
+		location = 4102
 		division_template = "BETA Horde"
 		start_experience_factor = 0.3
 	}
 		division= {
 		name = "BETA Horde"
-		location = 7046
+		location = 4102
 		division_template = "BETA Horde"
 		start_experience_factor = 0.3
 	}
 		division= {
 		name = "BETA Horde"
-		location = 11997
+		location = 1158
 		division_template = "BETA Horde"
 		start_experience_factor = 0.3
 	}
 		division= {
 		name = "BETA Horde"
-		location = 11985
+		location = 4102
 		division_template = "BETA Horde"
 		start_experience_factor = 0.3
 	}
 		division= {
 		name = "BETA Horde"
-		location = 11985
+		location = 4102
 		division_template = "BETA Horde"
 		start_experience_factor = 0.3
 	}
 		division= {
 		name = "BETA Horde"
-		location = 7087
+		location = 4102
 		division_template = "BETA Horde"
 		start_experience_factor = 0.3
 	}
 		division= {
 		name = "BETA Horde"
-		location = 7087
+		location = 4102
 		division_template = "BETA Horde"
 		start_experience_factor = 0.3
 	}
 		division= {
 		name = "BETA Horde"
-		location = 7087
+		location = 4102
 		division_template = "BETA Horde"
 		start_experience_factor = 0.3
 	}
 		division= {
 		name = "BETA Horde"
-		location = 11997
+		location = 1158
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "BETA Horde"
+		location = 1158
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "BETA Horde"
+		location = 1158
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "BETA Horde"
+		location = 1158
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "BETA Horde"
+		location = 1158
+		division_template = "BETA Horde"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "BETA Horde"
+		location = 1158
 		division_template = "BETA Horde"
 		start_experience_factor = 0.3
 	}
 		division= {
 		name = "BETA Horde"
-		location = 11997
-		division_template = "BETA Horde"
+		location = 4102
+		division_template = "BETA Destroyer"
 		start_experience_factor = 0.3
 	}
 		division= {
 		name = "BETA Horde"
-		location = 11997
-		division_template = "BETA Horde"
+		location = 1158
+		division_template = "BETA Destroyer"
 		start_experience_factor = 0.3
 	}
 }

@@ -18,7 +18,7 @@ country_event = {
 
 	option = {
 		name = StaerkeBETA.1.da
-		BET={ add_manpower = 6000000 }		
+		BET={ add_manpower = 6000000 }
 	}
 }
 

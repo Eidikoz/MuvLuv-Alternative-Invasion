@@ -133,11 +133,11 @@ country_event = {
 	mean_time_to_happen = { days = 100 }
 
 	option = {
-		name = america
+		name = japan
 		country_event = { days = 1 id = BETAnews.30 }
 		set_variable = {
 			var = BETA_fight_japan
-			value = 0
+			value = 1
 		}
 	}
 }
@@ -167,7 +167,7 @@ country_event = {
 	mean_time_to_happen = { days = 100 }
 
 	option = {
-		name = america
+		name = australia
 		country_event = { days = 1 id = BETAnews.33 }
 		set_variable = {
 			var = BETA_fight_australia
@@ -201,7 +201,7 @@ country_event = {
 	mean_time_to_happen = { days = 100 }
 
 	option = {
-		name = america
+		name = nzl
 		country_event = { days = 1 id = BETAnews.36 }
 		set_variable = {
 			var = BETA_fight_nzl
@@ -235,7 +235,7 @@ country_event = {
 	mean_time_to_happen = { days = 100 }
 
 	option = {
-		name = america
+		name = phi
 		country_event = { days = 1 id = BETAnews.39 }
 		set_variable = {
 			var = BETA_fight_phi
@@ -269,7 +269,7 @@ country_event = {
 	mean_time_to_happen = { days = 100 }
 
 	option = {
-		name = america
+		name = bra
 		country_event = { days = 1 id = BETAnews.42 }
 		set_variable = {
 			var = BETA_fight_bra
@@ -303,7 +303,7 @@ country_event = {
 	mean_time_to_happen = { days = 100 }
 
 	option = {
-		name = america
+		name = cub
 		country_event = { days = 1 id = BETAnews.45 }
 		set_variable = {
 			var = BETA_fight_CUB
@@ -334,7 +334,7 @@ country_event = {
 	mean_time_to_happen = { days = 100 }
 
 	option = {
-		name = america
+		name = dom
 		country_event = { days = 1 id = BETAnews.48 }
 		set_variable = {
 			var = BETA_fight_DOM
@@ -365,7 +365,7 @@ country_event = {
 	mean_time_to_happen = { days = 100 }
 
 	option = {
-		name = america
+		name = iceland
 		country_event = { days = 1 id = BETAnews.51 }
 		set_variable = {
 			var = BETA_fight_ICE

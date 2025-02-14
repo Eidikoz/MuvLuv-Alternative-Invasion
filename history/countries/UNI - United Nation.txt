@@ -3,7 +3,6 @@ set_research_slots = 2
 set_convoys = 100000
 set_stability = 1
 set_war_support = 1
-load_oob = "UNI"
 
 add_ideas = {
 	closed_economy
@@ -26,14 +25,9 @@ set_technology = {
 	gwtank = 1
 	basic_light_tank = 1
 	basic_heavy_tank = 1
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	tactical_bomber1 = 1
-	strategic_bomber1 = 1
-	CAS1 = 1
-	naval_bomber1 = 1
 }
+
+# load_oob = "UNI"
 	
 set_popularities = {
 	neutrality = 100

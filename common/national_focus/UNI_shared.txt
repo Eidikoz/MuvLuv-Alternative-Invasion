@@ -232,7 +232,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			CHI ={
+			PRC ={
 				load_oob = "UNI"
 				load_oob = "UNI_more"
 				hidden_effect = {

@@ -1,0 +1,168 @@
+UNI_force_concentration_through_suez = {
+	allowed = {
+		original_tag = UNI
+	}
+	enable = {
+		454 = {
+			is_controlled_by = BET
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = force_concentration_front_factor
+		state = 446 
+		ratio = 0.3
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = force_concentration_target_weight
+		state = 446 
+		value = 50
+	}
+	ai_strategy = {
+		type = front_unit_request
+		state = 446
+		value = 50  # +30 %
+	}
+}
+
+UNI_unit_buffer_for_african_defense = {
+	allowed = {
+		original_tag = UNI
+	}
+	enable = {
+		446 = {
+			not = { is_controlled_by = BET }
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+
+		# ratio of total armies in country to be buffered
+		ratio = 0.2
+
+		state = {
+			446
+		}
+
+		# you can specify an order id. ratio of same orders ids will be share same ratio
+		#order_id = 2
+
+		area = suez
+
+		subtract_invasions_from_need = yes
+		subtract_fronts_from_need = yes
+	}
+}
+
+UNI_first_important_choke  = {
+	allowed = { original_tag = UNI }
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = suez
+		value = 80 # this is extra on top of 50 base (now equal to other territory)
+	}
+}
+
+### Malaya
+
+UNI_force_concentration_through_malaya = {
+	allowed = {
+		original_tag = UNI
+	}
+	enable = {
+		288 = {
+			is_controlled_by = BET
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = force_concentration_front_factor
+		state = {
+			1394
+			336
+		} 
+		ratio = 0.3
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = force_concentration_target_weight
+		state = {
+			1394
+			336
+		} 
+		value = 50 
+	}
+	ai_strategy = {
+		type = front_unit_request
+		state = {
+			1394
+			336
+		} 
+		value = 30  # +30 %
+	}
+}
+
+UNI_unit_buffer_for_malaya_defense = {
+	allowed = {
+		original_tag = UNI
+	}
+	enable = {
+		336 = {
+			not = { is_controlled_by = BET }
+		}
+		
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+
+		# ratio of total armies in country to be buffered
+		ratio = 0.2
+
+		# you can specify an order id. ratio of same orders ids will be share same ratio
+		#order_id = 2
+
+		state = {
+			1394
+			336
+		}
+
+		area = malaya
+
+		subtract_invasions_from_need = yes
+		subtract_fronts_from_need = yes
+	}
+}
+
+UNI_second_important_choke = {
+	allowed = { original_tag = UNI }
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = malaya
+		value = 50 # this is extra on top of 50 base (now equal to other territory)
+	}
+}

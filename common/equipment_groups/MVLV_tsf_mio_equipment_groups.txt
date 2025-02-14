@@ -6,10 +6,10 @@ MVLV_mio_cat_eq_all_tsf = {
 	}
 }
 
-MVLV_mio_cat_eq_1st_tsf = { 
-	equipment_type = {
-		MVLV_TSF_chassis_1_light
-		MVLV_TSF_chassis_1_light_mod
-		MVLV_TSF_chassis_1_heavy
-	}
-}
+# MVLV_mio_cat_eq_1st_tsf = { 
+# 	equipment_type = {
+# 		MVLV_TSF_chassis_1_light
+# 		MVLV_TSF_chassis_1_light_mod
+# 		MVLV_TSF_chassis_1_heavy
+# 	}
+# }

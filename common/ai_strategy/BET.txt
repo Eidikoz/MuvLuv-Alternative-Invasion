@@ -39,170 +39,188 @@ Betas_bad = {
 	}
 	
 }
-BET_blitzkrieg_afg_with_force_concentration = {
-	allowed = {
-		original_tag = BET
-	}
-	enable = {
-		AFG = { has_capitulated = no }
-	}
-	abort_when_not_enabled = yes
+# BET_blitzkrieg_afg_with_force_concentration = {
+# 	allowed = {
+# 		original_tag = BET
+# 	}
+# 	enable = {
+# 		AFG = { has_capitulated = no }
+# 	}
+# 	abort_when_not_enabled = yes
 	
-	ai_strategy = {
-		type = force_concentration_target_weight
-		state = 267 # Minsk
-		state = 475 # Kyiv
+# 	ai_strategy = {
+# 		type = force_concentration_target_weight
+# 		state = 267 # Minsk
+# 		state = 475 # Kyiv
 
-		value = 25 # +25%
-	}
+# 		value = 25 # +25%
+# 	}
 
-	ai_strategy = {
-		type = consider_weak
-		id = AFG
-		value = 25
-	}
+# 	ai_strategy = {
+# 		type = consider_weak
+# 		id = AFG
+# 		value = 25
+# 	}
 
-	ai_strategy = {
-		type = front_control
+# 	ai_strategy = {
+# 		type = front_control
 
-		tag = AFG
+# 		tag = AFG
 
-		ratio = 0.5
+# 		ratio = 0.5
 
-		priority = 100
-		ordertype = front
-		execution_type = rush_weak
-		execute_order = yes
-	}
-}
-BET_blitzkrieg_per_with_force_concentration = {
-	allowed = {
-		original_tag = BET
-	}
+# 		priority = 100
+# 		ordertype = front
+# 		execution_type = rush_weak
+# 		execute_order = yes
+# 	}
+# }
+# BET_blitzkrieg_per_with_force_concentration = {
+# 	allowed = {
+# 		original_tag = BET
+# 	}
+# 	enable = {
+# 		AND = {
+# 			AFG = { has_capitulated = yes }
+# 			PER = { has_capitulated = no }
+# 		}
+# 	}
+# 	abort_when_not_enabled = yes
+
+# 	ai_strategy = {
+# 		type = force_concentration_target_weight
+# 		state = 266 
+# 		state = 419 
+
+# 		value = 25 # +25%
+# 	}
+
+# 	ai_strategy = {
+# 		type = consider_weak
+# 		id = PER
+# 		value = 25
+# 	}
+
+# 	ai_strategy = {
+# 		type = front_control
+
+# 		tag = PER
+
+# 		ratio = 0.5
+
+# 		priority = 100
+# 		ordertype = front
+# 		execution_type = rush_weak
+# 		execute_order = yes
+# 	}
+# }
+# BET_blitzkrieg_southsoviet_with_force_concentration = {
+# 	allowed = {
+# 		original_tag = BET
+# 	}
+# 	enable = {
+# 		AND = {
+# 			AFG = { has_capitulated = yes }
+# 			PER = { has_capitulated = yes }
+# 		}
+# 	}
+# 	abort_when_not_enabled = yes
+
+# 	ai_strategy = {
+# 		type = force_concentration_target_weight
+# 		state = 229
+# 		state = 217
+# 		state = 234
+
+# 		value = 25 # +25%
+# 	}
+# 	ai_strategy = {
+# 		type = consider_weak
+# 		id = SOV
+# 		value = 25
+# 	}
+
+# 	ai_strategy = {
+# 		type = front_control
+
+# 		tag = SOV
+
+# 		ratio = 0.5
+
+# 		priority = 100
+# 		ordertype = front
+# 		execution_type = rush_weak
+# 		execute_order = yes
+# 	}
+# }
+# BET_blitzkrieg_westsoviet_with_force_concentration = {
+# 	allowed = {
+# 		original_tag = BET
+# 	}
+# 	enable = {
+# 		AND = {
+# 			229 = {
+# 				is_controlled_by = BET 
+# 			}
+# 			217 = {
+# 				is_controlled_by = BET
+# 			}
+# 			234 = {
+# 				is_controlled_by = BET
+# 			}
+
+# 			219 = {
+# 				NOT = { is_controlled_by = BET }
+# 			}
+# 			195 = {
+# 				NOT = { is_controlled_by = BET }
+# 			}
+# 		}
+# 	}
+# 	abort_when_not_enabled = yes
+
+# 	ai_strategy = {
+# 		type = force_concentration_target_weight
+# 		state = 195
+# 		state = 219
+
+# 		value = 50 # +25%
+# 	}
+# 	ai_strategy = {
+# 		type = consider_weak
+# 		id = SOV
+# 		value = 25
+# 	}
+
+# 	ai_strategy = {
+# 		type = front_control
+
+# 		tag = SOV
+
+# 		ratio = 0.5
+
+# 		priority = 100
+# 		ordertype = front
+# 		execution_type = rush_weak
+# 		execute_order = yes
+# 	}
+# }
+BETA_generic_strategy = {
 	enable = {
-		AND = {
-			AFG = { has_capitulated = yes }
-			PER = { has_capitulated = no }
-		}
+		tag = BET
 	}
 	abort_when_not_enabled = yes
-
 	ai_strategy = {
-		type = force_concentration_target_weight
-		state = 266 
-		state = 419 
-
-		value = 25 # +25%
-	}
-
-	ai_strategy = {
-		type = consider_weak
-		id = PER
-		value = 25
-	}
-
-	ai_strategy = {
-		type = front_control
-
-		tag = PER
-
-		ratio = 0.5
-
-		priority = 100
-		ordertype = front
-		execution_type = rush_weak
-		execute_order = yes
-	}
-}
-BET_blitzkrieg_southsoviet_with_force_concentration = {
-	allowed = {
-		original_tag = BET
-	}
-	enable = {
-		AND = {
-			AFG = { has_capitulated = yes }
-			PER = { has_capitulated = yes }
-		}
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = force_concentration_target_weight
-		state = 229
-		state = 217
-		state = 234
-
-		value = 25 # +25%
+		type = garrison
+		value = -100
 	}
 	ai_strategy = {
-		type = consider_weak
-		id = SOV
-		value = 25
-	}
-
-	ai_strategy = {
-		type = front_control
-
-		tag = SOV
-
-		ratio = 0.5
-
-		priority = 100
-		ordertype = front
-		execution_type = rush_weak
-		execute_order = yes
-	}
-}
-BET_blitzkrieg_westsoviet_with_force_concentration = {
-	allowed = {
-		original_tag = BET
-	}
-	enable = {
-		AND = {
-			229 = {
-				is_controlled_by = BET 
-			}
-			217 = {
-				is_controlled_by = BET
-			}
-			234 = {
-				is_controlled_by = BET
-			}
-
-			219 = {
-				NOT = { is_controlled_by = BET }
-			}
-			195 = {
-				NOT = { is_controlled_by = BET }
-			}
-		}
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = force_concentration_target_weight
-		state = 195
-		state = 219
-
-		value = 50 # +25%
+		type = garrison_reinforcement_priority
+		value = -100
 	}
 	ai_strategy = {
-		type = consider_weak
-		id = SOV
-		value = 25
-	}
-
-	ai_strategy = {
-		type = front_control
-
-		tag = SOV
-
-		ratio = 0.5
-
-		priority = 100
-		ordertype = front
-		execution_type = rush_weak
-		execute_order = yes
+		type = spare_unit_factor
+		value = -100
 	}
 }
 BET_force_concentration_through_gobi_hurts_too_much = {
@@ -210,41 +228,324 @@ BET_force_concentration_through_gobi_hurts_too_much = {
 		original_tag = BET
 	}
 	enable = {
-		195 = {
+		64 = {
 			NOT = { is_controlled_by = BET }
 		}
 	}
 	abort_when_not_enabled = yes
-	
+
+		
 	ai_strategy = {
 		type = force_concentration_front_factor
-		state = 617  
-		state = 287
-		state = 758
-		state = 439
-		state = 433
-		state = 428
-		ratio = 0.50 
+		area = gobi
 		value = -100
 	}
 	ai_strategy = {
 		type = force_concentration_target_weight
-		state = 617  
-		state = 287
-		state = 758
-		state = 439
-		state = 433
-		state = 428
+		area = gobi
 		value = -100 
 	}
 	ai_strategy = {
 		type = front_unit_request
-		state = 617  
-		state = 287
-		state = 758
-		state = 439
-		state = 433
-		state = 428
+		area = gobi
 		value = 15  # +30 %
 	}
+}
+BET_force_concentration_through_kashmir_hurts_too_much = {
+	allowed = {
+		original_tag = BET
+	}
+	enable = {
+		64 = {
+			NOT = { is_controlled_by = BET }
+		}
+	}
+	abort_when_not_enabled = yes
+
+		
+	ai_strategy = {
+		type = force_concentration_front_factor
+		area = kashmir
+		value = -100
+	}
+	ai_strategy = {
+		type = force_concentration_target_weight
+		area = kashmir
+		value = -100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = kashmir
+		value = 15  # +30 %
+	}
+}
+BET_blitz_middleeast  = {
+	allowed = {
+		original_tag = BET
+	}
+
+	enable = {
+		OR = {
+			AND = {
+				has_war_with = PER
+				PER = { has_capitulated = no }
+			}
+			AND = {
+				has_war_with = AFG
+				AFG = { has_capitulated = no }
+			}
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+
+		tag = PER
+
+		ratio = 0.25
+
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		tag = AFG
+
+		ratio = 0.25
+
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+
+		tag = PER
+
+		value = 50 # lets put more units, should be safe
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+
+		tag = AFG
+
+		value = 60 # lets put more units, should be safe
+	}
+}
+BET_blitz_soviet = {
+
+	allowed = {
+		original_tag = BET
+	}
+
+	enable = {
+		PER = { has_capitulated = yes }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = consider_weak
+		id = SOV
+		value = 25
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		tag = SOV
+
+		ratio = 0.5
+
+		priority = 100
+		ordertype = front
+		execution_type = rush_weak
+		execute_order = yes
+	}
+
+	ai_strategy = {
+		type = force_concentration_target_weight
+		state = 229
+		state = 217
+		state = 234
+		state = 219
+		state = 195
+
+		value = 80 # +80%
+	}
+
+	# ai_strategy = {
+	# 	# Avoid the areas behind the Maginot line
+	# 	type = force_concentration_target_weight
+	# 	state = 18 # Champagne
+	# 	state = 17 # Franche-Comte
+	# 	state = 28 # Alsace-Lorraine
+	# 	state = 27 # Bourgogne
+
+	# 	value = -60 # -60%
+	# }
+}
+BET_blitz_easteurope  = {
+	allowed = {
+		original_tag = BET
+	}
+
+	enable = {
+		OR = {
+			AND = {
+				has_war_with = POL
+				POL = { has_capitulated = no }
+			}
+			AND = {
+				has_war_with = ROM
+				ROM = { has_capitulated = no }
+			}
+			AND = {
+				has_war_with = TUR
+				TUR = { has_capitulated = no }
+			}
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+
+		tag = POL
+
+		ratio = 0.25
+
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		tag = ROM
+
+		ratio = 0.25
+
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		tag = HUN
+
+		ratio = 0.25
+
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+
+		tag = POL
+
+		value = 40 # lets put more units, should be safe
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+
+		tag = ROM
+
+		value = 30 # lets put more units, should be safe
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+
+		tag = HUN
+
+		value = 30 # lets put more units, should be safe
+	}
+	
+}
+BET_blitz_westeurope  = {
+	allowed = {
+		original_tag = BET
+	}
+
+	enable = {
+		OR = {
+			AND = {
+				has_war_with = DDR
+				DDR = { has_capitulated = no }
+			}
+			AND = {
+				has_war_with = GER
+				GER = { has_capitulated = no }
+			}
+			AND = {
+				has_war_with = AUS
+				AUS = { has_capitulated = no }
+			}
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+
+		tag = DDR
+
+		ratio = 0.5
+
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+
+		tag = GER
+
+		ratio = 0.3
+
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+
+		tag = DDR
+
+		value = 50 # lets put more units, should be safe
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+
+		tag = GER
+
+		value = 30 # lets put more units, should be safe
+	}
+	
 }

@@ -1,0 +1,20 @@
+FRA_middleeast_protector = {
+	allowed = { original_tag = ITA }
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 30 # this is extra on top of 50 base (now equal to other territory)
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = north_africa
+		value = 30  # +30 %
+	}
+}

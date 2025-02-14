@@ -54,27 +54,7 @@ ideas = {
 				breakthrough_bonus_against = 0.5
 			}
 			targeted_modifier = {
-				tag = TUR
-				attack_bonus_against = 0.5
-				breakthrough_bonus_against = 0.5
-			}
-			targeted_modifier = {
 				tag = IRQ
-				attack_bonus_against = 0.5
-				breakthrough_bonus_against = 0.5
-			}
-			targeted_modifier = {
-				tag = SAU
-				attack_bonus_against = 0.5
-				breakthrough_bonus_against = 0.5
-			}
-			targeted_modifier = {
-				tag = OMA
-				attack_bonus_against = 0.5
-				breakthrough_bonus_against = 0.5
-			}
-			targeted_modifier = {
-				tag = YEM
 				attack_bonus_against = 0.5
 				breakthrough_bonus_against = 0.5
 			}

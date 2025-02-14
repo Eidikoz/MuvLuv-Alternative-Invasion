@@ -1,8 +1,8 @@
 ﻿units = {
 	division = {
-		name = "Anti-BETA Division"
+		name = "United Nation Guard Division"
 		location = 859
-		division_template = "Anti-BETA Divisions"
+		division_template = "United Nation Guard"
 		start_experience_factor = 0.3
 	}
 }

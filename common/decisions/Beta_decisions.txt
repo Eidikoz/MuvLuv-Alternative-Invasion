@@ -1,4 +1,4 @@
-####Find Betas#####	
+####Betas#####	
 
 Beta_decisions = {
 	Beta_spawn_hive_1 = {
@@ -6,15 +6,17 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			619 = {
 				is_fully_controlled_by = BET
 			}
+			
 		}
 		ai_will_do = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 150
 		days_remove = 1
 		
 		visible = {
@@ -37,15 +39,18 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			418 = {
 				is_fully_controlled_by = BET
 			}
+			not = {has_army_manpower = { size > 70000000 }}
 		}
+
 		ai_will_do = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -68,6 +73,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			407 = {
 				is_fully_controlled_by = BET
 			}
@@ -76,7 +82,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -99,6 +105,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			880 = {
 				is_fully_controlled_by = BET
 			}
@@ -107,7 +114,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -129,6 +136,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			260 = {
 				is_fully_controlled_by = BET
 			}
@@ -137,7 +145,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -159,6 +167,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			882 = {
 				is_fully_controlled_by = BET
 			}
@@ -167,7 +176,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -189,6 +198,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			577 = {
 				is_fully_controlled_by = BET
 			}
@@ -197,7 +207,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -219,6 +229,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			148 = {
 				is_fully_controlled_by = BET
 			}
@@ -227,7 +238,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -249,6 +260,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			291 = {
 				is_fully_controlled_by = BET
 			}
@@ -257,7 +269,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -279,6 +291,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			576 = {
 				is_fully_controlled_by = BET
 			}
@@ -287,7 +300,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -309,6 +322,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			43 = {
 				is_fully_controlled_by = BET
 			}
@@ -317,7 +331,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -339,6 +353,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			20 = {
 				is_fully_controlled_by = BET
 			}
@@ -347,7 +362,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -369,6 +384,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			436 = {
 				is_fully_controlled_by = BET
 			}
@@ -377,7 +393,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -399,6 +415,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			756 = {
 				is_fully_controlled_by = BET
 			}
@@ -407,7 +424,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -429,6 +446,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			568 = {
 				is_fully_controlled_by = BET
 			}
@@ -437,7 +455,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -459,6 +477,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			605 = {
 				is_fully_controlled_by = BET
 			}
@@ -467,7 +486,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -489,6 +508,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			640 = {
 				is_fully_controlled_by = BET
 			}
@@ -497,7 +517,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -519,6 +539,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			330 = {
 				is_fully_controlled_by = BET
 			}
@@ -527,7 +548,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -545,6 +566,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			561 = {
 				is_fully_controlled_by = BET
 			}
@@ -553,7 +575,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -571,6 +593,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			527 = {
 				is_fully_controlled_by = BET
 			}
@@ -579,7 +602,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -597,6 +620,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			534 = {
 				is_fully_controlled_by = BET
 			}
@@ -605,7 +629,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -623,6 +647,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			282 = {
 				is_fully_controlled_by = BET
 			}
@@ -631,7 +656,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -649,6 +674,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			574 = {
 				is_fully_controlled_by = BET
 			}
@@ -657,7 +683,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -675,6 +701,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			878 = {
 				is_fully_controlled_by = BET
 			}
@@ -683,7 +710,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -701,6 +728,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			877 = {
 				is_fully_controlled_by = BET
 			}
@@ -709,7 +737,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -727,6 +755,7 @@ Beta_decisions = {
 
 		available = {
 			tag = BET
+			not = {has_army_manpower = { size > 70000000 }}
 			874 = {
 				is_fully_controlled_by = BET
 			}
@@ -735,7 +764,7 @@ Beta_decisions = {
 			factor = 100
 		}
 		cost = 0
-		days_re_enable = 183
+		days_re_enable = 300
 		days_remove = 1
 		
 		visible = {
@@ -748,180 +777,123 @@ Beta_decisions = {
 		}
 	}
 
-	find_the_Betas_england = {
-		icon = generic_operation
+	beta_invasion_japan = {                         
+		allowed = { tag = BET }                
+		available = {                           
+			check_variable = { beta_fight_japan = 1 }
+		}
+		cost = 0
+		days_re_enable = 300
 
-		available = {
-			tag = ENG
-		}
-		cost = 200
-		days_re_enable = 1
-		days_remove = 25
-		
-		visible = {
-			AND = {
-				ENG = { has_country_flag = Beta_find }
-				tag = ENG
-			}
-		}
 		complete_effect = {
-			add_to_variable = {
-				var = Beta_fight_england
-				value = 10
-			}
-			news_event = { days = 1 id = Betanews.56 }
-		}
-
-		ai_will_do = {
-			factor = 200
-		}
-	}
-	
-	fightBeta_japan = {
-		icon = generic_operation
-
-		available = {
-			AND = {
-				tag = JAP
-				BET = { exists = yes }
-			}
-		}
-		cost = 300
-		fire_only_once = yes
-		
-		visible = {
-			AND = {
-				JAP = { exists = yes }
-				tag = JAP
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				country_event = { days = 1 id = Betaevents.5 } 
-				country_event = { days = 1 id = Betanews.59 } 
-			}
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-	Betas_spain = {
-			icon = generic_operation
-
-		available = {
-			AND = {
-				tag = D01
-				SPR={ has_war_with = D01 }
-			}
-		}
-		cost = 50
-		fire_only_once = yes
-		
-		visible = {
-			AND = {
-				SPR={ has_war_with = D01 }
-				tag = D01
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				country_event = { days = 1 id = Betanews.11}
-				BET={
-					load_oob = "BET_spain"
-					declare_war_on = {
-						type = take_state_focus
-						target = SPR	
-					}
-					declare_war_on = {
-						type = take_state_focus
-						target = D01	
-					}
-				}		
-			}
-		}
-
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				has_war_with = BET
-				factor = 0
-			}
-		}
-	}
-	
-	join_unsecurity = {
-		icon = generic_operation
-
-		available = {
-			OR ={
-				AND = {
-					has_capitulated = no
-					is_major = yes
-					FROM={ NOT = { is_in_faction_with = ENG }}
-					FROM={ NOT = { has_war_with = ENG }}
-					# has_game_rule = {
-					# 	rule = normal_alliances
-					# 	option = UNITED
-					# }
-					NOT = { tag = BET }
-					NOT = { tag = UNI }
-					BET = { exists = yes }
+			BET ={
+				declare_war_on = {
+					type = take_state_focus
+					target = JAP
 				}
-				AND = {
-					FROM = { has_war_with = BET }
-					FROM={ NOT = { is_in_faction_with = ENG }}
-					# has_game_rule = {
-					# 	rule = normal_alliances
-					# 	option = UNITED
-					# }
-					has_capitulated = no
-					NOT = { tag = BET }
-					NOT = { tag = UNI }
-					BET = { exists = yes }
-				}
+			}
+			hidden_effect = {
+				BET = { load_oob = "BET_japan" }
+			}
+			country_event = { days = 1 id = betanews.32 }   
+		}
+	}
+
+	beta_invasion_japan = {                         
+		allowed = { tag = BET }                
+		available = {                           
+			529 = {
+				is_controlled_by = BET
+			}
+			530 = {
+				is_controlled_by = BET
 			}
 		}
 		cost = 0
-		fire_only_once = yes
-		
-		visible = {
-			OR ={
-				AND = {
-					has_capitulated = no
-					is_major = yes
-					FROM={ NOT = { is_in_faction_with = ENG }}
-					FROM={ NOT = { has_war_with = ENG }}
-					# has_game_rule = {
-					# 	rule = normal_alliances
-					# 	option = UNITED
-					# }
-					NOT = { tag = BET }
-					NOT = { tag = UNI }
-				}
-				AND = {
-					FROM = { has_war_with = BET }
-					FROM={ NOT = { is_in_faction_with = ENG }}
-					# has_game_rule = {
-					# 	rule = normal_alliances
-					# 	option = UNITED
-					# }
-					has_capitulated = no
-					NOT = { tag = BET }
-					NOT = { tag = UNI }
-				}
-			}
-			date > 1936.03.01 
-		}
-		complete_effect = {
-			USA = { add_to_Faction = FROM }
-		}
+		days_re_enable = 300
 
-		ai_will_do = {
-			factor = 20
+		complete_effect = {
+			hidden_effect = {
+				BET = { load_oob = "BET_japan" }
+			}
+			country_event = { days = 1 id = betanews.32 }   
 		}
 	}
+	
+	# fightBeta_japan = {
+	# 	icon = generic_operation
+
+	# 	available = {
+	# 		AND = {
+	# 			tag = JAP
+	# 			BET = { exists = yes }
+	# 		}
+	# 	}
+	# 	cost = 0
+	# 	fire_only_once = yes
+		
+	# 	visible = {
+	# 		AND = {
+	# 			JAP = { exists = yes }
+	# 			tag = JAP
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		hidden_effect = {
+	# 			country_event = { days = 1 id = Betanews.59 } 
+	# 		}
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 10
+	# 	}
+	# }
+	
+	# Betas_spain = {
+	# 		icon = generic_operation
+
+	# 	available = {
+	# 		AND = {
+	# 			tag = D01
+	# 			SPR={ has_war_with = D01 }
+	# 		}
+	# 	}
+	# 	cost = 50
+	# 	fire_only_once = yes
+		
+	# 	visible = {
+	# 		AND = {
+	# 			SPR={ has_war_with = D01 }
+	# 			tag = D01
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		hidden_effect = {
+	# 			country_event = { days = 1 id = Betanews.11}
+	# 			BET={
+	# 				load_oob = "BET_spain"
+	# 				declare_war_on = {
+	# 					type = take_state_focus
+	# 					target = SPR	
+	# 				}
+	# 				declare_war_on = {
+	# 					type = take_state_focus
+	# 					target = D01	
+	# 				}
+	# 			}		
+	# 		}
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 20
+	# 		modifier = {
+	# 			has_war_with = BET
+	# 			factor = 0
+	# 		}
+	# 	}
+	# }
+	
+	
 	usa_special_forces_decision = {
         icon = GFX_decision_generic_build_troops
         available = {
@@ -948,4 +920,99 @@ Beta_decisions = {
 			}
 		}
     }
+
+	# BETA_offensive = {
+	# 	activation = {
+	# 		always = no
+	# 	}
+	# 	available = { always = yes }
+	# 	# cancel_trigger = {
+	# 	# 	OR = {
+	# 	# 		check_variable = {
+	# 	# 			num_divisions < @setF
+	#  	# 		}
+	# 	# 		has_idea = hive_thinning_state
+	# 	# 		has_idea = mvlv_brokenhive
+	# 	# 	}
+	# 	# }
+	# 	icon = mission_icon
+	# 	is_good = yes
+	# 	fire_only_once = no
+	# 	days_mission_timeout = 15
+	# 	# cancel_effect = {
+	# 	# 	#必要ならイベント
+	# 	# 	set_country_flag = mvlv_aggressive_beta_cool_down_flag
+	# 	# 	clr_country_flag = MVLV_aggressive_preparation_flag
+	# 	# }
+	# 	timeout_effect = {
+	# 		# clr_country_flag = MVLV_aggressive_preparation_flag
+	# 		every_enemy_country = {
+	# 			limit = {
+	# 				any_neighbor_country = {
+	#  					tag = ROOT
+	#  				}
+	# 				NOT = { has_country_flag = MVLV_underground_notice_flag }
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					defficulty_hell_trigger = yes
+	# 				}
+	# 				country_event = mvlv_uni.35
+	# 			}
+	# 			else = {
+	# 				country_event = mvlv_uni.34
+	# 			}
+	# 		}
+	# 		every_enemy_country = {
+	# 			limit = {
+	# 				has_country_flag = MVLV_underground_notice_flag
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					defficulty_hell_trigger = yes
+	# 				}
+	# 				country_event = mvlv_uni.35
+	# 			}
+	# 			else = {
+	# 				country_event = mvlv_uni.34
+	# 			}
+	# 		}
+			
+	# 		add_ideas = { mvlv_aggressive_beta }
+	# 		if = {
+	# 			limit = { tag = H21 }
+	# 			country_event = BETA.10
+	# 		}
+	# 	}
+	# }
+
+	# BETA_exhaustion = {
+	# 	activation = {
+	# 		has_idea = OffensiveBETA
+	# 	}
+	# 	available = { always = no }
+	# 	icon = mission_icon
+	# 	is_good = yes
+	# 	fire_only_once = no
+	# 	days_mission_timeout = 35
+	# 	timeout_effect = {
+	# 		#必要ならイベント
+	# 		every_neighbor_country = {
+	# 			limit = {
+	# 				is_in_faction_with = UNI
+	# 				NOT = { has_country_flag = MVLV_underground_notice_flag }
+	# 			}
+	# 			country_event = mvlv_uni.39
+	# 		}
+	# 		every_country = {
+	# 			limit = {
+	# 				is_in_faction_with = UNI
+	# 				has_country_flag = MVLV_underground_notice_flag
+	# 			}
+	# 			country_event = mvlv_uni.39
+	# 		}
+	# 		remove_ideas = { mvlv_aggressive_beta }
+	# 		set_country_flag = mvlv_aggressive_beta_cool_down_flag
+	# 	}
+	# }
 }

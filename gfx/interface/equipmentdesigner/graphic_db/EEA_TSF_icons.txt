@@ -1,150 +1,150 @@
-EEA = {
-	MVLV_TSF_chassis_1_heavy = {
-		pool = {
-			icons = {
-				"GFX_EEA_Mig-21"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
-		}
-	}
-	MVLV_TSF_chassis_2_heavy = {
-		pool = {
-			icons = {
-				"GFX_MiG-23EEA"
-				"GFX_MiG-27EEA"
-				"GFX_MiG-31M"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
-		}
-	}
-	MVLV_TSF_chassis_2_heavy = {
-		pool = {
-			icons = {
-				"GFX_MiG-27EEA"
-				"GFX_MiG-31M"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
-		}
-	}
-	MVLV_TSF_chassis_2_heavy = {
-		pool = {
-			icons = {
-				"GFX_MiG-25"
-				"GFX_MiG-31"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
-		}
-	}
-	MVLV_TSF_chassis_2_maneuver = {
-		pool = {
-			icons = {
-				"GFX_Su-27"
-				"GFX_Su-37"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
-		}
-	}
-	MVLV_TSF_chassis_3_maneuver = {
-		pool = {
-			icons = {
-				"GFX_Su-47"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
-		}
-	}
-	MVLV_TSF_chassis_3_maneuver = {
-		pool = {
-			icons = {
-				"GFX_Su-47"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
-		}
-	}
-	MVLV_TSF_chassis_3_maneuver = {
-		pool = {
-			icons = {
-				"GFX_Su-47"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
-		}
-	}
-	MVLV_TSF_chassis_3_maneuver = {
-		pool = {
-			icons = {
-				"GFX_Su-47"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
-		}
-	}
-	MVLV_TSF_chassis_3_light = {
-		pool = {
-			icons = {
-				"GFX_Su-57"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
-		}
-	}
-	MVLV_TSF_chassis_3_light = {
-		pool = {
-			icons = {
-				"GFX_Su-57"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
-		}
-	}
-	MVLV_TSF_chassis_3_heavy = {
-		pool = {
-			icons = {
-				"GFX_Su-57"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
-		}
-	}
-	MVLV_TSF_chassis_3_heavy = {
-		pool = {
-			icons = {
-				"GFX_Su-57"
-			}
-			models = {
-				"TSF_entity"
-			}
-			weight = 100
-		}
-	}
-}
+# EEA = {
+# 	MVLV_TSF_chassis_1_heavy = {
+# 		pool = {
+# 			icons = {
+# 				"GFX_EEA_Mig-21"
+# 			}
+# 			models = {
+# 				"TSF_entity"
+# 			}
+# 			weight = 100
+# 		}
+# 	}
+# 	MVLV_TSF_chassis_2_heavy = {
+# 		pool = {
+# 			icons = {
+# 				"GFX_MiG-23EEA"
+# 				"GFX_MiG-27EEA"
+# 				"GFX_MiG-31M"
+# 			}
+# 			models = {
+# 				"TSF_entity"
+# 			}
+# 			weight = 100
+# 		}
+# 	}
+# 	MVLV_TSF_chassis_2_heavy = {
+# 		pool = {
+# 			icons = {
+# 				"GFX_MiG-27EEA"
+# 				"GFX_MiG-31M"
+# 			}
+# 			models = {
+# 				"TSF_entity"
+# 			}
+# 			weight = 100
+# 		}
+# 	}
+# 	MVLV_TSF_chassis_2_heavy = {
+# 		pool = {
+# 			icons = {
+# 				"GFX_MiG-25"
+# 				"GFX_MiG-31"
+# 			}
+# 			models = {
+# 				"TSF_entity"
+# 			}
+# 			weight = 100
+# 		}
+# 	}
+# 	MVLV_TSF_chassis_2_maneuver = {
+# 		pool = {
+# 			icons = {
+# 				"GFX_Su-27"
+# 				"GFX_Su-37"
+# 			}
+# 			models = {
+# 				"TSF_entity"
+# 			}
+# 			weight = 100
+# 		}
+# 	}
+# 	MVLV_TSF_chassis_3_maneuver = {
+# 		pool = {
+# 			icons = {
+# 				"GFX_Su-47"
+# 			}
+# 			models = {
+# 				"TSF_entity"
+# 			}
+# 			weight = 100
+# 		}
+# 	}
+# 	MVLV_TSF_chassis_3_maneuver = {
+# 		pool = {
+# 			icons = {
+# 				"GFX_Su-47"
+# 			}
+# 			models = {
+# 				"TSF_entity"
+# 			}
+# 			weight = 100
+# 		}
+# 	}
+# 	MVLV_TSF_chassis_3_maneuver = {
+# 		pool = {
+# 			icons = {
+# 				"GFX_Su-47"
+# 			}
+# 			models = {
+# 				"TSF_entity"
+# 			}
+# 			weight = 100
+# 		}
+# 	}
+# 	MVLV_TSF_chassis_3_maneuver = {
+# 		pool = {
+# 			icons = {
+# 				"GFX_Su-47"
+# 			}
+# 			models = {
+# 				"TSF_entity"
+# 			}
+# 			weight = 100
+# 		}
+# 	}
+# 	MVLV_TSF_chassis_3_light = {
+# 		pool = {
+# 			icons = {
+# 				"GFX_Su-57"
+# 			}
+# 			models = {
+# 				"TSF_entity"
+# 			}
+# 			weight = 100
+# 		}
+# 	}
+# 	MVLV_TSF_chassis_3_light = {
+# 		pool = {
+# 			icons = {
+# 				"GFX_Su-57"
+# 			}
+# 			models = {
+# 				"TSF_entity"
+# 			}
+# 			weight = 100
+# 		}
+# 	}
+# 	MVLV_TSF_chassis_3_heavy = {
+# 		pool = {
+# 			icons = {
+# 				"GFX_Su-57"
+# 			}
+# 			models = {
+# 				"TSF_entity"
+# 			}
+# 			weight = 100
+# 		}
+# 	}
+# 	MVLV_TSF_chassis_3_heavy = {
+# 		pool = {
+# 			icons = {
+# 				"GFX_Su-57"
+# 			}
+# 			models = {
+# 				"TSF_entity"
+# 			}
+# 			weight = 100
+# 		}
+# 	}
+# }

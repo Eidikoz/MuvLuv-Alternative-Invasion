@@ -5927,7 +5927,7 @@ guiTypes = {
 	### MUVLUV INVASION START ###
 	containerWindowType = {
 		name = "techtree_UNI_tsf_folder_small_item"
-		position = { x=0 y=0 }
+		position = { x=0 y=-1 }
 		size = { width = 72 height = 72 }
 		clipping = no
 
@@ -5968,7 +5968,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "techtree_UNI_tsf_folder_item"
 		position = { x=-55 y=0 }
-		size = { width = 204 height = 72 }
+		size = { width = 204 height = 5 }
 		clipping = no
 
 		background = {

@@ -1,6 +1,6 @@
-state = {
-	id = 982
-	name = "STATE_982" # Barotseland
+state={
+	id=1017
+	name="STATE_1017"
 	
 	state_category = megalopolis
 	manpower = 1000

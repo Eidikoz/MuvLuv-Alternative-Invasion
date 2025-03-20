@@ -3,17 +3,17 @@ technologies = {
 ###TSF###
 	
 	UNI_basic_concept_research = {
-#コスト、開始年#
+		#コスト、開始年#
 		research_cost = 1
 		start_year = 1970
-#完了したらどうなるか#
+		#完了したらどうなるか#
 		on_research_complete = {
 			enable_subunits = {MVLV_tsf_battalion}
 			hidden_effect = { load_oob = "unlock_tsf" }
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
-#どれに繋がるか#
+		#どれに繋がるか#
 		path = { leads_to_tech = generic_F-5 research_cost_coeff = 1 }
 		path = { leads_to_tech = generic_F-4 research_cost_coeff = 1 }
 		path = { leads_to_tech = generic_A-6 research_cost_coeff = 1 }
@@ -50,7 +50,7 @@ technologies = {
 		path = { leads_to_tech = AFR_F-4 research_cost_coeff = 1 }
 		path = { leads_to_tech = AFR_MiG-21 research_cost_coeff = 1 }
 		
-#フォルダ、カテゴリ#
+		#フォルダ、カテゴリ#
 		folder = { name = UNI_tsf_folder position = { x = 0 y = -1 } }
 		categories = { MVLV_tsf_tech }
 		ai_will_do = { factor = 20000 }
@@ -145,7 +145,7 @@ technologies = {
 	UNI_F-4 = { enable_equipments = { tsf_equipment_F-4 }
 
 		research_cost = 2
-		start_year = 1976
+		start_year = 1974
 
 		allow_branch = { tag = UNI }
 
@@ -159,7 +159,7 @@ technologies = {
 	UNI_F-4J = { enable_equipments = { tsf_equipment_F-4J }
 
 		research_cost = 2
-		start_year = 1977
+		start_year = 1975
 
 		allow_branch = { tag = UNI }
 
@@ -508,45 +508,6 @@ technologies = {
 		ai_will_do = { factor = 20000 }
 	}
 	
-	UNI_F-35 = { enable_equipments = { tsf_equipment_F-35 }
-
-		research_cost = 2
-		start_year = 2002
-
-		path = { leads_to_tech = UNI_Fenrir research_cost_coeff = 1 }
-		path = { leads_to_tech = UNI_Typhon research_cost_coeff = 1 }
-
-		folder = { name = UNI_tsf_folder position = { x = 0 y = 15 } }
-		categories = {MVLV_tsf_tech }
-		show_effect_as_desc = no
-		ai_will_do = { factor = 20000 }
-	}
-	
-	UNI_Fenrir = { enable_equipments = { tsf_equipment_Fenrir }
-
-		research_cost = 2
-		start_year = 2010
-
-		# path = { leads_to_tech =  research_cost_coeff = 1 }
-
-		folder = { name = UNI_tsf_folder position = { x = 0 y = 17 } }
-		categories = { MVLV_tsf_tech }
-		show_effect_as_desc = no
-		ai_will_do = { factor = 20000 }
-	}
-	
-	UNI_Typhon = { enable_equipments = { tsf_equipment_Typhon }
-
-		research_cost = 2
-		start_year = 2010
-
-		# path = { leads_to_tech =  research_cost_coeff = 1 }
-
-		folder = { name = UNI_tsf_folder position = { x = 3 y = 17 } }
-		categories = { MVLV_tsf_tech }
-		show_effect_as_desc = no
-		ai_will_do = { factor = 20000 }
-	}
 
 #################################
 	UNI_Assault_gun_improvement_1 = {
@@ -777,71 +738,21 @@ technologies = {
 		ai_will_do = { factor = 20000 }
 	}
 
-	tsf_sub_weapons = {
-		enable_equipments = {
-			tsf_sub_weapons_equipment_1
-		}
-		research_cost = 1
-		start_year = 1980
-		folder = {
-			name = UNI_tsf_folder
-			position = { x = -11 y = 6 }
-		}
-		categories = {
-			artillery
-			cat_anti_tank
-		}
-	}
-
-	tsf_railgun_1 = {
-		enable_equipments = {
-			anti_tank_equipment_1
-		}
-		research_cost = 4
-		start_year = 2000
-		folder = {
-			name = UNI_tsf_folder
-			position = { x = 11 y = 14 }
-		}
-		categories = {
-			artillery
-			cat_anti_tank
-		}
-		path = { leads_to_tech = tsf_railgun_2 research_cost_coeff = 1 }
-	}
-	tsf_railgun_2 = {
-		enable_equipments = {
-			anti_tank_equipment_2
-		}
-		research_cost = 4
-		start_year = 2000
-		folder = {
-			name = UNI_tsf_folder
-			position = { x = 11 y = 16 }
-		}
-		categories = {
-			artillery
-			cat_anti_tank
-		}
-		path = { leads_to_tech = tsf_railgun_3 research_cost_coeff = 1 }
-	}
-	tsf_railgun_3 = {
-		enable_equipments = {
-			anti_tank_equipment_3
-		}
-		research_cost = 4
-		start_year = 2000
-		folder = {
-			name = UNI_tsf_folder
-			position = { x = 11 y = 18 }
-		}
-		categories = {
-			artillery
-			cat_anti_tank
-		}
-
-	}
-	
+	# tsf_sub_weapons = {
+	# 	enable_equipments = {
+	# 		tsf_sub_weapons_equipment_1
+	# 	}
+	# 	research_cost = 1
+	# 	start_year = 1980
+	# 	folder = {
+	# 		name = UNI_tsf_folder
+	# 		position = { x = -11 y = 6 }
+	# 	}
+	# 	categories = {
+	# 		artillery
+	# 		cat_anti_tank
+	# 	}
+	# }
 	
 	############
 
@@ -993,17 +904,6 @@ USA_YF-23 = { enable_equipments = { tsf_equipment_YF-23 }
 
 	ai_will_do = { factor = 20000 }
 }	
-
-USA_F-35 = { enable_equipments = { tsf_equipment_F-35 }
-
-	research_cost = 1
-	start_year = 2002
-
-	folder = { name = UNI_tsf_folder position = { x = 0 y = 16 } }
-	categories = { MVLV_tsf_tech }
-	ai_will_do = { factor = 20000 }
-}
-
 #____________________________________________________________
 #JAPツリー
 JAP_F-5J = { enable_equipments = { tsf_equipment_F-5 }
@@ -1026,7 +926,7 @@ JAP_F-5J = { enable_equipments = { tsf_equipment_F-5 }
 JAP_F-4J = { enable_equipments = { tsf_equipment_F-4J }
 
 	research_cost = 2
-	start_year = 1977
+	start_year = 1975
 
 	allow_branch = {
 		tag = JAP
@@ -1203,16 +1103,6 @@ JAP_T942 = { enable_equipments = { tsf_equipment_T942 }
 	ai_will_do = { factor = 20000 }
 }
 
-JAP_T94F = { enable_equipments = { tsf_equipment_T94F }
-
-	research_cost = 2
-	start_year = 2003
-
-	folder = { name = UNI_tsf_folder position = { x = 2 y = 16 } }
-	categories = { MVLV_tsf_tech }
-	ai_will_do = { factor = 20000}
-}
-
 #____________________________________________________________
 #SOVツリー
 
@@ -1372,17 +1262,7 @@ SOV_Su-47 = { enable_equipments = { tsf_equipment_Su-47 }
 	folder = { name = UNI_tsf_folder position = { x = 4 y = 14 } }
 	categories = { MVLV_tsf_tech }
 	ai_will_do = { factor = 20000 }
-}	
-
-SOV_Su-57 = { enable_equipments = { tsf_equipment_Su-57 }
-
-	research_cost = 1
-	start_year = 2003
-	
-	folder = { name = UNI_tsf_folder position = { x = 0 y = 16 } }
-	categories = { MVLV_tsf_tech }
-	ai_will_do = { factor = 20000 }
-}	
+}		
 
 #____________________________________________________________
 #CHIツリー
@@ -1390,7 +1270,7 @@ SOV_Su-57 = { enable_equipments = { tsf_equipment_Su-57 }
 CHI_F-4 = { enable_equipments = { tsf_equipment_F-4 }
 
 	research_cost = 2
-	start_year = 1976
+	start_year = 1974
 
 	allow_branch = { 
 		OR = {
@@ -1487,16 +1367,6 @@ CHI_F-15SE = { enable_equipments = { tsf_equipment_F-15SE }
 	ai_will_do = { factor = 20000 }
 }
 
-CHI_F-35 = { enable_equipments = { tsf_equipment_F-35 }
-
-	research_cost = 2
-	start_year = 2002
-
-	folder = { name = UNI_tsf_folder position = { x = 0 y = 16 } }
-	categories = { MVLV_tsf_tech }
-	ai_will_do = { factor = 20000 }
-}
-
 CHI_F-16 = { enable_equipments = { tsf_equipment_F-16 }
 
 	research_cost = 2
@@ -1581,16 +1451,6 @@ CHI_J-11 = { enable_equipments = { tsf_equipment_J-11 }
 
 	path = { leads_to_tech = CHI_J-10X research_cost_coeff = 1 }
 	folder = { name = UNI_tsf_folder position = { x = 6 y = 12 } }
-	categories = { MVLV_tsf_tech }
-	ai_will_do = { factor = 20000 }
-}
-
-CHI_J-20 = { enable_equipments = { tsf_equipment_Su-57 }
-
-	research_cost = 2
-	start_year = 2003
-
-	folder = { name = UNI_tsf_folder position = { x = 3 y = 16 } }
 	categories = { MVLV_tsf_tech }
 	ai_will_do = { factor = 20000 }
 }
@@ -1778,39 +1638,6 @@ EUR_Rafale = { enable_equipments = { tsf_equipment_Rafale }
 	ai_will_do = { factor = 20000 }
 }
 
-EUR_F-35 = { enable_equipments = { tsf_equipment_F-35 }
-
-	research_cost = 2
-	start_year = 2002
-
-	folder = { name = UNI_tsf_folder position = { x = -3 y = 16 } }
-	categories = { MVLV_tsf_tech }
-	show_effect_as_desc = no
-	ai_will_do = { factor = 20000 }
-}
-
-EUR_Tempest = { enable_equipments = { tsf_equipment_Tempest }
-
-	research_cost = 2
-	start_year = 2004
-
-	folder = { name = UNI_tsf_folder position = { x = 0 y = 16 } }
-	categories = { MVLV_tsf_tech }
-	show_effect_as_desc = no
-	ai_will_do = { factor = 20000 }
-}
-
-EUR_SW = { enable_equipments = { tsf_equipment_SW }
-
-	research_cost = 2
-	start_year = 2004
-
-	folder = { name = UNI_tsf_folder position = { x = 3 y = 16 } }
-	categories = { MVLV_tsf_tech }
-	show_effect_as_desc = no
-	ai_will_do = { factor = 20000 }
-}
-
 #____________________________________________________________
 # EEA
 
@@ -1880,16 +1707,6 @@ EEA_EF-2000 = { enable_equipments = { tsf_equipment_EF-2000 }
 	path = { leads_to_tech = EEA_SW research_cost_coeff = 1 }
 	}
 
-EEA_SW = { enable_equipments = { tsf_equipment_SW }
-
-	research_cost = 2
-	start_year = 2004
-
-	folder = { name = UNI_tsf_folder position = { x = 3 y = 16 } }
-	categories = { MVLV_tsf_tech }
-	show_effect_as_desc = no
-	ai_will_do = { factor = 20000 }
-	}
 
 EEA_MiG-21 = { enable_equipments = { tsf_equipment_MiG-21 }
 
@@ -1985,16 +1802,6 @@ EEA_MiG-31 = { enable_equipments = { tsf_equipment_MiG-31 }
 	ai_will_do = { factor = 20000 }
 	}
 
-EEA_Su-57 = { enable_equipments = { tsf_equipment_Su-57 }
-
-	research_cost = 2
-	start_year = 2003
-
-	folder = { name = UNI_tsf_folder position = { x = 0 y = 16 } }		
-	categories = { MVLV_tsf_tech }
-	show_effect_as_desc = no
-	ai_will_do = { factor = 20000 }
-	}
 
 #____________________________________________________________
 # AFR
@@ -2086,16 +1893,6 @@ AFR_F-15E = { enable_equipments = { tsf_equipment_F-15E }
 	ai_will_do = { factor = 20000 }
 }
 
-AFR_F-35 = { enable_equipments = { tsf_equipment_F-35 }
-
-	research_cost = 2
-	start_year = 2002
-
-	folder = { name = UNI_tsf_folder position = { x = -3 y = 16 } }
-	categories = { MVLV_tsf_tech }
-	ai_will_do = { factor = 20000 }
-}
-
 AFR_F-16 = { enable_equipments = { tsf_equipment_F-16 }
 
 	research_cost = 2
@@ -2175,17 +1972,6 @@ AFR_Rafale = { enable_equipments = { tsf_equipment_Rafale }
 
 	folder = { name = UNI_tsf_folder position = { x = 3 y = 12 } }
 	categories = { MVLV_tsf_tech }
-	ai_will_do = { factor = 20000 }
-}
-
-AFR_SW = { enable_equipments = { tsf_equipment_SW }
-
-	research_cost = 2
-	start_year = 2004
-
-	folder = { name = UNI_tsf_folder position = { x = 3 y = 16 } }
-	categories = { MVLV_tsf_tech }
-	show_effect_as_desc = no
 	ai_will_do = { factor = 20000 }
 }
 
@@ -2393,16 +2179,6 @@ generic_F-15SE = { enable_equipments = { tsf_equipment_F-15SE }
 	categories = { MVLV_tsf_tech }
     ai_will_do = { factor = 20000 }
 }	
-
-generic_F-35 = { enable_equipments = { tsf_equipment_F-35 }
-
-	research_cost = 1
-	start_year = 2002
-
-	folder = { name = UNI_tsf_folder position = { x = 0 y = 16 } }		
-	categories = { MVLV_tsf_tech }
-    ai_will_do = { factor = 20000 }
-} 
 
 #____________________________________________________________	
 ###ASA###

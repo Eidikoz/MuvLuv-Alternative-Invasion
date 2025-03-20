@@ -92,9 +92,9 @@ country_event = {
 		BET = {
 			load_oob = "BET_0_sinkiang"
 		}
-		619 = {
-			add_manpower = -99999999
-		}
+		# 619 = {
+		# 	add_manpower = -99999999
+		# }
 		every_country = {
             limit = {
                 NOT = { tag = BET } 

@@ -52,4 +52,3 @@ set_popularities = {
 	neutrality = 5
 	democratic = 40
 }
-

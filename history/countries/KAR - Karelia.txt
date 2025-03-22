@@ -107,4 +107,3 @@ recruit_character = KAR_jalmari_takkinen
 
 
 
-

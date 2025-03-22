@@ -235,4 +235,3 @@ if = {
 		CZE_fortification_focus
 	}
 }
-

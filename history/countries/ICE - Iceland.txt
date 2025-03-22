@@ -27,7 +27,6 @@ IF = {
 		civilian_economy
 	}
 }
-set_cosmetic_tag = ICE_personal_union
 
 set_technology = {
 	infantry_weapons = 1

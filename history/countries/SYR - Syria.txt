@@ -23,8 +23,6 @@ if = {
 
 set_convoys = 5
 
-set_cosmetic_tag = SYR_mandate
-
 
 set_politics = {
 	ruling_party = democratic

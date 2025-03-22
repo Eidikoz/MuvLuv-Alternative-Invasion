@@ -44,7 +44,7 @@ if = { #DLC
 	#BUL_democratic
 	#BUL_fascism
 	#BUL_neutrality
-	set_cosmetic_tag = BUL_neutrality
+	set_cosmetic_tag = GRE_communism
 
 	#IDEAS SETUP
 	if = {

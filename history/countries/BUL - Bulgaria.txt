@@ -190,9 +190,8 @@ if = { #DLC
 	#DLC POLIICS
 	set_popularities = { #DLC
 		democratic = 10
-		fascism = 30
-		neutrality = 55
-		communism = 5
+		neutrality = 30
+		communism = 60
 	}
 
 	recruit_character = BUL_boris_iii
@@ -273,8 +272,8 @@ if = { #DLC
 
 	#RULING PARTY
 	set_politics = { #DLC
-		ruling_party = neutrality
-		last_election = "1935.1.22"
+		ruling_party = communism
+		last_election = "1946.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}

@@ -327,15 +327,15 @@ add_opinion_modifier = {
 
 # SETUP HUNGARIAN POLITICS
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1935.3.31"
+	ruling_party = communism
+	last_election = "1946.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 25
-	fascism = 31
-	neutrality = 44
+	democratic = 10
+	neutrality = 15
+	communism = 75
 }
 
 # RECRUITING HUNGARIAN CHARACTERS

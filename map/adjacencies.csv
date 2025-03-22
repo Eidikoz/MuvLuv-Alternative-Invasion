@@ -204,7 +204,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5864;5838;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto Strait
 
 7855;13254;sea;8662;-1;-1;-1;-1;;Soviet America North Pole
-13063;13204;sea;5808;-1;-1;-1;-1;;Soviet America North Pole
 12060;10011;sea;7932;-1;-1;-1;-1;;South Korea to Japan
 5745;4002;;-1;-1;-1;-1;-1;THAI_CANAL;Thai Canal
 12113;12184;sea;5539;-1;-1;-1;-1;;Singapore

@@ -110,17 +110,15 @@ IF = {
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1935.5.19"
+	ruling_party = communism
+	last_election = "1946.1.1"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 65
-	neutrality = 20
-	fascism = 5
-	communism = 10
+	neutrality = 45
+	communism = 55
 }
 
 if = {

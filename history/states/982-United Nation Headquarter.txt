@@ -14,10 +14,11 @@ state = {
 			dockyard = 5
 			air_base = 10
 		}
-		victory_points = {
-			859 30
-		}
 	}	
+
+	victory_points = {
+		859 30
+	}
 
 	provinces = {
 		859

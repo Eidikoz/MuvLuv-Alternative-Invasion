@@ -2126,7 +2126,7 @@ equipments = {
 		year = 1970
 
 		picture = archetype_MVLV_tsf
-		is_archetype = yes
+		archetype = jeg_equipment 
 		is_convertable = yes
 		is_buildable = no
 		type = armor
@@ -2174,7 +2174,7 @@ equipments = {
 	jeg_equipment_F-4JK = {
 		year = 1985
 
-		archetype = jeg_equipment
+		archetype = MVLV_TSF_chassis
 		parent = tsf_equipment_F-4J 
 		priority = 0
 		visual_level = 26
@@ -2246,7 +2246,7 @@ equipments = {
 	jeg_equipment_T00R = {
 		year = 2000
 
-		archetype = jeg_equipment 
+		archetype = MVLV_TSF_chassis 
 		priority = 0
 		visual_level = 30
 		parent = jeg_equipment_T00
@@ -2281,7 +2281,7 @@ equipments = {
 	jeg_equipment_T00F = {
 		year = 1999
 
-		archetype = jeg_equipment
+		archetype = MVLV_TSF_chassis
 		priority = 0
 		visual_level = 29
 		parent = jeg_equipment_T00
@@ -2317,7 +2317,7 @@ equipments = {
 	jeg_equipment_T00A = {
 		year = 1999
 
-		archetype = jeg_equipment 
+		archetype = MVLV_TSF_chassis 
 		priority = 0
 		visual_level = 28
 		parent = jeg_equipment_T00
@@ -2352,7 +2352,7 @@ equipments = {
 	jeg_equipment_T00C = {
 		year = 2000
 
-		archetype = jeg_equipment 
+		archetype = MVLV_TSF_chassis 
 		priority = 0
 		visual_level = 27
 		parent = jeg_equipment_T00

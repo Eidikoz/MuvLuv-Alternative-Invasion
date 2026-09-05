@@ -337,10 +337,10 @@ international_security = {
 		days_re_enable = 25
 		
 		visible = {
-			has_completed_focus = Black_market_small_arms
+			has_completed_focus = United_nation_lendlease_small_arms
 		}
 		complete_effect = {
-			custom_effect_tooltip = UNI_Black_market
+			custom_effect_tooltip = UNI_United_nation_lendlease
 			UNI ={	
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
@@ -380,10 +380,10 @@ international_security = {
 		days_re_enable = 25
 		
 		visible = {
-			has_completed_focus = Black_market_heavy_weapons
+			has_completed_focus = United_nation_lendlease_heavy_weapons
 		}
 		complete_effect = {
-			custom_effect_tooltip = UNI_Black_market
+			custom_effect_tooltip = UNI_United_nation_lendlease
 			UNI ={	
 				add_equipment_to_stockpile = {
 					type = tsf_equipment_F-4 
@@ -423,10 +423,10 @@ international_security = {
 		days_re_enable = 25
 		
 		visible = {
-			has_completed_focus = Black_market_heavy_weapons
+			has_completed_focus = United_nation_lendlease_heavy_weapons
 		}
 		complete_effect = {
-			custom_effect_tooltip = UNI_Black_market
+			custom_effect_tooltip = UNI_United_nation_lendlease
 			UNI ={	
 				add_equipment_to_stockpile = {
 					type = heavy_tank_chassis
@@ -490,7 +490,7 @@ international_security = {
 		days_re_enable = 25		
 		
 		visible = {
-			has_completed_focus = Black_market_planes
+			has_completed_focus = United_nation_lendlease_planes
 		}
 		complete_effect = {
 			UNI ={	
@@ -500,7 +500,7 @@ international_security = {
 					producer = UNI
 				}
 			}
-			custom_effect_tooltip = UNI_Black_market
+			custom_effect_tooltip = UNI_United_nation_lendlease
 		}
 
 		ai_will_do = {

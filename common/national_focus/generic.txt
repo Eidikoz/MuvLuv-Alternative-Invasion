@@ -1,0 +1,1398 @@
+search_filter_prios = {
+	FOCUS_FILTER_POLITICAL = 1010
+	
+	FOCUS_FILTER_RESEARCH = 522
+	
+	FOCUS_FILTER_INDUSTRY = 509
+
+	FOCUS_FILTER_BALANCE_OF_POWER = 200
+	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
+	FOCUS_FILTER_PROPAGANDA = 110
+	FOCUS_FILTER_MISSIOLINI = 110
+	FOCUS_FILTER_ARMY_XP = 103
+	FOCUS_FILTER_NAVY_XP = 102
+	FOCUS_FILTER_AIR_XP = 101
+
+}
+
+focus_tree = {
+	id = generic_focus
+	
+	country = {
+		factor = 1
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+
+	initial_show_position = {
+		focus = industrial_effort
+	}
+
+	#shared_focus = HABSBURG_part_of_something_bigger
+	focus = {
+		id = Against_the_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 15
+		y = 0
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		complete_tooltip = {
+			navy_experience = 25
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+
+	focus = {
+		id = State_of_Emergency
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Against_the_unknown }
+		x = -1
+		y = 1
+		relative_position_id = Against_the_unknown
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = A_Nation_at_Arms
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = State_of_Emergency }
+		x = -3
+		y = 1
+		relative_position_id = State_of_Emergency
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = National_Unity_and_Resolve
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = A_Nation_at_Arms }
+		x = 0
+		y = 1
+		relative_position_id = A_Nation_at_Arms
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Rise_of_the_people
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Civillian_Evacuation_Effort }
+		prerequisite = { focus = National_Unity_and_Resolve }
+		x = -2
+		y = 1
+		relative_position_id = National_Unity_and_Resolve
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = The_Great_Expanditionary_Force
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Rise_of_the_people }
+		mutually_exclusive = { focus = Defender_of_the_Homeland }
+		x = -1
+		y = 1
+		relative_position_id = Rise_of_the_people
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Defender_of_the_Homeland
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Rise_of_the_people }
+		mutually_exclusive = { focus = The_Great_Expanditionary_Force }
+		x = 1
+		y = 1
+		relative_position_id = Rise_of_the_people
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Prepare_for_the_Final_Assault
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = The_Great_Expanditionary_Force }
+		prerequisite = { focus = Defender_of_the_Homeland }
+		x = -1
+		y = 1
+		relative_position_id = Defender_of_the_Homeland
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = The_Forge_of_Strength
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Prepare_for_the_Final_Assault }
+		prerequisite = { focus = Gathering_the_Final_Legion }
+		x = -1
+		y = 1
+		relative_position_id = Gathering_the_Final_Legion
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Strike_Force_Arsenal
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Traditional_Arms_Complex }
+		mutually_exclusive = { focus = Fortification_Defense_Systems }
+		x = -1
+		y = 2
+		relative_position_id = Armaments_Designer
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Evacuation_Order
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = State_of_Emergency }
+		x = 0
+		y = 1
+		relative_position_id = State_of_Emergency
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = industrial_Relocation
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Evacuation_Order }
+		x = 1
+		y = 1
+		relative_position_id = Evacuation_Order
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Overseas_industrial_Expansion
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Nationwide_Production_Surge }
+		prerequisite = { focus = industrial_Relocation }
+		mutually_exclusive = { focus = industrial_Ascendancy }
+		x = 0
+		y = 1
+		relative_position_id = industrial_Relocation
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Oversea_Arms_Factory
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Overseas_industrial_Expansion }
+		x = 1
+		y = 1
+		relative_position_id = Overseas_industrial_Expansion
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Oversea_Supremacy_Initiative
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Oversea_Arms_Factory }
+		x = 0
+		y = 1
+		relative_position_id = Oversea_Arms_Factory
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Foreign_Idustrial_Investment
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Overseas_industrial_Expansion }
+		x =-1
+		y = 1
+		relative_position_id = Overseas_industrial_Expansion
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Global_Trade_Network
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Foreign_Idustrial_Investment }
+		x = 0
+		y = 1
+		relative_position_id = Foreign_Idustrial_Investment
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Industial_Exile
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Global_Trade_Network }
+		prerequisite = { focus = Oversea_Supremacy_Initiative }
+		x =1
+		y = 1
+		relative_position_id = Global_Trade_Network
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = The_Last_Retreat
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = The_Forge_of_Strength }
+		prerequisite = { focus = Nationalizing_The_Economy }
+		prerequisite = { focus = Industial_Exile }
+		x = 0
+		y = 1
+		relative_position_id = Industial_Exile
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = The_Final_Stand
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = The_Last_Retreat }
+		mutually_exclusive = { focus = Counterstrike_of_Glory }
+		x = 1
+		y = 1
+		relative_position_id = The_Last_Retreat
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Counterstrike_of_Glory
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = The_Last_Retreat }
+		mutually_exclusive = { focus = The_Final_Stand }
+		x = -1
+		y = 1
+		relative_position_id = The_Last_Retreat
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Victory_or_Oblivion
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Counterstrike_of_Glory }
+		prerequisite = { focus = The_Final_Stand }
+		x =1
+		y = 1
+		relative_position_id = Counterstrike_of_Glory
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Civillian_Evacuation_Effort
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Evacuation_Order }
+		x = -1
+		y = 1
+		relative_position_id = Evacuation_Order
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Resttlement_and_Reproduction
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Civillian_Evacuation_Effort }
+		prerequisite = { focus = National_Unity_and_Resolve }
+		x = -1
+		y = 1
+		relative_position_id = Civillian_Evacuation_Effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Reviving_the_Recruitment_Drive
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Resttlement_and_Reproduction }
+		x = 0
+		y = 1
+		relative_position_id = Resttlement_and_Reproduction
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Gathering_the_Final_Legion
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Reviving_the_Recruitment_Drive }
+		x = 0
+		y = 1
+		relative_position_id = Reviving_the_Recruitment_Drive
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Preliminary_Arsenal
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Against_the_unknown }
+		x = 3
+		y = 1
+		relative_position_id = Against_the_unknown
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Mobilize_the_Workforce
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Preliminary_Arsenal }
+		x = 4
+		y = 1
+		relative_position_id = State_of_Emergency
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Nationwide_Production_Surge
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Mobilize_the_Workforce }
+		x = 4
+		y = 2
+		relative_position_id = State_of_Emergency
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Industrial_Ascendancy
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Nationwide_Production_Surge }
+		prerequisite = { focus = industrial_Relocation }
+		mutually_exclusive = { focus = Overseas_industrial_Expansion }
+		x = 1
+		y = 1
+		relative_position_id = Nationwide_Production_Surge
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Resource_Security_initiative
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Industrial_Ascendancy }
+		x = 1
+		y = 1
+		relative_position_id = Industrial_Ascendancy
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Strategic_Resource_Expansion
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Resource_Security_initiative }
+		x = 0
+		y = 1
+		relative_position_id = Resource_Security_initiative
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = War_production_Surge
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Industrial_Ascendancy }
+		x = -1
+		y = 1
+		relative_position_id = Industrial_Ascendancy
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Total_War_Effort
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = War_production_Surge }
+		x = 0
+		y = 1
+		relative_position_id = War_production_Surge
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Nationalizing_The_Economy
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Total_War_Effort }
+		prerequisite = { focus = Strategic_Resource_Expansion }
+		x = 1
+		y = 1
+		relative_position_id = Total_War_Effort
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Armaments_Designer
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Preliminary_Arsenal }
+		x = 9
+		y = 1
+		relative_position_id = State_of_Emergency
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Traditional_Arms_Complex
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Armaments_Designer }
+		x = 0
+		y = 1
+		relative_position_id = Armaments_Designer
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+	
+	focus = {
+		id = Strike_Force_Arsenal
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Traditional_Arms_Complex }
+		mutually_exclusive = { focus = Fortification_Defense_Systems }
+		x = -1
+		y = 2
+		relative_position_id = Armaments_Designer
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Assault_Production_Initiative
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Strike_Force_Arsenal }
+		x = 0
+		y = 1
+		relative_position_id = Strike_Force_Arsenal
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Spearhead_Arsenal
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Assault_Production_Initiative }
+		x = 0
+		y = 1
+		relative_position_id = Assault_Production_Initiative
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Blood_and_Iron
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = Bastion_Armament focus = Spearhead_Arsenal }
+		x = -1
+		y = 1
+		relative_position_id = Bastion_Armament
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+
+	focus = {
+		id = Fortification_Defense_Systems
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Traditional_Arms_Complex }
+		mutually_exclusive = { focus = Strike_Force_Arsenal }
+		x = 1
+		y = 2
+		relative_position_id = Armaments_Designer
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Defensive_Shield_Technologies
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Fortification_Defense_Systems }
+		x = 0
+		y = 1
+		relative_position_id = Fortification_Defense_Systems
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Bastion_Armament
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Defensive_Shield_Technologies }
+		x = 0
+		y = 1
+		relative_position_id = Defensive_Shield_Technologies
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = TSF_Arms_Complex
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Armaments_Designer }
+		x = 6
+		y = 1
+		relative_position_id = Armaments_Designer
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Mass_Production_Arsenal
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = TSF_Arms_Complex }
+		mutually_exclusive = { focus = Presition_Arsenal }
+		x = -2
+		y = 1
+		relative_position_id = TSF_Arms_Complex
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Mass_TSF
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Mass_Production_Arsenal }
+		x = 0
+		y = 1
+		relative_position_id = Mass_Production_Arsenal
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Presition_Arsenal
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = TSF_Arms_Complex }
+		mutually_exclusive = { focus = Mass_Production_Arsenal }
+		x = 2
+		y = 1
+		relative_position_id = TSF_Arms_Complex
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = Technological_TSF
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = Presition_Arsenal }
+		x = 0
+		y = 1
+		relative_position_id = Presition_Arsenal
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = TSF_for_Victory
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = Mass_TSF focus = Technological_TSF }
+		x = 2
+		y = 2
+		relative_position_id = Mass_TSF
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+
+	focus = {
+		id = The_Forge_of_War
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = Blood_and_Iron }
+		prerequisite = { focus = TSF_for_Victory }
+		x = 3
+		y = 2
+		relative_position_id = Blood_and_Iron
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+}

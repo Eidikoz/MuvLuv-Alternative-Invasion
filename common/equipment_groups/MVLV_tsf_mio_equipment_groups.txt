@@ -1,7 +1,8 @@
-
 MVLV_mio_cat_eq_all_tsf = { 
 	equipment_type = {
 		MVLV_TSF_chassis
+		MVLV_TSF_support_chassis
+		tsa_equipment
 		asa_equipment
 	}
 }

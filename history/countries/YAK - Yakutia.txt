@@ -105,4 +105,3 @@ recruit_character = YAK_anatoly_pepelyayev
 
 
 
-

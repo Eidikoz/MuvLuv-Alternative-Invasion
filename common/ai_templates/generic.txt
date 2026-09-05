@@ -22,7 +22,7 @@ tsf_role = {
 			
 			
 			regiments = {
-				MVLV_tsf_battalion = 10
+				MVLV_tsf_battalion = 5
 			}
 			support = {
 				engineer = 1

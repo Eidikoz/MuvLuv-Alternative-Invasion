@@ -105,4 +105,3 @@ recruit_character = BYA_bidia_dandaron
 
 
 
-

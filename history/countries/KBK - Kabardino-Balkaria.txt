@@ -99,4 +99,3 @@ set_popularities = {
 
 recruit_character = KBK_betal_kalmyk
 
-

@@ -135,4 +135,3 @@ recruit_character = KAZ_acgs
 
 
 
-

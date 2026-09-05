@@ -11,171 +11,178 @@ equipments = {
 		interface_category = interface_category_armor
 		
 		priority = 2000
-		module_slots = {
-			MVLV_TSF_convert_module_slot = {
-				allowed_module_categories = {
-					MVLV_TSF_convert_module_type
-				}
-			}
-			MVLV_TSF_armor_slot = {
-				required = yes
-				allowed_module_categories = {
-					MVLV_TSF_armor_type
-				}
-			}
-			MVLV_TSF_OS_slot = {
-				required = yes
-				allowed_module_categories = {
-					MVLV_TSF_OS_normal_type
-					MVLV_TSF_OS_close_type
-					MVLV_TSF_OS_support_type
-				}
-			}
-			MVLV_TSF_engine_slot = {
-				required = yes
-				allowed_module_categories = {
-					MVLV_TSF_engine_normal_type
-					MVLV_TSF_engine_maneuver_type
-					MVLV_TSF_engine_cruise_type
-				}
-			}
-			MVLV_TSF_headUnit_slot = {
-				required = yes
-				allowed_module_categories = {
-					MVLV_TSF_headUnit_nomal_type
-					MVLV_TSF_headUnit_heavy_type
-					MVLV_TSF_headUnit_aerial_type
-				}	
-			}
-			MVLV_TSF_right_hand_slot = {
-				required = yes
-				allowed_module_categories = {
-					MVLV_TSF_right_hand_type
-				}	
-			}
+		# module_slots = {
+		# 	MVLV_TSF_convert_module_slot = {
+		# 		allowed_module_categories = {
+		# 			MVLV_TSF_convert_module_type
+		# 		}
+		# 	}
+		# 	MVLV_TSF_armor_slot = {
+		# 		required = yes
+		# 		allowed_module_categories = {
+		# 			MVLV_TSF_armor_type
+		# 		}
+		# 	}
+		# 	MVLV_TSF_OS_slot = {
+		# 		required = yes
+		# 		allowed_module_categories = {
+		# 			MVLV_TSF_OS_normal_type
+		# 			MVLV_TSF_OS_close_type
+		# 			MVLV_TSF_OS_support_type
+		# 		}
+		# 	}
+		# 	MVLV_TSF_engine_slot = {
+		# 		required = yes
+		# 		allowed_module_categories = {
+		# 			MVLV_TSF_engine_normal_type
+		# 			MVLV_TSF_engine_maneuver_type
+		# 			MVLV_TSF_engine_cruise_type
+		# 		}
+		# 	}
+		# 	MVLV_TSF_headUnit_slot = {
+		# 		required = yes
+		# 		allowed_module_categories = {
+		# 			MVLV_TSF_headUnit_nomal_type
+		# 			MVLV_TSF_headUnit_heavy_type
+		# 			MVLV_TSF_headUnit_aerial_type
+		# 		}	
+		# 	}
+		# 	MVLV_TSF_right_hand_slot = {
+		# 		required = yes
+		# 		allowed_module_categories = {
+		# 			MVLV_TSF_right_hand_type
+		# 		}	
+		# 	}
 			
-			MVLV_TSF_left_hand_slot = {
-				allowed_module_categories = {
-					MVLV_TSF_shield_type
-					MVLV_TSF_sword_type
-					MVLV_TSF_add_wepon_type
-				}
-			}
+		# 	MVLV_TSF_left_hand_slot = {
+		# 		allowed_module_categories = {
+		# 			MVLV_TSF_shield_type
+		# 			MVLV_TSF_sword_type
+		# 			MVLV_TSF_add_wepon_type
+		# 		}
+		# 	}
 			
-			MVLV_TSF_head_slot = {
-				allowed_module_categories = {
-					MVLV_TSF_add_sensor_type
-					MVLV_TSF_add_armor_type
-				}
-			}
-			#
-			MVLV_TSF_shoulder_slot = {
-				allowed_module_categories = {
-					MVLV_TSF_add_thruster_type
-					MVLV_TSF_add_sensor_type
-					MVLV_TSF_add_armor_type
-					MVLV_TSF_add_missile_type
-					MVLV_TSF_add_supplies_type
-				}
-			}
-			MVLV_TSF_leftBackArm_slot = {
-				allowed_module_categories = {
-					MVLV_TSF_sword_type
-					MVLV_TSF_add_wepon_type
-					MVLV_TSF_add_back_thruster_type
-					MVLV_TSF_add_back_supplies_type
-				}
-			}
-			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_leftBackArm_slot
-			#
-			MVLV_TSF_arm_slot = {
-				allowed_module_categories = {
-					MVLV_TSF_sub_weapon_type
-					MVLV_TSF_add_sensor_type
-					MVLV_TSF_add_armor_type
-					MVLV_TSF_add_supplies_type
-				}
-			}
-			#
-			MVLV_TSF_waist_slot = {
-				allowed_module_categories = {
-					MVLV_TSF_add_thruster_type
-					MVLV_TSF_add_armor_type
-					MVLV_TSF_add_supplies_type
-				}
-			}
-			#
-			MVLV_TSF_leg_slot = {
-				allowed_module_categories = {
-					MVLV_TSF_add_armor_type
-					MVLV_TSF_add_supplies_type
-				}
-			}
-			###
-			MVLV_TSF_sp_slot_1 = {
-				allowed_module_categories = {
-					MVLV_TSF_sp_dataLink_type
-					MVLV_TSF_sp_fcs_type
-					MVLV_TSF_sp_structure_type
-					MVLV_TSF_sp_vibration_sensor_type
-					MVLV_TSF_sp_shell_type
-					MVLV_TSF_sp_sight_type
-					MVLV_TSF_sp_maintenance_team_type
-					MVLV_TSF_sp_custom_module_type
-				}
-			}
-			MVLV_TSF_sp_slot_2 = MVLV_TSF_sp_slot_1
-			MVLV_TSF_sp_slot_3 = MVLV_TSF_sp_slot_1
-			MVLV_TSF_sp_slot_4 = MVLV_TSF_sp_slot_1
-			MVLV_TSF_sp_slot_5 = MVLV_TSF_sp_slot_1
-			MVLV_TSF_sp_slot_6 = MVLV_TSF_sp_slot_1
-		}
-		module_count_limit = {
-			category = MVLV_TSF_sword_type
-			count < 3
-		}
-		module_count_limit = {
-			category = MVLV_TSF_add_back_thruster_type
-				count > 2
-		}
-		module_count_limit = {
-			category = MVLV_TSF_sp_dataLink_type
-			count < 2
-		}
-		module_count_limit = {
-			category = MVLV_TSF_sp_fcs_type
-			count < 2
-		}
-		module_count_limit = {
-			category = MVLV_TSF_sp_vibration_sensor_type
-			count < 2
-		}
-		module_count_limit = {
-			category = MVLV_TSF_sp_shell_type
-			count < 2
-		}
-		module_count_limit = {
-			category = MVLV_TSF_sp_sight_type
-			count < 2
-		}
-		module_count_limit = {
-			category = MVLV_TSF_sp_structure_type
-			count < 2
-		}
-		module_count_limit = {
-			category = MVLV_TSF_sp_maintenance_team_type
-			count < 2
-		}
-		module_count_limit = {
-			category = MVLV_TSF_sp_custom_module_type
-			count < 2
-		}
-		default_modules = {
-			MVLV_TSF_armor_slot = MVLV_TSF_armor_nomal
-			MVLV_TSF_OS_slot = MVLV_TSF_basic_OS
-			MVLV_TSF_engine_slot = MVLV_TSF_basic_engine
-			MVLV_TSF_headUnit_slot = MVLV_TSF_basic_head
-			MVLV_TSF_right_hand_slot = MVLV_TSF_basic_assault_cannon
+		# 	MVLV_TSF_head_slot = {
+		# 		allowed_module_categories = {
+		# 			MVLV_TSF_add_sensor_type
+		# 			MVLV_TSF_add_armor_type
+		# 		}
+		# 	}
+		# 	#
+		# 	MVLV_TSF_shoulder_slot = {
+		# 		allowed_module_categories = {
+		# 			MVLV_TSF_add_thruster_type
+		# 			MVLV_TSF_add_sensor_type
+		# 			MVLV_TSF_add_armor_type
+		# 			MVLV_TSF_add_missile_type
+		# 			MVLV_TSF_add_supplies_type
+		# 		}
+		# 	}
+		# 	MVLV_TSF_leftBackArm_slot = {
+		# 		allowed_module_categories = {
+		# 			MVLV_TSF_sword_type
+		# 			MVLV_TSF_add_wepon_type
+		# 			MVLV_TSF_add_back_thruster_type
+		# 			MVLV_TSF_add_back_supplies_type
+		# 		}
+		# 	}
+		# 	MVLV_TSF_rigtBackArm_slot = MVLV_TSF_leftBackArm_slot
+		# 	#
+		# 	MVLV_TSF_arm_slot = {
+		# 		allowed_module_categories = {
+		# 			MVLV_TSF_sub_weapon_type
+		# 			MVLV_TSF_add_sensor_type
+		# 			MVLV_TSF_add_armor_type
+		# 			MVLV_TSF_add_supplies_type
+		# 		}
+		# 	}
+		# 	#
+		# 	MVLV_TSF_waist_slot = {
+		# 		allowed_module_categories = {
+		# 			MVLV_TSF_add_thruster_type
+		# 			MVLV_TSF_add_armor_type
+		# 			MVLV_TSF_add_supplies_type
+		# 		}
+		# 	}
+		# 	#
+		# 	MVLV_TSF_leg_slot = {
+		# 		allowed_module_categories = {
+		# 			MVLV_TSF_add_armor_type
+		# 			MVLV_TSF_add_supplies_type
+		# 		}
+		# 	}
+		# 	###
+		# 	MVLV_TSF_sp_slot_1 = {
+		# 		allowed_module_categories = {
+		# 			MVLV_TSF_sp_dataLink_type
+		# 			MVLV_TSF_sp_fcs_type
+		# 			MVLV_TSF_sp_structure_type
+		# 			MVLV_TSF_sp_vibration_sensor_type
+		# 			MVLV_TSF_sp_shell_type
+		# 			MVLV_TSF_sp_sight_type
+		# 			MVLV_TSF_sp_maintenance_team_type
+		# 			MVLV_TSF_sp_custom_module_type
+		# 		}
+		# 	}
+		# 	MVLV_TSF_sp_slot_2 = MVLV_TSF_sp_slot_1
+		# 	MVLV_TSF_sp_slot_3 = MVLV_TSF_sp_slot_1
+		# 	MVLV_TSF_sp_slot_4 = MVLV_TSF_sp_slot_1
+		# 	MVLV_TSF_sp_slot_5 = MVLV_TSF_sp_slot_1
+		# 	MVLV_TSF_sp_slot_6 = MVLV_TSF_sp_slot_1
+		# }
+		# module_count_limit = {
+		# 	category = MVLV_TSF_sword_type
+		# 	count < 3
+		# }
+		# module_count_limit = {
+		# 	category = MVLV_TSF_add_back_thruster_type
+		# 		count > 2
+		# }
+		# module_count_limit = {
+		# 	category = MVLV_TSF_sp_dataLink_type
+		# 	count < 2
+		# }
+		# module_count_limit = {
+		# 	category = MVLV_TSF_sp_fcs_type
+		# 	count < 2
+		# }
+		# module_count_limit = {
+		# 	category = MVLV_TSF_sp_vibration_sensor_type
+		# 	count < 2
+		# }
+		# module_count_limit = {
+		# 	category = MVLV_TSF_sp_shell_type
+		# 	count < 2
+		# }
+		# module_count_limit = {
+		# 	category = MVLV_TSF_sp_sight_type
+		# 	count < 2
+		# }
+		# module_count_limit = {
+		# 	category = MVLV_TSF_sp_structure_type
+		# 	count < 2
+		# }
+		# module_count_limit = {
+		# 	category = MVLV_TSF_sp_maintenance_team_type
+		# 	count < 2
+		# }
+		# module_count_limit = {
+		# 	category = MVLV_TSF_sp_custom_module_type
+		# 	count < 2
+		# }
+		# default_modules = {
+		# 	MVLV_TSF_armor_slot = MVLV_TSF_armor_nomal
+		# 	MVLV_TSF_OS_slot = MVLV_TSF_basic_OS
+		# 	MVLV_TSF_engine_slot = MVLV_TSF_basic_engine
+		# 	MVLV_TSF_headUnit_slot = MVLV_TSF_basic_head
+		# 	MVLV_TSF_right_hand_slot = MVLV_TSF_basic_assault_cannon
+		# }
+
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
 		}
 		
 		max_organisation = 30

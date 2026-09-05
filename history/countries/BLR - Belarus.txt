@@ -100,4 +100,3 @@ recruit_character = BLR_panteleimon_ponomarenko
 recruit_character = BLR_radislau_astrouski
 
 
-

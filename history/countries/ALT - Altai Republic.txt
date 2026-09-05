@@ -107,4 +107,3 @@ recruit_character = ALT_samuil_yufit
 
 
 
-

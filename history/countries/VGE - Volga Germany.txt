@@ -106,4 +106,3 @@ recruit_character = VGE_aleksander_heck
 
 
 
-

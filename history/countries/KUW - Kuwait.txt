@@ -1,4 +1,4 @@
-﻿capital = 656
+﻿capital = 656 # Kuwait City
 
 #oob = ""
 
@@ -17,6 +17,8 @@ IF = {
 
 set_convoys = 5
 
+
+recruit_character = KUW_ahmad_al_sabah
 recruit_character = KUW_pot
 recruit_character = KUW_aco2
 recruit_character = KUW_mt
@@ -38,62 +40,16 @@ recruit_character = KUW_nt
 recruit_character = KUW_communist_guy
 recruit_character = KUW_acr
 
-2099.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-}
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 75
+	democratic = 40
 	fascism = 1
 	communism = 1
-	neutrality = 23
+	neutrality = 58
 }
 
-#create_country_leader = {
-#	
-#	name = "Jonas Lote"
-#	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-#	expire = "1965.1.1"
-#	ideology = centrism
-#	traits = {
-#		#
-#	}
-#}

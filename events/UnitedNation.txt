@@ -17,7 +17,7 @@ country_event = {
 	}
 
 	immediate = {
-		982 = { add_core_of = UNI }
+		1017 = { add_core_of = UNI }
 		USA ={ release = UNI }
 		country_event = { days = 1 id = BETAnews.20 }
 		UNI ={

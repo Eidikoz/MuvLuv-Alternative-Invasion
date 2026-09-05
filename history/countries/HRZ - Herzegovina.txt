@@ -98,4 +98,3 @@ recruit_character = HRZ_pot
 recruit_character = HRZ_mt
 recruit_character = HRZ_ncm
 recruit_character = HRZ_nt
-

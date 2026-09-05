@@ -144,4 +144,3 @@ create_country_leader = {
 }
 
 #couldnt find anything historical on fascism
-

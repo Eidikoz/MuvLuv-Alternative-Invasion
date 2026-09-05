@@ -52,4 +52,3 @@ set_popularities = {
 	communism = 2
 	neutrality = 2
 }
-

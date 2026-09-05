@@ -98,4 +98,3 @@ set_popularities = {
 
 recruit_character = CHU_gerasim_ivanov
 
-

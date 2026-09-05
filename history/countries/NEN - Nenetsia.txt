@@ -96,4 +96,3 @@ set_popularities = {
 	neutrality = 30
 }
 
-

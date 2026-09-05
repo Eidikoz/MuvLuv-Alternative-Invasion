@@ -1,8 +1,0 @@
-BET_offensive = {
-	enable = { always = yes }
-
-	icon = GFX_modifiers_generic_military_plans
-
-	army_speed_factor = 0.5
-
-}

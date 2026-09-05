@@ -1,0 +1,29 @@
+state={
+	id=1017
+	name="STATE_1017"
+	
+	state_category = megalopolis
+	manpower = 1000
+
+	history = {
+		add_core_of = USA
+		owner = USA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 20
+			dockyard = 5
+			air_base = 10
+		}
+	}	
+
+	victory_points = {
+		859 30
+	}
+
+	provinces = {
+		859
+	}
+	
+	buildings_max_level_factor = 10.000
+	local_supplies = 0.0 
+}

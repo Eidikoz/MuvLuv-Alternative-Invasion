@@ -97,4 +97,3 @@ recruit_character = IA_olga_taratuta
 recruit_character = UKR_pavlo_shandruk 
 
 
-
